@@ -26,8 +26,9 @@ jobs:
         run: |
           sudo apt-get install ikiwiki libtext-multimarkdown-perl
 
-      - name: Run ikiwiki
+      - name: Set up worktree and Run ikiwiki
         run: |
+          git config extensions.worktreeConfig true
           git worktree add -B gh-pages ../_site origin/gh-pages
           ikiwiki --setup orbital-transfer.setup
           
