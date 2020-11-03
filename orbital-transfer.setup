@@ -8,7 +8,7 @@
 # Remember to re-run ikiwiki --setup any time you edit this file.
 #
 # name of the wiki
-wikiname: wiki
+wikiname: Orbital Transfer
 # contact email for wiki
 #adminemail: me@example.com
 # users who are wiki admins
@@ -36,7 +36,7 @@ cgi_overload_message: ''
 # enable optimization of only refreshing committed changes?
 only_committed_changes: 0
 # rcs backend to use
-rcs: ''
+rcs: git
 # plugins to add to the default configuration
 add_plugins: []
 # plugins to disable
@@ -54,7 +54,7 @@ usedirs: 1
 # use '!'-prefixed preprocessor directives?
 prefix_directives: 1
 # use page/index.mdwn source files
-indexpages: 0
+indexpages: 1
 # enable Discussion pages?
 discussion: 1
 # name of Discussion pages
@@ -191,7 +191,7 @@ pingurl: []
 
 # mdwn plugin
 # enable multimarkdown features?
-#multimarkdown: 0
+multimarkdown: 1
 # disable use of markdown discount?
 #nodiscount: 0
 # enable footnotes in Markdown (where supported)?
