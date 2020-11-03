@@ -19,10 +19,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Install ikiwiki
         run: |
-          sudo apt install ikiwiki libtext-multimarkdown-perl
+          sudo apt-get install ikiwiki libtext-multimarkdown-perl
 
       - name: Run ikiwiki
         run: |
@@ -33,7 +35,7 @@ jobs:
         run: |
           cd ../_site
           git config --worktree push.default simple
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "noreply@github.com"
+          git config --worktree user.name github-actions
+          git config --worktree user.email github-actions@github.com
           COMMIT_MESSAGE="Publishing site on `date "+%Y-%m-%d %H:%M:%S"` from `git log -n 1 --format='commit %h - %s' $GITHUB_SHA`"
           git add --all && git commit -m $COMMIT_MESSAGE && git push origin gh-pages
