@@ -75,13 +75,107 @@ Orbital Transfer
 <div id="pagebody">
 
 <div id="content" role="main">
-<h1 id="designoforbitaltransfer">Design of orbital transfer</h1>
+<h1 id="orbitaltransfer">Orbital Transfer</h1>
 
-<h2 id="poly-repoversusmono-repo">Poly-repo versus mono-repo</h2>
+<h2 id="whatisorbitaltransfer">What is Orbital Transfer?</h2>
+
+<p>Orbital Transfer is a set of tools made to help developers manage their
+execution environments. This is similar to what an IDE does when setting up a
+project, but goes further in helping declaratively specifying the project's
+relationship to other parts of the system both under the developer's control
+and not.</p>
+
+<h2 id="relationshiptoothercode">Relationship to other code</h2>
+
+<p>A distribution of code does not exist in a standalone environment. It has
+dependencies on other aspects of the system it is running on such as the
+architecture, operating system, paths to libraries, configuration settings.</p>
+
+<h3 id="poly-repoversusmono-repo">Poly-repo versus mono-repo</h3>
+
+<p>Usually a large project is broken into modules that can be used and tested
+independently of other parts of the project. To keep track of changes to these
+modules, developer's make decision to manage changes to these together
+(mono-repo architecture) or apart (poly-repo architecture)
+(see <a href="https://github.com/joelparkerhenderson/monorepo_vs_polyrepo">more</a>).</p>
+
+<p>The reason why a mono-repo may be used is because it makes it easier to advance
+changes that cut across modules at a single time. When modules depend on each
+other such a <code>B -(depends on)⟶ A</code>, making a change in <code>A</code> would also mean
+possibly updating <code>B</code>. Keeping these changes together means that advancing
+versions is easier especially if there are further modules <code>C, D, E -(depends on)⟶ B</code>
+which would also possibly need to be updated. Though one could say that
+if a change in one module causes so many changes downstream, the modules are
+too highly <a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">coupled</a>.</p>
+
+<p>However, a poly-repo is not that much harder to work with than a mono-repo if
+one has the right tools. One could use branches and declare that a particular
+branch can only work with changes before/past a certain point (e.g., version,
+tag) on a dependency. Applying this to multiple repositories at once just
+requires specifying at which point <code>Δ</code> the change in occurs then specifying
+that everything before the change must be <code>&lt; ∆</code> and after must be <code>≥ Δ</code>. To
+automate this, the tool needs access to the dependency graph between the
+various repos that make up the poly-repo architecture.</p>
+
+<h3 id="dependenciesinotherpackages">Dependencies in other packages</h3>
+
+<p>Packages also depend on code outside of the developer's direct control. These
+can apply to the entire system or just to the language environment that the
+code is being developed in.</p>
+
+<h4 id="systemdistributionpackagemanagement">System/distribution package management</h4>
+
+<p>Often IDEs and language tooling just know about language-level dependencies and
+help the developer resolve these, however system-level dependencies are an
+important part of testing and deployment.</p>
+
+<p>Often these dependencies are things that are compiled for the entire system to
+uses such as GUI toolkits, libraries or services that need to be accessed by
+the code (network servers, databases). Installing these often require
+administrator permissions, system restarts, system-specific paths, so knowing
+the specifics of the system you are working with is necessary.</p>
+
+<p>This system-specificity also applies to the package names themselves, such as
+the GTK+3.0 library is known by <code>libgtk-3-0</code> on Debian, <code>gtk3</code> on Fedora, etc.
+(see <a href="https://repology.org/project/gtk/versions">more</a>) and there are further
+packages built from the same source that contain features such as development
+files (headers, debugging builds, type maps) or documentation.</p>
+
+<h4 id="languagepackagemanagement">Language package management</h4>
+
+<p>Tooling for language package management is well-known by developers and these
+can be used in many ways such as installing at the system level, per-user, or
+per-project, each with benefits and drawbacks.</p>
+
+<h4 id="cross-languagedependencies">Cross-language dependencies</h4>
 
 <h2 id="whynotconfigurationmanagement">Why not configuration management?</h2>
 
+<h2 id="acombinatorialexplosion">A combinatorial explosion</h2>
+
+<h3 id="differenttoolchains">Different toolchains</h3>
+
+<ul>
+<li>WebAssembly, architectures</li>
+</ul>
+
+<h3 id="differentsystems">Different systems</h3>
+
+<h3 id="differentruntimes">Different runtimes</h3>
+
+<ul>
+<li>containers, Docker, virtual machines</li>
+</ul>
+
 <h2 id="refactoringtools">Refactoring tools</h2>
+
+<h2 id="seealso">See also</h2>
+
+<ul>
+<li><a href="https://themanifest.fireside.fm/">The Manifest: A podcast all about package management</a></li>
+<li><a href="https://www.activestate.com/blog/universal-package-managers-meet-the-state-tool/">ActiveState State Tool</a></li>
+<li><a href="https://github.com/ottomatica/Baker">Baker: tool for provisioning virtual machines and containers</a></li>
+</ul>
 
 </div>
 
@@ -108,7 +202,7 @@ Orbital Transfer
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu Nov  5 05:13:11 2020</span>
+Last edited <span class="date">Thu Nov  5 23:29:22 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
