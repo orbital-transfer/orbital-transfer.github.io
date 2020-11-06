@@ -177,7 +177,7 @@ the <code>&lt;binding-package&gt; -(depends on)⟶ &lt;system-package&gt;</code>
 <code>&lt;application&gt; -(depends on)⟶ &lt;system-package&gt;</code>. For example, an application
 that uses Gtk+3 using language package <a href="http://p3rl.org/Gtk3">Gtk3.pm</a> would have the following dependencies:</p>
 
-<p>```
+<p>[[!format  txt """
 perl:Gtk3 ⟶ perl:Glib::Object::Introspection (*)
 perl:Gtk3 ⟶ debian:gir1.2-gtk-3.0 (runtime)</p>
 
@@ -187,7 +187,7 @@ perl:Glib::Object::Introspection ⟶ debian:libgirepository-1.0-1 (runtime)</p>
 
 <p>perl:Glib ⟶ debian:libglib2.0-dev (build time)
 perl:Glib ⟶ debian:libglib2.0-0 (runtime)
-```</p>
+"""]]</p>
 
 <p>Instead of listing these in each application that might use <code>perl:Gtk3</code>, it
 would be better to have a package metadata repository to make these
@@ -278,7 +278,7 @@ having access to the JVM.</p>
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Nov  6 08:09:48 2020</span>
+Last edited <span class="date">Fri Nov  6 08:14:09 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
