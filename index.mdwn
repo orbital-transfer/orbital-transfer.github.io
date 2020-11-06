@@ -142,26 +142,116 @@ can be installed to a prefix and are often self-contained,
 packaging something like Java requires also packaging dependencies and
 having access to the JVM.
 
-## Why not configuration management?
+# Why not IDEs or configuration management?
 
-## A combinatorial explosion
+An IDE could be configured to do many of the same tasks that I have outlined,
+but then that information would likely be in the IDEs format and not easily
+shared with others that do not use that particular IDE. This information is
+also useful for running tasks in an environment where there is no IDE such as a
+continuous integration server.
 
-### Different toolchains
+Some of what I'm proposing could be done with configuration management (e.g.,
+CFEngine, Chef, Puppet, Ansible), but those are usually for whole systems so
+the recipes aren't written in quite the way that would make sense for a
+development environment. These configuration management tools often do not
+understand the underlying build environments or languages and are mostly used
+to deploy a set of pre-built packages.
 
-- WebAssembly, architectures
+I'm trying to fit in a niche inside of DevOps, but more dev-centric. I am
+trying to do tasks an IDE would do if it knew more about the ecosystem of the
+current project. Furthermore, IDE/editor plugins could certainly be created.
 
-### Different systems
+# Reproducible builds
+
+> Goal: Help with create packages/installers for deployment
+
+While some of DevOps has focused on creating VM images/containers that contain
+the final environment for a service/application, I believe there is still room
+for tools that help with creating packages.
+
+I could possibly use a particular cross-platform package manager (e.g.
+[[Spack|https://spack.io]], [[Conda|https://conda.io/]],
+[[Nix|https://nixos.org/]], [[Homebrew|https://brew.sh/]], RPM (e.g., via
+[[alien|https://help.ubuntu.com/community/RPM/AlienHowto]]))
+to do some of what I had outlined in terms of dependency management, but when
+using those tools, it is similar to creating your own system packages. This
+limits you to the platforms that the package manager supports. One could
+certainly use the dependency metadata to help create system packages for those package
+managers, but creating system packages makes more sense later in the
+development pipeline, not during development.
+
+# A combinatorial explosion
+
+> Goal: Simplify complex sequences and combinations of development tasks by
+> making them declarative.
+
+When doing a development task, often there is some setup involved before it can
+be run. Often this set up of an environment (paths, environment variables) is
+placed in a script that is sourced prior starting work. These scripts are often
+specific to the system they were written for with hard-coded paths so they can
+not be shared when working in a different configuration.
+
+A declarative approach could help with setting up the appropriate environment
+prior to running a task.
+
+For example, maybe I want to run `git-bisect` on some code on FreeBSD, but I'm on a
+Linux host. What if the tool knew how to download and start a virtual machine
+with FreeBSD and install everything the project needs for FreeBSD, then run
+`git-bisect` inside the virtual machine.  I could just let it run and come back
+in an hour and I've got the results.
+
+Instead of having to write a whole bunch of task-specific configuration code to
+glue something together, I could have a configuration such as
+
+[[!format txt """
+Host: Linux x86_64
+Target: FreeBSD 12.0 x86_64
+  Package-Override:
+     package: libfoo
+     version: 1.23p24
+Repo: foobar.git
+  Build-Type: Debug
+  Build-Options:
+    - ASAN: on
+    - Optimize-Level: 0
+Task: git-bisect
+   Good version: git SHA
+   Bad version: git SHA
+   Test: prove
+Strategy: *
+"""]]
+
+and the tool could figure out a strategy to fulfill that by using Vagrant with
+a FreeBSD image, retrieves all the project-specific variations from analyzing
+the repository's files and repo-specific metadata. This task is not difficult
+to do manually, it's just mindless repetitive and could be replaced by a
+template.
+
+I don't want to have repeat the same configuration information multiple times
+for different kinds of environments
+
+- Runtime environment: local system (`chroot`), virtual machines (Vagrant),
+  emulators (QEMU), containers (Docker, LXC), compatibility layer
+- Architectures: ARM 32/64, `x86_64`
+- Targets: WebAssembly, cross compilation
+- CI/CD pipelines: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines
+- IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy)
+- Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, Fink), Windows (MSYS2, vcpkg)
+- Toolchains: `gcc`, `clang`, Visual Studio Build Tools
+- Wrappers: `ccache`
+- Build systems: CMake, Gradle.
+- Remote transport: SSH, WinRM
+- Servers: HTTP, DBs, X11, VNC
 
 
-### Different runtimes
-
-- containers, Docker, virtual machines
 
 
-## Refactoring tools
 
 
-## See also
+
+
+
+# See also
 
 - [[The Manifest: A podcast all about package management|https://themanifest.fireside.fm/]]
 - [[ActiveState State Tool|https://www.activestate.com/blog/universal-package-managers-meet-the-state-tool/]]
