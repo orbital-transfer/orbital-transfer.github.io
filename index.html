@@ -85,15 +85,15 @@ Orbital Transfer
 		</li>
 		<li class="L2"><a href="#dependenciesinotherpackages">Dependencies in other packages</a>
 		</li>
-		<li class="L2"><a href="#whynotconfigurationmanagement">Why not configuration management?</a>
-		</li>
-		<li class="L2"><a href="#acombinatorialexplosion">A combinatorial explosion</a>
-		</li>
-		<li class="L2"><a href="#refactoringtools">Refactoring tools</a>
-		</li>
-		<li class="L2"><a href="#seealso">See also</a>
-		</li>
 	</ol>
+	</li>
+	<li class="L1"><a href="#whynotidesorconfigurationmanagement">Why not IDEs or configuration management?</a>
+	</li>
+	<li class="L1"><a href="#reproduciblebuilds">Reproducible builds</a>
+	</li>
+	<li class="L1"><a href="#acombinatorialexplosion">A combinatorial explosion</a>
+	</li>
+	<li class="L1"><a href="#seealso">See also</a>
 	</li>
 </ol>
 </div>
@@ -244,27 +244,112 @@ can be installed to a prefix and are often self-contained,
 packaging something like Java requires also packaging dependencies and
 having access to the JVM.</p>
 
-<h2 id="whynotconfigurationmanagement"><a name="index3h2"></a>Why not configuration management?</h2>
+<h1 id="whynotidesorconfigurationmanagement"><a name="index3h1"></a>Why not IDEs or configuration management?</h1>
 
-<h2 id="acombinatorialexplosion"><a name="index4h2"></a>A combinatorial explosion</h2>
+<p>An IDE could be configured to do many of the same tasks that I have outlined,
+but then that information would likely be in the IDEs format and not easily
+shared with others that do not use that particular IDE. This information is
+also useful for running tasks in an environment where there is no IDE such as a
+continuous integration server.</p>
 
-<h3 id="differenttoolchains"><a name="index4h3"></a>Different toolchains</h3>
+<p>Some of what I'm proposing could be done with configuration management (e.g.,
+CFEngine, Chef, Puppet, Ansible), but those are usually for whole systems so
+the recipes aren't written in quite the way that would make sense for a
+development environment. These configuration management tools often do not
+understand the underlying build environments or languages and are mostly used
+to deploy a set of pre-built packages.</p>
+
+<p>I'm trying to fit in a niche inside of DevOps, but more dev-centric. I am
+trying to do tasks an IDE would do if it knew more about the ecosystem of the
+current project. Furthermore, IDE/editor plugins could certainly be created.</p>
+
+<h1 id="reproduciblebuilds"><a name="index4h1"></a>Reproducible builds</h1>
+
+<blockquote>
+  <p>Goal: Help with create packages/installers for deployment</p>
+</blockquote>
+
+<p>While some of DevOps has focused on creating VM images/containers that contain
+the final environment for a service/application, I believe there is still room
+for tools that help with creating packages.</p>
+
+<p>I could possibly use a particular cross-platform package manager (e.g.
+<a href="https://spack.io">Spack</a>, <a href="https://conda.io/">Conda</a>,
+<a href="https://nixos.org/">Nix</a>, <a href="https://brew.sh/">Homebrew</a>, RPM (e.g., via
+<a href="https://help.ubuntu.com/community/RPM/AlienHowto">alien</a>))
+to do some of what I had outlined in terms of dependency management, but when
+using those tools, it is similar to creating your own system packages. This
+limits you to the platforms that the package manager supports. One could
+certainly use the dependency metadata to help create system packages for those package
+managers, but creating system packages makes more sense later in the
+development pipeline, not during development.</p>
+
+<h1 id="acombinatorialexplosion"><a name="index5h1"></a>A combinatorial explosion</h1>
+
+<blockquote>
+  <p>Goal: Simplify complex sequences and combinations of development tasks by
+  making them declarative.</p>
+</blockquote>
+
+<p>When doing a development task, often there is some setup involved before it can
+be run. Often this set up of an environment (paths, environment variables) is
+placed in a script that is sourced prior starting work. These scripts are often
+specific to the system they were written for with hard-coded paths so they can
+not be shared when working in a different configuration.</p>
+
+<p>A declarative approach could help with setting up the appropriate environment
+prior to running a task.</p>
+
+<p>For example, maybe I want to run <code>git-bisect</code> on some code on FreeBSD, but I'm on a
+Linux host. What if the tool knew how to download and start a virtual machine
+with FreeBSD and install everything the project needs for FreeBSD, then run
+<code>git-bisect</code> inside the virtual machine.  I could just let it run and come back
+in an hour and I've got the results.</p>
+
+<p>Instead of having to write a whole bunch of task-specific configuration code to
+glue something together, I could have a configuration such as</p>
+
+<pre>Host: Linux x86_64
+Target: FreeBSD 12.0 x86_64
+  Package-Override:
+     package: libfoo
+     version: 1.23p24
+Repo: foobar.git
+  Build-Type: Debug
+  Build-Options:
+    - ASAN: on
+    - Optimize-Level: 0
+Task: git-bisect
+   Good version: git SHA
+   Bad version: git SHA
+   Test: prove
+Strategy: *</pre>
+
+<p>and the tool could figure out a strategy to fulfill that by using Vagrant with
+a FreeBSD image, retrieves all the project-specific variations from analyzing
+the repository's files and repo-specific metadata. This task is not difficult
+to do manually, it's just mindless repetitive and could be replaced by a
+template.</p>
+
+<p>I don't want to have repeat the same configuration information multiple times
+for different kinds of environments</p>
 
 <ul>
-<li>WebAssembly, architectures</li>
+<li>Runtime environment: local system (<code>chroot</code>), virtual machines (Vagrant),
+emulators (QEMU), containers (Docker, LXC), compatibility layer</li>
+<li>Architectures: ARM 32/64, <code>x86_64</code></li>
+<li>Targets: WebAssembly, cross compilation</li>
+<li>CI/CD pipelines: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines</li>
+<li>IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy)</li>
+<li>Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, Fink), Windows (MSYS2, vcpkg)</li>
+<li>Toolchains: <code>gcc</code>, <code>clang</code>, Visual Studio Build Tools</li>
+<li>Wrappers: <code>ccache</code></li>
+<li>Build systems: CMake, Gradle.</li>
+<li>Remote transport: SSH, WinRM</li>
+<li>Servers: HTTP, DBs, X11, VNC</li>
 </ul>
 
-<h3 id="differentsystems"><a name="index5h3"></a>Different systems</h3>
-
-<h3 id="differentruntimes"><a name="index6h3"></a>Different runtimes</h3>
-
-<ul>
-<li>containers, Docker, virtual machines</li>
-</ul>
-
-<h2 id="refactoringtools"><a name="index5h2"></a>Refactoring tools</h2>
-
-<h2 id="seealso"><a name="index6h2"></a>See also</h2>
+<h1 id="seealso"><a name="index6h1"></a>See also</h1>
 
 <ul>
 <li><a href="https://themanifest.fireside.fm/">The Manifest: A podcast all about package management</a></li>
@@ -297,7 +382,7 @@ having access to the JVM.</p>
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Nov  6 08:20:11 2020</span>
+Last edited <span class="date">Fri Nov  6 10:10:45 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
