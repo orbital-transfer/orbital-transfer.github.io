@@ -40,6 +40,7 @@ rcs: git
 # plugins to add to the default configuration
 add_plugins:
 - format
+- toc
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
