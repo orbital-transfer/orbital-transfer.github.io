@@ -79,19 +79,41 @@ Orbital Transfer
 <ol>
 	<li class="L1"><a href="#whatisorbitaltransfer">What is Orbital Transfer?</a>
 	</li>
-	<li class="L1"><a href="#relationshiptoothercode">Relationship to other code</a>
+	<li class="L1"><a href="#goals">Goals</a>
 	<ol>
-		<li class="L2"><a href="#poly-repoversusmono-repo">Poly-repo versus mono-repo</a>
+		<li class="L2"><a href="#relationshiptoothercode">Relationship to other code</a>
 		</li>
-		<li class="L2"><a href="#dependenciesinotherpackages">Dependencies in other packages</a>
+		<li class="L2"><a href="#whynotidesorconfigurationmanagement">Why not IDEs or configuration management?</a>
+		</li>
+		<li class="L2"><a href="#reproduciblebuilds">Reproducible builds</a>
+		</li>
+		<li class="L2"><a href="#acombinatorialexplosion">A combinatorial explosion</a>
+		</li>
+		<li class="L2"><a href="#refactoringtools">Refactoring tools</a>
 		</li>
 	</ol>
 	</li>
-	<li class="L1"><a href="#whynotidesorconfigurationmanagement">Why not IDEs or configuration management?</a>
-	</li>
-	<li class="L1"><a href="#reproduciblebuilds">Reproducible builds</a>
-	</li>
-	<li class="L1"><a href="#acombinatorialexplosion">A combinatorial explosion</a>
+	<li class="L1"><a href="#design">Design</a>
+	<ol>
+		<li class="L2"><a href="#bootstrapping">Bootstrapping</a>
+		</li>
+		<li class="L2"><a href="#phases">Phases</a>
+		</li>
+		<li class="L2"><a href="#featuressoftwarevariabilitysoftwareproductlines">Features / software variability / Software Product Lines</a>
+		</li>
+		<li class="L2"><a href="#carryingyourenvironmentwithyou">Carrying your environment with you</a>
+		</li>
+		<li class="L2"><a href="#front-end">Front-end</a>
+		</li>
+		<li class="L2"><a href="#thedeveloperloop">The developer loop</a>
+		</li>
+		<li class="L2"><a href="#mirroringandcacheing">Mirroring and cacheing</a>
+		</li>
+		<li class="L2"><a href="#reducingbuildtimes">Reducing build times</a>
+		</li>
+		<li class="L2"><a href="#cachemeoutside:whenyouhavenointernet">Cache me outside!: when you have no Internet</a>
+		</li>
+	</ol>
 	</li>
 	<li class="L1"><a href="#seealso">See also</a>
 	</li>
@@ -106,13 +128,15 @@ project, but goes further in helping declaratively specifying the project's
 relationship to other parts of the system both under the developer's control
 and not.</p>
 
-<h1 id="relationshiptoothercode"><a name="index2h1"></a>Relationship to other code</h1>
+<h1 id="goals"><a name="index2h1"></a>Goals</h1>
+
+<h2 id="relationshiptoothercode"><a name="index1h2"></a>Relationship to other code</h2>
 
 <p>A distribution of code does not exist in a standalone environment. It has
 dependencies on other aspects of the system it is running on such as the
 architecture, operating system, paths to libraries, configuration settings.</p>
 
-<h2 id="poly-repoversusmono-repo"><a name="index1h2"></a>Poly-repo versus mono-repo</h2>
+<h3 id="poly-repoversusmono-repo"><a name="index1h3"></a>Poly-repo versus mono-repo</h3>
 
 <blockquote>
   <p>Goal: Declare the relationship between source code repositories.</p>
@@ -145,13 +169,13 @@ various repos that make up the poly-repo architecture.</p>
 <p>Of course, this technical difference does not account for the communication dynamics
 of the organization developing the software (see <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a>).</p>
 
-<h2 id="dependenciesinotherpackages"><a name="index2h2"></a>Dependencies in other packages</h2>
+<h3 id="dependenciesinotherpackages"><a name="index2h3"></a>Dependencies in other packages</h3>
 
 <p>Packages also depend on code outside of the developer's direct control. These
 can apply to the entire system or just to the language environment that the
 code is being developed in.</p>
 
-<h3 id="systemdistributionpackagemanagement"><a name="index1h3"></a>System/distribution package management</h3>
+<h4 id="systemdistributionpackagemanagement"><a name="index1h4"></a>System/distribution package management</h4>
 
 <blockquote>
   <p>Goal: Declare system packages.</p>
@@ -173,7 +197,7 @@ the GTK+3.0 library is known by <code>libgtk-3-0</code> on Debian, <code>gtk3</c
 packages built from the same source that contain features such as development
 files (headers, debugging builds, type maps) or documentation.</p>
 
-<h3 id="languagepackagemanagement"><a name="index2h3"></a>Language package management</h3>
+<h4 id="languagepackagemanagement"><a name="index2h4"></a>Language package management</h4>
 
 <blockquote>
   <p>Goal: Standardize how language packages are installed and declared.</p>
@@ -212,7 +236,7 @@ perl:Glib ⟶ debian:libglib2.0-0 (runtime)</pre>
 would be better to have a package metadata repository to make these
 dependencies reusable.</p>
 
-<h3 id="cross-languagedependencies"><a name="index3h3"></a>Cross-language dependencies</h3>
+<h4 id="cross-languagedependencies"><a name="index3h4"></a>Cross-language dependencies</h4>
 
 <blockquote>
   <p>Goal: Declare dependencies across languages for polyglot projects.</p>
@@ -244,7 +268,7 @@ can be installed to a prefix and are often self-contained,
 packaging something like Java requires also packaging dependencies and
 having access to the JVM.</p>
 
-<h1 id="whynotidesorconfigurationmanagement"><a name="index3h1"></a>Why not IDEs or configuration management?</h1>
+<h2 id="whynotidesorconfigurationmanagement"><a name="index2h2"></a>Why not IDEs or configuration management?</h2>
 
 <p>An IDE could be configured to do many of the same tasks that I have outlined,
 but then that information would likely be in the IDEs format and not easily
@@ -263,7 +287,7 @@ to deploy a set of pre-built packages.</p>
 trying to do tasks an IDE would do if it knew more about the ecosystem of the
 current project. Furthermore, IDE/editor plugins could certainly be created.</p>
 
-<h1 id="reproduciblebuilds"><a name="index4h1"></a>Reproducible builds</h1>
+<h2 id="reproduciblebuilds"><a name="index3h2"></a>Reproducible builds</h2>
 
 <blockquote>
   <p>Goal: Help with create packages/installers for deployment</p>
@@ -284,7 +308,7 @@ certainly use the dependency metadata to help create system packages for those p
 managers, but creating system packages makes more sense later in the
 development pipeline, not during development.</p>
 
-<h1 id="acombinatorialexplosion"><a name="index5h1"></a>A combinatorial explosion</h1>
+<h2 id="acombinatorialexplosion"><a name="index4h2"></a>A combinatorial explosion</h2>
 
 <blockquote>
   <p>Goal: Simplify complex sequences and combinations of development tasks by
@@ -303,7 +327,7 @@ prior to running a task.</p>
 <p>For example, maybe I want to run <code>git-bisect</code> on some code on FreeBSD, but I'm on a
 Linux host. What if the tool knew how to download and start a virtual machine
 with FreeBSD and install everything the project needs for FreeBSD, then run
-<code>git-bisect</code> inside the virtual machine.  I could just let it run and come back
+<code>git-bisect</code> inside the virtual machine. I could just let it run and come back
 in an hour and I've got the results.</p>
 
 <p>Instead of having to write a whole bunch of task-specific configuration code to
@@ -326,13 +350,14 @@ Task: git-bisect
 Strategy: *</pre>
 
 <p>and the tool could figure out a strategy to fulfill that by using Vagrant with
-a FreeBSD image, retrieves all the project-specific variations from analyzing
+a FreeBSD image while retrieving all the project-specific variations by analyzing
 the repository's files and repo-specific metadata. This task is not difficult
-to do manually, it's just mindless repetitive and could be replaced by a
+to do manually, it's just mindlessly repetitive and could be replaced by a
 template.</p>
 
 <p>I don't want to have repeat the same configuration information multiple times
-for different kinds of environments</p>
+for different kinds of environments and each aspect of the environment adds to
+the combination that needs to be supported:</p>
 
 <ul>
 <li>Runtime environment: local system (<code>chroot</code>), virtual machines (Vagrant),
@@ -341,7 +366,7 @@ emulators (QEMU), containers (Docker, LXC), compatibility layer</li>
 <li>Targets: WebAssembly, cross compilation</li>
 <li>CI/CD pipelines: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines</li>
 <li>IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy)</li>
-<li>Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, Fink), Windows (MSYS2, vcpkg)</li>
+<li>Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, MacPorts, Fink), Windows (MSYS2, vcpkg), *BSDs</li>
 <li>Toolchains: <code>gcc</code>, <code>clang</code>, Visual Studio Build Tools</li>
 <li>Wrappers: <code>ccache</code></li>
 <li>Build systems: CMake, Gradle.</li>
@@ -349,7 +374,130 @@ emulators (QEMU), containers (Docker, LXC), compatibility layer</li>
 <li>Servers: HTTP, DBs, X11, VNC</li>
 </ul>
 
-<h1 id="seealso"><a name="index6h1"></a>See also</h1>
+<p>This is not hopelessly complex as each aspect has a straightforward way of
+using them. One just has to figure out how to combine each of these
+straightforward pieces.</p>
+
+<h2 id="refactoringtools"><a name="index5h2"></a>Refactoring tools</h2>
+
+<p>I am still thinking of how I want to do refactoring tools, but I have written a
+tool that lets me rename and move code between repositories that makes use of
+Git branches and separates groups of repository moves and groups of renames
+into separate commits so that the changes can be tracked.</p>
+
+<ul>
+<li><p>Martin Fowler <a href="https://refactoring.com/">writes</a> that when he refactors, he
+does not always have automated tools and that he does not always need them.</p></li>
+<li><p>Kent Beck <a href="https://www.infoq.com/news/2011/10/thinking-and-refactoring/">writes</a> that he
+tells people to "stop thinking" when refactoring. He also mentions separating
+"vertical refactoring" from "horizontal refactoring".</p></li>
+</ul>
+
+<h1 id="design"><a name="index3h1"></a>Design</h1>
+
+<h2 id="bootstrapping"><a name="index6h2"></a>Bootstrapping</h2>
+
+<p>One of the first questions to answer is how can Orbital Transfer code install
+itself on a fresh install? This question is important for dealing with
+provisioning virtual machines as everything needed to run the software is not
+necessarily available at first.</p>
+
+<p>Right now the code "launches" Orbital Transfer by checking to see what package
+manager the system has and installing the base interpreter using that then
+scanning the Orbital Transfer code itself for dependencies and installing those.</p>
+
+<h2 id="phases"><a name="index7h2"></a>Phases</h2>
+
+<p>Some dependencies are only needed in certain phases of</p>
+
+<p>Right now I have defined the phases for dependencies:</p>
+
+<ul>
+<li><em>Author</em>: Needed generate a source code distribution from code in the
+repository. Not all code necessarily has an authoring phase.</li>
+<li><em>Configuration</em>/<em>Build</em>: Needed to build the code from the source code distribution and place
+it in its final install location.</li>
+<li><em>Test</em>: Needed for testing the code before it has been installed.</li>
+<li><em>Runtime</em>: Needed for when the installed code is run.</li>
+</ul>
+
+<p>Possibly to test that a runtime is actually clean and that dependencies are
+actually specified fully, it may be necessary to remove <em>Build</em> dependencies
+before running the <em>Test</em> phase This separation is actually useful for when
+people try to build on one machine then deploy on another. One way of doing
+this is use one container to build and another to run the tests with shared
+build artifacts.</p>
+
+<h2 id="featuressoftwarevariabilitysoftwareproductlines"><a name="index8h2"></a>Features / software variability / Software Product Lines</h2>
+
+<p>One of the ideas I want to implement is a way of modeling features in software
+that can be turned on and off. There should be a way to say that <code>B:feat2 -(depends on)⟶ A:feat1</code>
+so that the granularity of dependencies can go down to the level of features.</p>
+
+<ul>
+<li><a href="https://vimeo.com/161964371">From the Linux Kernel to Cryptography APIs: Supporting and Leveraging Software Product Lines / Sarah Nadi</a></li>
+</ul>
+
+<h2 id="carryingyourenvironmentwithyou"><a name="index9h2"></a>Carrying your environment with you</h2>
+
+<p>When running commands, combine both the command and the environment that the
+command needs such as administrator privileges, environment variables, current
+working directory. This helps with keeping state between each command, making
+for reproducible builds, and easier to debug builds.</p>
+
+<h2 id="front-end"><a name="index10h2"></a>Front-end</h2>
+
+<ul>
+<li>Command line front-end, REPL (e.g., a list of commands for
+interacting with different services that users can choose from interactively
+by searching and tab-completing — kind of like what a command line version of
+an IDE would be)</li>
+</ul>
+
+<h2 id="thedeveloperloop"><a name="index11h2"></a>The developer loop</h2>
+
+<p>Some affordances to help developers do the next step automatically:</p>
+
+<ul>
+<li><p>Scan build software for message strings like "%s can
+not be installed due to conflict with %s needed by %s" and then when running
+the software and getting an error message, automatically searching for the
+message online.</p></li>
+<li><p>Intercepting calls to <code>pkg-config</code> and installing the corresponding package
+automatically.</p></li>
+</ul>
+
+<h2 id="mirroringandcacheing"><a name="index12h2"></a>Mirroring and cacheing</h2>
+
+<h2 id="reducingbuildtimes"><a name="index13h2"></a>Reducing build times</h2>
+
+<p>Part of the development process is waiting for your code to build and test in
+order to get feedback on your changes. Cacheing certain aspects of the build
+can help speed up the build. There should be an easy way to enable/disable
+cacheing for a project and a way to share those caches with downstream
+dependencies if they opt-in (for example if you are building something from the
+<em>Author</em> phase onwards).</p>
+
+<p>How caching works depends on which type of caching you are doing and where the
+caches will reside. Different language tooling caching works differently. Some
+caches are small and some are large. Some caching locations need API keys and
+depending on where it is running those are supplied in different ways.</p>
+
+<h2 id="cachemeoutside:whenyouhavenointernet"><a name="index14h2"></a>Cache me outside!: when you have no Internet</h2>
+
+<p>Orbital Transfer should let people offline their environments for development
+and installation. I'd like to sit in a green field and write greenfield code.</p>
+
+<p>This can take several forms:</p>
+
+<ul>
+<li>Mirroring system/language packages so that they can be installed in a virtual
+environment without having to download from the Internet.</li>
+<li>Mirroring documentation/examples for reading and indexing so that an Internet
+connection is not needed to look up how to use code.</li>
+</ul>
+
+<h1 id="seealso"><a name="index4h1"></a>See also</h1>
 
 <ul>
 <li><a href="https://themanifest.fireside.fm/">The Manifest: A podcast all about package management</a></li>
@@ -382,7 +530,7 @@ emulators (QEMU), containers (Docker, LXC), compatibility layer</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Nov  6 10:10:45 2020</span>
+Last edited <span class="date">Fri Nov  6 19:00:50 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
