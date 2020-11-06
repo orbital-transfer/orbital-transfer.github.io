@@ -94,7 +94,7 @@ the `<binding-package> -(depends on)⟶ <system-package>` instead of
 `<application> -(depends on)⟶ <system-package>`. For example, an application
 that uses Gtk+3 using language package [[Gtk3.pm|http://p3rl.org/Gtk3]] would have the following dependencies:
 
-```
+[[!format txt """
 perl:Gtk3 ⟶ perl:Glib::Object::Introspection (*)
 perl:Gtk3 ⟶ debian:gir1.2-gtk-3.0 (runtime)
 
@@ -104,7 +104,7 @@ perl:Glib::Object::Introspection ⟶ debian:libgirepository-1.0-1 (runtime)
 
 perl:Glib ⟶ debian:libglib2.0-dev (build time)
 perl:Glib ⟶ debian:libglib2.0-0 (runtime)
-```
+"""]]
 
 Instead of listing these in each application that might use `perl:Gtk3`, it
 would be better to have a package metadata repository to make these
