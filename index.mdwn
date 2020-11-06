@@ -334,7 +334,7 @@ Some affordances to help developers do the next step automatically:
 
 ## Mirroring and cacheing
 
-## Reducing build times
+### Reducing build times
 
 Part of the development process is waiting for your code to build and test in
 order to get feedback on your changes. Cacheing certain aspects of the build
@@ -348,7 +348,7 @@ caches will reside. Different language tooling caching works differently. Some
 caches are small and some are large. Some caching locations need API keys and
 depending on where it is running those are supplied in different ways.
 
-## Cache me outside!: when you have no Internet
+### Cache me outside!: when you have no Internet
 
 Orbital Transfer should let people offline their environments for development
 and installation. I'd like to sit in a green field and write greenfield code.
