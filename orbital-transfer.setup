@@ -38,7 +38,8 @@ only_committed_changes: 0
 # rcs backend to use
 rcs: git
 # plugins to add to the default configuration
-add_plugins: []
+add_plugins:
+- format
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
