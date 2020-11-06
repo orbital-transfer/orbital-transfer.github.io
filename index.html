@@ -75,9 +75,30 @@ Orbital Transfer
 <div id="pagebody">
 
 <div id="content" role="main">
-<p>[[!toc  levels=2]]</p>
+<div class="toc">
+<ol>
+	<li class="L1"><a href="#whatisorbitaltransfer">What is Orbital Transfer?</a>
+	</li>
+	<li class="L1"><a href="#relationshiptoothercode">Relationship to other code</a>
+	<ol>
+		<li class="L2"><a href="#poly-repoversusmono-repo">Poly-repo versus mono-repo</a>
+		</li>
+		<li class="L2"><a href="#dependenciesinotherpackages">Dependencies in other packages</a>
+		</li>
+		<li class="L2"><a href="#whynotconfigurationmanagement">Why not configuration management?</a>
+		</li>
+		<li class="L2"><a href="#acombinatorialexplosion">A combinatorial explosion</a>
+		</li>
+		<li class="L2"><a href="#refactoringtools">Refactoring tools</a>
+		</li>
+		<li class="L2"><a href="#seealso">See also</a>
+		</li>
+	</ol>
+	</li>
+</ol>
+</div>
 
-<h1 id="whatisorbitaltransfer">What is Orbital Transfer?</h1>
+<h1 id="whatisorbitaltransfer"><a name="index1h1"></a>What is Orbital Transfer?</h1>
 
 <p>Orbital Transfer is a set of tools made to help developers manage their
 execution environments. This is similar to what an IDE does when setting up a
@@ -85,13 +106,13 @@ project, but goes further in helping declaratively specifying the project's
 relationship to other parts of the system both under the developer's control
 and not.</p>
 
-<h1 id="relationshiptoothercode">Relationship to other code</h1>
+<h1 id="relationshiptoothercode"><a name="index2h1"></a>Relationship to other code</h1>
 
 <p>A distribution of code does not exist in a standalone environment. It has
 dependencies on other aspects of the system it is running on such as the
 architecture, operating system, paths to libraries, configuration settings.</p>
 
-<h2 id="poly-repoversusmono-repo">Poly-repo versus mono-repo</h2>
+<h2 id="poly-repoversusmono-repo"><a name="index1h2"></a>Poly-repo versus mono-repo</h2>
 
 <blockquote>
   <p>Goal: Declare the relationship between source code repositories.</p>
@@ -124,13 +145,13 @@ various repos that make up the poly-repo architecture.</p>
 <p>Of course, this technical difference does not account for the communication dynamics
 of the organization developing the software (see <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a>).</p>
 
-<h2 id="dependenciesinotherpackages">Dependencies in other packages</h2>
+<h2 id="dependenciesinotherpackages"><a name="index2h2"></a>Dependencies in other packages</h2>
 
 <p>Packages also depend on code outside of the developer's direct control. These
 can apply to the entire system or just to the language environment that the
 code is being developed in.</p>
 
-<h3 id="systemdistributionpackagemanagement">System/distribution package management</h3>
+<h3 id="systemdistributionpackagemanagement"><a name="index1h3"></a>System/distribution package management</h3>
 
 <blockquote>
   <p>Goal: Declare system packages.</p>
@@ -152,7 +173,7 @@ the GTK+3.0 library is known by <code>libgtk-3-0</code> on Debian, <code>gtk3</c
 packages built from the same source that contain features such as development
 files (headers, debugging builds, type maps) or documentation.</p>
 
-<h3 id="languagepackagemanagement">Language package management</h3>
+<h3 id="languagepackagemanagement"><a name="index2h3"></a>Language package management</h3>
 
 <blockquote>
   <p>Goal: Standardize how language packages are installed and declared.</p>
@@ -177,13 +198,21 @@ the <code>&lt;binding-package&gt; -(depends on)⟶ &lt;system-package&gt;</code>
 <code>&lt;application&gt; -(depends on)⟶ &lt;system-package&gt;</code>. For example, an application
 that uses Gtk+3 using language package <a href="http://p3rl.org/Gtk3">Gtk3.pm</a> would have the following dependencies:</p>
 
-<p>[[!format <span class="error">Error: unsupported page format txt</span>]]</p>
+<pre>perl:Gtk3 ⟶ perl:Glib::Object::Introspection (*)
+perl:Gtk3 ⟶ debian:gir1.2-gtk-3.0 (runtime)
+
+perl:Glib::Object::Introspection ⟶ perl:Glib (*)
+perl:Glib::Object::Introspection ⟶ debian:libgirepository1.0-dev (build time)
+perl:Glib::Object::Introspection ⟶ debian:libgirepository-1.0-1 (runtime)
+
+perl:Glib ⟶ debian:libglib2.0-dev (build time)
+perl:Glib ⟶ debian:libglib2.0-0 (runtime)</pre>
 
 <p>Instead of listing these in each application that might use <code>perl:Gtk3</code>, it
 would be better to have a package metadata repository to make these
 dependencies reusable.</p>
 
-<h3 id="cross-languagedependencies">Cross-language dependencies</h3>
+<h3 id="cross-languagedependencies"><a name="index3h3"></a>Cross-language dependencies</h3>
 
 <blockquote>
   <p>Goal: Declare dependencies across languages for polyglot projects.</p>
@@ -215,27 +244,27 @@ can be installed to a prefix and are often self-contained,
 packaging something like Java requires also packaging dependencies and
 having access to the JVM.</p>
 
-<h2 id="whynotconfigurationmanagement">Why not configuration management?</h2>
+<h2 id="whynotconfigurationmanagement"><a name="index3h2"></a>Why not configuration management?</h2>
 
-<h2 id="acombinatorialexplosion">A combinatorial explosion</h2>
+<h2 id="acombinatorialexplosion"><a name="index4h2"></a>A combinatorial explosion</h2>
 
-<h3 id="differenttoolchains">Different toolchains</h3>
+<h3 id="differenttoolchains"><a name="index4h3"></a>Different toolchains</h3>
 
 <ul>
 <li>WebAssembly, architectures</li>
 </ul>
 
-<h3 id="differentsystems">Different systems</h3>
+<h3 id="differentsystems"><a name="index5h3"></a>Different systems</h3>
 
-<h3 id="differentruntimes">Different runtimes</h3>
+<h3 id="differentruntimes"><a name="index6h3"></a>Different runtimes</h3>
 
 <ul>
 <li>containers, Docker, virtual machines</li>
 </ul>
 
-<h2 id="refactoringtools">Refactoring tools</h2>
+<h2 id="refactoringtools"><a name="index5h2"></a>Refactoring tools</h2>
 
-<h2 id="seealso">See also</h2>
+<h2 id="seealso"><a name="index6h2"></a>See also</h2>
 
 <ul>
 <li><a href="https://themanifest.fireside.fm/">The Manifest: A podcast all about package management</a></li>
