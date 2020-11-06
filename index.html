@@ -93,6 +93,10 @@ architecture, operating system, paths to libraries, configuration settings.</p>
 
 <h3 id="poly-repoversusmono-repo">Poly-repo versus mono-repo</h3>
 
+<blockquote>
+  <p>Goal: Declare the relationship between source code repositories.</p>
+</blockquote>
+
 <p>Usually a large project is broken into modules that can be used and tested
 independently of other parts of the project. To keep track of changes to these
 modules, developer's make decision to manage changes to these together
@@ -117,6 +121,9 @@ that everything before the change must be <code>&lt; ∆</code> and after must b
 automate this, the tool needs access to the dependency graph between the
 various repos that make up the poly-repo architecture.</p>
 
+<p>Of course, this technical difference does not account for the communication dynamics
+of the organization developing the software (see <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a>).</p>
+
 <h3 id="dependenciesinotherpackages">Dependencies in other packages</h3>
 
 <p>Packages also depend on code outside of the developer's direct control. These
@@ -125,6 +132,10 @@ code is being developed in.</p>
 
 <h4 id="systemdistributionpackagemanagement">System/distribution package management</h4>
 
+<blockquote>
+  <p>Goal: Declare system packages.</p>
+</blockquote>
+
 <p>Often IDEs and language tooling just know about language-level dependencies and
 help the developer resolve these, however system-level dependencies are an
 important part of testing and deployment.</p>
@@ -132,8 +143,8 @@ important part of testing and deployment.</p>
 <p>Often these dependencies are things that are compiled for the entire system to
 uses such as GUI toolkits, libraries or services that need to be accessed by
 the code (network servers, databases). Installing these often require
-administrator permissions, system restarts, system-specific paths, so knowing
-the specifics of the system you are working with is necessary.</p>
+administrator permissions, system restarts, system-specific commands/paths, so
+knowing the specifics of the system you are working with is necessary.</p>
 
 <p>This system-specificity also applies to the package names themselves, such as
 the GTK+3.0 library is known by <code>libgtk-3-0</code> on Debian, <code>gtk3</code> on Fedora, etc.
@@ -143,11 +154,76 @@ files (headers, debugging builds, type maps) or documentation.</p>
 
 <h4 id="languagepackagemanagement">Language package management</h4>
 
+<blockquote>
+  <p>Goal: Standardize how language packages are installed and declared.</p>
+</blockquote>
+
 <p>Tooling for language package management is well-known by developers and these
 can be used in many ways such as installing at the system level, per-user, or
 per-project, each with benefits and drawbacks.</p>
 
+<p>System packages are more for end-user use than language packages are. An
+application could possibly be distributed through a language package manager,
+but it is more likely that language packages are installed to something like a
+<a href="https://softwareengineering.stackexchange.com/questions/123305/what-is-the-difference-between-the-lib-and-vendor-folders"><code>vendor/</code> directory</a>.
+Developers tend to modify and extend language packages more than system
+packages which means that tasks such as version pinning, custom builds, and
+patching are more likely to be used there.</p>
+
+<p>Furthermore, language packages can themselves have system packages that they
+depend on. If my application ultimately depends on a language package that is a
+binding for something provided by a system package, it would be best to declare
+the <code>&lt;binding-package&gt; -(depends on)⟶ &lt;system-package&gt;</code> instead of
+<code>&lt;application&gt; -(depends on)⟶ &lt;system-package&gt;</code>. For example, an application
+that uses Gtk+3 using language package <a href="http://p3rl.org/Gtk3">Gtk3.pm</a> would have the following dependencies:</p>
+
+<p>```
+perl:Gtk3 ⟶ perl:Glib::Object::Introspection (*)
+perl:Gtk3 ⟶ debian:gir1.2-gtk-3.0 (runtime)</p>
+
+<p>perl:Glib::Object::Introspection ⟶ perl:Glib (*)
+perl:Glib::Object::Introspection ⟶ debian:libgirepository1.0-dev (build time)
+perl:Glib::Object::Introspection ⟶ debian:libgirepository-1.0-1 (runtime)</p>
+
+<p>perl:Glib ⟶ debian:libglib2.0-dev (build time)
+perl:Glib ⟶ debian:libglib2.0-0 (runtime)
+```</p>
+
+<p>Instead of listing these in each application that might use <code>perl:Gtk3</code>, it
+would be better to have a package metadata repository to make these
+dependencies reusable.</p>
+
 <h4 id="cross-languagedependencies">Cross-language dependencies</h4>
+
+<blockquote>
+  <p>Goal: Declare dependencies across languages for polyglot projects.</p>
+</blockquote>
+
+<p>Sometimes you are not using a single language in a project and need to be able
+to prepare a development environment that contains modules from multiple
+language ecosystems. Language package managers usually only know about the
+specific language/runtime they are written for and developers might not be able
+to use system packages either because they are outdated or do not even exist.</p>
+
+<p>Being able to specify dependencies on other language ecosystems and installing
+those modules under a project environment allows for them to be distributed
+together for deployment.</p>
+
+<p>This can be made easier than remembering the flags and settings for each of the
+language package managers (e.g., Maven, NPM, CPAN, pip, gem, etc.) and
+language-specific environment managers (e.g., <code>rbenv</code>, <code>pyenv</code>, etc.). Instead
+of having to write a script which combines these tools in an ad hoc fashion per
+each project that needs cross-language dependencies and using tools that are
+shell-specific, one could generate a configuration file (which can be read by
+any language) that specifies where to find the installation path for each
+component.</p>
+
+<p>For me, this was motivated by trying to use packages for natural language
+processing in Java and Python. Some of these are used mostly as libraries and
+others can be used as servers. As opposed to working with C/C++ libraries which
+can be installed to a prefix and are often self-contained,
+packaging something like Java requires also packaging dependencies and
+having access to the JVM.</p>
 
 <h2 id="whynotconfigurationmanagement">Why not configuration management?</h2>
 
@@ -202,7 +278,7 @@ per-project, each with benefits and drawbacks.</p>
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu Nov  5 23:29:22 2020</span>
+Last edited <span class="date">Fri Nov  6 08:09:48 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
