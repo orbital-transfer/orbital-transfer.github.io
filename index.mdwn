@@ -1,6 +1,8 @@
-# Orbital Transfer
+[[!meta title="Orbital Transfer"]]
 
-## What is Orbital Transfer?
+[[!toc levels=2]]
+
+# What is Orbital Transfer?
 
 Orbital Transfer is a set of tools made to help developers manage their
 execution environments. This is similar to what an IDE does when setting up a
@@ -8,13 +10,13 @@ project, but goes further in helping declaratively specifying the project's
 relationship to other parts of the system both under the developer's control
 and not.
 
-## Relationship to other code
+# Relationship to other code
 
 A distribution of code does not exist in a standalone environment. It has
 dependencies on other aspects of the system it is running on such as the
 architecture, operating system, paths to libraries, configuration settings.
 
-### Poly-repo versus mono-repo
+## Poly-repo versus mono-repo
 
 > Goal: Declare the relationship between source code repositories.
 
@@ -45,13 +47,13 @@ various repos that make up the poly-repo architecture.
 Of course, this technical difference does not account for the communication dynamics
 of the organization developing the software (see [[Conway's law|https://en.wikipedia.org/wiki/Conway%27s_law]]).
 
-### Dependencies in other packages
+## Dependencies in other packages
 
 Packages also depend on code outside of the developer's direct control. These
 can apply to the entire system or just to the language environment that the
 code is being developed in.
 
-#### System/distribution package management
+### System/distribution package management
 
 > Goal: Declare system packages.
 
@@ -71,7 +73,7 @@ the GTK+3.0 library is known by `libgtk-3-0` on Debian, `gtk3` on Fedora, etc.
 packages built from the same source that contain features such as development
 files (headers, debugging builds, type maps) or documentation.
 
-#### Language package management
+### Language package management
 
 > Goal: Standardize how language packages are installed and declared.
 
@@ -110,7 +112,7 @@ Instead of listing these in each application that might use `perl:Gtk3`, it
 would be better to have a package metadata repository to make these
 dependencies reusable.
 
-#### Cross-language dependencies
+### Cross-language dependencies
 
 > Goal: Declare dependencies across languages for polyglot projects.
 
