@@ -10,13 +10,15 @@ project, but goes further in helping declaratively specifying the project's
 relationship to other parts of the system both under the developer's control
 and not.
 
-# Relationship to other code
+# Goals
+
+## Relationship to other code
 
 A distribution of code does not exist in a standalone environment. It has
 dependencies on other aspects of the system it is running on such as the
 architecture, operating system, paths to libraries, configuration settings.
 
-## Poly-repo versus mono-repo
+### Poly-repo versus mono-repo
 
 > Goal: Declare the relationship between source code repositories.
 
@@ -47,13 +49,13 @@ various repos that make up the poly-repo architecture.
 Of course, this technical difference does not account for the communication dynamics
 of the organization developing the software (see [[Conway's law|https://en.wikipedia.org/wiki/Conway%27s_law]]).
 
-## Dependencies in other packages
+### Dependencies in other packages
 
 Packages also depend on code outside of the developer's direct control. These
 can apply to the entire system or just to the language environment that the
 code is being developed in.
 
-### System/distribution package management
+#### System/distribution package management
 
 > Goal: Declare system packages.
 
@@ -73,7 +75,7 @@ the GTK+3.0 library is known by `libgtk-3-0` on Debian, `gtk3` on Fedora, etc.
 packages built from the same source that contain features such as development
 files (headers, debugging builds, type maps) or documentation.
 
-### Language package management
+#### Language package management
 
 > Goal: Standardize how language packages are installed and declared.
 
@@ -112,7 +114,7 @@ Instead of listing these in each application that might use `perl:Gtk3`, it
 would be better to have a package metadata repository to make these
 dependencies reusable.
 
-### Cross-language dependencies
+#### Cross-language dependencies
 
 > Goal: Declare dependencies across languages for polyglot projects.
 
@@ -142,7 +144,7 @@ can be installed to a prefix and are often self-contained,
 packaging something like Java requires also packaging dependencies and
 having access to the JVM.
 
-# Why not IDEs or configuration management?
+## Why not IDEs or configuration management?
 
 An IDE could be configured to do many of the same tasks that I have outlined,
 but then that information would likely be in the IDEs format and not easily
@@ -161,7 +163,7 @@ I'm trying to fit in a niche inside of DevOps, but more dev-centric. I am
 trying to do tasks an IDE would do if it knew more about the ecosystem of the
 current project. Furthermore, IDE/editor plugins could certainly be created.
 
-# Reproducible builds
+## Reproducible builds
 
 > Goal: Help with create packages/installers for deployment
 
@@ -180,7 +182,7 @@ certainly use the dependency metadata to help create system packages for those p
 managers, but creating system packages makes more sense later in the
 development pipeline, not during development.
 
-# A combinatorial explosion
+## A combinatorial explosion
 
 > Goal: Simplify complex sequences and combinations of development tasks by
 > making them declarative.
@@ -197,7 +199,7 @@ prior to running a task.
 For example, maybe I want to run `git-bisect` on some code on FreeBSD, but I'm on a
 Linux host. What if the tool knew how to download and start a virtual machine
 with FreeBSD and install everything the project needs for FreeBSD, then run
-`git-bisect` inside the virtual machine.  I could just let it run and come back
+`git-bisect` inside the virtual machine. I could just let it run and come back
 in an hour and I've got the results.
 
 Instead of having to write a whole bunch of task-specific configuration code to
@@ -222,13 +224,14 @@ Strategy: *
 """]]
 
 and the tool could figure out a strategy to fulfill that by using Vagrant with
-a FreeBSD image, retrieves all the project-specific variations from analyzing
+a FreeBSD image while retrieving all the project-specific variations by analyzing
 the repository's files and repo-specific metadata. This task is not difficult
-to do manually, it's just mindless repetitive and could be replaced by a
+to do manually, it's just mindlessly repetitive and could be replaced by a
 template.
 
 I don't want to have repeat the same configuration information multiple times
-for different kinds of environments
+for different kinds of environments and each aspect of the environment adds to
+the combination that needs to be supported:
 
 - Runtime environment: local system (`chroot`), virtual machines (Vagrant),
   emulators (QEMU), containers (Docker, LXC), compatibility layer
@@ -236,20 +239,126 @@ for different kinds of environments
 - Targets: WebAssembly, cross compilation
 - CI/CD pipelines: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines
 - IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy)
-- Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, Fink), Windows (MSYS2, vcpkg)
+- Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, MacPorts, Fink), Windows (MSYS2, vcpkg), \*BSDs
 - Toolchains: `gcc`, `clang`, Visual Studio Build Tools
 - Wrappers: `ccache`
 - Build systems: CMake, Gradle.
 - Remote transport: SSH, WinRM
 - Servers: HTTP, DBs, X11, VNC
 
+This is not hopelessly complex as each aspect has a straightforward way of
+using them. One just has to figure out how to combine each of these
+straightforward pieces.
+
+## Refactoring tools
+
+I am still thinking of how I want to do refactoring tools, but I have written a
+tool that lets me rename and move code between repositories that makes use of
+Git branches and separates groups of repository moves and groups of renames
+into separate commits so that the changes can be tracked.
+
+- Martin Fowler [[writes|https://refactoring.com/]] that when he refactors, he
+  does not always have automated tools and that he does not always need them.
+
+- Kent Beck [[writes|https://www.infoq.com/news/2011/10/thinking-and-refactoring/]] that he
+  tells people to "stop thinking" when refactoring. He also mentions separating
+  "vertical refactoring" from "horizontal refactoring".
+
+# Design
+
+## Bootstrapping
+
+One of the first questions to answer is how can Orbital Transfer code install
+itself on a fresh install? This question is important for dealing with
+provisioning virtual machines as everything needed to run the software is not
+necessarily available at first.
+
+Right now the code "launches" Orbital Transfer by checking to see what package
+manager the system has and installing the base interpreter using that then
+scanning the Orbital Transfer code itself for dependencies and installing those.
+
+## Phases
+
+Some dependencies are only needed in certain phases of
+
+Right now I have defined the phases for dependencies:
+
+- *Author*: Needed generate a source code distribution from code in the
+  repository. Not all code necessarily has an authoring phase.
+- *Configuration*/*Build*: Needed to build the code from the source code distribution and place
+  it in its final install location.
+- *Test*: Needed for testing the code before it has been installed.
+- *Runtime*: Needed for when the installed code is run.
+
+Possibly to test that a runtime is actually clean and that dependencies are
+actually specified fully, it may be necessary to remove *Build* dependencies
+before running the *Test* phase This separation is actually useful for when
+people try to build on one machine then deploy on another. One way of doing
+this is use one container to build and another to run the tests with shared
+build artifacts.
+
+## Features / software variability / Software Product Lines
+
+One of the ideas I want to implement is a way of modeling features in software
+that can be turned on and off. There should be a way to say that `B:feat2 -(depends on)⟶ A:feat1`
+so that the granularity of dependencies can go down to the level of features.
+
+- [[From the Linux Kernel to Cryptography APIs: Supporting and Leveraging Software Product Lines / Sarah Nadi|https://vimeo.com/161964371]]
+
+## Carrying your environment with you
+
+When running commands, combine both the command and the environment that the
+command needs such as administrator privileges, environment variables, current
+working directory. This helps with keeping state between each command, making
+for reproducible builds, and easier to debug builds.
+
+## Front-end
+
+- Command line front-end, REPL (e.g., a list of commands for
+  interacting with different services that users can choose from interactively
+  by searching and tab-completing — kind of like what a command line version of
+  an IDE would be)
+
+## The developer loop
+
+Some affordances to help developers do the next step automatically:
+
+- Scan build software for message strings like "%s can
+  not be installed due to conflict with %s needed by %s" and then when running
+  the software and getting an error message, automatically searching for the
+  message online.
+
+- Intercepting calls to `pkg-config` and installing the corresponding package
+  automatically.
 
 
+## Mirroring and cacheing
 
+## Reducing build times
 
+Part of the development process is waiting for your code to build and test in
+order to get feedback on your changes. Cacheing certain aspects of the build
+can help speed up the build. There should be an easy way to enable/disable
+cacheing for a project and a way to share those caches with downstream
+dependencies if they opt-in (for example if you are building something from the
+*Author* phase onwards).
 
+How caching works depends on which type of caching you are doing and where the
+caches will reside. Different language tooling caching works differently. Some
+caches are small and some are large. Some caching locations need API keys and
+depending on where it is running those are supplied in different ways.
 
+## Cache me outside!: when you have no Internet
 
+Orbital Transfer should let people offline their environments for development
+and installation. I'd like to sit in a green field and write greenfield code.
+
+This can take several forms:
+
+- Mirroring system/language packages so that they can be installed in a virtual
+  environment without having to download from the Internet.
+- Mirroring documentation/examples for reading and indexing so that an Internet
+  connection is not needed to look up how to use code.
 
 # See also
 
