@@ -75,9 +75,9 @@ Orbital Transfer
 <div id="pagebody">
 
 <div id="content" role="main">
-<h1 id="orbitaltransfer">Orbital Transfer</h1>
+<p>[[!toc  levels=2]]</p>
 
-<h2 id="whatisorbitaltransfer">What is Orbital Transfer?</h2>
+<h1 id="whatisorbitaltransfer">What is Orbital Transfer?</h1>
 
 <p>Orbital Transfer is a set of tools made to help developers manage their
 execution environments. This is similar to what an IDE does when setting up a
@@ -85,13 +85,13 @@ project, but goes further in helping declaratively specifying the project's
 relationship to other parts of the system both under the developer's control
 and not.</p>
 
-<h2 id="relationshiptoothercode">Relationship to other code</h2>
+<h1 id="relationshiptoothercode">Relationship to other code</h1>
 
 <p>A distribution of code does not exist in a standalone environment. It has
 dependencies on other aspects of the system it is running on such as the
 architecture, operating system, paths to libraries, configuration settings.</p>
 
-<h3 id="poly-repoversusmono-repo">Poly-repo versus mono-repo</h3>
+<h2 id="poly-repoversusmono-repo">Poly-repo versus mono-repo</h2>
 
 <blockquote>
   <p>Goal: Declare the relationship between source code repositories.</p>
@@ -124,13 +124,13 @@ various repos that make up the poly-repo architecture.</p>
 <p>Of course, this technical difference does not account for the communication dynamics
 of the organization developing the software (see <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a>).</p>
 
-<h3 id="dependenciesinotherpackages">Dependencies in other packages</h3>
+<h2 id="dependenciesinotherpackages">Dependencies in other packages</h2>
 
 <p>Packages also depend on code outside of the developer's direct control. These
 can apply to the entire system or just to the language environment that the
 code is being developed in.</p>
 
-<h4 id="systemdistributionpackagemanagement">System/distribution package management</h4>
+<h3 id="systemdistributionpackagemanagement">System/distribution package management</h3>
 
 <blockquote>
   <p>Goal: Declare system packages.</p>
@@ -152,7 +152,7 @@ the GTK+3.0 library is known by <code>libgtk-3-0</code> on Debian, <code>gtk3</c
 packages built from the same source that contain features such as development
 files (headers, debugging builds, type maps) or documentation.</p>
 
-<h4 id="languagepackagemanagement">Language package management</h4>
+<h3 id="languagepackagemanagement">Language package management</h3>
 
 <blockquote>
   <p>Goal: Standardize how language packages are installed and declared.</p>
@@ -193,7 +193,7 @@ perl:Glib ⟶ debian:libglib2.0-0 (runtime)
 would be better to have a package metadata repository to make these
 dependencies reusable.</p>
 
-<h4 id="cross-languagedependencies">Cross-language dependencies</h4>
+<h3 id="cross-languagedependencies">Cross-language dependencies</h3>
 
 <blockquote>
   <p>Goal: Declare dependencies across languages for polyglot projects.</p>
@@ -278,7 +278,7 @@ having access to the JVM.</p>
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Nov  6 08:14:09 2020</span>
+Last edited <span class="date">Fri Nov  6 08:20:11 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
