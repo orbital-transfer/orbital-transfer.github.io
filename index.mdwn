@@ -22,13 +22,13 @@ architecture, operating system, paths to libraries, configuration settings.
 
 > Goal: Declare the relationship between source code repositories.
 
-Usually a large project is broken into modules that can be used and tested
+Usually, a large project is broken into modules that can be used and tested
 independently of other parts of the project. To keep track of changes to these
 modules, developer's make decision to manage changes to these together
 (mono-repo architecture) or apart (poly-repo architecture)
 (see [[more|https://github.com/joelparkerhenderson/monorepo_vs_polyrepo]]).
 
-The reason why a mono-repo may be used is because it makes it easier to advance
+The reason why a mono-repo may be used is that it makes it easier to advance
 changes that cut across modules at a single time. When modules depend on each
 other such a `B -(depends on)⟶ A`, making a change in `A` would also mean
 possibly updating `B`. Keeping these changes together means that advancing
@@ -60,11 +60,11 @@ code is being developed in.
 > Goal: Declare system packages.
 
 Often IDEs and language tooling just know about language-level dependencies and
-help the developer resolve these, however system-level dependencies are an
+help the developer resolve these, however, system-level dependencies are an
 important part of testing and deployment.
 
 Often these dependencies are things that are compiled for the entire system to
-uses such as GUI toolkits, libraries or services that need to be accessed by
+uses such as GUI toolkits, libraries, or services that need to be accessed by
 the code (network servers, databases). Installing these often require
 administrator permissions, system restarts, system-specific commands/paths, so
 knowing the specifics of the system you are working with is necessary.
@@ -84,7 +84,7 @@ can be used in many ways such as installing at the system level, per-user, or
 per-project, each with benefits and drawbacks.
 
 System packages are more for end-user use than language packages are. An
-application could possibly be distributed through a language package manager,
+application could be distributed through a language package manager,
 but it is more likely that language packages are installed to something like a
 [[`vendor/` directory|https://softwareengineering.stackexchange.com/questions/123305/what-is-the-difference-between-the-lib-and-vendor-folders]].
 Developers tend to modify and extend language packages more than system
@@ -125,7 +125,7 @@ specific language/runtime they are written for and developers might not be able
 to use system packages either because they are outdated or do not even exist.
 
 Being able to specify dependencies on other language ecosystems and installing
-those modules under a project environment allows for them to be distributed
+those modules under a project environment allow for them to be distributed
 together for deployment.
 
 This can be made easier than remembering the flags and settings for each of the
@@ -165,13 +165,13 @@ current project. Furthermore, IDE/editor plugins could certainly be created.
 
 ## Reproducible builds
 
-> Goal: Help with create packages/installers for deployment
+> Goal: Help with creating packages/installers for deployment
 
 While some of DevOps has focused on creating VM images/containers that contain
 the final environment for a service/application, I believe there is still room
 for tools that help with creating packages.
 
-I could possibly use a particular cross-platform package manager (e.g.
+I could use a particular cross-platform package manager (e.g.
 [[Spack|https://spack.io]], [[Conda|https://conda.io/]],
 [[Nix|https://nixos.org/]], [[Homebrew|https://brew.sh/]], RPM (e.g., via
 [[alien|https://help.ubuntu.com/community/RPM/AlienHowto]]))
@@ -180,7 +180,7 @@ using those tools, it is similar to creating your own system packages. This
 limits you to the platforms that the package manager supports. One could
 certainly use the dependency metadata to help create system packages for those package
 managers, but creating system packages makes more sense later in the
-development pipeline, not during development.
+development pipeline when deploying, not during day-to-day development.
 
 ## A combinatorial explosion
 
@@ -188,13 +188,13 @@ development pipeline, not during development.
 > making them declarative.
 
 When doing a development task, often there is some setup involved before it can
-be run. Often this set up of an environment (paths, environment variables) is
-placed in a script that is sourced prior starting work. These scripts are often
-specific to the system they were written for with hard-coded paths so they can
+be run. Often this setup of an environment (paths, environment variables) is
+placed in a script that is sourced prior to starting work. These scripts are often
+specific to the system they were written for with hard-coded paths, so they can
 not be shared when working in a different configuration.
 
 A declarative approach could help with setting up the appropriate environment
-prior to running a task.
+before running a task.
 
 For example, maybe I want to run `git-bisect` on some code on FreeBSD, but I'm on a
 Linux host. What if the tool knew how to download and start a virtual machine
@@ -202,7 +202,7 @@ with FreeBSD and install everything the project needs for FreeBSD, then run
 `git-bisect` inside the virtual machine. I could just let it run and come back
 in an hour and I've got the results.
 
-Instead of having to write a whole bunch of task-specific configuration code to
+Instead of having to write a bunch of task-specific configuration code to
 glue something together, I could have a configuration such as
 
 [[!format txt """
@@ -229,14 +229,14 @@ the repository's files and repo-specific metadata. This task is not difficult
 to do manually, it's just mindlessly repetitive and could be replaced by a
 template.
 
-I don't want to have repeat the same configuration information multiple times
+I don't want to have to repeat the same configuration information multiple times
 for different kinds of environments and each aspect of the environment adds to
 the combination that needs to be supported:
 
 - Runtime environment: local system (`chroot`), virtual machines (Vagrant),
   emulators (QEMU), containers (Docker, LXC), compatibility layer
 - Architectures: ARM 32/64, `x86_64`
-- Targets: WebAssembly, cross compilation
+- Targets: WebAssembly, cross-compilation
 - CI/CD pipelines: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines
 - IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy)
 - Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, MacPorts, Fink), Windows (MSYS2, vcpkg), \*BSDs
@@ -283,18 +283,18 @@ Some dependencies are only needed in certain phases of
 
 Right now I have defined the phases for dependencies:
 
-- *Author*: Needed generate a source code distribution from code in the
+- *Author*: Needed to generate a source code distribution from code in the
   repository. Not all code necessarily has an authoring phase.
 - *Configuration*/*Build*: Needed to build the code from the source code distribution and place
   it in its final install location.
 - *Test*: Needed for testing the code before it has been installed.
 - *Runtime*: Needed for when the installed code is run.
 
-Possibly to test that a runtime is actually clean and that dependencies are
-actually specified fully, it may be necessary to remove *Build* dependencies
-before running the *Test* phase This separation is actually useful for when
+Possibly to test that a runtime is clean and that dependencies are
+specified fully, it may be necessary to remove *Build* dependencies
+before running the *Test* phase. This separation is useful for when
 people try to build on one machine then deploy on another. One way of doing
-this is use one container to build and another to run the tests with shared
+this is to use one container to build and another to run the tests with shared
 build artifacts.
 
 ## Features / software variability / Software Product Lines
@@ -314,9 +314,9 @@ for reproducible builds, and easier to debug builds.
 
 ## Front-end
 
-- Command line front-end, REPL (e.g., a list of commands for
+- Command-line front-end, REPL (e.g., a list of commands for
   interacting with different services that users can choose from interactively
-  by searching and tab-completing — kind of like what a command line version of
+  by searching and tab-completing — kind of like what a command-line version of
   an IDE would be)
 
 ## The developer loop
@@ -332,14 +332,14 @@ Some affordances to help developers do the next step automatically:
   automatically.
 
 
-## Mirroring and cacheing
+## Mirroring and caching
 
 ### Reducing build times
 
 Part of the development process is waiting for your code to build and test in
-order to get feedback on your changes. Cacheing certain aspects of the build
+order to get feedback on your changes. Caching certain aspects of the build
 can help speed up the build. There should be an easy way to enable/disable
-cacheing for a project and a way to share those caches with downstream
+caching for a project and a way to share those caches with downstream
 dependencies if they opt-in (for example if you are building something from the
 *Author* phase onwards).
 
