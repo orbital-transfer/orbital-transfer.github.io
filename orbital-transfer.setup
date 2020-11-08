@@ -44,6 +44,7 @@ add_plugins:
 - theme
 - txt
 - autoindex
+- tag
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -413,4 +414,4 @@ recentchangesnum: 100
 # autocreate new tag pages?
 #tag_autocreate: 1
 # commit autocreated tag pages
-#tag_autocreate_commit: 1
+tag_autocreate_commit: 1
