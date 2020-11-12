@@ -45,6 +45,7 @@ add_plugins:
 - txt
 - autoindex
 - tag
+- sidebar
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
