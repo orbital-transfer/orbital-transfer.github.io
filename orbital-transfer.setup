@@ -46,6 +46,7 @@ add_plugins:
 - autoindex
 - tag
 - sidebar
+- map
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
