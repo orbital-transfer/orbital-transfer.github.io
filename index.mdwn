@@ -250,6 +250,16 @@ This is not hopelessly complex as each aspect has a straightforward way of
 using them. One just has to figure out how to combine each of these
 straightforward pieces.
 
+One example of what I would like to do is generate configurations for cloud
+IDEs. Several of these allow for configuring a project by using a YAML
+configuration; by placing that configuration in a repository, you can start
+writing and testing that project in your browser. It would be useful to only
+specify configuration metadata once and output service-specific configurations.
+It is also possible to support weird combinations that only make sense in a
+cloud IDE context such as using VNC for X11 application output and running a
+JavaScript VNC client — allowing one to develop graphical desktop applications
+in a cloud IDE.
+
 ## Refactoring tools
 
 I am still thinking of how I want to do refactoring tools, but I have written a
