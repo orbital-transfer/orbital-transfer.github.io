@@ -361,7 +361,8 @@ emulators (QEMU), containers (Docker, LXC), compatibility layer</li>
 <li>Architectures: ARM 32/64, <code>x86_64</code></li>
 <li>Targets: WebAssembly, cross-compilation</li>
 <li>CI/CD pipelines: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines</li>
-<li>IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy)</li>
+<li>IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy),
+notebooks (<a href="https://jupyter.org/">Project Jupyter</a>, <a href="https://mybinder.org/">Binder</a>)</li>
 <li>Operating systems: GNU/Linux (Debian, Fedora, SuSE), macOS (Homebrew, MacPorts, Fink), Windows (MSYS2, vcpkg), *BSDs</li>
 <li>Toolchains: <code>gcc</code>, <code>clang</code>, Visual Studio Build Tools</li>
 <li>Wrappers: <code>ccache</code></li>
@@ -373,6 +374,16 @@ emulators (QEMU), containers (Docker, LXC), compatibility layer</li>
 <p>This is not hopelessly complex as each aspect has a straightforward way of
 using them. One just has to figure out how to combine each of these
 straightforward pieces.</p>
+
+<p>One example of what I would like to do is generate configurations for cloud
+IDEs. Several of these allow for configuring a project by using a YAML
+configuration; by placing that configuration in a repository, you can start
+writing and testing that project in your browser. It would be useful to only
+specify configuration metadata once and output service-specific configurations.
+It is also possible to support weird combinations that only make sense in a
+cloud IDE context such as using VNC for X11 application output and running a
+JavaScript VNC client — allowing one to develop graphical desktop applications
+in a cloud IDE.</p>
 
 <h2 id="refactoringtools"><a name="index5h2"></a>Refactoring tools</h2>
 
@@ -526,7 +537,7 @@ connection is not needed to look up how to use code.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat Nov  7 00:55:14 2020</span>
+Last edited <span class="date">Thu Nov 12 01:57:35 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
