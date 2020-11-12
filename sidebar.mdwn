@@ -1,0 +1,6 @@
+<ul>
+	<li>[[Documentation|doc]]</li>
+	<ul>
+		<li>[[Development|doc/development]]</li>
+	</ul>
+</ul>
