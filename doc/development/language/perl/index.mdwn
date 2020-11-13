@@ -1,3 +1,18 @@
 [[!meta title="Perl"]]
 
+# Building Perl modules
+
+Module specificity:
+
+- Pure-Perl modules:
+    * Are not: Perl version-specific, but may have have a minimum
+      Perl version.
+    * Are not: Architecture-specific.
+    * Can be "fatpacked".
+- Alien modules
+    * Are not: Perl version-specific.
+    * Are: Architecture-specific.
+- XS modules
+    * Are: Perl version-specific.
+    * Are: Architecture-specific.
 
