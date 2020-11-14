@@ -425,25 +425,36 @@ scanning the Orbital Transfer code itself for dependencies and installing those.
 
 <h2 id="phases"><a name="index7h2"></a>Phases</h2>
 
-<p>Some dependencies are only needed in certain phases of</p>
+<p>Some dependencies are only needed in certain phases of development.
+Furthermore, those phases may need certain environments for running.</p>
 
-<p>Right now I have defined the phases for dependencies:</p>
+<p>Right now I have defined the phases:</p>
 
 <ul>
 <li><em>Author</em>: Needed to generate a source code distribution from code in the
 repository. Not all code necessarily has an authoring phase.</li>
-<li><em>Configuration</em>/<em>Build</em>: Needed to build the code from the source code distribution and place
-it in its final install location.</li>
+<li><em>Configuration</em>/<em>Build</em>: Needed to build the code from the source code
+distribution and place it in its final install location.</li>
 <li><em>Test</em>: Needed for testing the code before it has been installed.</li>
 <li><em>Runtime</em>: Needed for when the installed code is run.</li>
 </ul>
 
-<p>Possibly to test that a runtime is clean and that dependencies are
-specified fully, it may be necessary to remove <em>Build</em> dependencies
-before running the <em>Test</em> phase. This separation is useful for when
-people try to build on one machine then deploy on another. One way of doing
-this is to use one container to build and another to run the tests with shared
-build artifacts.</p>
+<p>For dependencies, it may be necessary to remove <em>Build</em> dependencies before
+running the <em>Test</em> phase to test that a runtime is clean and that dependencies
+are specified fully. This separation is useful for when people try to build on
+one machine then deploy on another. One way of doing this is to use one
+container to build and another to run the tests with shared build artifacts.</p>
+
+<p>Another feature of these phases is that they may need to have different
+environments. For example, installation of system packages usually requires
+having root access while running tests is usually done as a non-privileged
+user. A test may require having certain environment variables set such as
+ flags enabling code coverage,
+ flags for a system service,
+ API keys,
+ or paths to test data.
+Another project may have tests that are only available when some other service
+is running before the tests starts.</p>
 
 <h2 id="featuressoftwarevariabilitysoftwareproductlines"><a name="index8h2"></a>Features / software variability / Software Product Lines</h2>
 
@@ -547,7 +558,7 @@ connection is not needed to look up how to use code.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu Nov 12 01:57:35 2020</span>
+Last edited <span class="date">Sat Nov 14 03:49:50 2020</span>
 <!-- Created <span class="date">Tue Nov  3 22:07:56 2020</span> -->
 </div>
 
