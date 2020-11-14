@@ -290,23 +290,34 @@ scanning the Orbital Transfer code itself for dependencies and installing those.
 
 ## Phases
 
-Some dependencies are only needed in certain phases of
+Some dependencies are only needed in certain phases of development.
+Furthermore, those phases may need certain environments for running.
 
-Right now I have defined the phases for dependencies:
+Right now I have defined the phases:
 
 - *Author*: Needed to generate a source code distribution from code in the
   repository. Not all code necessarily has an authoring phase.
-- *Configuration*/*Build*: Needed to build the code from the source code distribution and place
-  it in its final install location.
+- *Configuration*/*Build*: Needed to build the code from the source code
+  distribution and place it in its final install location.
 - *Test*: Needed for testing the code before it has been installed.
 - *Runtime*: Needed for when the installed code is run.
 
-Possibly to test that a runtime is clean and that dependencies are
-specified fully, it may be necessary to remove *Build* dependencies
-before running the *Test* phase. This separation is useful for when
-people try to build on one machine then deploy on another. One way of doing
-this is to use one container to build and another to run the tests with shared
-build artifacts.
+For dependencies, it may be necessary to remove *Build* dependencies before
+running the *Test* phase to test that a runtime is clean and that dependencies
+are specified fully. This separation is useful for when people try to build on
+one machine then deploy on another. One way of doing this is to use one
+container to build and another to run the tests with shared build artifacts.
+
+Another feature of these phases is that they may need to have different
+environments. For example, installation of system packages usually requires
+having root access while running tests is usually done as a non-privileged
+user. A test may require having certain environment variables set such as
+ flags enabling code coverage,
+ flags for a system service,
+ API keys,
+ or paths to test data.
+Another project may have tests that are only available when some other service
+is running before the tests starts.
 
 ## Features / software variability / Software Product Lines
 
