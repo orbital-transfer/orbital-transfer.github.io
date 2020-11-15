@@ -12,6 +12,7 @@ Module specificity:
 - Alien modules
     * Are not: Perl version-specific.
     * Are: Architecture-specific.
+    * <https://metacpan.org/pod/Alien::Build::Plugin::Probe::OverrideCI>
 - XS modules
     * Are: Perl version-specific.
     * Are: Architecture-specific.
