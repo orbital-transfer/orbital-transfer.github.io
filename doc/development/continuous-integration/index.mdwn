@@ -4,7 +4,23 @@
 
 ## GitHub Actions
 
+- Reference: <https://docs.github.com/en/free-pro-team@latest/actions/reference>.
+
+- Storing artifacts inside of a workflow <https://docs.github.com/en/free-pro-team@latest/actions/guides/storing-workflow-data-as-artifacts>.
+- Caching <https://docs.github.com/en/free-pro-team@latest/actions/guides/caching-dependencies-to-speed-up-workflows>.
+- Container registry <https://github.blog/2020-09-01-introducing-github-container-registry/>
+    * <https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry>
+
+Examples:
+
+- Perl
+    * <https://perlmaven.com/github-actions-running-on-3-operating-systems>
+    * <https://github.com/tobyink/p5-app-ghaprove/blob/master/.github/workflows/ci.yml>
+
 ## Travis CI
+
+- Build stages <https://docs.travis-ci.com/user/build-stages/>.
+- Storing artifacts inside of stages <https://docs.travis-ci.com/user/using-workspaces/>.
 
 ## AppVeyor
 
