@@ -29,6 +29,8 @@
 * [[GitHub - ninja-build/ninja: a small build system with a focus on speed|https://github.com/ninja-build/ninja]]
 * [[GitHub - KDE/clazy: Qt-oriented static code analyzer based on the Clang framework|https://github.com/KDE/clazy]]
 * [[GitHub - bookingcom/pakket: An Unopinionated Meta-Packaging System|https://github.com/bookingcom/pakket]]
+    * [["Pakket - An Unopinionated Meta-Packaging System" - Sawyer X - YouTube|https://www.youtube.com/watch?v=-WBL0QoQ3kw]]
+    * [[Sawyer X - "Pakket - An Unopinionated Meta-Packaging System" - YouTube|https://www.youtube.com/watch?v=aiNRbQKX9iU]]
 * [[GitHub - fluendo/cerbero|https://github.com/fluendo/cerbero]]
 * [[GitHub - bazelbuild/bazel: a fast, scalable, multi-language and extensible build system|https://github.com/bazelbuild/bazel]]
 * [[lib/Metabrik/Shell/Command.pm - metacpan.org|https://metacpan.org/source/Metabrik::Shell::Command]]
@@ -76,3 +78,13 @@
 
 * [[GitHub - JetBrains/intellij-community: IntelliJ IDEA Community Edition & IntelliJ Platform|https://github.com/JetBrains/intellij-community]]
 * [[Ultimate vs. Community - Compare Editions - IntelliJ IDEA|http://www.jetbrains.com/idea/features/editions_comparison_matrix.html]]
+
+
+# TeX
+
+* [[CTAN: Comprehensive TeX Archive Network|https://ctan.org/]]
+* [[TeX Live - TeX Users Group|http://tug.org/texlive/]]
+    + [[TinyTeX - A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live - Yihui Xie - 谢益辉|https://yihui.name/tinytex/]]
+* [[Home - MiKTeX.org|https://miktex.org/]]
+* [[portability - Portable minimal distribution - TeX - LaTeX Stack Exchange|https://tex.stackexchange.com/questions/13649/portable-minimal-distribution]]
+    + [[KerGIS.com: kerTeX : Take Care of TeX!|http://kertex.kergis.com/en/index.html]]
