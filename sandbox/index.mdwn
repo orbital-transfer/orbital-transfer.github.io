@@ -24,7 +24,6 @@
 # Build systems / environment management
 
 * [[GitHub - facebook/buck: A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages.|https://github.com/facebook/buck]]
-* [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
 * [[GitHub - conan-io/conan: Conan - The open-source C/C++ package manager|https://github.com/conan-io/conan]]
 * [[GitHub - ninja-build/ninja: a small build system with a focus on speed|https://github.com/ninja-build/ninja]]
 * [[GitHub - KDE/clazy: Qt-oriented static code analyzer based on the Clang framework|https://github.com/KDE/clazy]]
@@ -88,3 +87,10 @@
 * [[Home - MiKTeX.org|https://miktex.org/]]
 * [[portability - Portable minimal distribution - TeX - LaTeX Stack Exchange|https://tex.stackexchange.com/questions/13649/portable-minimal-distribution]]
     + [[KerGIS.com: kerTeX : Take Care of TeX!|http://kertex.kergis.com/en/index.html]]
+
+# Python
+
+- [[GitHub - tox-dev/tox: Command line driven CI frontend and development task automation tool.|https://github.com/tox-dev/tox]]
+    * [[biopython/.travis-tox.ini at master · biopython/biopython · GitHub|https://github.com/biopython/biopython/blob/master/.travis-tox.ini]]
+    * [[Tox tricks and patterns - ionel's codelog|https://blog.ionelmc.ro/2015/04/14/tox-tricks-and-patterns/]]
+- [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
