@@ -98,3 +98,7 @@
 # Meson
 
 - [[Using the WrapDB|http://mesonbuild.com/Using-the-WrapDB.html]]
+
+# Language Server
+
+- <https://lsif.dev>
