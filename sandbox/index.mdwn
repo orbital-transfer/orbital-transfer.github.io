@@ -101,4 +101,4 @@
 
 # Language Server
 
-- <https://lsif.dev>
+- [[LSIF.dev|https://lsif.dev]]
