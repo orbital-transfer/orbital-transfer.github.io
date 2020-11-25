@@ -26,3 +26,13 @@ Examples:
 
 - [[Environment variables - AppVeyor|https://www.appveyor.com/docs/environment-variables/]]
 - [[Software pre-installed on Windows build VMs - AppVeyor|https://www.appveyor.com/docs/windows-images-software/]]
+
+# Design of CI configuration
+
+- Script
+    * Bourne shell script
+    * PowerShell script
+- Script should be source-able using the same script for every CI service
+  (because generating multiple scripts means changing those scripts). Then the
+  script in turn should do something different based on which CI is being used
+  (detected using the environment variables).
