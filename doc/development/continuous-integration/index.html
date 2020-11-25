@@ -129,6 +129,20 @@ Continuous integration
 <li><a href="https://www.appveyor.com/docs/windows-images-software/">Software pre-installed on Windows build VMs - AppVeyor</a></li>
 </ul>
 
+<h1 id="designofciconfiguration">Design of CI configuration</h1>
+
+<ul>
+<li>Script
+<ul>
+<li>Bourne shell script</li>
+<li>PowerShell script</li>
+</ul></li>
+<li>Script should be source-able using the same script for every CI service
+(because generating multiple scripts means changing those scripts). Then the
+script in turn should do something different based on which CI is being used
+(detected using the environment variables).</li>
+</ul>
+
 </div>
 
 
@@ -154,7 +168,7 @@ Continuous integration
 
 
 <div class="pagedate">
-Last edited <span class="date">Tue Nov 17 05:18:24 2020</span>
+Last edited <span class="date">Wed Nov 25 05:05:14 2020</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 
