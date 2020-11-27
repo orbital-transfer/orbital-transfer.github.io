@@ -132,17 +132,53 @@ Continuous integration
 
 <h1 id="designofciconfiguration">Design of CI configuration</h1>
 
-<ul>
-<li>Script
+<p><ul>
+<li>Script</p>
+
 <ul>
 <li>Bourne shell script</li>
 <li>PowerShell script</li>
-</ul></li>
+</ul>
+
+<p></li>
 <li>Script should be source-able using the same script for every CI service
 (because generating multiple scripts means changing those scripts). Then the
 script in turn should do something different based on which CI is being used
 (detected using the environment variables).</li>
+<li>e.g.
+<ul>
+<li>Travis CI:</p>
+
+<pre>        install: skip
+script: eval $(curl .../bootstrap.sh )
+</pre>
+
+<p></li>
+<li>AppVeyor:
+<pre>        build: off
+test_script:</p>
+
+<ul>
+<li>ps: . { iwr -useb .../bootstrap.ps1 } | iex
+</pre></li>
 </ul>
+
+<p></li>
+<li>GitHub Actions:</p>
+
+<pre>        jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Orbital Transfer
+        run: |
+          sudo apt-get install ikiwiki libtext-multimarkdown-perl
+</pre>
+
+<p></li>
+</ul></li>
+</ul></p>
 
 </div>
 
@@ -169,7 +205,7 @@ script in turn should do something different based on which CI is being used
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu Nov 26 05:19:21 2020</span>
+Last edited <span class="date">Fri Nov 27 05:41:48 2020</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 
