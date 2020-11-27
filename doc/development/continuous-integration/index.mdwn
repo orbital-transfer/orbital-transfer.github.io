@@ -37,3 +37,26 @@ Examples:
   (because generating multiple scripts means changing those scripts). Then the
   script in turn should do something different based on which CI is being used
   (detected using the environment variables).
+- e.g.
+    * Travis CI:
+        [[!format txt """
+        install: skip
+        script: eval $(curl .../bootstrap.sh )
+        """]]
+    * AppVeyor:
+        [[!format txt """
+        build: off
+        test_script:
+          - ps: . { iwr -useb .../bootstrap.ps1 } | iex
+        """]]
+    * GitHub Actions:
+        [[!format txt """
+        jobs:
+          build:
+            runs-on: ubuntu-latest
+            steps:
+              - uses: actions/checkout@v2
+              - name: Run Orbital Transfer
+                run: |
+                  sudo apt-get install ikiwiki libtext-multimarkdown-perl
+        """]]
