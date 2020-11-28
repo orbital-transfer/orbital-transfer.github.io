@@ -1,0 +1,1 @@
+[[!map pages="doc/development/continuous-integration/example/* and ! doc/development/continuous-integration/example/*/*"]]
