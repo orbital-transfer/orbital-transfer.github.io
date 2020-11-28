@@ -213,7 +213,7 @@ pingurl: []
 
 # highlight plugin
 # types of source files to syntax highlight
-tohighlight: .c .h .cpp .pl .py Makefile:make .yml
+#tohighlight: .c .h .cpp .pl .py Makefile:make .yml
 # location of highlight's filetypes.conf
 filetypes_conf: /etc/highlight/filetypes.conf
 # location of highlight's langDefs directory
