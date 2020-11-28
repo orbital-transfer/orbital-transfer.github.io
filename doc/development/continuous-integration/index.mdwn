@@ -37,21 +37,18 @@ Examples:
   (because generating multiple scripts means changing those scripts). Then the
   script in turn should do something different based on which CI is being used
   (detected using the environment variables).
-- e.g.
-  <ul>
-    <li> Travis CI:
-[[!format yml """
-[[!inline pagenames="doc/development/continuous-integration/example/travis.yml" raw=yes ]]
-"""]]
-    </li>
-    <li> AppVeyor:
-[[!format yml """
-[[!inline pagenames="doc/development/continuous-integration/example/appveyor.yml" raw=yes ]]
-"""]]
-    </li>
-    <li> GitHub Actions:
-[[!format yml """
-[[!inline pagenames="doc/development/continuous-integration/example/github-actions.yml" raw=yes ]]
-"""]]
-    </li>
+
+## Examples
+
+<ul>
+<li> Travis CI:
+[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/travis.yml" raw=yes ]] """]]
+</li>
+<li> AppVeyor:
+[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/appveyor.yml" raw=yes ]] """]]
+</li>
+<li>
+GitHub Actions:
+[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/github-actions.yml" raw=yes ]] """]]
+</li>
 </ul>
