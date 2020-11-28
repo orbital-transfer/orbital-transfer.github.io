@@ -142,121 +142,35 @@ Continuous integration
 (because generating multiple scripts means changing those scripts). Then the
 script in turn should do something different based on which CI is being used
 (detected using the environment variables).</li>
-<li><p>e.g.</p>
+<li>e.g.</li>
+</ul>
 
 <ul>
-<li><p>Travis CI:</p>
-
-<div class="inlinepage">
-
-<div class="inlineheader">
-
-<span class="header">
-
-<a href="./example/travis.yml">travis.yml</a>
-
-</span>
-</div>
-
-<div class="inlinecontent">
-
-</div>
-
-
-
-<div class="inlinefooter">
-
-<span class="pagedate">
-Posted <span class="date">Sat Nov 28 09:54:56 2020</span>
-</span>
-
-
-
-
-
-
-
-
-
-</div>
-
-</div>
-</li>
-<li><p>AppVeyor:</p>
-
-<div class="inlinepage">
-
-<div class="inlineheader">
-
-<span class="header">
-
-<a href="./example/appveyor.yml">appveyor.yml</a>
-
-</span>
-</div>
-
-<div class="inlinecontent">
-
-</div>
-
-
-
-<div class="inlinefooter">
-
-<span class="pagedate">
-Posted <span class="date">Sat Nov 28 09:54:56 2020</span>
-</span>
-
-
-
-
-
-
-
-
-
-</div>
-
-</div>
-</li>
-<li><p>GitHub Actions:</p>
-
-<div class="inlinepage">
-
-<div class="inlineheader">
-
-<span class="header">
-
-<a href="./example/github-actions.yml">github-actions.yml</a>
-
-</span>
-</div>
-
-<div class="inlinecontent">
-
-</div>
-
-
-
-<div class="inlinefooter">
-
-<span class="pagedate">
-Posted <span class="date">Sat Nov 28 09:54:56 2020</span>
-</span>
-
-
-
-
-
-
-
-
-
-</div>
-
-</div>
-</li>
-</ul></li>
+    <li> Travis CI:
+<div class="highlight-yml"><pre class="hl">
+<span class="hl kwa">install:</span> skip
+<span class="hl kwa">script:</span> eval $<span class="hl opt">(</span>curl .../bootstrap.sh <span class="hl opt">)</span>
+</pre></div>
+    </li>
+    <li> AppVeyor:
+<div class="highlight-yml"><pre class="hl">
+<span class="hl kwa">build:</span> off
+<span class="hl kwa">test_script:</span>
+  - <span class="hl kwa">ps:</span> . { iwr -useb .../bootstrap.ps<span class="hl num">1</span> } <span class="hl opt">|</span> iex
+</pre></div>
+    </li>
+    <li> GitHub Actions:
+<div class="highlight-yml"><pre class="hl">
+<span class="hl kwa">jobs:</span>
+  <span class="hl kwa">build:</span>
+    runs-<span class="hl kwa">on:</span> ubuntu-latest
+    <span class="hl kwa">steps:</span>
+      - <span class="hl kwa">uses:</span> actions/checkout&#64;v<span class="hl num">2</span>
+      - <span class="hl kwa">name:</span> Run Orbital Transfer
+        <span class="hl kwa">run:</span> <span class="hl opt">|</span>
+          <span class="hl kwb">sudo</span> <span class="hl kwc">apt</span>-get install ikiwiki libtext-multimarkdown-perl
+</pre></div>
+    </li>
 </ul>
 
 </div>
@@ -284,7 +198,7 @@ Posted <span class="date">Sat Nov 28 09:54:56 2020</span>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat Nov 28 09:54:56 2020</span>
+Last edited <span class="date">Sat Nov 28 10:22:45 2020</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 
