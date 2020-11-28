@@ -47,6 +47,7 @@ add_plugins:
 - tag
 - sidebar
 - map
+- highlight
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -214,9 +215,9 @@ pingurl: []
 # types of source files to syntax highlight
 #tohighlight: .c .h .cpp .pl .py Makefile:make
 # location of highlight's filetypes.conf
-#filetypes_conf: /etc/highlight/filetypes.conf
+filetypes_conf: /etc/highlight/filetypes.conf
 # location of highlight's langDefs directory
-#langdefdir: /usr/share/highlight/langDefs
+langdefdir: /usr/share/highlight/langDefs
 
 # mdwn plugin
 # enable multimarkdown features?
