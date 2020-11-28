@@ -1,0 +1,2 @@
+install: skip
+script: eval $(curl .../bootstrap.sh )
