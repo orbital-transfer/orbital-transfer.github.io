@@ -1,0 +1,3 @@
+build: off
+test_script:
+  - ps: . { iwr -useb .../bootstrap.ps1 } | iex

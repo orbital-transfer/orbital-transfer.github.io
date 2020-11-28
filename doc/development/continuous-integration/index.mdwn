@@ -39,24 +39,8 @@ Examples:
   (detected using the environment variables).
 - e.g.
     * Travis CI:
-        [[!format txt """
-install: skip
-script: eval $(curl .../bootstrap.sh )
-"""]]
+        [[!inline pagenames="doc/development/continuous-integration/example/travis.yml" feeds=no ]]
     * AppVeyor:
-        [[!format txt """
-build: off
-test_script:
-  - ps: . { iwr -useb .../bootstrap.ps1 } | iex
-"""]]
+        [[!inline pagenames="doc/development/continuous-integration/example/appveyor.yml" feeds=no ]]
     * GitHub Actions:
-        [[!format txt """
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run Orbital Transfer
-        run: |
-          sudo apt-get install ikiwiki libtext-multimarkdown-perl
-"""]]
+        [[!inline pagenames="doc/development/continuous-integration/example/github-actions.yml" feeds=no ]]
