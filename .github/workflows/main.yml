@@ -24,7 +24,8 @@ jobs:
 
       - name: Install ikiwiki
         run: |
-          sudo apt-get install ikiwiki libtext-multimarkdown-perl
+          sudo apt-get install ikiwiki libtext-multimarkdown-perl \
+            libhighlight-perl
 
       - name: Set up worktree and Run ikiwiki
         run: |
