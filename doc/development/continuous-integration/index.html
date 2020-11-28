@@ -149,32 +149,32 @@ script in turn should do something different based on which CI is being used
 <ul>
 <li>Travis CI:</p>
 
-<pre>        install: skip
+<pre>install: skip
 script: eval $(curl .../bootstrap.sh )
 </pre>
 
 <p></li>
-<li>AppVeyor:
-<pre>        build: off
-test_script:</p>
+<li>AppVeyor:</p>
 
-<ul>
+<pre>build: off
+test_script:</li>
 <li>ps: . { iwr -useb .../bootstrap.ps1 } | iex
-</pre></li>
-</ul>
+</pre>
 
 <p></li>
-<li>GitHub Actions:</p>
+<li>GitHub Actions:
+<pre>jobs:
+build:
+runs-on: ubuntu-latest
+steps:</p>
 
-<pre>        jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run Orbital Transfer
-        run: |
-          sudo apt-get install ikiwiki libtext-multimarkdown-perl
-</pre>
+<ul>
+<li>uses: actions/checkout@v2</li>
+<li>name: Run Orbital Transfer
+run: |
+sudo apt-get install ikiwiki libtext-multimarkdown-perl
+</pre></li>
+</ul>
 
 <p></li>
 </ul></li>
@@ -205,7 +205,7 @@ test_script:</p>
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Nov 27 05:41:48 2020</span>
+Last edited <span class="date">Sat Nov 28 05:44:15 2020</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 
