@@ -42,13 +42,13 @@ Examples:
         [[!format txt """
 install: skip
 script: eval $(curl .../bootstrap.sh )
-        """]]
+"""]]
     * AppVeyor:
         [[!format txt """
 build: off
 test_script:
   - ps: . { iwr -useb .../bootstrap.ps1 } | iex
-        """]]
+"""]]
     * GitHub Actions:
         [[!format txt """
 jobs:
@@ -59,4 +59,4 @@ jobs:
       - name: Run Orbital Transfer
         run: |
           sudo apt-get install ikiwiki libtext-multimarkdown-perl
-        """]]
+"""]]
