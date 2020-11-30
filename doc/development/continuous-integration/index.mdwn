@@ -11,12 +11,15 @@
 - Container registry <https://github.blog/2020-09-01-introducing-github-container-registry/>
     * <https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry>
 - Problem matcher <https://github.com/actions/toolkit/blob/master/docs/problem-matchers.md>
+- Runner OS <https://stackoverflow.com/questions/57946173/github-actions-run-step-on-specific-os>
 
 Examples:
 
 - Perl
     * <https://perlmaven.com/github-actions-running-on-3-operating-systems>
     * <https://github.com/tobyink/p5-app-ghaprove/blob/master/.github/workflows/ci.yml>
+        + Note: this uses separate stages for authoring the distribution and
+          installing distribution. This way it is only authored once.
 
 ## Travis CI
 
