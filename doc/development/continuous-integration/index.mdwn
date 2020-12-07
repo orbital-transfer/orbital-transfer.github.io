@@ -13,6 +13,14 @@
 - Problem matcher <https://github.com/actions/toolkit/blob/master/docs/problem-matchers.md>
 - Runner OS <https://stackoverflow.com/questions/57946173/github-actions-run-step-on-specific-os>
 
+Actions:
+
+- MSYS2:
+    * <https://github.com/actions/starter-workflows/issues/95>
+    * <https://github.com/msys2/setup-msys2>
+    * <https://github.com/actions/virtual-environments/issues/1525>
+    * <https://github.com/actions/virtual-environments/issues/1572>
+
 Examples:
 
 - Perl
