@@ -51,6 +51,9 @@ Examples:
   script in turn should do something different based on which CI is being used
   (detected using the environment variables).
 
+- Steps for CI should have information on how to retrieve modules/distributions.
+  For example, inside a monorepo this is a directory.
+
 ## Examples
 
 <ul>
