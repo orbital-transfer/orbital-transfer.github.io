@@ -157,10 +157,12 @@ installing distribution. This way it is only authored once.</li>
 <li>Bourne shell script</li>
 <li>PowerShell script</li>
 </ul></li>
-<li>Script should be source-able using the same script for every CI service
+<li><p>Script should be source-able using the same script for every CI service
 (because generating multiple scripts means changing those scripts). Then the
 script in turn should do something different based on which CI is being used
-(detected using the environment variables).</li>
+(detected using the environment variables).</p></li>
+<li><p>Steps for CI should have information on how to retrieve modules/distributions.
+For example, inside a monorepo this is a directory.</p></li>
 </ul>
 
 <h2 id="examples">Examples</h2>
@@ -222,7 +224,7 @@ GitHub Actions:
 
 
 <div class="pagedate">
-Last edited <span class="date">Mon Dec  7 04:59:48 2020</span>
+Last edited <span class="date">Tue Dec  8 04:58:20 2020</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 
