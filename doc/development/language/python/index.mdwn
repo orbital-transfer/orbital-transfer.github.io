@@ -1,0 +1,9 @@
+[[!meta title="Python"]]
+
+# Local PyPI
+
+- [[sganis/minirepo: Create a local pypi repository to use pip off-line|https://github.com/sganis/minirepo]]
+- [[dbaty/Basket: A local static PyPI repository builder|https://github.com/dbaty/basket]]
+- [[pypa/bandersnatch: A PyPI mirror client according to PEP 381 http://www.python.org/dev/peps/pep-0381/|https://github.com/pypa/bandersnatch/]]
+- [[pypiserver/pypiserver: Minimal PyPI server for uploading & downloading packages with pip/easy_install|https://github.com/pypiserver/pypiserver]]
+
