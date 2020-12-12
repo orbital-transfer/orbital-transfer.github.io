@@ -9,6 +9,9 @@ Module specificity:
       Perl version.
     * Are not: Architecture-specific.
     * Can be "fatpacked".
+        + Fatpacking:
+            + <https://metacpan.org/release/App-FatPacker-Simple>
+            + <https://metacpan.org/pod/App::FatPacker>
 - Alien modules
     * Are not: Perl version-specific.
     * Are: Architecture-specific.
