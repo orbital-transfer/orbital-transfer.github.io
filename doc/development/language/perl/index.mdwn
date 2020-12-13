@@ -16,6 +16,7 @@ Module specificity:
     * Are not: Perl version-specific.
     * Are: Architecture-specific.
     * <https://metacpan.org/pod/Alien::Build::Plugin::Probe::OverrideCI>
+    * <https://metacpan.org/pod/Alien::Build::Plugin::Fetch::Cache>
 - XS modules
     * Are: Perl version-specific.
     * Are: Architecture-specific.
