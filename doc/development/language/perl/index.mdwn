@@ -20,4 +20,4 @@ Module specificity:
 - XS modules
     * Are: Perl version-specific.
     * Are: Architecture-specific.
-
+    * Test without XS: <https://metacpan.org/pod/Test::NoXS>
