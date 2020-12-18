@@ -1,0 +1,2 @@
+https://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
+
