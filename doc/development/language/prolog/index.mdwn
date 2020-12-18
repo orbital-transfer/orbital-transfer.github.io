@@ -1,2 +1,4 @@
-https://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
+[[!meta title="Prolog"]]
 
+- SWI-Prolog
+    * [[prolog_pack.pl -- A package manager for Prolog|https://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl]]
