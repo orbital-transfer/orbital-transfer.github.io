@@ -8,6 +8,7 @@
 
 - Storing artifacts inside of a workflow <https://docs.github.com/en/free-pro-team@latest/actions/guides/storing-workflow-data-as-artifacts>.
 - Caching <https://docs.github.com/en/free-pro-team@latest/actions/guides/caching-dependencies-to-speed-up-workflows>.
+    * <https://github.com/actions/cache/blob/main/examples.md>
 - Container registry <https://github.blog/2020-09-01-introducing-github-container-registry/>
     * <https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry>
 - Problem matcher <https://github.com/actions/toolkit/blob/master/docs/problem-matchers.md>
