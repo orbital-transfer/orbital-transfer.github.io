@@ -21,3 +21,5 @@ Module specificity:
     * Are: Perl version-specific.
     * Are: Architecture-specific.
     * Test without XS: <https://metacpan.org/pod/Test::NoXS>
+    * Can be packaged using PAR
+        + <https://metacpan.org/pod/PAR::Dist>
