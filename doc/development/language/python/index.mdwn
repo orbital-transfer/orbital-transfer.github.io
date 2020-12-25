@@ -7,3 +7,6 @@
 - [[pypa/bandersnatch: A PyPI mirror client according to PEP 381 http://www.python.org/dev/peps/pep-0381/|https://github.com/pypa/bandersnatch/]]
 - [[pypiserver/pypiserver: Minimal PyPI server for uploading & downloading packages with pip/easy_install|https://github.com/pypiserver/pypiserver]]
 
+# Tox
+
+https://tox.readthedocs.io/
