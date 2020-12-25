@@ -1,0 +1,6 @@
+[[!meta title="Chocolatey"]]
+
+# RefreshEnv
+
+* [[powershell - install-package with chocolatey never adds anything to the path environment variable - Stack Overflow|https://stackoverflow.com/questions/44756491/install-package-with-chocolatey-never-adds-anything-to-the-path-environment-vari]]
+* [[installation - How to refresh the environment of a PowerShell session after a Chocolatey install without needing to open a new session - Stack Overflow|https://stackoverflow.com/questions/46758437/how-to-refresh-the-environment-of-a-powershell-session-after-a-chocolatey-instal]]
