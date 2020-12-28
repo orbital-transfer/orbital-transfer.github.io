@@ -1,5 +1,7 @@
 [[!meta title="Chocolatey"]]
 
+- <https://chocolatey.org/>
+
 # RefreshEnv
 
 * [[powershell - install-package with chocolatey never adds anything to the path environment variable - Stack Overflow|https://stackoverflow.com/questions/44756491/install-package-with-chocolatey-never-adds-anything-to-the-path-environment-vari]]
