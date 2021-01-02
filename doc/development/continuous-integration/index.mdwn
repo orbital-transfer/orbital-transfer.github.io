@@ -15,6 +15,9 @@
     * <https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry>
 - Problem matcher <https://github.com/actions/toolkit/blob/master/docs/problem-matchers.md>
 - Runner OS <https://stackoverflow.com/questions/57946173/github-actions-run-step-on-specific-os>
+- Debugging with SSH <https://github.com/marketplace/actions/debugging-with-tmate>, <https://github.com/mxschmitt/action-tmate>
+    * Security: <https://github.com/mxschmitt/action-tmate/issues/2>
+    * On failure: <https://gist.github.com/mikedep333/4b58843923ac909b48b95c99c32d03af>
 
 Actions:
 
