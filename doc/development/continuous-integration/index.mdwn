@@ -18,6 +18,14 @@
 - Debugging with SSH <https://github.com/marketplace/actions/debugging-with-tmate>, <https://github.com/mxschmitt/action-tmate>
     * Security: <https://github.com/mxschmitt/action-tmate/issues/2>
     * On failure: <https://gist.github.com/mikedep333/4b58843923ac909b48b95c99c32d03af>
+- Calling another action from within another action
+    * Examples
+        + <https://github.com/msys2/setup-msys2/blob/master/main.js>
+        + <https://github.com/lukka/get-cmake>
+        + <https://github.com/marketplace/actions/run-vcpkg>
+    * <https://github.community/t/call-an-action-from-another-action/17524/2>
+    * <https://stackoverflow.com/questions/58860769/call-a-github-action-from-another-github-action>
+    * <https://stackoverflow.com/questions/58611841/how-can-i-reference-other-actions-from-my-github-actions-action-yml-file>
 
 Actions:
 
