@@ -23,3 +23,17 @@ Module specificity:
     * Test without XS: <https://metacpan.org/pod/Test::NoXS>
     * Can be packaged using PAR
         + <https://metacpan.org/pod/PAR::Dist>
+
+# Packaging
+
+- Debian
+    * http://web.archive.org/web/20170911182144/https://debian-administration.org/article/78/Building_Debian_packages_of_Perl_modules
+    * https://metacpan.org/pod/CPANPLUS::Dist::Deb
+    * https://github.com/jozef/Debian-Apt-PM
+        + https://metacpan.org/pod/Alien::Debian::Apt::PM
+        + https://news.perlfoundation.org/post/2010q3_grant_proposal_cpan_to
+        + https://metacpan.org/pod/distribution/Debian-Apt-PM/lib/Debian/Apt/PM/SettingUpBuildSystem.pod
+- RPM
+    * http://cpanspec.sourceforge.net/
+    * https://fedoraproject.org/wiki/Perl/cpanspec
+    * https://github.com/openSUSE/cpanspec
