@@ -1,0 +1,7 @@
+[[!meta title="Homebrew"]]
+
+- <https://docs.brew.sh/Manpage>
+- No autoupdate: `HOMEBREW_NO_AUTO_UPDATE`
+    * <https://github.com/Homebrew/brew/issues/1670>
+    * <https://github.com/xianyi/OpenBLAS/blob/v0.3.13/.github/workflows/nightly-Homebrew-build.yml>
+    * <https://stackoverflow.com/questions/63672189/use-github-actions-cache-with-brew-install>
