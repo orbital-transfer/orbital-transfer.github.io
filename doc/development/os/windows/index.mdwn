@@ -4,3 +4,11 @@
 
 - Process Explorer
     * <https://chocolatey.org/packages/procexp>
+- Dependencies
+    * <https://stackoverflow.com/questions/17179380/dll-missing-dependencies-on-windows-7-files>
+        + <http://www.dependencywalker.com/>
+            + <https://chocolatey.org/packages/dependencywalker>
+        + <https://docs.microsoft.com/en-us/sysinternals/downloads/procmon>
+            + <https://chocolatey.org/packages/procmon>
+        + <https://github.com/lucasg/Dependencies>
+            + <https://chocolatey.org/packages/dependencies>
