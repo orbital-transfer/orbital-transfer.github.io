@@ -12,3 +12,10 @@
             + <https://chocolatey.org/packages/procmon>
         + <https://github.com/lucasg/Dependencies>
             + <https://chocolatey.org/packages/dependencies>
+- Memory
+    * <https://github.com/zodiacon/KernelExplorer>
+        + <https://github.com/zodiacon/KernelExplorer/releases/tag/memmapview-0.1-beta>
+        + <https://github.com/zodiacon/AllTools>
+    * <https://docs.microsoft.com/en-us/sysinternals/downloads/vmmap>
+        + <https://chocolatey.org/packages/vmmap>
+    * <https://github.com/JochenKalmbach/StackWalker>
