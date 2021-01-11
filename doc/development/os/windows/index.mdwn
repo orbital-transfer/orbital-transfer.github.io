@@ -21,3 +21,5 @@
     * <https://github.com/JochenKalmbach/StackWalker>
 
 - AppVerifier <https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier>
+- Debugger
+    * <https://github.com/x64dbg/x64dbg>
