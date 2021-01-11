@@ -19,3 +19,5 @@
     * <https://docs.microsoft.com/en-us/sysinternals/downloads/vmmap>
         + <https://chocolatey.org/packages/vmmap>
     * <https://github.com/JochenKalmbach/StackWalker>
+
+- AppVerifier <https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier>
