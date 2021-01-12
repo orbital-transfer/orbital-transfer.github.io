@@ -23,3 +23,8 @@
 - AppVerifier <https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier>
 - Debugger
     * <https://github.com/x64dbg/x64dbg>
+
+# Environment variables
+
+- set/setx PATH <https://stackoverflow.com/questions/9546324/adding-a-directory-to-the-path-environment-variable-in-windows>
+- PowerShell must using path, not just name: <https://superuser.com/questions/694967/how-to-add-scripts-to-path>
