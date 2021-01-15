@@ -39,3 +39,9 @@ Module specificity:
     * http://cpanspec.sourceforge.net/
     * https://fedoraproject.org/wiki/Perl/cpanspec
     * https://github.com/openSUSE/cpanspec
+
+# Version updating
+
+- <https://stackoverflow.com/questions/1454202/how-can-i-automatically-update-perl-modules-version-with-git>
+- <https://metacpan.org/pod/distribution/App-RewriteVersion/script/perl-bump-version>
+- <https://metacpan.org/release/PPI-PowerToys>
