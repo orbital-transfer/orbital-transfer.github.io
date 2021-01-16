@@ -6,3 +6,5 @@
     + <https://github.com/Alexpux/MSYS2-pacman/issues/59>
     + <https://github.com/msys2/MINGW-packages/blob/master/.ci/ci-build.sh>
 * <https://github.com/msys2/setup-msys2/blob/master/main.js>
+* <https://www.msys2.org/wiki/Creating-Packages/>
+    + <https://archlinux.org/pacman/makepkg.8.html>
