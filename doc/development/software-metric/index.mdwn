@@ -1,0 +1,5 @@
+[[!meta title="Software metric"]]
+
+- <https://en.wikipedia.org/wiki/Software_metric>
+- <https://libyear.com/>
+- <https://metacpan.org/release/Analizo>
