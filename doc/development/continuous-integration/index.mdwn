@@ -6,6 +6,10 @@
 
 - Reference: <https://docs.github.com/en/free-pro-team@latest/actions/reference>.
 
+- Events
+    * <https://docs.github.com/en/actions/reference/events-that-trigger-workflows>
+    * Scheduled actions
+        + <https://jasonet.co/posts/scheduled-actions/>
 - Storing artifacts inside of a workflow <https://docs.github.com/en/free-pro-team@latest/actions/guides/storing-workflow-data-as-artifacts>.
 - Caching <https://docs.github.com/en/free-pro-team@latest/actions/guides/caching-dependencies-to-speed-up-workflows>.
     * <https://github.com/actions/cache/blob/main/examples.md>
