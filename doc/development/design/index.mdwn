@@ -1,0 +1,10 @@
+[[!meta title="Design"]]
+
+
+- Task
+    * Something that can be run.
+    * Has dependencies.
+- Resources
+    * lockable / mutex
+        + Some resources can only be accessed for writing by one task at a time,
+          e.g., installing CPAN modules to a library directory, running apt-get.
