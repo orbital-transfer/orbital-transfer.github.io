@@ -4,6 +4,8 @@
 - Task
     * Something that can be run.
     * Has dependencies.
+    * Has inputs / outputs
+        + Can be parameters, directories, files
 - Resources
     * lockable / mutex
         + Some resources can only be accessed for writing by one task at a time,
