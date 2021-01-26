@@ -8,3 +8,8 @@
     * lockable / mutex
         + Some resources can only be accessed for writing by one task at a time,
           e.g., installing CPAN modules to a library directory, running apt-get.
+- Scheduling
+    * <https://en.wikipedia.org/wiki/Coffman–Graham_algorithm>
+    * <https://metacpan.org/pod/Bencher::Scenario::GraphTopologicalSortModules>
+        + <https://metacpan.org/pod/Data::Graph::Util>
+        + <https://metacpan.org/pod/Algorithm::Dependency>
