@@ -6,6 +6,9 @@
     * Has dependencies.
     * Has inputs / outputs
         + Can be parameters, directories, files
+    * Can have specialised tasks for CIs
+        + e.g., on GitHub Actions, this would indicate which
+          OS the task is running on
 - Resources
     * lockable / mutex
         + Some resources can only be accessed for writing by one task at a time,
