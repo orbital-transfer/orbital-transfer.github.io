@@ -88,13 +88,6 @@
 * [[portability - Portable minimal distribution - TeX - LaTeX Stack Exchange|https://tex.stackexchange.com/questions/13649/portable-minimal-distribution]]
     + [[KerGIS.com: kerTeX : Take Care of TeX!|http://kertex.kergis.com/en/index.html]]
 
-# Python
-
-- [[GitHub - tox-dev/tox: Command line driven CI frontend and development task automation tool.|https://github.com/tox-dev/tox]]
-    * [[biopython/.travis-tox.ini at master · biopython/biopython · GitHub|https://github.com/biopython/biopython/blob/master/.travis-tox.ini]]
-    * [[Tox tricks and patterns - ionel's codelog|https://blog.ionelmc.ro/2015/04/14/tox-tricks-and-patterns/]]
-- [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
-
 # Meson
 
 - [[Using the WrapDB|http://mesonbuild.com/Using-the-WrapDB.html]]
