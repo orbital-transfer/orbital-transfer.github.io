@@ -52,3 +52,9 @@ Module specificity:
 - <https://metacpan.org/pod/CPAN::Unwind>
     * <https://metacpan.org/release/Parse-CPAN-Packages>
     * <https://metacpan.org/pod/Module::Depends::Intrusive>
+
+# Benchmarking, Profiling
+
+- <https://metacpan.org/pod/Dumbbench>
+- <https://metacpan.org/pod/Benchmark>
+- <https://metacpan.org/pod/Devel::NYTProf>
