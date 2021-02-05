@@ -52,6 +52,10 @@ Module specificity:
 - <https://metacpan.org/pod/CPAN::Unwind>
     * <https://metacpan.org/release/Parse-CPAN-Packages>
     * <https://metacpan.org/pod/Module::Depends::Intrusive>
+- <https://metacpan.org/release/Devel-TraceUse>
+- <https://metacpan.org/release/Perl-PrereqScanner-NotQuiteLite>
+- <https://metacpan.org/release/Perl-PrereqScanner>
+- <https://metacpan.org/release/App-scan_prereqs_cpanfile>
 
 # Benchmarking, Profiling
 
