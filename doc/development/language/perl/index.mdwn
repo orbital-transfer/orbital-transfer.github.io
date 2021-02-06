@@ -21,12 +21,18 @@ Module specificity:
     * Are: Perl version-specific.
     * Are: Architecture-specific.
     * Test without XS: <https://metacpan.org/pod/Test::NoXS>
-    * Can be packaged using PAR
-        + <https://metacpan.org/pod/PAR::Dist>
-        + PAR issue with DLLs <https://github.com/project-renard/curie/issues/122>, <https://www.mail-archive.com/par@perl.org/msg05985.html>
-            + may need to use DLL dependency tool for [[Windows|os/windows]] to automate this.
+    * Can be packaged using PAR or staticperl (see below)
 
 # Packaging
+
+- PAR
+    * <https://metacpan.org/pod/PAR::Dist>
+    * PAR issue with DLLs <https://github.com/project-renard/curie/issues/122>, <https://www.mail-archive.com/par@perl.org/msg05985.html>
+        + may need to use DLL dependency tool for [[Windows|os/windows]] to automate this.
+- staticperl
+    * <https://metacpan.org/pod/staticperl>
+    * <https://github.com/gh0stwizard/staticperl-modules>
+        + <https://gh0stwizard.tk/categories/staticperl/>
 
 - Debian
     * http://web.archive.org/web/20170911182144/https://debian-administration.org/article/78/Building_Debian_packages_of_Perl_modules
