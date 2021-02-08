@@ -62,6 +62,9 @@ Module specificity:
 - <https://metacpan.org/release/Perl-PrereqScanner-NotQuiteLite>
 - <https://metacpan.org/release/Perl-PrereqScanner>
 - <https://metacpan.org/release/App-scan_prereqs_cpanfile>
+- <https://metacpan.org/release/Dependencies-Searcher>
+- <https://metacpan.org/release/Module-ScanDeps>
+- <https://metacpan.org/release/Tangerine>
 
 # Benchmarking, Profiling
 
