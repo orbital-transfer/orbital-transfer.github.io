@@ -91,6 +91,22 @@ Design
 <div id="pagebody">
 
 <div id="content" role="main">
+<h1 id="bootstrapping">Bootstrapping</h1>
+
+<ul>
+<li>Current steps:
+<ol>
+<li>Install <code>cpm</code> (from vendor submodules) if not available</li>
+<li>Install <code>cpanm</code> using <code>cpm</code>.</li>
+<li>Install <code>App::scan_prereqs_cpanfile</code> using <code>cpanm</code>.</li>
+<li>Generate a <code>cpanfile</code> for every orbital-transfer submodule.</li>
+<li>Install dependencies from <code>cpanfile</code> for every orbital-transfer
+submodule using <code>cpm</code> then <code>cpanm</code>.</li>
+</ol></li>
+</ul>
+
+<h1 id="workflowgraph">Workflow graph</h1>
+
 <ul>
 <li>Task
 <ul>
@@ -150,7 +166,7 @@ e.g., installing CPAN modules to a library directory, running apt-get.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sun Jan 31 02:48:41 2021</span>
+Last edited <span class="date">Tue Feb  9 05:17:18 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
