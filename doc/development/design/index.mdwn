@@ -1,6 +1,18 @@
 [[!meta title="Design"]]
 
 
+# Bootstrapping
+
+- Current steps:
+    1. Install `cpm` (from vendor submodules) if not available
+    2. Install `cpanm` using `cpm`.
+    3. Install `App::scan_prereqs_cpanfile` using `cpanm`.
+    4. Generate a `cpanfile` for every orbital-transfer submodule.
+    5. Install dependencies from `cpanfile` for every orbital-transfer
+       submodule using `cpm` then `cpanm`.
+
+# Workflow graph
+
 - Task
     * Something that can be run.
     * Has dependencies.
