@@ -3,13 +3,20 @@
 
 # Bootstrapping
 
-- Current steps:
-    1. Install `cpm` (from vendor submodules) if not available
-    2. Install `cpanm` using `cpm`.
-    3. Install `App::scan_prereqs_cpanfile` using `cpanm`.
-    4. Generate a `cpanfile` for every orbital-transfer submodule.
-    5. Install dependencies from `cpanfile` for every orbital-transfer
-       submodule using `cpm` then `cpanm`.
+- Current
+    * config:
+        + Install directory
+            + global install: no directory specified (so installs to `perl -V:sitelib`)
+            + CI install: in `~/.orbital`.
+                + Only when $ENV{CI} is true
+            + default: relative to launch-site repo
+    * steps:
+        1. Install `cpm` (from vendor submodules) if not available
+        2. Install `cpanm` using `cpm`.
+        3. Install `App::scan_prereqs_cpanfile` using `cpanm`.
+        4. Generate a `cpanfile` for every orbital-transfer submodule.
+        5. Install dependencies from `cpanfile` for every orbital-transfer
+           submodule using `cpm` then `cpanm`.
 
 # Workflow graph
 
