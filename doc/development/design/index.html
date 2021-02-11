@@ -118,6 +118,22 @@ Design
 submodule using <code>cpm</code> then <code>cpanm</code>.</li>
 </ol></li>
 </ul></li>
+<li>Future
+<ul>
+<li>config:
+<ul>
+<li>Install to directory, upload to GitHub</li>
+<li>Install to directory at bootstrap time
+<ul>
+<li>determine the directory to install to using a class</li>
+</ul></li>
+</ul></li>
+<li>steps: same as before
+<ul>
+<li>Perhaps need to generate cpanfile in each repo, only install and run
+<code>App::scan_prereqs_cpanfile</code> if <code>cpanfile</code> missing.</li>
+</ul></li>
+</ul></li>
 </ul>
 
 <h1 id="workflowgraph">Workflow graph</h1>
@@ -181,7 +197,7 @@ e.g., installing CPAN modules to a library directory, running apt-get.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Wed Feb 10 03:35:26 2021</span>
+Last edited <span class="date">Thu Feb 11 03:24:29 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
