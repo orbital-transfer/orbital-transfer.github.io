@@ -17,6 +17,14 @@
         4. Generate a `cpanfile` for every orbital-transfer submodule.
         5. Install dependencies from `cpanfile` for every orbital-transfer
            submodule using `cpm` then `cpanm`.
+- Future
+    * config:
+        + Install to directory, upload to GitHub
+        + Install to directory at bootstrap time
+            + determine the directory to install to using a class
+    * steps: same as before
+        + Perhaps need to generate cpanfile in each repo, only install and run
+          `App::scan_prereqs_cpanfile` if `cpanfile` missing.
 
 # Workflow graph
 
