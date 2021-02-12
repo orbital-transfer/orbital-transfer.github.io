@@ -15,6 +15,9 @@
 * [[GitHub - Tatsh/xchain: A cross compiler toolchain targeting macOS/iOS/etc.|https://github.com/Tatsh/xchain]]
 * [[GitHub - tpoechtrager/osxcross: Mac OS X cross toolchain for Linux, FreeBSD, OpenBSD and Android (Termux)|https://github.com/tpoechtrager/osxcross]]
 * [[GitHub - weswigham/cross: Cross-compiler environment management|https://github.com/weswigham/cross]]
+
+# C/C++ package management
+
 * [[GitHub - ruslo/hunter|https://github.com/ruslo/hunter]]
 * [[GitHub - microsoft/vcpkg: C++ Library Manager for Windows, Linux, and MacOS|https://github.com/Microsoft/vcpkg]]
 * [[GitHub - onqtam/awesome-cmake: A curated list of awesome CMake resources, scripts, modules and examples.|https://github.com/onqtam/awesome-cmake#package-management--build-systems]]
