@@ -133,6 +133,23 @@ submodule using <code>cpm</code> then <code>cpanm</code>.</li>
 <li>Perhaps need to generate cpanfile in each repo, only install and run
 <code>App::scan_prereqs_cpanfile</code> if <code>cpanfile</code> missing.</li>
 </ul></li>
+<li>decreasing deps:
+<ul>
+<li>Need to outline a set of modules that are pure-Perl or can be translated
+to pure-Perl equivalents.</li>
+<li>Some of these can be installed as the base dependencies of all the
+Orbital::Payload::* modules.</li>
+<li>Others need to be set up to be installed based on context:
+<ul>
+<li>e.g., if loading on GitHub actions, then load everything needed there</li>
+</ul></li>
+<li>Create a way of specifying features that require different sets of
+modules in a distribution.</li>
+<li>Use a loader function to look up the features needed by a module and
+install if necessary.</li>
+<li>Need to have a context for installation and loading which holds the
+directories for bootstrapping.</li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -197,7 +214,7 @@ e.g., installing CPAN modules to a library directory, running apt-get.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu Feb 11 03:24:29 2021</span>
+Last edited <span class="date">Sat Feb 13 23:13:04 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
