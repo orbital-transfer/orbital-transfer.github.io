@@ -25,6 +25,19 @@
     * steps: same as before
         + Perhaps need to generate cpanfile in each repo, only install and run
           `App::scan_prereqs_cpanfile` if `cpanfile` missing.
+    * decreasing deps:
+        + Need to outline a set of modules that are pure-Perl or can be translated
+          to pure-Perl equivalents.
+        + Some of these can be installed as the base dependencies of all the
+          Orbital::Payload::* modules.
+        + Others need to be set up to be installed based on context:
+            + e.g., if loading on GitHub actions, then load everything needed there
+        + Create a way of specifying features that require different sets of
+          modules in a distribution.
+        + Use a loader function to look up the features needed by a module and
+          install if necessary.
+        + Need to have a context for installation and loading which holds the
+          directories for bootstrapping.
 
 # Workflow graph
 
