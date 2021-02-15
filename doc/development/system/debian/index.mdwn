@@ -1,0 +1,4 @@
+[[!meta title="Debian"]]
+
+- https://wiki.debian.org/SupportedArchitectures
+- https://wiki.debian.org/PackageManagement
