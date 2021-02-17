@@ -41,14 +41,6 @@
 
 
 
-# Chocolatey
-
-* [[chocolatey - How to choose between 32 bit or 64 bit version of a package? - Super User|https://superuser.com/questions/1167112/how-to-choose-between-32-bit-or-64-bit-version-of-a-package]]
-* [[CommandsInstall · chocolatey/choco Wiki · GitHub|https://github.com/chocolatey/choco/wiki/CommandsInstall]]
-* [[Chocolatey Software - Installing Chocolatey|https://chocolatey.org/install]]
-
-
-
 # Indexing / Search
 
 * [[Perl-Tags-0.32 - Generate (possibly exuberant) Ctags style tags for Perl sourcecode - metacpan.org|https://metacpan.org/release/Perl-Tags]]
