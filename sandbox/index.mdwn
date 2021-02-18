@@ -74,15 +74,6 @@
 * [[Ultimate vs. Community - Compare Editions - IntelliJ IDEA|http://www.jetbrains.com/idea/features/editions_comparison_matrix.html]]
 
 
-# TeX
-
-* [[CTAN: Comprehensive TeX Archive Network|https://ctan.org/]]
-* [[TeX Live - TeX Users Group|http://tug.org/texlive/]]
-    + [[TinyTeX - A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live - Yihui Xie - 谢益辉|https://yihui.name/tinytex/]]
-* [[Home - MiKTeX.org|https://miktex.org/]]
-* [[portability - Portable minimal distribution - TeX - LaTeX Stack Exchange|https://tex.stackexchange.com/questions/13649/portable-minimal-distribution]]
-    + [[KerGIS.com: kerTeX : Take Care of TeX!|http://kertex.kergis.com/en/index.html]]
-
 # Meson
 
 - [[Using the WrapDB|http://mesonbuild.com/Using-the-WrapDB.html]]
