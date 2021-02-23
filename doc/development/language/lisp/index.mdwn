@@ -1,0 +1,8 @@
+[[!meta title="Lisp"]]
+
+# SLIME
+
+* [[SLIME: The Superior Lisp Interaction Mode for Emacs|https://common-lisp.net/project/slime/]]
+* [[EmacsWiki: Slime Mode|https://www.emacswiki.org/emacs/SlimeMode]]
+* [[CLiki: SLIME|http://www.cliki.net/SLIME]]
+* [[CLiki: ILISP|http://www.cliki.net/ILISP]]

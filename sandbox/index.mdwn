@@ -51,13 +51,6 @@
 * [[GNU GLOBAL source code tagging system|https://www.gnu.org/software/global/global.html]]
 * [[Comparison with Similar Tools · oracle/opengrok Wiki · GitHub|https://github.com/OpenGrok/OpenGrok/wiki/Comparison-with-Similar-Tools]]
 
-# SLIME
-
-* [[SLIME: The Superior Lisp Interaction Mode for Emacs|https://common-lisp.net/project/slime/]]
-* [[EmacsWiki: Slime Mode|https://www.emacswiki.org/emacs/SlimeMode]]
-* [[CLiki: SLIME|http://www.cliki.net/SLIME]]
-* [[CLiki: ILISP|http://www.cliki.net/ILISP]]
-
 # IntelliJ
 
 * [[GitHub - JetBrains/intellij-community: IntelliJ IDEA Community Edition & IntelliJ Platform|https://github.com/JetBrains/intellij-community]]
