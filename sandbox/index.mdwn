@@ -1,21 +1,6 @@
 [[!meta title="Sandbox"]]
 [[!meta description="Page for throwing information temporarily that will be organised later"]]
 
-
-# Cross compilers
-
-* [[Cross compiler - Wikipedia|https://en.wikipedia.org/wiki/Cross_compiler]]
-* [[GitHub - arsv/perl-cross: configure and cross-compile perl|https://github.com/arsv/perl-cross]]
-* [[GitHub - crosstool-ng/crosstool-ng: A versatile (cross-)toolchain generator.|https://github.com/crosstool-ng/crosstool-ng]]
-* [[GitHub - dockcross/dockcross: Cross compiling toolchains in Docker images|https://github.com/dockcross/dockcross]]
-* [[GitHub - multiarch/crossbuild: multiarch cross compiling environments|https://github.com/multiarch/crossbuild]]
-* [[GitHub - ruslo/polly: Collection of CMake toolchain files and scripts for cross-platform build and CI testing (GCC, Visual Studio, iOS, Android, Clang analyzer, sanitizers etc.)|https://github.com/ruslo/polly]]
-* [[GitHub - steeve/cross-compiler: Dockerfiles for cross compiling environments|https://github.com/steeve/cross-compiler]]
-* [[GitHub - SynoCommunity/spksrc: Cross compilation framework to create native packages for the Synology's NAS|https://github.com/SynoCommunity/spksrc]]
-* [[GitHub - Tatsh/xchain: A cross compiler toolchain targeting macOS/iOS/etc.|https://github.com/Tatsh/xchain]]
-* [[GitHub - tpoechtrager/osxcross: Mac OS X cross toolchain for Linux, FreeBSD, OpenBSD and Android (Termux)|https://github.com/tpoechtrager/osxcross]]
-* [[GitHub - weswigham/cross: Cross-compiler environment management|https://github.com/weswigham/cross]]
-
 # C/C++ package management
 
 * [[GitHub - ruslo/hunter|https://github.com/ruslo/hunter]]
