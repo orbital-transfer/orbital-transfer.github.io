@@ -78,3 +78,9 @@ Module specificity:
 - [[PPR - Pattern-based Perl Recognizer - metacpan.org|https://metacpan.org/pod/PPR]]
 - [[Babble - EXPERIMENTAL Babel-like for perl - metacpan.org|https://metacpan.org/pod/Babble]]
 - [[Guacamole - A parser toolkit for Standard Perl - metacpan.org|https://metacpan.org/pod/Guacamole]]
+- https://metacpan.org/pod/SPVM
+    * https://github.com/yuki-kimoto/SPVM
+    * https://yuki-kimoto.github.io/spvmdoc-public/language.html
+- https://metacpan.org/pod/RPerl
+- https://github.com/perl11
+    * http://perl11.github.io/
