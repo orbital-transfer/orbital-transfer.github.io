@@ -9,3 +9,13 @@
 - <http://xsb.sourceforge.net/>
 - <https://www.swi-prolog.org/>
 - <https://github.com/mthom/scryer-prolog>
+
+# Language extensions
+
+- <https://logtalk.org/>
+- <https://en.wikipedia.org/wiki/Constraint_logic_programming>
+    * <https://en.wikipedia.org/wiki/CLP(R)>
+    * <https://www.swi-prolog.org/pldoc/man?section=clp>
+    * <https://en.wikipedia.org/wiki/Constraint_Handling_Rules>
+        + <https://dtai.cs.kuleuven.be/CHR/books.shtml>
+- <https://en.wikipedia.org/wiki/Definite_clause_grammar>
