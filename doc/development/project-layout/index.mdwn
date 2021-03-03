@@ -1,0 +1,11 @@
+[[!meta title="Project layout"]]
+
+# Project directories
+
+- Documentation
+- Library code
+- Testing code
+
+# Poly-repo versus mono-repo
+
+- TODO: Add info from main page.
