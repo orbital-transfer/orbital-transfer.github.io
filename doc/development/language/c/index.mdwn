@@ -4,3 +4,4 @@
 - <https://musl.libc.org/manual.html>
 - <http://www.open-std.org/JTC1/SC22/WG14/>
 - <https://pubs.opengroup.org/onlinepubs/9699919799/>
+- <https://uclibc.org/specs.html>
