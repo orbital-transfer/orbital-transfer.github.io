@@ -1,5 +1,7 @@
 [[!meta title="Prolog"]]
 
+# Packaging
+
 - SWI-Prolog
     * [[prolog_pack.pl -- A package manager for Prolog|https://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl]]
 
@@ -9,6 +11,7 @@
 - <http://xsb.sourceforge.net/>
 - <https://www.swi-prolog.org/>
 - <https://github.com/mthom/scryer-prolog>
+- <https://github.com/tau-prolog/tau-prolog>
 
 # Language extensions
 
