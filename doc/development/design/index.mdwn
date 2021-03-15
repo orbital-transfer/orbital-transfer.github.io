@@ -58,3 +58,14 @@
     * <https://metacpan.org/pod/Bencher::Scenario::GraphTopologicalSortModules>
         + <https://metacpan.org/pod/Data::Graph::Util>
         + <https://metacpan.org/pod/Algorithm::Dependency>
+
+# Organisation of project
+
+- Payload:
+    * Environment: language
+    * System:
+        + Operating system
+        + Package management system
+    * Service:
+        + Usually a web service
+    * VCS: version control system
