@@ -12,6 +12,7 @@
 - <https://www.swi-prolog.org/>
 - <https://github.com/mthom/scryer-prolog>
 - <https://github.com/tau-prolog/tau-prolog>
+- <https://github.com/infradig/trealla>
 
 # Language extensions
 
