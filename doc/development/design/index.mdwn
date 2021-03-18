@@ -43,9 +43,17 @@
 
 - Task
     * Something that can be run.
+        + `exec()` calls
+        + code
+    * Can succeed or fail.
+        + A future?
     * Has dependencies.
     * Has inputs / outputs
-        + Can be parameters, directories, files
+        + Can be variables (e.g., parameters), directories, files
+        + Outputs: stdout/stderr
+    * Dependency graph:
+        + e.g., Task B depends on A.output0
+    * Tasks can have a mergeable role.
     * Can have specialised tasks for CIs
         + e.g., on GitHub Actions, this would indicate which
           OS the task is running on
@@ -58,6 +66,21 @@
     * <https://metacpan.org/pod/Bencher::Scenario::GraphTopologicalSortModules>
         + <https://metacpan.org/pod/Data::Graph::Util>
         + <https://metacpan.org/pod/Algorithm::Dependency>
+- Workflow graph
+    * DAG
+        + Maybe in the future use strongly connected components to do
+          condensation of any directed graph?
+- `Task::Apt::Install`
+    * Definition of `Task::Apt::Install`
+        + `apt-get install [-y] [package-list]`
+            + where `-y` option is boolean and optional.
+            + where `package-list` option is array and required.
+    * Given two tasks of type `Task::Apt::Install`,
+        + Mutually exclusive: can not run multiple instances of
+          `Task::Apt::Install` at the same time since they all require
+          access to the `dpkg` lock.
+        + Mergeable: if the options other than `package-list` are the same,
+          then they can be merged by merging the arrays of `package-list`.
 
 # Organisation of project
 
