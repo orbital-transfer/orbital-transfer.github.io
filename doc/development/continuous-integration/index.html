@@ -224,16 +224,22 @@ of the CI cacheing mechanism so that they can be shared across repos.</p>
 
 <ol>
 <li>Given
-a. Projects { P_A, P_B }
-b. Tasks { Task₀, Task₁ }
-c. OS <em>os</em> and architecture <em>arch</em> (determined by what the workflow is running on); (ignoring APIs/ABIs for now)</li>
+<ol>
+<li>Projects { P_A, P_B }</li>
+<li>Tasks { Task₀, Task₁ }</li>
+<li>OS <em>os</em> and architecture <em>arch</em> (determined by what the workflow is running on); (ignoring APIs/ABIs for now)</li>
+</ol></li>
 <li>VersionString(P_A) = V_A, VersionString(P_B) = V_B
-a. e.g., using <code>git describe --always</code></li>
+<ol>
+<li>e.g., using <code>git describe --always</code></li>
+</ol></li>
 <li>Task₀(P_A) has output A_O₀{V_A, <em>os</em>,<em>arch</em>}.</li>
 <li>Where Task₁(P_B) running on {<em>os</em>,<em>arch</em>} depends on A_O₀{V_A,<em>os</em>,<em>arch</em>}
-a. V_A for P_B is determined by turning a project dependency such as <code>B
-   has-runtime-dependency-on (P_A where P_A source is git:A @ master)</code>
-   into a concrete dependency.</li>
+<ol>
+<li>V_A for P_B is determined by turning a project dependency such as <code>B
+has-runtime-dependency-on (P_A where P_A source is git:A @ master)</code>
+into a concrete dependency.</li>
+</ol></li>
 </ol>
 
 <p>Specifically on GitHub:</p>
@@ -324,7 +330,7 @@ Links:
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Mar 19 02:32:43 2021</span>
+Last edited <span class="date">Fri Mar 19 02:38:31 2021</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 
