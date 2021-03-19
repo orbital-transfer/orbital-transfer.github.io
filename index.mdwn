@@ -246,6 +246,8 @@ the combination that needs to be supported:
 - Build systems: CMake, Gradle.
 - Remote transport: SSH, WinRM
 - Servers: HTTP, DBs, X11, VNC
+- Configuration: files, environment variables (e.g.,
+  application-specific such as `PORT`, linker-specific such as `LD_PRELOAD`)
 
 This is not hopelessly complex as each aspect has a straightforward way of
 using them. One just has to figure out how to combine each of these
