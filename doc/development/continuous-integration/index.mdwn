@@ -1,5 +1,66 @@
 [[!meta title="Continuous integration"]]
 
+# Design of CI configuration
+
+- Script
+    * Bourne shell script
+    * PowerShell script
+- Script should be source-able using the same script for every CI service
+  (because generating multiple scripts means changing those scripts). Then the
+  script in turn should do something different based on which CI is being used
+  (detected using the environment variables).
+
+- Steps for CI should have information on how to retrieve modules/distributions.
+  For example, inside a monorepo this is a directory.
+
+## Caching
+
+- Caching inside of a single CI system: this can be used for artifacts that
+  are created internally to the build that can be rebuilt as long as inputs do
+  not change.
+    * e.g., for a given repo, the dependencies installed from CPAN
+- Caching outside of the CI system: some build artifacts can be stored outside
+  of the CI caching mechanism so that they can be shared across repos.
+    1. Given
+        1. Projects { P_A, P_B }
+        2. Tasks { Task₀, Task₁ }
+        3. OS *os* and architecture *arch* (determined by what the workflow is running on); (ignoring APIs/ABIs for now)
+    2. VersionString(P_A) = V_A, VersionString(P_B) = V_B
+        1. e.g., using `git describe --always`
+    3. Task₀(P_A) has output A_O₀{V_A, *os*,*arch*}.
+    4. Where Task₁(P_B) running on {*os*,*arch*} depends on A_O₀{V_A,*os*,*arch*}
+        1. V_A for P_B is determined by turning a project dependency such as `P_B
+           has-runtime-dependency-on (P_A where P_A source is git:A @ master)`
+           into a concrete dependency.
+
+  Specifically on GitHub:
+    - Workflow running on every push, pull request:
+        1. We can store A_O₀{V_A,*os*,*arch*} as a GitHub
+           release under tag `continuous-build` when finished running
+           Task₀(P_A) under the CI workflow for P_A for the default/release branch (e.g.,
+           master).
+        2. When running Task₁(P_B) under the CI workflow for P_B, retrieve A_O₀{V_A,*os*,*arch*}
+           from GitHub releases if it exists. Otherwise build A_O₀{V_A,*os*,*arch*}
+           inside of the CI workflow.
+    - Workflow running on every tag creation:
+        1. When running Task₀(P_A) under the CI workflow for P_A, delete all
+           A_O₀{Version,Os,Arch} where Version < VersionString(P_A).
+
+## Examples
+
+<ul>
+<li> Travis CI:
+[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/travis.yml" raw=yes ]] """]]
+</li>
+<li> AppVeyor:
+[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/appveyor.yml" raw=yes ]] """]]
+</li>
+<li>
+GitHub Actions:
+[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/github-actions.yml" raw=yes ]] """]]
+</li>
+</ul>
+
 # Services
 
 ## GitHub Actions
@@ -67,63 +128,3 @@ Examples:
     * <https://tonyxu.io/posts/2018/use-gitlab-ci-to-run-free-scheduled-jobs/>
     * <https://medium.com/@Maxime_/get-free-cron-jobs-with-gitlab-78f57e086453>
 
-# Design of CI configuration
-
-- Script
-    * Bourne shell script
-    * PowerShell script
-- Script should be source-able using the same script for every CI service
-  (because generating multiple scripts means changing those scripts). Then the
-  script in turn should do something different based on which CI is being used
-  (detected using the environment variables).
-
-- Steps for CI should have information on how to retrieve modules/distributions.
-  For example, inside a monorepo this is a directory.
-
-## Caching
-
-- Caching inside of a single CI system: this can be used for artifacts that
-  are created internally to the build that can be rebuilt as long as inputs do
-  not change.
-    * e.g., for a given repo, the dependencies installed from CPAN
-- Caching outside of the CI system: some build artifacts can be stored outside
-  of the CI caching mechanism so that they can be shared across repos.
-    1. Given
-        1. Projects { P_A, P_B }
-        2. Tasks { Task₀, Task₁ }
-        3. OS *os* and architecture *arch* (determined by what the workflow is running on); (ignoring APIs/ABIs for now)
-    2. VersionString(P_A) = V_A, VersionString(P_B) = V_B
-        1. e.g., using `git describe --always`
-    3. Task₀(P_A) has output A_O₀{V_A, *os*,*arch*}.
-    4. Where Task₁(P_B) running on {*os*,*arch*} depends on A_O₀{V_A,*os*,*arch*}
-        1. V_A for P_B is determined by turning a project dependency such as `P_B
-           has-runtime-dependency-on (P_A where P_A source is git:A @ master)`
-           into a concrete dependency.
-
-  Specifically on GitHub:
-    - Workflow running on every push, pull request:
-        1. We can store A_O₀{V_A,*os*,*arch*} as a GitHub
-           release under tag `continuous-build` when finished running
-           Task₀(P_A) under the CI workflow for P_A for the default/release branch (e.g.,
-           master).
-        2. When running Task₁(P_B) under the CI workflow for P_B, retrieve A_O₀{V_A,*os*,*arch*}
-           from GitHub releases if it exists. Otherwise build A_O₀{V_A,*os*,*arch*}
-           inside of the CI workflow.
-    - Workflow running on every tag creation:
-        1. When running Task₀(P_A) under the CI workflow for P_A, delete all
-           A_O₀{Version,Os,Arch} where Version < VersionString(P_A).
-
-## Examples
-
-<ul>
-<li> Travis CI:
-[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/travis.yml" raw=yes ]] """]]
-</li>
-<li> AppVeyor:
-[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/appveyor.yml" raw=yes ]] """]]
-</li>
-<li>
-GitHub Actions:
-[[!format yml """ [[!inline pagenames="doc/development/continuous-integration/example/github-actions.yml" raw=yes ]] """]]
-</li>
-</ul>
