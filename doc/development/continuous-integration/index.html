@@ -210,6 +210,53 @@ script in turn should do something different based on which CI is being used
 For example, inside a monorepo this is a directory.</p></li>
 </ul>
 
+<h2 id="cacheing">Cacheing</h2>
+
+<ul>
+<li>Cacheing inside of a single CI system: this can be used for artifacts that
+are created internally to the build that can be rebuilt as long as inputs do
+not change.
+<ul>
+<li>e.g., for a given repo, the dependencies installed from CPAN</li>
+</ul></li>
+<li><p>Cacheing outside of the CI system: some build artifacts can be stored outside
+of the CI cacheing mechanism so that they can be shared across repos.</p>
+
+<ol>
+<li>Given
+a. Projects { P_A, P_B }
+b. Tasks { Task₀, Task₁ }
+c. OS <em>os</em> and architecture <em>arch</em> (determined by what the workflow is running on); (ignoring APIs/ABIs for now)</li>
+<li>VersionString(P_A) = V_A, VersionString(P_B) = V_B
+a. e.g., using <code>git describe --always</code></li>
+<li>Task₀(P_A) has output A_O₀{V_A, <em>os</em>,<em>arch</em>}.</li>
+<li>Where Task₁(P_B) running on {<em>os</em>,<em>arch</em>} depends on A_O₀{V_A,<em>os</em>,<em>arch</em>}
+a. V_A for P_B is determined by turning a project dependency such as <code>B
+   has-runtime-dependency-on (P_A where P_A source is git:A @ master)</code>
+   into a concrete dependency.</li>
+</ol>
+
+<p>Specifically on GitHub:</p>
+
+<ul>
+<li>Workflow running on every push, pull request:
+<ol>
+<li>We can store A_O₀{V_A,<em>os</em>,<em>arch</em>} as a GitHub
+release under tag <code>continuous-build</code> when finished running
+Task₀(P_A) under the CI workflow for P_A for the default/release branch (e.g.,
+master).</li>
+<li>When running Task₁(P_B) under the CI workflow for P_B, retrieve A_O₀{V_A,<em>os</em>,<em>arch</em>}
+from GitHub releases if it exists. Otherwise build A_O₀{V_A,<em>os</em>,<em>arch</em>}
+inside of the CI workflow.</li>
+</ol></li>
+<li>Workflow running on every tag creation:
+<ol>
+<li>When running Task₀(P_A) under the CI workflow for P_A, delete all
+A_O₀{Version,Os,Arch} where Version &lt; VersionString(P_A).</li>
+</ol></li>
+</ul></li>
+</ul>
+
 <h2 id="examples">Examples</h2>
 
 <ul>
@@ -277,7 +324,7 @@ Links:
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Jan 22 21:47:27 2021</span>
+Last edited <span class="date">Fri Mar 19 02:32:43 2021</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 

@@ -158,12 +158,26 @@ directories for bootstrapping.</li>
 <ul>
 <li>Task
 <ul>
-<li>Something that can be run.</li>
+<li>Something that can be run.
+<ul>
+<li><code>exec()</code> calls</li>
+<li>code</li>
+</ul></li>
+<li>Can succeed or fail.
+<ul>
+<li>A future?</li>
+</ul></li>
 <li>Has dependencies.</li>
 <li>Has inputs / outputs
 <ul>
-<li>Can be parameters, directories, files</li>
+<li>Can be variables (e.g., parameters), directories, files</li>
+<li>Outputs: stdout/stderr</li>
 </ul></li>
+<li>Dependency graph:
+<ul>
+<li>e.g., Task B depends on A.output0</li>
+</ul></li>
+<li>Tasks can have a mergeable role.</li>
 <li>Can have specialised tasks for CIs
 <ul>
 <li>e.g., on GitHub Actions, this would indicate which
@@ -185,6 +199,33 @@ e.g., installing CPAN modules to a library directory, running apt-get.</li>
 <ul>
 <li><a href="https://metacpan.org/pod/Data::Graph::Util">https://metacpan.org/pod/Data::Graph::Util</a></li>
 <li><a href="https://metacpan.org/pod/Algorithm::Dependency">https://metacpan.org/pod/Algorithm::Dependency</a></li>
+</ul></li>
+</ul></li>
+<li>Workflow graph
+<ul>
+<li>DAG
+<ul>
+<li>Maybe in the future use strongly connected components to do
+condensation of any directed graph?</li>
+</ul></li>
+</ul></li>
+<li><code>Task::Apt::Install</code>
+<ul>
+<li>Definition of <code>Task::Apt::Install</code>
+<ul>
+<li><code>apt-get install [-y] [package-list]</code>
+<ul>
+<li>where <code>-y</code> option is boolean and optional.</li>
+<li>where <code>package-list</code> option is array and required.</li>
+</ul></li>
+</ul></li>
+<li>Given two tasks of type <code>Task::Apt::Install</code>,
+<ul>
+<li>Mutually exclusive: can not run multiple instances of
+<code>Task::Apt::Install</code> at the same time since they all require
+access to the <code>dpkg</code> lock.</li>
+<li>Mergeable: if the options other than <code>package-list</code> are the same,
+then they can be merged by merging the arrays of <code>package-list</code>.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -233,7 +274,7 @@ e.g., installing CPAN modules to a library directory, running apt-get.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Mon Mar 15 22:14:59 2021</span>
+Last edited <span class="date">Thu Mar 18 22:48:12 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
