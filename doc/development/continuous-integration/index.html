@@ -166,7 +166,7 @@ A_O₀{Version,Os,Arch} where Version &lt; VersionString(P_A).</li>
 <li> Travis CI:
 <div class="highlight-yml"><pre class="hl"> 
 <span class="hl kwa">install:</span> skip
-<span class="hl kwa">script:</span> eval $<span class="hl opt">(</span>curl .../bootstrap.sh <span class="hl opt">)</span>
+<span class="hl kwa">script:</span> eval <span class="hl str">&quot;$(curl .../bootstrap.sh)&quot;</span>
 
 </pre></div>
 </li>
@@ -188,7 +188,7 @@ GitHub Actions:
       - <span class="hl kwa">uses:</span> actions/checkout&#64;v<span class="hl num">2</span>
       - <span class="hl kwa">name:</span> Run Orbital Transfer
         <span class="hl kwa">run:</span> <span class="hl opt">|</span>
-          <span class="hl kwb">sudo</span> <span class="hl kwc">apt</span>-get install ikiwiki libtext-multimarkdown-perl
+          eval <span class="hl str">&quot;$(curl .../bootstrap.sh)&quot;</span>
 
 </pre></div>
 </li>
