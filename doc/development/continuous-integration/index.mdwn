@@ -89,14 +89,14 @@ Examples:
 - Cacheing outside of the CI system: some build artifacts can be stored outside
   of the CI cacheing mechanism so that they can be shared across repos.
     1. Given
-        a. Projects { P_A, P_B }
-        b. Tasks { Task₀, Task₁ }
-        c. OS *os* and architecture *arch* (determined by what the workflow is running on); (ignoring APIs/ABIs for now)
+        1. Projects { P_A, P_B }
+        2. Tasks { Task₀, Task₁ }
+        3. OS *os* and architecture *arch* (determined by what the workflow is running on); (ignoring APIs/ABIs for now)
     2. VersionString(P_A) = V_A, VersionString(P_B) = V_B
-        a. e.g., using `git describe --always`
+        1. e.g., using `git describe --always`
     3. Task₀(P_A) has output A_O₀{V_A, *os*,*arch*}.
     4. Where Task₁(P_B) running on {*os*,*arch*} depends on A_O₀{V_A,*os*,*arch*}
-        a. V_A for P_B is determined by turning a project dependency such as `B
+        1. V_A for P_B is determined by turning a project dependency such as `B
            has-runtime-dependency-on (P_A where P_A source is git:A @ master)`
            into a concrete dependency.
 
