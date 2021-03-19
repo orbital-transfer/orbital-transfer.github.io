@@ -80,14 +80,14 @@ Examples:
 - Steps for CI should have information on how to retrieve modules/distributions.
   For example, inside a monorepo this is a directory.
 
-## Cacheing
+## Caching
 
-- Cacheing inside of a single CI system: this can be used for artifacts that
+- Caching inside of a single CI system: this can be used for artifacts that
   are created internally to the build that can be rebuilt as long as inputs do
   not change.
     * e.g., for a given repo, the dependencies installed from CPAN
-- Cacheing outside of the CI system: some build artifacts can be stored outside
-  of the CI cacheing mechanism so that they can be shared across repos.
+- Caching outside of the CI system: some build artifacts can be stored outside
+  of the CI caching mechanism so that they can be shared across repos.
     1. Given
         1. Projects { P_A, P_B }
         2. Tasks { Task₀, Task₁ }
