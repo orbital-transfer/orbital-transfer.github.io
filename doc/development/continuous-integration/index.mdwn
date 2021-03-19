@@ -96,7 +96,7 @@ Examples:
         1. e.g., using `git describe --always`
     3. Task₀(P_A) has output A_O₀{V_A, *os*,*arch*}.
     4. Where Task₁(P_B) running on {*os*,*arch*} depends on A_O₀{V_A,*os*,*arch*}
-        1. V_A for P_B is determined by turning a project dependency such as `B
+        1. V_A for P_B is determined by turning a project dependency such as `P_B
            has-runtime-dependency-on (P_A where P_A source is git:A @ master)`
            into a concrete dependency.
 
