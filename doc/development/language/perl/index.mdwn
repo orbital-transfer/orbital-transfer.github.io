@@ -84,3 +84,4 @@ Module specificity:
 - https://metacpan.org/pod/RPerl
 - https://github.com/perl11
     * http://perl11.github.io/
+- <https://www.sunstarsys.com/essays/perl7-sealed-lexicals>
