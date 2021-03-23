@@ -85,3 +85,7 @@ Module specificity:
 - https://github.com/perl11
     * http://perl11.github.io/
 - <https://www.sunstarsys.com/essays/perl7-sealed-lexicals>
+    * [[This Week on p5p 2000/06/25|https://www.perl.com/pub/2000/06/p5pdigest/THISWEEK-20000625.html/#Method_Lookup_Speedup_]]
+    * [[Notes on Doug's Method Lookup Patch|https://www.perl.com/pub/2000/06/dougpatch.html/]]
+    * [[Speeding up method lookups - nntp.perl.org|https://www.nntp.perl.org/group/perl.perl5.porters/2000/05/msg13255.html]]
+    * [[resolving methods at compile time - nntp.perl.org|https://www.nntp.perl.org/group/perl.perl5.porters/2005/08/msg104029.html]]
