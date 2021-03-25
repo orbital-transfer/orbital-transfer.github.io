@@ -7,3 +7,8 @@
 * [[portability - Portable minimal distribution - TeX - LaTeX Stack Exchange|https://tex.stackexchange.com/questions/13649/portable-minimal-distribution]]
     + [[KerGIS.com: kerTeX : Take Care of TeX!|http://kertex.kergis.com/en/index.html]]
 * <https://www.nongnu.org/chktex/>
+
+* <https://en.wikipedia.org/wiki/BibTeX>
+    + <https://metacpan.org/pod/BibTeX::Parser>
+    + <https://metacpan.org/pod/Text::BibTeX>
+    + <http://biblatex-biber.sourceforge.net/>
