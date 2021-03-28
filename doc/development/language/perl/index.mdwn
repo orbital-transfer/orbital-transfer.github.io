@@ -66,6 +66,10 @@ Module specificity:
 - <https://metacpan.org/release/Module-ScanDeps>
 - <https://metacpan.org/release/Tangerine>
 
+- <https://metacpan.org/pod/OrePAN2>
+- <https://metacpan.org/pod/App::opan>
+- <https://metacpan.org/release/App-plx>
+
 # Benchmarking, Profiling
 
 - <https://metacpan.org/pod/Dumbbench>
