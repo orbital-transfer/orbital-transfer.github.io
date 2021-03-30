@@ -69,6 +69,8 @@ Module specificity:
 - <https://metacpan.org/pod/OrePAN2>
 - <https://metacpan.org/pod/App::opan>
 - <https://metacpan.org/release/App-plx>
+- <https://github.com/skaji/Carl>
+- <https://metacpan.org/release/CPAN-Mirror-Tiny>
 
 # Benchmarking, Profiling
 
