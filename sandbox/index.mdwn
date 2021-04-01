@@ -24,7 +24,22 @@
 * [[Pants|https://www.pantsbuild.org/]]
 * [[Welcome to the BuildStream project - BuildStream, the software integration tool|https://www.buildstream.build/]]
 
+# Debugging / profiling / coverage tools for C/C++
 
+- [[GitHub - google/sanitizers: AddressSanitizer, ThreadSanitizer, MemorySanitizer|https://github.com/google/sanitizers]]
+    * [[ThreadSanitizer — Clang 12 documentation|https://clang.llvm.org/docs/ThreadSanitizer.html]]
+    * [[UndefinedBehaviorSanitizer — Clang 12 documentation|https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html]]
+    * [[AddressSanitizer - Wikipedia|https://en.wikipedia.org/wiki/AddressSanitizer]]
+    * [[Sanitizer support · The Julia Language|https://docs.julialang.org/en/v1/devdocs/sanitizers/]]
+    * [[ThreadSanitizer (TSan) v. 2 - The Chromium Projects|https://www.chromium.org/developers/testing/threadsanitizer-tsan-v2]]
+- [[GitHub - google/AFL: american fuzzy lop - a security-oriented fuzzer|https://github.com/google/AFL]]
+- [[Perf Wiki|https://perf.wiki.kernel.org/index.php/Main_Page]]
+- [[Gcov (Using the GNU Compiler Collection (GCC))|http://gcc.gnu.org/onlinedocs/gcc/Gcov.html]]
+    * [[GitHub - gcovr/gcovr: generate code coverage reports with gcc/gcov|https://github.com/gcovr/gcovr]]
+- [[Top (GNU gprof)|http://sourceware.org/binutils/docs/gprof/]]
+- [[Callgrind - Valgrind|https://valgrind.org/docs/manual/cl-manual.html]]
+- [[GDB: The GNU Project Debugger|https://www.gnu.org/software/gdb/]]
+- [[LLDB Homepage — The LLDB Debugger|https://lldb.llvm.org/]]
 
 # Indexing / Search
 
