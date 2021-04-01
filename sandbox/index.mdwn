@@ -33,6 +33,7 @@
     * [[Sanitizer support · The Julia Language|https://docs.julialang.org/en/v1/devdocs/sanitizers/]]
     * [[ThreadSanitizer (TSan) v. 2 - The Chromium Projects|https://www.chromium.org/developers/testing/threadsanitizer-tsan-v2]]
 - [[GitHub - google/AFL: american fuzzy lop - a security-oriented fuzzer|https://github.com/google/AFL]]
+- [[GitHub - AFLplusplus/AFLplusplus: The fuzzer afl++ is afl with community patches, qemu 5.1 upgrade, collision-free coverage, enhanced laf-intel & redqueen, AFLfast++ power schedules, MOpt mutators, unicorn_mode, and a lot more!|https://github.com/AFLplusplus/AFLplusplus]]
 - [[Perf Wiki|https://perf.wiki.kernel.org/index.php/Main_Page]]
 - [[Gcov (Using the GNU Compiler Collection (GCC))|http://gcc.gnu.org/onlinedocs/gcc/Gcov.html]]
     * [[GitHub - gcovr/gcovr: generate code coverage reports with gcc/gcov|https://github.com/gcovr/gcovr]]
