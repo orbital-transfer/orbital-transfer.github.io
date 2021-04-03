@@ -65,3 +65,10 @@
 # Language Server
 
 - [[LSIF.dev|https://lsif.dev]]
+
+# Repository indexes
+
+- <https://repology.org/>
+- <https://pkgs.org/>
+- <https://release-monitoring.org>
+- <https://reposcope.com/>
