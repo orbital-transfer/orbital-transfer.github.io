@@ -46,6 +46,16 @@
         1. When running Task₀(P_A) under the CI workflow for P_A, delete all
            A_O₀{Version,Os,Arch} where Version < VersionString(P_A).
 
+## Multiple version testing
+
+For example, say you want to test a binding library B that binds to library A
+(e.g., FFI-based binding).
+
+- You can build and install all different versions of A in parallel into different folders.
+- You only need to build the dependencies of library B once since they do not
+  depend on library A.
+- You build library B with a different path to test each version.
+
 ## Examples
 
 <ul>
