@@ -72,6 +72,14 @@ Module specificity:
 - <https://github.com/skaji/Carl>
 - <https://metacpan.org/release/CPAN-Mirror-Tiny>
 
+# Dist tools
+
+- <https://metacpan.org/pod/Dist::Milla>
+- <https://metacpan.org/pod/Dist::Iller>
+- <https://metacpan.org/release/Minilla>
+- <https://dev.to/haarg/distar-a-cpan-distribution-author-tool-5e95>
+- <https://metacpan.org/pod/Zilla::Dist>
+
 # Benchmarking, Profiling
 
 - <https://metacpan.org/pod/Dumbbench>
