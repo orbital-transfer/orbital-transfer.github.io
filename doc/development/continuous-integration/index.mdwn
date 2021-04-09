@@ -138,3 +138,11 @@ Examples:
     * <https://tonyxu.io/posts/2018/use-gitlab-ci-to-run-free-scheduled-jobs/>
     * <https://medium.com/@Maxime_/get-free-cron-jobs-with-gitlab-78f57e086453>
 
+# Common features
+
+- Skipping commits by using directive in commit message:
+    * e.g., `[skip ci]`, `[ci skip]`.
+    * GHA: <https://github.blog/changelog/2021-02-08-github-actions-skip-pull-request-and-push-workflows-with-skip-ci/>
+- CI environment information
+    * <https://github.com/watson/ci-info>
+    * <https://metacpan.org/pod/Test::CI>
