@@ -54,6 +54,9 @@
     * Dependency graph:
         + e.g., Task B depends on A.output0
     * Tasks can have a mergeable role.
+    * Tasks can have a retryable role.
+    * Tasks can have subtasks?
+        + A graph of subtasks?
     * Can have specialised tasks for CIs
         + e.g., on GitHub Actions, this would indicate which
           OS the task is running on
