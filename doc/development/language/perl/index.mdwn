@@ -48,6 +48,8 @@ Module specificity:
 
 # Version updating
 
+- <http://blogs.perl.org/users/grinnz/2018/04/a-guide-to-versions-in-perl.html>
+- <https://metacpan.org/pod/Sort::Versions>
 - <https://stackoverflow.com/questions/1454202/how-can-i-automatically-update-perl-modules-version-with-git>
 - <https://metacpan.org/pod/distribution/App-RewriteVersion/script/perl-bump-version>
 - <https://metacpan.org/release/PPI-PowerToys>
