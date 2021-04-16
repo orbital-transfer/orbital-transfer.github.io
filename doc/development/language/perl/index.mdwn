@@ -79,7 +79,15 @@ Module specificity:
 - <https://github.com/skaji/Carl>
 - <https://metacpan.org/release/CPAN-Mirror-Tiny>
 
-# Dist tools
+# Distribution
+
+## Guides
+
+- <https://metacpan.org/pod/Dist::Zilla::Starter>
+- <https://ology.github.io/2021/03/14/releasing-perl-modules-to-cpan/>
+- <http://tynovsky.github.io/cpan-tutorials/>
+
+## Tools
 
 - <https://metacpan.org/pod/Dist::Milla>
 - <https://metacpan.org/pod/Dist::Iller>
