@@ -1,3 +1,5 @@
 [[!meta title="JavaScript"]]
 
+- <https://www.npmjs.com/>
+    * <https://en.wikipedia.org/wiki/Npm_(software)#Alternatives>
 - <https://yarnpkg.com/>
