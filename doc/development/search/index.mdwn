@@ -1,0 +1,7 @@
+[[!meta title="Search"]]
+
+- <https://github.com/Debian/dcs>
+    * https://codesearch.debian.net/
+- https://github.com/google/codesearch
+- https://github.com/BurntSushi/ripgrep/issues/1497
+- https://chromium.github.io/vs-chromium/
