@@ -20,6 +20,7 @@
 - Future
     * config:
         + Install to directory, upload to GitHub
+            - upload to GitHub for cacheing
         + Install to directory at bootstrap time
             + determine the directory to install to using a class
     * steps: same as before
