@@ -7,3 +7,13 @@
 - https://chromium.github.io/vs-chromium/
 - https://github.com/beyondgrep/ack3
 - https://github.com/ggreer/the_silver_searcher
+
+# Indexing / Search
+
+* [[Perl-Tags-0.32 - Generate (possibly exuberant) Ctags style tags for Perl sourcecode - metacpan.org|https://metacpan.org/release/Perl-Tags]]
+* [[ctags regex for multiple declarations in one line - Stack Overflow|https://stackoverflow.com/questions/10741664/ctags-regex-for-multiple-declarations-in-one-line]]
+* [[List files in local git repo? - Stack Overflow|https://stackoverflow.com/questions/8533202/list-files-in-local-git-repo#8533413]]
+* [[Using Cscope and SilentBob to analyze source code - Linux.com|https://www.linux.com/news/using-cscope-and-silentbob-analyze-source-code]]
+* [[CGVG|http://uzix.org/cgvg.html]]
+* [[GNU GLOBAL source code tagging system|https://www.gnu.org/software/global/global.html]]
+* [[Comparison with Similar Tools · oracle/opengrok Wiki · GitHub|https://github.com/OpenGrok/OpenGrok/wiki/Comparison-with-Similar-Tools]]
