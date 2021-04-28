@@ -62,3 +62,10 @@
 - <https://pkgs.org/>
 - <https://release-monitoring.org>
 - <https://reposcope.com/>
+
+# Parsing / static analysis
+
+- [[GitHub - trailofbits/graphtage: A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV.|https://github.com/trailofbits/graphtage]]
+- [[GitHub - returntocorp/pfff: pfff is mainly an OCaml API to write static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.|https://github.com/returntocorp/pfff]]
+- [[GitHub - returntocorp/semgrep: Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.|https://github.com/returntocorp/semgrep]]
+- [[GitHub - tree-sitter/tree-sitter: An incremental parsing system for programming tools|https://github.com/tree-sitter/tree-sitter]]
