@@ -1,5 +1,9 @@
 [[!meta title="Python"]]
 
+# pip
+
+- [[GitHub - pypa/pipfile|https://github.com/pypa/pipfile]]
+
 # Local PyPI
 
 - [[sganis/minirepo: Create a local pypi repository to use pip off-line|https://github.com/sganis/minirepo]]
