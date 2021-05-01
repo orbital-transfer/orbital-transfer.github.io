@@ -1,0 +1,9 @@
+[[!meta title="Matlab-like"]]
+
+- Matlab, Octave, Scilab
+
+## Packages
+
+- Matlab: <https://www.mathworks.com/matlabcentral/fileexchange/>
+- Octave: <https://octave.sourceforge.io/packages.php>
+- Scilab: <https://atoms.scilab.org/>
