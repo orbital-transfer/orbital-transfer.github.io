@@ -96,3 +96,9 @@
     * Service:
         + Usually a web service
     * VCS: version control system
+
+# CI of project modules
+
+- Pull from `launch-site`.
+- For every repo in { `GITHUB_SHA`, `cpanfile-git` } and `launch-site/vendor/`,
+  checkout the version of that repo.
