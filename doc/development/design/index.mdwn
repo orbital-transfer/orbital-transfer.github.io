@@ -89,7 +89,10 @@
 # Organisation of project
 
 - Payload:
-    * Environment: language
+    * Environment:
+        + Language
+        + DB
+        + XWindows
     * System:
         + Operating system
         + Package management system
