@@ -91,7 +91,7 @@
 - Payload:
     * Environment:
         + Language
-        + DB
+        + DB (e.g., PostgreSQL, MySQL)
         + XWindows
     * System:
         + Operating system
