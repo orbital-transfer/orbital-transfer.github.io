@@ -260,6 +260,33 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 </ul></li>
 <li>VCS: version control system</li>
 </ul></li>
+<li>database
+<ul>
+<li><code>pkg/</code>: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
+<ul>
+<li>e.g., <code>pkg/gui/gtk3</code></li>
+<li>e.g., <code>pkg/perl/Gtk3</code> for <a href="https://p3rl.org/Gtk3">https://p3rl.org/Gtk3</a>
+<ul>
+<li>depends on <code>pkg/gui/gtk3</code> with feature :glib-introspection</li>
+</ul></li>
+</ul></li>
+<li><code>sys/</code>: os  package manager + distribution
+<ul>
+<li>e.g., sys/os/{windows,linux,macos}</li>
+<li>e.g., sys/dist/{debian,ubuntu}, system/dist/fedora</li>
+<li>e.g., system/dist/{msys2,chocolatey}</li>
+<li>e.g., sys/dist/{homebrew,fink,macports}</li>
+</ul></li>
+<li><code>env/</code>: language {perl,python,go}
+<ul>
+<li>env/perl/dist/Strawberry</li>
+<li>env/python/dist/Anaconda</li>
+</ul></li>
+<li><code>role/</code>: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
+<ul>
+<li>e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb</li>
+</ul></li>
+</ul></li>
 </ul>
 
 <h1 id="ciofprojectmodules">CI of project modules</h1>
@@ -295,7 +322,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Wed May  5 22:34:47 2021</span>
+Last edited <span class="date">Thu May  6 18:53:27 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
