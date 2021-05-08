@@ -102,8 +102,27 @@
 - database
     * `pkg/`: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
         + e.g., `pkg/gui/gtk3`
+            + inside of this create definitions such as
+              ```
+              requires env('c');
+
+              def c_library('gtk3') {
+                header_file('gtk/gtk.h'), type => main_header;
+              }
+              def apt('libgtk-3-0') {
+                # version '*';  # implied
+                requires dist('debian') | dist('ubuntu');
+                provides shared_library;
+              }
+              def apt('libgtk-3.0-dev') {
+                requires dist('debian') | dist('ubuntu');
+                provides env('c')->headers;
+              }
+              ```
         + e.g., `pkg/perl/Gtk3` for <https://p3rl.org/Gtk3>
             + depends on `pkg/gui/gtk3` with feature :glib-introspection
+        + Need a mapper from external packages to database.
+            + e.g., `CPANPackage($Name) -> Pkg('main:pkg/perl/$Name')`
     * `sys/`: os  package manager + distribution
         + e.g., sys/os/{windows,linux,macos}
         + e.g., sys/dist/{debian,ubuntu}, system/dist/fedora
