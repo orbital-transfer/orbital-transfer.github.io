@@ -72,6 +72,8 @@ Module specificity:
 - <https://metacpan.org/release/Dependencies-Searcher>
 - <https://metacpan.org/release/Module-ScanDeps>
 - <https://metacpan.org/release/Tangerine>
+- <https://metacpan.org/release/CPAN-FindDependencies>
+- <http://neilb.org/reviews/dependencies.html>
 
 - <https://metacpan.org/pod/OrePAN2>
 - <https://metacpan.org/pod/App::opan>
