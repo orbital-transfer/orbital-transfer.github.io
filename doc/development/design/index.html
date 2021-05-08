@@ -269,25 +269,25 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 <li><p>e.g., <code>pkg/gui/gtk3</code></p>
 
 <ul>
-<li><p>inside of this create definitions such as
-```
-requires env('c');</p>
+<li><p>inside of this create definitions such as</p>
 
-<p>def c_library('gtk3') {
+<pre>              requires env('c');
+
+
+def c_library('gtk3') {
 header_file('gtk/gtk.h'), type =&gt; main_header;
 }
-def apt('libgtk-3-0') {</p>
-
+def apt('libgtk-3-0') {
 <h1 id="versionimplied">version '*';  # implied</h1>
 
-<p>requires dist('debian') | dist('ubuntu');
+requires dist('debian') | dist('ubuntu');
 provides shared_library;
 }
 def apt('libgtk-3.0-dev') {
 requires dist('debian') | dist('ubuntu');
 provides env('c')-&gt;headers;
 }
-```</p></li>
+</pre></li>
 </ul></li>
 <li>e.g., <code>pkg/perl/Gtk3</code> for <a href="https://p3rl.org/Gtk3">https://p3rl.org/Gtk3</a>
 <ul>
@@ -351,7 +351,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat May  8 17:52:54 2021</span>
+Last edited <span class="date">Sat May  8 18:03:59 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
