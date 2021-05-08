@@ -103,7 +103,7 @@
     * `pkg/`: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
         + e.g., `pkg/gui/gtk3`
             + inside of this create definitions such as
-[[!format txt """ [[!inline pagenames="doc/development/design/pkg-def.txt.ex" raw=yes ]] """]]
+            + [[!format txt """ [[!inline pagenames="doc/development/design/pkg-def.txt.ex" raw=yes ]] """]]
         + e.g., `pkg/perl/Gtk3` for <https://p3rl.org/Gtk3>
             + depends on `pkg/gui/gtk3` with feature :glib-introspection
         + Need a mapper from external packages to database.
