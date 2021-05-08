@@ -240,8 +240,9 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 
 <h1 id="organisationofproject">Organisation of project</h1>
 
-<ul>
-<li>Payload:
+<p><ul>
+<li>Payload:</p>
+
 <ul>
 <li>Environment:
 <ul>
@@ -259,7 +260,9 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 <li>Usually a web service</li>
 </ul></li>
 <li>VCS: version control system</li>
-</ul></li>
+</ul>
+
+<p></li>
 <li>database
 <ul>
 <li><code>pkg/</code>: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
@@ -267,14 +270,12 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 <li>e.g., <code>pkg/gui/gtk3</code>
 <ul>
 <li>inside of this create definitions such as</li>
+<li><pre> 
+requires env('c');</li>
 </ul></li>
 </ul></li>
 </ul></li>
 </ul>
-
-<pre> 
-requires env('c');
-
 def c_library('gtk3') {
   header_file('gtk/gtk.h'), type =&gt; main_header;
 }
@@ -288,23 +289,21 @@ def apt('libgtk-3.0-dev') {
   provides env('c')-&gt;headers;
 }
  </pre>
-
-<pre><code>    + e.g., `pkg/perl/Gtk3` for &lt;https://p3rl.org/Gtk3&gt;
-        + depends on `pkg/gui/gtk3` with feature :glib-introspection
-    + Need a mapper from external packages to database.
-        + e.g., `CPANPackage(&#036;Name) -&gt; Pkg('main:pkg/perl/&#036;Name')`
-        + must be overrideable: in case a fork needs to be used or in the example of Perl, an &lt;https://p3rl.org/Alt&gt; module.
-* `sys/`: os  package manager + distribution
-    + e.g., sys/os/{windows,linux,macos}
-    + e.g., sys/dist/{debian,ubuntu}, system/dist/fedora
-    + e.g., system/dist/{msys2,chocolatey}
-    + e.g., sys/dist/{homebrew,fink,macports}
-* `env/`: language {perl,python,go}
-    + env/perl/dist/Strawberry
-    + env/python/dist/Anaconda
-* `role/`: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
-    + e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb
-</code></pre>
+        + e.g., <code>pkg/perl/Gtk3</code> for <a href="https://p3rl.org/Gtk3">https://p3rl.org/Gtk3</a>
+            + depends on <code>pkg/gui/gtk3</code> with feature :glib-introspection
+        + Need a mapper from external packages to database.
+            + e.g., <code>CPANPackage(&#036;Name) -&gt; Pkg('main:pkg/perl/&#036;Name')</code>
+            + must be overrideable: in case a fork needs to be used or in the example of Perl, an <a href="https://p3rl.org/Alt">https://p3rl.org/Alt</a> module.
+    * <code>sys/</code>: os  package manager + distribution
+        + e.g., sys/os/{windows,linux,macos}
+        + e.g., sys/dist/{debian,ubuntu}, system/dist/fedora
+        + e.g., system/dist/{msys2,chocolatey}
+        + e.g., sys/dist/{homebrew,fink,macports}
+    * <code>env/</code>: language {perl,python,go}
+        + env/perl/dist/Strawberry
+        + env/python/dist/Anaconda
+    * <code>role/</code>: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
+        + e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb</p>
 
 <h1 id="ciofprojectmodules">CI of project modules</h1>
 
@@ -339,7 +338,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat May  8 18:20:11 2021</span>
+Last edited <span class="date">Sat May  8 18:27:46 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
