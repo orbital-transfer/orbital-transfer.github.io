@@ -260,14 +260,42 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 </ul></li>
 <li>VCS: version control system</li>
 </ul></li>
-<li>database
+<li><p>database</p>
+
 <ul>
-<li><code>pkg/</code>: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
+<li><p><code>pkg/</code>: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).</p>
+
 <ul>
-<li>e.g., <code>pkg/gui/gtk3</code></li>
+<li><p>e.g., <code>pkg/gui/gtk3</code></p>
+
+<ul>
+<li><p>inside of this create definitions such as
+```
+requires env('c');</p>
+
+<p>def c_library('gtk3') {
+header_file('gtk/gtk.h'), type =&gt; main_header;
+}
+def apt('libgtk-3-0') {</p>
+
+<h1 id="versionimplied">version '*';  # implied</h1>
+
+<p>requires dist('debian') | dist('ubuntu');
+provides shared_library;
+}
+def apt('libgtk-3.0-dev') {
+requires dist('debian') | dist('ubuntu');
+provides env('c')-&gt;headers;
+}
+```</p></li>
+</ul></li>
 <li>e.g., <code>pkg/perl/Gtk3</code> for <a href="https://p3rl.org/Gtk3">https://p3rl.org/Gtk3</a>
 <ul>
 <li>depends on <code>pkg/gui/gtk3</code> with feature :glib-introspection</li>
+</ul></li>
+<li>Need a mapper from external packages to database.
+<ul>
+<li>e.g., <code>CPANPackage(&#036;Name) -&gt; Pkg('main:pkg/perl/&#036;Name')</code></li>
 </ul></li>
 </ul></li>
 <li><code>sys/</code>: os  package manager + distribution
@@ -322,7 +350,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu May  6 18:53:27 2021</span>
+Last edited <span class="date">Sat May  8 17:49:53 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
