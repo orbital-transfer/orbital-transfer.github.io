@@ -240,8 +240,9 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 
 <h1 id="organisationofproject">Organisation of project</h1>
 
-<ul>
-<li>Payload:
+<p><ul>
+<li>Payload:</p>
+
 <ul>
 <li>Environment:
 <ul>
@@ -259,64 +260,53 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 <li>Usually a web service</li>
 </ul></li>
 <li>VCS: version control system</li>
-</ul></li>
-<li><p>database</p>
+</ul>
 
+<p></li>
+<li>database
 <ul>
-<li><p><code>pkg/</code>: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).</p>
+<li><code>pkg/</code>: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
+<ul>
+<li>e.g., <code>pkg/gui/gtk3</code>
+<ul>
+<li>inside of this create definitions such as</p>
 
-<ul>
-<li><p>e.g., <code>pkg/gui/gtk3</code></p>
-
-<ul>
-<li><p>inside of this create definitions such as</p>
-
-<pre>              requires env('c');
-
-
-def c_library('gtk3') {
-header_file('gtk/gtk.h'), type =&gt; main_header;
-}
-def apt('libgtk-3-0') {
-<h1 id="versionimplied">version '*';  # implied</h1>
-
-requires dist('debian') | dist('ubuntu');
-provides shared_library;
-}
-def apt('libgtk-3.0-dev') {
-requires dist('debian') | dist('ubuntu');
-provides env('c')-&gt;headers;
-}
-</pre></li>
+<div class="highlight-yml"><pre class="hl"> 
+requires env<span class="hl opt">(</span><span class="hl str">&apos;c&apos;</span><span class="hl opt">)</span>;</li>
 </ul></li>
-<li>e.g., <code>pkg/perl/Gtk3</code> for <a href="https://p3rl.org/Gtk3">https://p3rl.org/Gtk3</a>
-<ul>
-<li>depends on <code>pkg/gui/gtk3</code> with feature :glib-introspection</li>
-</ul></li>
-<li>Need a mapper from external packages to database.
-<ul>
-<li>e.g., <code>CPANPackage(&#036;Name) -&gt; Pkg('main:pkg/perl/&#036;Name')</code></li>
-<li>must be overrideable: in case a fork needs to be used or in the example of Perl, an <a href="https://p3rl.org/Alt">https://p3rl.org/Alt</a> module.</li>
-</ul></li>
-</ul></li>
-<li><code>sys/</code>: os  package manager + distribution
-<ul>
-<li>e.g., sys/os/{windows,linux,macos}</li>
-<li>e.g., sys/dist/{debian,ubuntu}, system/dist/fedora</li>
-<li>e.g., system/dist/{msys2,chocolatey}</li>
-<li>e.g., sys/dist/{homebrew,fink,macports}</li>
-</ul></li>
-<li><code>env/</code>: language {perl,python,go}
-<ul>
-<li>env/perl/dist/Strawberry</li>
-<li>env/python/dist/Anaconda</li>
-</ul></li>
-<li><code>role/</code>: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
-<ul>
-<li>e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb</li>
 </ul></li>
 </ul></li>
 </ul>
+def c_library<span class="hl opt">(</span><span class="hl str">&apos;gtk3&apos;</span><span class="hl opt">)</span> {
+  header_file<span class="hl opt">(</span><span class="hl str">&apos;gtk/gtk.h&apos;</span><span class="hl opt">),</span> type <span class="hl opt">=&gt;</span> main_header;
+}
+def <span class="hl kwc">apt</span><span class="hl opt">(</span><span class="hl str">&apos;libgtk-3-0&apos;</span><span class="hl opt">)</span> {
+  <span class="hl slc"># version &apos;*&apos;;  # implied</span>
+  requires dist<span class="hl opt">(</span><span class="hl str">&apos;debian&apos;</span><span class="hl opt">) |</span> dist<span class="hl opt">(</span><span class="hl str">&apos;ubuntu&apos;</span><span class="hl opt">)</span>;
+  provides shared_library;
+}
+def <span class="hl kwc">apt</span><span class="hl opt">(</span><span class="hl str">&apos;libgtk-3.0-dev&apos;</span><span class="hl opt">)</span> {
+  requires dist<span class="hl opt">(</span><span class="hl str">&apos;debian&apos;</span><span class="hl opt">) |</span> dist<span class="hl opt">(</span><span class="hl str">&apos;ubuntu&apos;</span><span class="hl opt">)</span>;
+  provides env<span class="hl opt">(</span><span class="hl str">&apos;c&apos;</span><span class="hl opt">)</span>-<span class="hl opt">&gt;</span>headers;
+}
+
+</pre></div>
+
+<p>+ e.g., <code>pkg/perl/Gtk3</code> for <a href="https://p3rl.org/Gtk3">https://p3rl.org/Gtk3</a>
+            + depends on <code>pkg/gui/gtk3</code> with feature :glib-introspection
+        + Need a mapper from external packages to database.
+            + e.g., <code>CPANPackage(&#036;Name) -&gt; Pkg('main:pkg/perl/&#036;Name')</code>
+            + must be overrideable: in case a fork needs to be used or in the example of Perl, an <a href="https://p3rl.org/Alt">https://p3rl.org/Alt</a> module.
+    * <code>sys/</code>: os  package manager + distribution
+        + e.g., sys/os/{windows,linux,macos}
+        + e.g., sys/dist/{debian,ubuntu}, system/dist/fedora
+        + e.g., system/dist/{msys2,chocolatey}
+        + e.g., sys/dist/{homebrew,fink,macports}
+    * <code>env/</code>: language {perl,python,go}
+        + env/perl/dist/Strawberry
+        + env/python/dist/Anaconda
+    * <code>role/</code>: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
+        + e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb</p>
 
 <h1 id="ciofprojectmodules">CI of project modules</h1>
 
@@ -351,7 +341,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat May  8 18:03:59 2021</span>
+Last edited <span class="date">Sat May  8 18:12:02 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
