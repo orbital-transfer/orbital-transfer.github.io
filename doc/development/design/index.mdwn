@@ -103,22 +103,7 @@
     * `pkg/`: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
         + e.g., `pkg/gui/gtk3`
             + inside of this create definitions such as
-              [[!format txt """
-              requires env('c');
-
-              def c_library('gtk3') {
-                header_file('gtk/gtk.h'), type => main_header;
-              }
-              def apt('libgtk-3-0') {
-                # version '*';  # implied
-                requires dist('debian') | dist('ubuntu');
-                provides shared_library;
-              }
-              def apt('libgtk-3.0-dev') {
-                requires dist('debian') | dist('ubuntu');
-                provides env('c')->headers;
-              }
-              """]]
+              [[!format yml """ [[!inline pagenames="doc/development/design/pkg-def.txt.ex" raw=yes ]] """]]
         + e.g., `pkg/perl/Gtk3` for <https://p3rl.org/Gtk3>
             + depends on `pkg/gui/gtk3` with feature :glib-introspection
         + Need a mapper from external packages to database.
