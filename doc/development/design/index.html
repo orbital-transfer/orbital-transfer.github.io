@@ -325,6 +325,7 @@ def_pkg {
 <li>e.g., sys/dist/{debian,ubuntu}, system/dist/fedora</li>
 <li>e.g., system/dist/{msys2,chocolatey}</li>
 <li>e.g., sys/dist/{homebrew,fink,macports}</li>
+<li>e.g., <code>sys/arch/{intel,arm}</code></li>
 </ul></li>
 <li><code>env/</code>: language {perl,python,go}
 <ul>
@@ -335,6 +336,14 @@ def_pkg {
 <ul>
 <li>e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb</li>
 </ul></li>
+</ul></li>
+<li>databases should be layered:
+<ul>
+<li>p5-Orbital-Transfer-Database distributes core database with OS, Language, Architecture files
+<ul>
+<li>actually stored in <code>orbital-transfer-database/core</code></li>
+</ul></li>
+<li><code>orbital-transfer-database/main</code> contains database with packages such as <code>pkg/gui/gtk3</code>.</li>
 </ul></li>
 </ul>
 
@@ -371,7 +380,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat May  8 21:40:01 2021</span>
+Last edited <span class="date">Sun May  9 17:31:29 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
