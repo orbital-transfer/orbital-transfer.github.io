@@ -113,11 +113,16 @@
         + e.g., sys/dist/{debian,ubuntu}, system/dist/fedora
         + e.g., system/dist/{msys2,chocolatey}
         + e.g., sys/dist/{homebrew,fink,macports}
+        + e.g., `sys/arch/{intel,arm}`
     * `env/`: language {perl,python,go}
         + env/perl/dist/Strawberry
         + env/python/dist/Anaconda
     * `role/`: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
         + e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb
+- databases should be layered:
+    * p5-Orbital-Transfer-Database distributes core database with OS, Language, Architecture files
+        + actually stored in `orbital-transfer-database/core`
+    * `orbital-transfer-database/main` contains database with packages such as `pkg/gui/gtk3`.
 
 # CI of project modules
 
