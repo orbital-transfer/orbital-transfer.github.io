@@ -7,7 +7,10 @@ def_pkg {
     vcs 'git', {
       uri 'git@gitlab.gnome.org:GNOME/gtk.git', protocol => 'ssh';
       uri 'https://gitlab.gnome.org/GNOME/gtk.git', protocol => 'https';
-      uri 'https://github.com/GNOME/gtk.git', protocol => 'https', type => 'mirror';
+    };
+    vcs 'git', {
+      type => 'mirror';
+      uri 'https://github.com/GNOME/gtk.git', protocol => 'https';
     };
     bug_tracker 'https://gitlab.gnome.org/GNOME/gtk/-/issues';
   };
