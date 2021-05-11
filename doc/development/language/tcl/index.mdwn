@@ -1,0 +1,13 @@
+[[!meta title="Tcl"]]
+
+- <https://www.tcl-lang.org/>
+
+# Packages
+
+- <https://github.com/ActiveState/teapot>
+    * <https://www.activestate.com/blog/activestate-tcl-teapot-teacup-now-open-source/>
+- Tclkits
+    * <http://tclkits.rkeene.org/fossil/wiki/Downloads>
+    * <http://www.tcl3d.org/html/appTclkits.html>
+    * <http://www.bawt.tcl3d.org/>
+- <https://tcl.tk/starkits/>
