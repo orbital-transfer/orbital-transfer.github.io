@@ -4,10 +4,15 @@
 
 # Packages
 
+- <https://wiki.tcl-lang.org/page/package+management>
+- <https://core.tcl-lang.org/jenglish/gutter/>
+- <https://wiki.tcl-lang.org/page/Category+Package>
+- <https://github.com/bef/tpkg>
 - <https://github.com/ActiveState/teapot>
     * <https://www.activestate.com/blog/activestate-tcl-teapot-teacup-now-open-source/>
-- Tclkits
+- Tclkits <https://wiki.tcl-lang.org/page/Tclkit>, <https://www.equi4.com/tclkit/>
     * <http://tclkits.rkeene.org/fossil/wiki/Downloads>
     * <http://www.tcl3d.org/html/appTclkits.html>
     * <http://www.bawt.tcl3d.org/>
 - <https://tcl.tk/starkits/>
+    * <https://www.equi4.com/starkit/>
