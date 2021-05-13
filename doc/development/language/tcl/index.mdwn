@@ -16,3 +16,10 @@
     * <http://www.bawt.tcl3d.org/>
 - <https://tcl.tk/starkits/>
     * <https://www.equi4.com/starkit/>
+
+# Distributions
+
+- <https://core.tcl-lang.org/dist.html>
+    * <https://wiki.tcl-lang.org/page/Category+Distribution>
+- <https://wiki.tcl-lang.org/page/AndroWish>
+    * <http://www.androwish.org/home/home>
