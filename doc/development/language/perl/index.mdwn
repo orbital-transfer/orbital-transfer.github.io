@@ -28,6 +28,10 @@ Module specificity:
     * Test without XS: <https://metacpan.org/pod/Test::NoXS>
     * Can be packaged using PAR or staticperl (see below)
 
+Some modules have Pure-Perl fallbacks:
+
+- <https://metacpan.org/pod/Module::XSOrPP>
+
 # Packaging
 
 - PAR
