@@ -4,6 +4,9 @@
 
 - cpanm
     * `PERL_CPANM_OPT='--from https://www.cpan.org --verify'`
+    * `cpanm --mirror http://backpan.perl.org/ --mirror http://cpan.cpantesters.org/ --mirror https://cpan.metacpan.org/ Local`
+        + download all `~/.cpanm/sources/*/02packages.details.txt.gz`
+        + note `Local` is reserved: <https://pause.perl.org/pause/query?ACTION=pause_namingmodules>
 
 # Building Perl modules
 
