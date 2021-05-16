@@ -1,0 +1,7 @@
+[[!meta title="Version control systems"]]
+
+# Multiple repository tools
+
+- <https://metacpan.org/pod/Acme::CPANModules::ManagingMultipleRepositories>
+- <http://myrepos.branchable.com/>
+- <https://www.jelmer.uk/silver-platter-intro.html>
