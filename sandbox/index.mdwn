@@ -63,6 +63,11 @@
 - <https://release-monitoring.org>
 - <https://reposcope.com/>
 
+# Package indexes
+
+- <https://github.com/librariesio/libraries.io/blob/main/docs/add-a-package-manager.md>
+    * <https://github.com/librariesio/bibliothecary>
+
 # Parsing / static analysis
 
 - [[GitHub - trailofbits/graphtage: A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV.|https://github.com/trailofbits/graphtage]]
