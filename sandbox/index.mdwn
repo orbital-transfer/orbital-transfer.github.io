@@ -55,6 +55,7 @@
 # Language Server
 
 - [[LSIF.dev|https://lsif.dev]]
+- <https://github.com/neoclide/coc.nvim>
 
 # Repository indexes
 
