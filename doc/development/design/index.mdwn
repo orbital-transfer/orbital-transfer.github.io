@@ -85,6 +85,12 @@
           access to the `dpkg` lock.
         + Mergeable: if the options other than `package-list` are the same,
           then they can be merged by merging the arrays of `package-list`.
+- Package (or Pkg)
+    * An installable unit.
+    * What gets installed varies by package type (different packaging
+      management systems).
+    * Has dependencies.
+    * Dependencies should be resolvable.
 
 # Organisation of project
 
