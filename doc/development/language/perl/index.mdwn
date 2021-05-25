@@ -68,6 +68,13 @@ Some modules have Pure-Perl fallbacks:
 
 # Existing tools
 
+## Building / distributing Perl
+
+- <https://github.com/tokuhirom/Perl-Build>
+- <https://github.com/tokuhirom/plenv>
+- <https://perlbrew.pl/>
+
+## Package dependencies
 
 - <https://metacpan.org/pod/CPAN::Unwind>
     * <https://metacpan.org/release/Parse-CPAN-Packages>
