@@ -95,14 +95,14 @@
 # Organisation of project
 
 - Payload:
-    * Environment:
+    * Env (for Environment):
         + Language
         + DB (e.g., PostgreSQL, MySQL)
         + XWindows
-    * System:
+    * Sys (for tem):
         + Operating system
         + Package management system
-    * Service:
+    * Serv (for ice):
         + Usually a web service
     * VCS: version control system
 - database
