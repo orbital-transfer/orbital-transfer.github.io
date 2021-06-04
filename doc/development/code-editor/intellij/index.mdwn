@@ -1,0 +1,3 @@
+[[!meta title="IntelliJ"]]
+
+<https://plugins.jetbrains.com/docs/intellij/project-structure.html>
