@@ -1,0 +1,1 @@
+[[!map pages="doc/development/code-editor/* and ! doc/development/code-editor/*/*"]]
