@@ -8,6 +8,7 @@
 * [[GitHub - microsoft/vcpkg: C++ Library Manager for Windows, Linux, and MacOS|https://github.com/Microsoft/vcpkg]]
 * [[GitHub - pfultz2/cget: C++ package retrieval|https://github.com/pfultz2/cget]]
 * [[GitHub - conan-io/conan: Conan - The open-source C/C++ package manager|https://github.com/conan-io/conan]]
+* [[GitHub - cpm-cmake/CPM.cmake: 📦 CMake's missing package manager. A small CMake script for setup-free, cross-platform, reproducible dependency management.|https://github.com/cpm-cmake/CPM.cmake]]
 
 
 # Build systems / environment management
