@@ -1,0 +1,3 @@
+[[!meta title="MacPorts"]]
+
+- Automatically install in CI <https://github.com/GiovanniBussi/macports-ci>
