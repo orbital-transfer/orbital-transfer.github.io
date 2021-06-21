@@ -61,6 +61,8 @@ Some modules have Pure-Perl fallbacks:
     * http://cpanspec.sourceforge.net/
     * https://fedoraproject.org/wiki/Perl/cpanspec
     * https://github.com/openSUSE/cpanspec
+    * <https://askubuntu.com/questions/108888/yum-whatprovides-perlfoobar-equivalent-with-apt-or-dpkg>
+        + `yum whatprovides 'perl(Foo::Bar)'`
 
 # Version updating
 
