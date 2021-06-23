@@ -1,0 +1,6 @@
+[[!meta title="macOS"]]
+
+# Linking
+
+- [[Dynamic Libraries, RPATH, and Mac OS - Oracle Joe Di Pol's Blog|https://blogs.oracle.com/dipol/dynamic-libraries,-rpath,-and-mac-os]]
+- [[GitHub - auriamg/macdylibbundler: Utility to ease bundling libraries into executables for OSX|https://github.com/auriamg/macdylibbundler]]
