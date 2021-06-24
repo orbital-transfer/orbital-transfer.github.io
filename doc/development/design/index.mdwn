@@ -99,12 +99,13 @@
         + Language
         + DB (e.g., PostgreSQL, MySQL)
         + XWindows
-    * Sys (for tem):
+    * Sys (for System):
         + Operating system
         + Package management system
-    * Serv (for ice):
+    * Serv (for Service):
         + Usually a web service
     * VCS: version control system
+        + git, bzr, svn, cvs, etc.
 - database
     * `pkg/`: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
         + e.g., `pkg/gui/gtk3`
