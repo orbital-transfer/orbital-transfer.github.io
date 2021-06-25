@@ -18,6 +18,10 @@
     * [[biopython/.travis-tox.ini at master · biopython/biopython · GitHub|https://github.com/biopython/biopython/blob/master/.travis-tox.ini]]
     * [[Tox tricks and patterns - ionel's codelog|https://blog.ionelmc.ro/2015/04/14/tox-tricks-and-patterns/]]
 
+# Buildout
+
+- [[Buildout, an automation tool written in and extended with Python — Buildout 2.7 documentation|http://www.buildout.org/]]
+
 # Env
 
 - [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
