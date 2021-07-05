@@ -1,0 +1,4 @@
+[[!meta title="CMake"]]
+
+* [[GitHub - onqtam/awesome-cmake: A curated list of awesome CMake resources, scripts, modules and examples.|https://github.com/onqtam/awesome-cmake#package-management--build-systems]]
+* [[GitHub - cpm-cmake/CPM.cmake: 📦 CMake's missing package manager. A small CMake script for setup-free, cross-platform, reproducible dependency management.|https://github.com/cpm-cmake/CPM.cmake]]
