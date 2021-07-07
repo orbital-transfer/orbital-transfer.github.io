@@ -243,7 +243,7 @@ the combination that needs to be supported:
 - Operating systems: GNU/Linux ([[Debian|doc/development/system/debian]], Fedora, SuSE), macOS (Homebrew, MacPorts, Fink), [[Windows|doc/development/os/windows]] ([[MSYS2|doc/development/system/msys2]], vcpkg), \*BSDs
 - Toolchains: `gcc`, `clang`, Visual Studio Build Tools, Oracle Developer Studio (Sun Studio), Open Watcom C/C++, Embarcadero C++Builder, Intel C++
 - Wrappers: `ccache`
-- Build systems: CMake, Gradle.
+- Build systems: [[CMake|doc/development/build-tool/cmake]], Gradle.
 - Remote transport: SSH, WinRM
 - Servers: HTTP, DBs, X11, VNC
 - Configuration: files, environment variables (e.g.,
