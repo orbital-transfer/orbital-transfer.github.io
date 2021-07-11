@@ -1,0 +1,5 @@
+[[!meta title="qemu"]]
+
+- <https://wiki.gentoo.org/wiki/Embedded_Handbook/General/Compiling_with_qemu_user_chroot>
+    * old: <https://wiki.gentoo.org/wiki/Crossdev_qemu-static-user-chroot>
+- <https://github.com/foxlet/macOS-Simple-KVM>
