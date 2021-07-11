@@ -106,8 +106,10 @@ Some modules have Pure-Perl fallbacks:
 ## Perl interpreter
 
 - <https://github.com/skaji/relocatable-perl>
+    * <https://github.com/ddmitov/perl-executing-browser>
 - <https://github.com/stevieb9/berrybrew>
     * <https://github.com/stevieb9/test-brewbuild>
+    * <https://community.chocolatey.org/packages/berrybrew>
 
 ## Guides
 
