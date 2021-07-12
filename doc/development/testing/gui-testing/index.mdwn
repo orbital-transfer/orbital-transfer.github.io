@@ -1,0 +1,25 @@
+[[!meta title="GUI testing"]]
+
+- FrogLogic Squish
+    * https://www.youtube.com/watch?v=ic0BILPYYik
+    * https://kb.froglogic.com/squish/mac/howto/automate-dmg-installers/
+    * https://www.froglogic.com/blog/how-automate-gui-tests-dmg-installer/
+- <https://gitlab.com/dogtail/dogtail>
+    * <https://stackoverflow.com/questions/45605632/what-is-best-test-automation-tool-approach-for-automating-gtk-guis-on-windows>
+- Gtk3
+    * <https://developer.gnome.org/gtk3/stable/gtk3-Testing.html>
+    * <https://www.reddit.com/r/gnome/comments/kfm2ck/gtk_unit_testing_via_the_ui/>
+- <https://blog.plasticscm.com/2019/01/guitestsharp-multiplatform-gui-testing-dotnet.html>
+- <https://en.wikipedia.org/wiki/Comparison_of_GUI_testing_tools>
+- <https://github.com/DiamondLightSource/diamond-releng/blob/master/diamond.releng.squish/squishrun_guest.sh>
+- <https://apple.stackexchange.com/questions/121810/waiting-until-a-window-exists-in-applescript>
+
+# Misc (to organise)
+
+- [[2 - How can we automate GUI testing? - YouTube|https://www.youtube.com/watch?v=KiIgyoPpcTE]]
+- [[Desktop Apps in Docker Containers - YouTube|https://www.youtube.com/watch?v=YbXDJJE5zsc]]
+- [[Porting Applications to Qt - Kevin Funk, KDAB - YouTube|https://www.youtube.com/watch?v=Y0TgaevFKx0]]
+- [[Session 20 - UI Testing Checklist (GUI) - Part 1 - YouTube|https://www.youtube.com/watch?v=Hj2O-EMy86Y]]
+- [[Characteristics of well-designed embedded GUI testing - Embedded Graphic User Interface Expert Talks - YouTube|https://www.youtube.com/watch?v=0tT-2Yf8WuQ]]
+- [[GUI Testing frAmewoRrk (GUITAR) - Demo - YouTube|https://www.youtube.com/watch?v=dMr12bzNSxM]]
+- [[Smalltalk-driven GUI Testing 1/2 - YouTube|https://www.youtube.com/watch?v=Adh9rgFX0fY]]
