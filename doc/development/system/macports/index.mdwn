@@ -1,3 +1,12 @@
 [[!meta title="MacPorts"]]
 
 - Automatically install in CI <https://github.com/GiovanniBussi/macports-ci>
+
+
+- [[OS-Scripts/installer.sh at master · TheAlienDrew/OS-Scripts|https://github.com/TheAlienDrew/OS-Scripts/blob/master/Mac/MacPorts/installer.sh]]
+- [[howto/ParallelBuilding – MacPorts|https://trac.macports.org/wiki/howto/ParallelBuilding]]
+- Possible problems
+    * [[ProblemHotlist – MacPorts|https://trac.macports.org/wiki/ProblemHotlist?version=81#compiler]]
+    * [[ProblemHotlist – MacPorts|https://trac.macports.org/wiki/ProblemHotlist#reinstall-clt]]
+- [[LibcxxOnOlderSystems – MacPorts|https://trac.macports.org/wiki/LibcxxOnOlderSystems]]
+- [[macOS/MacPortsDetail - GnuCash|https://wiki.gnucash.org/wiki/MacOS/MacPortsDetail]]
