@@ -1,3 +1,9 @@
 [[!meta title="Docker"]]
 
 Not necessarily a VM.
+
+#### Combining Docker images
+
+- [[dockerfile - Is there a way to combine Docker images into 1 container? - Stack Overflow|https://stackoverflow.com/questions/39626579/is-there-a-way-to-combine-docker-images-into-1-container]]
+- [[GitHub - StefanScherer/rebase-docker-image: Rebase a dockerized Windows app to a newer Windows Docker base image.|https://github.com/StefanScherer/rebase-docker-image]]
+- [[GitHub - efrecon/docker-rebase: Rebase slim Docker Images on top of other ones|https://github.com/efrecon/docker-rebase]]
