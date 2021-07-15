@@ -1,0 +1,1 @@
+[[!map pages="doc/development/testing/* and ! doc/development/testing/*/*"]]
