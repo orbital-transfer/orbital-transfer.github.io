@@ -4,6 +4,8 @@
 
 - [[Dynamic Libraries, RPATH, and Mac OS - Oracle Joe Di Pol's Blog|https://blogs.oracle.com/dipol/dynamic-libraries,-rpath,-and-mac-os]]
 - [[GitHub - auriamg/macdylibbundler: Utility to ease bundling libraries into executables for OSX|https://github.com/auriamg/macdylibbundler]]
+- [[@executable path, @load path and @rpath · wincent.com|https://wincent.com/wiki/@executable_path,_@load_path_and_@rpath]]
+- [[mikeash.com: Friday Q&A 2009-11-06: Linking and Install Names|https://www.mikeash.com/pyblog/friday-qa-2009-11-06-linking-and-install-names.html]]
 
 # Distribution
 
