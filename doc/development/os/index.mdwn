@@ -1,1 +1,9 @@
+# Cross-platform information
+
+## Linking
+
+- [[RPATH support|https://www.lekensteyn.nl/rpath.html]]
+
+# List
+
 [[!map pages="doc/development/os/* and ! doc/development/os/*/*"]]
