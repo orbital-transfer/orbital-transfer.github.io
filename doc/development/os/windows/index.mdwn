@@ -38,3 +38,7 @@
     * [[Vagrant box saulonunes/win10 - Vagrant Cloud|https://app.vagrantup.com/saulonunes/boxes/win10]]
     * [[VirtualMachines/Scripts/Windows at master · saulonunesdev/VirtualMachines · GitHub|https://github.com/saulonunesdev/VirtualMachines/tree/master/Scripts/Windows]]
 
+# Windows on ARM64
+
+- [[How to run Windows 10 on ARM or Ubuntu for ARM64 in QEMU on Apple Silicon Mac|https://gist.github.com/niw/e4313b9c14e968764a52375da41b4278]]
+- [[Booting ARM64 builds of Windows 10 in QEMU  Rafael Rivera|https://withinrafael.com/2018/02/12/boot-arm64-builds-of-windows-10-in-qemu/]]
