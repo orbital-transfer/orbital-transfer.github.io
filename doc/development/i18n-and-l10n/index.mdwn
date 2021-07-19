@@ -1,0 +1,5 @@
+[[!meta title="i18n and l10n"]]
+
+- <https://www.gnu.org/software/gettext/>
+- <https://serge.io/>
+    * <https://github.com/evernote/serge>
