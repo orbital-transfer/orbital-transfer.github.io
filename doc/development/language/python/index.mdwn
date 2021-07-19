@@ -25,5 +25,11 @@
 # Env
 
 - [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
-- [[GitHub - pypa/manylinux: Python wheels that work on any linux (almost)|https://github.com/pypa/manylinux]]
 - [[Miniconda — Conda documentation|https://conda.io/miniconda.html]]
+
+# Distribution
+
+## Wheels
+
+- [[GitHub - pypa/cibuildwheel: 🎡 Build Python wheels for all the platforms on CI with minimal configuration.|https://github.com/pypa/cibuildwheel]]
+- [[GitHub - pypa/manylinux: Python wheels that work on any linux (almost)|https://github.com/pypa/manylinux]]
