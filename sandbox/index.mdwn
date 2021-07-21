@@ -1,6 +1,10 @@
 [[!meta title="Sandbox"]]
 [[!meta description="Page for throwing information temporarily that will be organised later"]]
 
+# Bibliography
+
+- <https://www.pearson.com/us/higher-education/program/Smith-Software-Build-Systems-Principles-and-Experience/PGM105534.html>
+
 # C/C++ package management
 
 * [[GitHub - ruslo/hunter|https://github.com/cpp-pm/hunter]]
