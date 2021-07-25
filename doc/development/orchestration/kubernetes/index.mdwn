@@ -3,3 +3,4 @@
 - [[Kubernetes|https://kubernetes.io/]]
 - [[Introducing Container Runtime Interface (CRI) in Kubernetes - Kubernetes|https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/]]
 - [[K3s: Lightweight Kubernetes|https://k3s.io/]]
+- [[Lens - The Kubernetes IDE|https://k8slens.dev/]]
