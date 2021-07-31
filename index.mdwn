@@ -234,7 +234,7 @@ for different kinds of environments and each aspect of the environment adds to
 the combination that needs to be supported:
 
 - Runtime environment: local system (`chroot`), virtual machines (Vagrant),
-  emulators (QEMU), containers ([[Docker|doc/development/virtualization/docker]], LXC), compatibility layer (Wine, NetBSD Binary Emulation)
+  emulators (QEMU), containers ([[Docker|doc/development/virtualization/docker]], LXC), compatibility layer ([[Wine|doc/development/virtualization/wine]], NetBSD Binary Emulation)
 - Architectures: ARM 32/64, `x86_64`
 - Targets: [[WebAssembly|doc/development/virtualization/webassembly]], [[cross-compilation|doc/development/cross-compilation]]
 - [[CI/CD pipelines|doc/development/continuous-integration]]: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines
