@@ -1,0 +1,7 @@
+[[!meta title="Eclipse Che"]]
+
+- [[CodeReady Workspaces Overview - Red Hat Developer|https://codenvy.com/]]
+- [[CodeReady Workspaces Overview - Red Hat Developer|https://codenvy.com/docs-version/5.0.1/docs/getting-started/admin-intro/index.html]]
+- [[Eclipse Che - Getting Started|https://www.eclipse.org/che/getting-started/]]
+- [[CodeReady Workspaces Overview - Red Hat Developer|https://codenvy.com/docs/tutorials/swing/index.html]]
+- [[Red Hat CodeReady Workspaces|https://che.openshift.io/dashboard/]]
