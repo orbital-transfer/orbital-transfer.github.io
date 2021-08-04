@@ -26,7 +26,7 @@ Usually, a large project is broken into modules that can be used and tested
 independently of other parts of the project. To keep track of changes to these
 modules, developer's make decision to manage changes to these together
 (mono-repo architecture) or apart (poly-repo architecture)
-(see [[more|https://github.com/joelparkerhenderson/monorepo_vs_polyrepo]]).
+(see [[more|https://github.com/joelparkerhenderson/monorepo-vs-polyrepo]]).
 
 The reason why a mono-repo may be used is that it makes it easier to advance
 changes that cut across modules at a single time. When modules depend on each
