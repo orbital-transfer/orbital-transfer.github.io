@@ -238,7 +238,7 @@ the combination that needs to be supported:
 - Architectures: ARM 32/64, `x86_64`
 - Targets: [[WebAssembly|doc/development/virtualization/webassembly]], [[cross-compilation|doc/development/cross-compilation]]
 - [[CI/CD pipelines|doc/development/continuous-integration]]: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines
-- IDEs: local IDEs, cloud IDEs (Gitpod, Eclipse Che / Codenvy),
+- IDEs: local IDEs, cloud IDEs ([[Gitpod|doc/development/code-editor/gitpod]], [[Eclipse Che / Codenvy|doc/development/code-editor/eclipse-che]]),
   notebooks ([[Project Jupyter|https://jupyter.org/]], [[Binder|https://mybinder.org/]])
 - Operating systems: GNU/Linux ([[Debian|doc/development/system/debian]], Fedora, SuSE), macOS (Homebrew, MacPorts, Fink), [[Windows|doc/development/os/windows]] ([[MSYS2|doc/development/system/msys2]], vcpkg), \*BSDs
 - Toolchains: `gcc`, `clang`, Visual Studio Build Tools, Oracle Developer Studio (Sun Studio), Open Watcom C/C++, Embarcadero C++Builder, Intel C++
