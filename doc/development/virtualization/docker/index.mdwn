@@ -12,3 +12,8 @@ Not necessarily a VM.
 
 - [[Swarm mode overview - Docker Documentation|https://docs.docker.com/engine/swarm/]]
 - [[orchestration/kubernetes]]
+
+# Docker-in-Docker
+
+- [[Using Docker-in-Docker for your CI or testing environment? Think twice.|https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/]]
+    * [[Docker in Docker?. Can you run Docker inside a Docker… - by Daniel Weibel - ITNEXT|https://itnext.io/docker-in-docker-521958d34efd]]
