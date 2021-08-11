@@ -136,3 +136,8 @@
 - Pull from `launch-site`.
 - For every repo in { `GITHUB_SHA`, `cpanfile-git` } and `launch-site/vendor/`,
   checkout the version of that repo.
+
+# Roadmap
+
+- Query package database.
+- Query dependencies for directory.
