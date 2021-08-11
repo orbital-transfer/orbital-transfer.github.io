@@ -117,8 +117,8 @@
             + must be overrideable: in case a fork needs to be used or in the example of Perl, an <https://p3rl.org/Alt> module.
     * `sys/`: os  package manager + distribution
         + e.g., sys/os/{windows,linux,macos}
-        + e.g., sys/dist/{debian,ubuntu}, system/dist/fedora
-        + e.g., system/dist/{msys2,chocolatey}
+        + e.g., sys/dist/{debian,ubuntu}, sys/dist/fedora
+        + e.g., sys/dist/{msys2,chocolatey}
         + e.g., sys/dist/{homebrew,fink,macports}
         + e.g., `sys/arch/{intel,arm}`
     * `env/`: language {perl,python,go}
