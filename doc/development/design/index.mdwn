@@ -141,3 +141,5 @@
 
 - Query package database.
 - Query dependencies for directory.
+- List platforms supported.
+- Query platform package databases.
