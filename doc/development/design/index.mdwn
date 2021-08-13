@@ -143,3 +143,4 @@
 - Query dependencies for directory.
 - List platforms supported.
 - Query platform package databases.
+- REPL for working with objects
