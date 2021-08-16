@@ -140,6 +140,7 @@
 # Roadmap
 
 - Query package database.
+- Directory can be specified as local FS or remote URL.
 - Query dependencies for directory.
 - List platforms supported.
 - Query platform package databases.
