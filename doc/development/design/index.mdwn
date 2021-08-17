@@ -142,6 +142,8 @@
 - Query package database.
 - Directory can be specified as local FS or remote URL.
 - Query dependencies for directory.
+    * Need language-specific scanner.
+    * Read from meta files.
 - List platforms supported.
 - Query platform package databases.
 - REPL for working with objects
