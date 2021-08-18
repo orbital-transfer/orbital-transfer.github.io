@@ -148,3 +148,7 @@
 - Query platform package databases.
     * e.g., query CPAN using MetaCPAN
 - REPL for working with objects
+- Tasks
+    * Install package
+    * Test package
+    * Timing for tasks
