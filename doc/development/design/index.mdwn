@@ -146,4 +146,5 @@
     * Read from meta files.
 - List platforms supported.
 - Query platform package databases.
+    * e.g., query CPAN using MetaCPAN
 - REPL for working with objects
