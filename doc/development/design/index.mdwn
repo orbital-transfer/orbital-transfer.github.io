@@ -147,6 +147,8 @@
 - List platforms supported.
 - Query platform package databases.
     * e.g., query CPAN using MetaCPAN
+- Query package database from URL
+    * e.g., Debian apt, Ubuntu PPA, local CPAN/DarkPAN/PyPI
 - REPL for working with objects
 - Tasks
     * Install package
