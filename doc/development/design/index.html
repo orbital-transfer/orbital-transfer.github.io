@@ -372,7 +372,24 @@ checkout the version of that repo.</li>
 <h1 id="roadmap">Roadmap</h1>
 
 <ul>
-<li>Query package database.</li>
+<li>Query Orbital package database (can be specified using URL).</li>
+<li>Query Sys/Env package database.
+<ul>
+<li>Package database (can be specified using URL):
+<ul>
+<li>Env::Python
+<ul>
+<li>PyPI</li>
+<li>local PyPI mirror</li>
+</ul></li>
+<li>Env::Perl
+<ul>
+<li>CPAN (via MetaCPAN)</li>
+<li>local DarkPAN</li>
+</ul></li>
+<li>.deb: Debian apt, Ubuntu PPA</li>
+</ul></li>
+</ul></li>
 <li>Directory can be specified as local FS or remote URL.</li>
 <li>Query dependencies for directory.
 <ul>
@@ -380,14 +397,6 @@ checkout the version of that repo.</li>
 <li>Read from meta files.</li>
 </ul></li>
 <li>List platforms supported.</li>
-<li>Query platform package databases.
-<ul>
-<li>e.g., query CPAN using MetaCPAN</li>
-</ul></li>
-<li>Query package database from URL
-<ul>
-<li>e.g., Debian apt, Ubuntu PPA, local CPAN/DarkPAN/PyPI</li>
-</ul></li>
 <li>REPL for working with objects</li>
 <li>Tasks
 <ul>
@@ -422,7 +431,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat Aug 21 00:54:00 2021</span>
+Last edited <span class="date">Sun Aug 22 01:39:44 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
