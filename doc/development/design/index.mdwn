@@ -139,16 +139,21 @@
 
 # Roadmap
 
-- Query package database.
+- Query Orbital package database (can be specified using URL).
+- Query Sys/Env package database.
+    * Package database (can be specified using URL):
+        + Env::Python
+            + PyPI
+            + local PyPI mirror
+        + Env::Perl
+            + CPAN (via MetaCPAN)
+            + local DarkPAN
+        + .deb: Debian apt, Ubuntu PPA
 - Directory can be specified as local FS or remote URL.
 - Query dependencies for directory.
     * Need language-specific scanner.
     * Read from meta files.
 - List platforms supported.
-- Query platform package databases.
-    * e.g., query CPAN using MetaCPAN
-- Query package database from URL
-    * e.g., Debian apt, Ubuntu PPA, local CPAN/DarkPAN/PyPI
 - REPL for working with objects
 - Tasks
     * Install package
