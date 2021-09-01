@@ -389,3 +389,4 @@ This can take several forms:
 - [[The Manifest: A podcast all about package management|https://themanifest.fireside.fm/]]
 - [[ActiveState State Tool|https://www.activestate.com/blog/universal-package-managers-meet-the-state-tool/]]
 - [[Baker: tool for provisioning virtual machines and containers|https://github.com/ottomatica/Baker]]
+- [[CppCast - Bazel|https://cppcast.com/bazel/]]
