@@ -10,6 +10,11 @@
 
 # Building Perl modules
 
+Minimum Perl versions:
+
+- [[Perl::MinimumVersion - Find a minimum required version of perl for Perl code - metacpan.org|https://metacpan.org/pod/Perl::MinimumVersion]]
+- [[Add minimum specified Perl version to build matrix (GitHub Actions workflow improvements by zmughal · Pull Request #7 · perlrdf/p5-rdf-ns-curated · GitHub)|https://github.com/perlrdf/p5-rdf-ns-curated/pull/7/commits/2f7624f0bbbcfee0367a614d9ce519283675a435]]
+
 Module specificity:
 
 - Pure-Perl modules:
