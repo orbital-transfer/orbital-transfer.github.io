@@ -103,10 +103,13 @@ GitHub Actions:
     * Examples
         + <https://github.com/msys2/setup-msys2/blob/master/main.js>
         + <https://github.com/lukka/get-cmake>
+            + See how the `INPUT_` variables are set before calling `node` on the script <https://github.com/lukka/get-cmake/commit/446604d899e2d059c8fcabbe0ca667f4a2f3d6a6#diff-be68d96e830a24de59f0f45dc4992763e34ed200d15c8a5e3e3fd05a007169b8>
         + <https://github.com/marketplace/actions/run-vcpkg>
     * <https://github.community/t/call-an-action-from-another-action/17524/2>
     * <https://stackoverflow.com/questions/58860769/call-a-github-action-from-another-github-action>
     * <https://stackoverflow.com/questions/58611841/how-can-i-reference-other-actions-from-my-github-actions-action-yml-file>
+- Using conditionals with composite actions <https://github.com/actions/runner/issues/834#issuecomment-909921245>.
+    * <https://github.com/PDLPorters/devops/pull/8>
 
 Actions:
 
