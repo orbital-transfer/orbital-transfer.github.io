@@ -127,6 +127,7 @@ Examples:
         + Note: this uses separate stages for authoring the distribution and
           installing distribution. This way it is only authored once.
     * <https://github.com/graphviz-perl/GraphViz2/blob/master/.github/workflows/ci.yml>
+    * <https://metacpan.org/pod/GitHub::Actions>
 
 ## Travis CI
 
