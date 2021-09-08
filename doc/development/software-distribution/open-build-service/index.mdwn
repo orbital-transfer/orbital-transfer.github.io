@@ -1,0 +1,4 @@
+[[!meta title="Open Build Service"]]
+
+- <https://en.wikipedia.org/wiki/Open_Build_Service>
+- <https://github.com/openSUSE/open-build-service>
