@@ -163,3 +163,7 @@ Some modules have Pure-Perl fallbacks:
 
 - https://metacpan.org/pod/Devel::Deprecate
 - https://phoenixtrap.com/2021/06/29/gradual-method-renaming-in-perl/
+
+# Testing
+
+- <https://metacpan.org/pod/Test::NeedsDisplay>
