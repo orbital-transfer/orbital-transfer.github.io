@@ -8,3 +8,8 @@
 - <http://www.open-std.org/JTC1/SC22/WG14/>
 - <https://pubs.opengroup.org/onlinepubs/9699919799/>
 - <https://uclibc.org/specs.html>
+
+# Libraries
+
+- pkg-config
+    * [[apt get - how to map pkg-config names to yum/apt-get - Stack Overflow|https://stackoverflow.com/questions/18475961/how-to-map-pkg-config-names-to-yum-apt-get]]
