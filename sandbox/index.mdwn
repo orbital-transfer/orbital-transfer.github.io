@@ -71,3 +71,10 @@
 - [[GitHub - returntocorp/semgrep: Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.|https://github.com/returntocorp/semgrep]]
 - [[GitHub - tree-sitter/tree-sitter: An incremental parsing system for programming tools|https://github.com/tree-sitter/tree-sitter]]
 
+
+# Tasks
+
+- [[GitHub - melezhik/Sparrow6: Raku Automation Framework|https://github.com/melezhik/Sparrow6]]
+- [[GitHub - RexOps/Rex: Rex, the friendly automation framework|https://github.com/RexOps/Rex]]
+- [[GitHub - nektos/act: Run your GitHub Actions locally 🚀|https://github.com/nektos/act]]
+- [[GitHub - casey/just: 🤖 Just a command runner|https://github.com/casey/just]]
