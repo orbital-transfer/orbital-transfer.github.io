@@ -25,6 +25,10 @@ Module specificity:
         + Fatpacking:
             + <https://metacpan.org/release/App-FatPacker-Simple>
             + <https://metacpan.org/pod/App::FatPacker>
+    * Some use an environment variable to set implementation:
+        + `Params::Util`: `$ENV{PERL_PARAMS_UTIL_PP}=1`
+        + `Params::Validate`: `$ENV{PARAMS_VALIDATE_IMPLEMENTATION}='PP'`
+        + others: <https://metacpan.org/pod/Acme::CPANModules::XSVersions>
 - Alien modules
     * Are not: Perl version-specific.
     * Are: Architecture-specific.
