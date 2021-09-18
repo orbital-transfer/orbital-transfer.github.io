@@ -119,12 +119,13 @@
         + e.g., sys/os/{windows,linux,macos}
         + e.g., sys/dist/{debian,ubuntu}, sys/dist/fedora
         + e.g., sys/dist/{msys2,chocolatey}
+            + for GitHub Actions, should use <https://github.com/msys2/setup-msys2>
         + e.g., sys/dist/{homebrew,fink,macports}
         + e.g., `sys/arch/{intel,arm}`
     * `env/`: language {perl,python,go}
         + env/perl/dist/Strawberry
             + have specialised data on how to install in different contexts
-              (e.g., using GitHub Actions)
+              (e.g., using GitHub Actions <https://github.com/shogo82148/actions-setup-perl>)
         + env/python/dist/Anaconda
     * `role/`: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
         + e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb
