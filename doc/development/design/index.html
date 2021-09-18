@@ -343,12 +343,18 @@ def_pkg {
 </ul></li>
 <li><code>env/</code>: language {perl,python,go}
 <ul>
-<li>env/perl/dist/Strawberry</li>
+<li>env/perl/dist/Strawberry
+<ul>
+<li>have specialised data on how to install in different contexts
+(e.g., using GitHub Actions)</li>
+</ul></li>
 <li>env/python/dist/Anaconda</li>
 </ul></li>
 <li><code>role/</code>: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
 <ul>
 <li>e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb</li>
+<li>OpenGL version? Extensions <a href="https://www.khronos.org/opengl/wiki/OpenGL_Extension">https://www.khronos.org/opengl/wiki/OpenGL_Extension</a>.</li>
+<li>language compiler support? C99, C11, C++03, C++11, etc.?</li>
 </ul></li>
 </ul></li>
 <li>databases should be layered:
@@ -431,7 +437,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sun Aug 22 01:39:44 2021</span>
+Last edited <span class="date">Sat Sep 18 02:33:14 2021</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
