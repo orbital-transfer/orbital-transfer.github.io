@@ -1,0 +1,5 @@
+[[!meta title="vcpkg"]]
+
+* [[GitHub - microsoft/vcpkg: C++ Library Manager for Windows, Linux, and MacOS|https://github.com/Microsoft/vcpkg]]
+* [[Triplet files - vcpkg|https://vcpkg.readthedocs.io/en/latest/users/triplets/]]
+* [[vcpkg and Mingw-w64|https://vcpkg.io/en/docs/users/mingw.html]]
