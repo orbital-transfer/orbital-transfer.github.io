@@ -13,3 +13,4 @@
 
 - pkg-config
     * [[apt get - how to map pkg-config names to yum/apt-get - Stack Overflow|https://stackoverflow.com/questions/18475961/how-to-map-pkg-config-names-to-yum-apt-get]]
+    * [[GitHub - pkgconf/pkgconf: package compiler and linker metadata toolkit|https://github.com/pkgconf/pkgconf]]
