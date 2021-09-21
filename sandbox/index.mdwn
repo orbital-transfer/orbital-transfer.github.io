@@ -77,3 +77,8 @@
 - [[GitHub - RexOps/Rex: Rex, the friendly automation framework|https://github.com/RexOps/Rex]]
 - [[GitHub - nektos/act: Run your GitHub Actions locally 🚀|https://github.com/nektos/act]]
 - [[GitHub - casey/just: 🤖 Just a command runner|https://github.com/casey/just]]
+
+# Linking
+
+- <https://github.com/JonathonReinhart/staticx>
+- <https://github.com/NixOS/patchelf>
