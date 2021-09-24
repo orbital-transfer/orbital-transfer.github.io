@@ -10,3 +10,9 @@
     * [[ProblemHotlist – MacPorts|https://trac.macports.org/wiki/ProblemHotlist#reinstall-clt]]
 - [[LibcxxOnOlderSystems – MacPorts|https://trac.macports.org/wiki/LibcxxOnOlderSystems]]
 - [[macOS/MacPortsDetail - GnuCash|https://wiki.gnucash.org/wiki/MacOS/MacPortsDetail]]
+
+# Building installers
+
+- [[How to build a Macintosh executable that will run on older versions of MacOSX. - DEV Community|https://dev.to/highperformancecoder/how-to-build-a-macintosh-executable-that-will-run-on-older-versions-of-macosx-k1p]]
+- [[howto/CreateInstallers – MacPorts|https://trac.macports.org/wiki/howto/CreateInstallers]]
+- [[3.4. Port Binaries|https://guide.macports.org/chunked/using.binaries.html]]
