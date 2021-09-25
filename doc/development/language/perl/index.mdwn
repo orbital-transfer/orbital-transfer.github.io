@@ -171,3 +171,8 @@ Some modules have Pure-Perl fallbacks:
 # Testing
 
 - <https://metacpan.org/pod/Test::NeedsDisplay>
+- <https://www.perlmonks.org/?node_id=856415>
+- <https://github.com/Perl-Toolchain-Gang/toolchain-site/blob/master/lancaster-consensus.md>
+    * <https://xdg.me/the-annotated-lancaster-consensus/>
+    * <http://cpan.io/ref/toolchain/lancaster-consensus.html>
+- `git clone https://github.com/travis-perl/helpers && git -C helpers grep export`
