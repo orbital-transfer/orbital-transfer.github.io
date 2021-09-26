@@ -5,3 +5,5 @@
     * <https://github.com/Homebrew/brew/issues/1670>
     * <https://github.com/xianyi/OpenBLAS/blob/v0.3.13/.github/workflows/nightly-Homebrew-build.yml>
     * <https://stackoverflow.com/questions/63672189/use-github-actions-cache-with-brew-install>
+
+- [[Homebrew tap with bottles uploaded to GitHub Releases — Homebrew|https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/]]
