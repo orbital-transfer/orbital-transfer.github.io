@@ -82,3 +82,9 @@
 
 - <https://github.com/JonathonReinhart/staticx>
 - <https://github.com/NixOS/patchelf>
+
+# Windows
+
+- <https://winlibs.com/>
+- <https://www.mingw-w64.org/>
+- <https://vcpkg.io/en/docs/users/mingw.html>
