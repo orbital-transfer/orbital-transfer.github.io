@@ -41,6 +41,7 @@
 - [[Callgrind - Valgrind|https://valgrind.org/docs/manual/cl-manual.html]]
 - [[GDB: The GNU Project Debugger|https://www.gnu.org/software/gdb/]]
 - [[LLDB Homepage — The LLDB Debugger|https://lldb.llvm.org/]]
+- [[GitHub - notfoundry/ppstep: Interactive C/C++ preprocessor macro debugger|https://github.com/notfoundry/ppstep]]
 
 # Meson
 
