@@ -176,3 +176,13 @@ Some modules have Pure-Perl fallbacks:
     * <https://xdg.me/the-annotated-lancaster-consensus/>
     * <http://cpan.io/ref/toolchain/lancaster-consensus.html>
 - `git clone https://github.com/travis-perl/helpers && git -C helpers grep export`
+
+
+# CI helpers
+
+- <https://github.com/uperl/cip> from plicease
+- <https://github.com/tobyink/p5-app-ghaprove> from tobyink
+- <https://github.com/houseabsolute/ci-perl-helpers>, <https://metacpan.org/dist/App-CISetup> from DROLSKY
+- <https://metacpan.org/dist/GitHub-Actions> from JMERELO
+- <https://github.com/travis-perl/helpers>
+- <https://www.activestate.com/products/platform/state-tool/>
