@@ -89,3 +89,5 @@
 - <https://winlibs.com/>
 - <https://www.mingw-w64.org/>
 - <https://vcpkg.io/en/docs/users/mingw.html>
+- <https://cygwin.com/packages/>
+- <https://packages.msys2.org/>
