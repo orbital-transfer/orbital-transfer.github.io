@@ -7,3 +7,6 @@
     * <https://stackoverflow.com/questions/63672189/use-github-actions-cache-with-brew-install>
 
 - [[Homebrew tap with bottles uploaded to GitHub Releases — Homebrew|https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/]]
+
+- Set `HOMEBREW_GITHUB_API_TOKEN: ${{ github.token }}` when in GitHub Actions.
+  See: <https://github.com/Homebrew/homebrew-cask-drivers/blob/master/.github/workflows/ci.yml>.
