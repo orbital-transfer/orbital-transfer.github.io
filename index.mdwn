@@ -242,7 +242,7 @@ the combination that needs to be supported:
   notebooks ([[Project Jupyter|https://jupyter.org/]], [[Binder|https://mybinder.org/]])
 - Operating systems: GNU/Linux ([[Debian|doc/development/system/debian]], Fedora, SuSE), macOS (Homebrew, MacPorts, Fink), [[Windows|doc/development/os/windows]] ([[MSYS2|doc/development/system/msys2]], [[vcpkg|doc/development/system/vcpkg]]), \*BSDs
 - Toolchains: `gcc`, `clang`, Visual Studio Build Tools, Oracle Developer Studio (Sun Studio), Open Watcom C/C++, Embarcadero C++Builder, Intel C++
-- Wrappers: `ccache`
+- Wrappers: [[`ccache`|doc/development/language/c/compiler/ccache]], [[`distcc`|doc/development/language/c/compiler/distcc]]
 - Build systems: [[CMake|doc/development/build-tool/cmake]], Gradle.
 - Remote transport: SSH, WinRM
 - Servers: HTTP, DBs, X11, VNC

@@ -1,0 +1,5 @@
+[[!meta title="distcc"]]
+
+- https://distcc.github.io/
+- https://github.com/distcc/distcc
+- https://en.wikipedia.org/wiki/Distcc
