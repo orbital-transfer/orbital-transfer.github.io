@@ -49,10 +49,6 @@
     * [[Debuginfod - Debian Wiki|https://wiki.debian.org/Debuginfod]]
     * [[elfutils debuginfod services|https://sourceware.org/elfutils/Debuginfod.html]]
 
-# Meson
-
-- [[Using the WrapDB|http://mesonbuild.com/Using-the-WrapDB.html]]
-
 # Language Server
 
 - [[LSIF.dev|https://lsif.dev]]
