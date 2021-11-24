@@ -4,6 +4,11 @@
 # Bibliography
 
 - <https://www.pearson.com/us/higher-education/program/Smith-Software-Build-Systems-Principles-and-Experience/PGM105534.html>
+- Linkers and Loaders by John R. Levine <https://www.elsevier.com/books/linkers-and-loaders/levine/978-0-08-051031-6>
+    * https://stackoverflow.com/questions/18835833/is-the-book-linkers-and-loaders-by-levine-still-relevant
+    * https://linker.iecc.com/
+    * https://www.iecc.com/linker/
+    * ftp://ftp.iecc.com/pub/linker/
 
 # C/C++ package management
 
