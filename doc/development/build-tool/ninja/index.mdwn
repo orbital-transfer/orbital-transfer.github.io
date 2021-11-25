@@ -1,0 +1,3 @@
+[[!meta title="Ninja"]]
+
+* [[GitHub - ninja-build/ninja: a small build system with a focus on speed|https://github.com/ninja-build/ninja]]
