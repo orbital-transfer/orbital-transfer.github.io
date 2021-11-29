@@ -22,6 +22,10 @@
 
 - [[Buildout, an automation tool written in and extended with Python — Buildout 2.7 documentation|http://www.buildout.org/]]
 
+# Poetry
+
+- <https://python-poetry.org/docs/pyproject/>
+
 # Env
 
 - [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
