@@ -97,3 +97,8 @@
 - <https://vcpkg.io/en/docs/users/mingw.html>
 - <https://cygwin.com/packages/>
 - <https://packages.msys2.org/>
+
+# Apple iOS
+
+- <https://github.com/holzschu/a-shell>
+- <https://github.com/holzschu/ios_system>
