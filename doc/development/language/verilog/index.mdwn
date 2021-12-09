@@ -1,0 +1,4 @@
+[[!meta title="Verilog"]]
+
+- <https://github.com/steveicarus/iverilog>
+- <https://github.com/Qucs/ADMS>
