@@ -3,3 +3,5 @@
 - <https://github.com/steveicarus/iverilog>
 - <https://github.com/Qucs/ADMS>
 - <https://github.com/Isotel/mixedsim>
+- <https://github.com/chipsalliance/sv-tests>
+- <https://www.systemverilog.io/>
