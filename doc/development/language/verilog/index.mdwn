@@ -5,3 +5,5 @@
 - <https://github.com/Isotel/mixedsim>
 - <https://github.com/chipsalliance/sv-tests>
 - <https://www.systemverilog.io/>
+- <https://www.chipverify.com/systemverilog/systemverilog-tutorial>
+- <http://www.asic-world.com/systemverilog/tools.html>
