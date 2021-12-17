@@ -108,6 +108,8 @@
 
 - <https://webassembly.org/getting-started/advanced-tools/>
 - <https://github.com/WebAssembly/tool-conventions/blob/main/DynamicLinking.md>
+- <https://github.com/i-net-software/JWebAssembly>
+- <https://github.com/plasma-umass/doppio>
 
 # JS transpilers
 
