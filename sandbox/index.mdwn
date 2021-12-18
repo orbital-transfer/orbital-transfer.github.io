@@ -114,3 +114,12 @@
 # JS transpilers
 
 - <https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS>
+
+# Rendering debugging
+
+- <https://github.com/baldurk/renderdoc>
+- <https://github.com/google/gapid>
+- <https://www.khronos.org/opengl/wiki/Debugging_Tools>
+- <https://github.com/ValveSoftware/vogl>
+- <https://github.com/apitrace/apitrace>
+- <https://github.com/LunarG/VulkanTools>
