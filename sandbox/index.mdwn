@@ -123,3 +123,8 @@
 - <https://github.com/ValveSoftware/vogl>
 - <https://github.com/apitrace/apitrace>
 - <https://github.com/LunarG/VulkanTools>
+
+# VM / JIT
+
+- <https://luajit.org/>
+- <https://asmjit.com/>
