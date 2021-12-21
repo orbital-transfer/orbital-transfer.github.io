@@ -1,3 +1,4 @@
 [[!meta title="R"]]
 
 - <http://projecttemplate.net/>
+- <https://github.com/rstudio/r-system-requirements>
