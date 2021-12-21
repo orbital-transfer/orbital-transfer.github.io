@@ -2,3 +2,5 @@
 
 - <http://projecttemplate.net/>
 - <https://github.com/rstudio/r-system-requirements>
+- <https://docs.r-hub.io/>
+- <https://www.r-pkg.org/>
