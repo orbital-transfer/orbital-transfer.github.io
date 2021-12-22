@@ -128,3 +128,9 @@
 
 - <https://luajit.org/>
 - <https://asmjit.com/>
+
+# Codemeta
+
+- <https://codemeta.github.io/>
+- <https://codemeta.github.io/codemetar/>
+- <https://github.com/cboettig/codemeta>
