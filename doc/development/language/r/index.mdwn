@@ -4,3 +4,5 @@
 - <https://github.com/rstudio/r-system-requirements>
 - <https://docs.r-hub.io/>
 - <https://www.r-pkg.org/>
+- <https://mran.microsoft.com/>
+- <https://rdrr.io/>
