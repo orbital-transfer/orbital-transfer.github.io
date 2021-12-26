@@ -10,6 +10,7 @@
 - <https://en.wikipedia.org/wiki/Comparison_of_Prolog_implementations>
 - <http://xsb.sourceforge.net/>
 - <https://www.swi-prolog.org/>
+- <http://www.gprolog.org/>
 - <https://github.com/mthom/scryer-prolog>
 - <https://github.com/tau-prolog/tau-prolog>
 - <https://github.com/infradig/trealla>
@@ -28,3 +29,4 @@
 
 - <https://www.emacswiki.org/emacs/PrologMode>
 - <https://www.swi-prolog.org/IDE.html>
+- <http://prodevtools.sourceforge.net/>
