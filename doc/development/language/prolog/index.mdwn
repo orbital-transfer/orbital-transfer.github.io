@@ -23,3 +23,8 @@
     * <https://en.wikipedia.org/wiki/Constraint_Handling_Rules>
         + <https://dtai.cs.kuleuven.be/CHR/books.shtml>
 - <https://en.wikipedia.org/wiki/Definite_clause_grammar>
+
+# Tools
+
+- <https://www.emacswiki.org/emacs/PrologMode>
+- <https://www.swi-prolog.org/IDE.html>
