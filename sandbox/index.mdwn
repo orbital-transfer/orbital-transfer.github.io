@@ -134,3 +134,7 @@
 - <https://codemeta.github.io/>
 - <https://codemeta.github.io/codemetar/>
 - <https://github.com/cboettig/codemeta>
+
+# Security
+
+- <https://wiki.debian.org/HardeningWalkthrough>
