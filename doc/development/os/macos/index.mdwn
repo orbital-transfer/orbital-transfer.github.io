@@ -17,3 +17,8 @@
 
 - [[A Simple PlistBuddy Tutorial - Fotsies Technology Blog|http://fgimian.github.io/blog/2015/06/27/a-simple-plistbuddy-tutorial/]]
 - [[What is PlistBuddy?. PlistBuddy is mac build-in program… - by Mark - Medium|https://medium.com/@marksiu/what-is-plistbuddy-76cb4f0c262d]]
+
+# Packages
+
+- <https://rudix.org/>
+- <https://en.wikipedia.org/wiki/Xar_(archiver)>
