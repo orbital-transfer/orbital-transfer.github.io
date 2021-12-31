@@ -37,3 +37,7 @@
 
 - [[GitHub - pypa/cibuildwheel: 🎡 Build Python wheels for all the platforms on CI with minimal configuration.|https://github.com/pypa/cibuildwheel]]
 - [[GitHub - pypa/manylinux: Python wheels that work on any linux (almost)|https://github.com/pypa/manylinux]]
+
+# Debugger
+
+- <https://github.com/rocky/python3-trepan>
