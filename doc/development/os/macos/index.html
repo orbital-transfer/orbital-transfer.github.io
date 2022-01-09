@@ -103,6 +103,42 @@ macOS
 <li><a href="https://stackoverflow.com/questions/27314733/make-usr-local-lib-a-default-library-search-path-for-ld-on-mac-os-x">c++ - Make /usr/local/lib a default library search path for ld on mac os x? - Stack Overflow</a></li>
 </ul>
 
+<hr />
+
+<p>Note from my own debugging of a autotools configure script:</p>
+
+<pre>+ echo "LIBRARY_PATH=$(brew --prefix)/lib${LIBRARY_PATH:+:${LIBRARY_PATH}}" &gt;&gt; $GITHUB_ENV</pre>
+
+<blockquote>
+  <p>Set macOS LIBRARY_PATH for Homebrew</p>
+  
+  <p>Per the macOS ld(1) man page <a href="https://www.unix.com/man-page/OSX/1/ld/">https://www.unix.com/man-page/OSX/1/ld/</a>,</p>
+  
+  <blockquote>
+    <p>The default library search path is /usr/lib then /usr/local/lib.</p>
+  </blockquote>
+  
+  <p>When <code>HOMEBREW_PREFIX=/usr/local</code>, this is where the <code>.dylib</code> files for
+   X11 are symlinked by Homebrew.</p>
+  
+  <p>When <code>AC_PATH_XTRA</code> is called, it uses <code>/usr/bin/gcc</code> (Apple clang) and
+   since the libraries are found in <code>/usr/local/lib</code>, it does not need to
+   specify any <code>-L</code> paths.</p>
+  
+  <p>However when <code>libtool</code> is used to call Homebrew <code>gfortran</code>, it sets
+   the flag <code>-syslibroot</code> which per the man page for ld(1):</p>
+  
+  <blockquote>
+    <p>The -syslibroot option will prepend a prefix to all search paths.</p>
+  </blockquote>
+  
+  <p>and this means that it no longer looks under <code>/usr/local/lib</code> by
+   default. To fix this, add the default path back by setting the
+   <code>LIBRARY_PATH</code> environment variable.</p>
+</blockquote>
+
+<hr />
+
 <h1 id="distribution">Distribution</h1>
 
 <h2 id="dmg">.dmg</h2>
@@ -150,7 +186,7 @@ macOS
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu Jan  6 19:53:15 2022</span>
+Last edited <span class="date">Sun Jan  9 02:19:57 2022</span>
 <!-- Created <span class="date">Wed Jun 23 01:37:00 2021</span> -->
 </div>
 
