@@ -8,6 +8,39 @@
 - [[mikeash.com: Friday Q&A 2009-11-06: Linking and Install Names|https://www.mikeash.com/pyblog/friday-qa-2009-11-06-linking-and-install-names.html]]
 - [[c++ - Make /usr/local/lib a default library search path for ld on mac os x? - Stack Overflow|https://stackoverflow.com/questions/27314733/make-usr-local-lib-a-default-library-search-path-for-ld-on-mac-os-x]]
 
+---
+
+Note from my own debugging of a autotools configure script:
+
+[[!format txt """
++ echo "LIBRARY_PATH=$(brew --prefix)/lib${LIBRARY_PATH:+:${LIBRARY_PATH}}" >> $GITHUB_ENV
+"""]]
+
+>  Set macOS LIBRARY_PATH for Homebrew
+>
+>  Per the macOS ld(1) man page <https://www.unix.com/man-page/OSX/1/ld/>,
+>
+>  > The default library search path is /usr/lib then /usr/local/lib.
+>
+>  When `HOMEBREW_PREFIX=/usr/local`, this is where the `.dylib` files for
+>  X11 are symlinked by Homebrew.
+>
+>  When `AC_PATH_XTRA` is called, it uses `/usr/bin/gcc` (Apple clang) and
+>  since the libraries are found in `/usr/local/lib`, it does not need to
+>  specify any `-L` paths.
+>
+>  However when `libtool` is used to call Homebrew `gfortran`, it sets
+>  the flag `-syslibroot` which per the man page for ld(1):
+>
+>  > The -syslibroot option will prepend a prefix to all search paths.
+>
+>  and this means that it no longer looks under `/usr/local/lib` by
+>  default. To fix this, add the default path back by setting the
+>  `LIBRARY_PATH` environment variable.
+
+---
+
+
 # Distribution
 
 ## .dmg
