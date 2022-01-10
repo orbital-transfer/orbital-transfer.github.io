@@ -56,3 +56,5 @@ Note from my own debugging of a autotools configure script:
 
 - <https://rudix.org/>
 - <https://en.wikipedia.org/wiki/Xar_(archiver)>
+- <https://stackoverflow.com/questions/41166805/how-to-extract-contents-from-payload-file-in-a-apple-macos-update-package>
+- <https://stackoverflow.com/questions/11298855/how-to-unpack-and-pack-pkg-file>
