@@ -144,3 +144,7 @@
 - Docker
     * <https://stackoverflow.com/questions/20010199/how-to-determine-if-a-process-runs-inside-lxc-docker>
     * <https://newbedev.com/how-to-check-if-a-process-is-running-inside-docker-container>
+- virt-what
+    * <https://people.redhat.com/~rjones/virt-what/>
+    * <http://git.annexia.org/?p=virt-what.git;a=summary>
+    * <https://github.com/jordemort/virt-what>
