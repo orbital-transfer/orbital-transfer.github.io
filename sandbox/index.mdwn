@@ -138,3 +138,9 @@
 # Security
 
 - <https://wiki.debian.org/HardeningWalkthrough>
+
+# Virtualisation
+
+- Docker
+    * <https://stackoverflow.com/questions/20010199/how-to-determine-if-a-process-runs-inside-lxc-docker>
+    * <https://newbedev.com/how-to-check-if-a-process-is-running-inside-docker-container>
