@@ -141,12 +141,6 @@
 
 # Virtualisation
 
-- Docker
-    * <https://stackoverflow.com/questions/20010199/how-to-determine-if-a-process-runs-inside-lxc-docker>
-    * <https://newbedev.com/how-to-check-if-a-process-is-running-inside-docker-container>
-    * ARM
-        + <https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/>
-        + <https://github.com/uraimo/run-on-arch-action/blob/master/src/run-on-arch.sh>
 - virt-what
     * <https://people.redhat.com/~rjones/virt-what/>
     * <http://git.annexia.org/?p=virt-what.git;a=summary>

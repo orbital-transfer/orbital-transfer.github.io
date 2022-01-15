@@ -19,3 +19,13 @@ Drop-in alternative: [[podman]]
 
 - [[Using Docker-in-Docker for your CI or testing environment? Think twice.|https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/]]
     * [[Docker in Docker?. Can you run Docker inside a Docker… - by Daniel Weibel - ITNEXT|https://itnext.io/docker-in-docker-521958d34efd]]
+
+# Detection
+
+- <https://stackoverflow.com/questions/20010199/how-to-determine-if-a-process-runs-inside-lxc-docker>
+- <https://newbedev.com/how-to-check-if-a-process-is-running-inside-docker-container>
+
+# Architectures
+
+- <https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/>
+- <https://github.com/uraimo/run-on-arch-action/blob/master/src/run-on-arch.sh>
