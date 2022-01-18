@@ -49,3 +49,12 @@
     * <https://stackoverflow.com/questions/1547809/extract-msi-from-exe>
     * <https://superuser.com/questions/307678/how-do-i-extract-files-from-an-msi-package>
     * <https://stackoverflow.com/questions/8839978/install-msi-with-msiexec-into-specific-directory>
+
+# Packages
+
+- <https://winlibs.com/>
+- <https://www.mingw-w64.org/>
+- <https://vcpkg.io/en/docs/users/mingw.html>
+- <https://cygwin.com/packages/>
+- <https://packages.msys2.org/>
+
