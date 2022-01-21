@@ -126,3 +126,10 @@
     * <https://people.redhat.com/~rjones/virt-what/>
     * <http://git.annexia.org/?p=virt-what.git;a=summary>
     * <https://github.com/jordemort/virt-what>
+
+# GitHub Actions for specific languages
+
+- https://github.com/ruby/setup-ruby
+- https://github.com/actions/setup-java
+- https://github.com/actions/setup-go
+- https://github.com/shogo82148/actions-setup-perl
