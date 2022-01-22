@@ -83,6 +83,9 @@
         + Mutually exclusive: can not run multiple instances of
           `Task::Apt::Install` at the same time since they all require
           access to the `dpkg` lock.
+            + note: the reason they are mutually exclusive should not be
+              limited to just because they are the same type — we should look
+              at the resources they are trying to lock
         + Mergeable: if the options other than `package-list` are the same,
           then they can be merged by merging the arrays of `package-list`.
 - Package (or Pkg)
