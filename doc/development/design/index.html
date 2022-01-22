@@ -231,7 +231,12 @@ condensation of any directed graph?</li>
 <ul>
 <li>Mutually exclusive: can not run multiple instances of
 <code>Task::Apt::Install</code> at the same time since they all require
-access to the <code>dpkg</code> lock.</li>
+access to the <code>dpkg</code> lock.
+<ul>
+<li>note: the reason they are mutually exclusive should not be
+limited to just because they are the same type — we should look
+at the resources they are trying to lock</li>
+</ul></li>
 <li>Mergeable: if the options other than <code>package-list</code> are the same,
 then they can be merged by merging the arrays of <code>package-list</code>.</li>
 </ul></li>
@@ -441,7 +446,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Tue Nov  9 22:49:48 2021</span>
+Last edited <span class="date">Sat Jan 22 00:06:49 2022</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
