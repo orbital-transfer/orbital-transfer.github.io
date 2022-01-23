@@ -91,11 +91,6 @@
 - <https://github.com/JonathonReinhart/staticx>
 - <https://github.com/NixOS/patchelf>
 
-# Apple iOS
-
-- <https://github.com/holzschu/a-shell>
-- <https://github.com/holzschu/ios_system>
-
 # Rendering debugging
 
 - <https://github.com/baldurk/renderdoc>
