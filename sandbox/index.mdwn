@@ -128,3 +128,9 @@
 - https://github.com/actions/setup-java
 - https://github.com/actions/setup-go
 - https://github.com/shogo82148/actions-setup-perl
+
+# Parsing interfaces
+
+- <http://swig.org/>
+- <https://www.doxygen.nl/>
+- <https://github.com/CastXML/CastXML>
