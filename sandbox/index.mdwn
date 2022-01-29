@@ -121,6 +121,10 @@
     * <https://people.redhat.com/~rjones/virt-what/>
     * <http://git.annexia.org/?p=virt-what.git;a=summary>
     * <https://github.com/jordemort/virt-what>
+- OSes on CI
+    * <https://github.com/PDLPorters/devops/issues/1>
+    * <https://github.com/vmactions/solaris-vm>
+    * <https://github.com/vmactions/freebsd-vm>
 
 # GitHub Actions for specific languages
 
