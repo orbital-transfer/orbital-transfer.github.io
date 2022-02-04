@@ -29,3 +29,8 @@ Drop-in alternative: [[podman]]
 
 - <https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/>
 - <https://github.com/uraimo/run-on-arch-action/blob/master/src/run-on-arch.sh>
+
+# Passing in information at build/runtime
+
+- <https://vsupalov.com/docker-arg-env-variable-guide/>
+- <https://aggarwal-rohan17.medium.com/docker-build-arguments-and-environment-variables-1bdca0c0ef92>
