@@ -3,6 +3,7 @@
 # pip
 
 - [[GitHub - pypa/pipfile|https://github.com/pypa/pipfile]]
+- [[pipx|https://pypa.github.io/pipx/]]
 
 # Local PyPI
 
