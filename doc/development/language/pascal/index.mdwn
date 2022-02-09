@@ -1,0 +1,4 @@
+[[!meta title="Pascal"]]
+
+- <https://www.freepascal.org/>
+- <https://www.lazarus-ide.org/>
