@@ -4,6 +4,10 @@ Not necessarily a VM.
 
 Drop-in alternative: [[podman]]
 
+# Dockerfiles
+
+- <https://docs.docker.com/develop/develop-images/dockerfile_best-practices/>
+
 #### Combining Docker images
 
 - [[dockerfile - Is there a way to combine Docker images into 1 container? - Stack Overflow|https://stackoverflow.com/questions/39626579/is-there-a-way-to-combine-docker-images-into-1-container]]
