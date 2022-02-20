@@ -113,6 +113,7 @@ Some modules have Pure-Perl fallbacks:
 - <https://metacpan.org/release/App-plx>
 - <https://github.com/skaji/Carl>
 - <https://metacpan.org/release/CPAN-Mirror-Tiny>
+- <https://metacpan.org/pod/V>
 
 # Distribution
 
