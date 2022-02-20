@@ -8,6 +8,13 @@ Drop-in alternative: [[podman]]
 
 - <https://docs.docker.com/develop/develop-images/dockerfile_best-practices/>
 
+# Platforms
+
+## macOS
+
+- <https://github.com/docker/roadmap/issues/7>
+- <https://github.com/docker/for-mac/issues/1592>
+
 #### Combining Docker images
 
 - [[dockerfile - Is there a way to combine Docker images into 1 container? - Stack Overflow|https://stackoverflow.com/questions/39626579/is-there-a-way-to-combine-docker-images-into-1-container]]
