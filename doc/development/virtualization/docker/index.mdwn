@@ -47,3 +47,9 @@ Drop-in alternative: [[podman]]
 
 - <https://vsupalov.com/docker-arg-env-variable-guide/>
 - <https://aggarwal-rohan17.medium.com/docker-build-arguments-and-environment-variables-1bdca0c0ef92>
+
+# Using Docker with CI
+
+- <https://stackoverflow.com/questions/68262326/how-to-share-docker-images-between-the-jobs-in-github-actions>
+    * <https://github.com/docker/build-push-action/issues/225>
+    * <https://evilmartians.com/chronicles/build-images-on-github-actions-with-docker-layer-caching>
