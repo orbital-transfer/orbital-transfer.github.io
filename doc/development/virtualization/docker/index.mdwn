@@ -9,6 +9,11 @@ Drop-in alternative: [[podman]]
 - <https://docs.docker.com/develop/develop-images/dockerfile_best-practices/>
 - Build duration
     * <https://stackoverflow.com/questions/46166293/how-to-measure-docker-build-steps-duration>
+- Build backend:
+    * <https://docs.docker.com/engine/reference/builder/#buildkit>
+    * <https://pythonspeed.com/articles/docker-buildkit/>
+    * <https://hub.docker.com/r/docker/dockerfile/>
+    * <https://docs.docker.com/buildx/working-with-buildx/>
 
 # Platforms
 
