@@ -132,6 +132,7 @@
 - https://github.com/actions/setup-java
 - https://github.com/actions/setup-go
 - https://github.com/shogo82148/actions-setup-perl
+- https://github.com/r-lib/actions
 
 # Parsing interfaces
 
