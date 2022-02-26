@@ -6,3 +6,7 @@
 - <https://www.r-pkg.org/>
 - <https://mran.microsoft.com/>
 - <https://rdrr.io/>
+- <https://r-pkgs.org/>
+- <https://www.r-consortium.org/>
+- <https://wiki.r-consortium.org/view/Code_Coverage_Tool_for_R>
+- <https://github.com/r-lib/covr>
