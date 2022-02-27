@@ -42,3 +42,9 @@
 # Debugger
 
 - <https://github.com/rocky/python3-trepan>
+
+# Tools
+
+- <https://github.com/airspeed-velocity/asv>
+- <https://wiki.python.org/moin/CodeCoverage>
+    * <https://github.com/nedbat/coveragepy>
