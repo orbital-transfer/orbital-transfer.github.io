@@ -71,12 +71,15 @@
 - <https://github.com/librariesio/libraries.io/blob/main/docs/add-a-package-manager.md>
     * <https://github.com/librariesio/bibliothecary>
 
-# Parsing / static analysis
+# Parsing / static analysis + API + docs
 
 - [[GitHub - trailofbits/graphtage: A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV.|https://github.com/trailofbits/graphtage]]
 - [[GitHub - returntocorp/pfff: pfff is mainly an OCaml API to write static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.|https://github.com/returntocorp/pfff]]
 - [[GitHub - returntocorp/semgrep: Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.|https://github.com/returntocorp/semgrep]]
 - [[GitHub - tree-sitter/tree-sitter: An incremental parsing system for programming tools|https://github.com/tree-sitter/tree-sitter]]
+- <http://swig.org/>
+- <https://www.doxygen.nl/>
+- <https://github.com/CastXML/CastXML>
 
 
 # Tasks
@@ -133,9 +136,3 @@
 - https://github.com/actions/setup-go
 - https://github.com/shogo82148/actions-setup-perl
 - https://github.com/r-lib/actions
-
-# Parsing interfaces
-
-- <http://swig.org/>
-- <https://www.doxygen.nl/>
-- <https://github.com/CastXML/CastXML>
