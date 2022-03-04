@@ -140,3 +140,13 @@
 - https://github.com/actions/setup-python
 - https://github.com/shogo82148/actions-setup-perl
 - https://github.com/r-lib/actions
+
+# Package differences
+
+- <https://github.com/lvc/pkgdiff>
+- <http://tardiff.coolprojects.org/>
+    * <https://www.tcg.com/blog/experiments_in_/>
+    * <http://tardiff.sourceforge.net/>
+- <https://invisible-island.net/diffstat/>
+- <https://diffoscope.org/>
+    * <https://reproducible-builds.org/tools/>
