@@ -390,3 +390,4 @@ This can take several forms:
 - [[ActiveState State Tool|https://www.activestate.com/blog/universal-package-managers-meet-the-state-tool/]]
 - [[Baker: tool for provisioning virtual machines and containers|https://github.com/ottomatica/Baker]]
 - [[CppCast - Bazel|https://cppcast.com/bazel/]]
+- [[Local Environment-as-Code: Is It Possible Yet? – The New Stack|https://thenewstack.io/local-environment-as-code-is-it-possible-yet/]]
