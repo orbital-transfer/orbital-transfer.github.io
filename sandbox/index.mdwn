@@ -29,6 +29,9 @@
 * [[lib/Metabrik/Shell/Command.pm - metacpan.org|https://metacpan.org/source/Metabrik::Shell::Command]]
 * [[Pants|https://www.pantsbuild.org/]]
 * [[Welcome to the BuildStream project - BuildStream, the software integration tool|https://www.buildstream.build/]]
+* [[crossroad · PyPI|https://pypi.org/project/crossroad/]]
+    + [[(Gimp-developer) crossroad: developer tool for cross-compiling GIMP for|https://mail.gnome.org/archives/gimp-developer-list/2013-October/msg00108.html]]
+    + [[Using 'crossroad' to compile Windows versions of G'MIC on Linux - G'MIC - discuss.pixls.us|https://discuss.pixls.us/t/using-crossroad-to-compile-windows-versions-of-gmic-on-linux/20496]]
 
 # Debugging / profiling / coverage tools for C/C++
 
