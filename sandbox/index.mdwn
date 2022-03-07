@@ -132,14 +132,17 @@
 # GitHub Actions for specific languages
 
 - Examples: <https://github.com/actions/starter-workflows>
-- https://github.com/ruby/setup-ruby
+- https://github.com/40ants/setup-lisp
 - https://github.com/actions/setup-dotnet
 - https://github.com/actions/setup-go
 - https://github.com/actions/setup-java
 - https://github.com/actions/setup-node
 - https://github.com/actions/setup-python
-- https://github.com/shogo82148/actions-setup-perl
+- https://github.com/logtalk-actions/setup-swi-prolog
 - https://github.com/r-lib/actions
+- https://github.com/ruby/setup-ruby
+- https://github.com/shivammathur/setup-php
+- https://github.com/shogo82148/actions-setup-perl
 
 # Package differences
 
