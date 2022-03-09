@@ -190,3 +190,4 @@ Some modules have Pure-Perl fallbacks:
 - <https://metacpan.org/dist/GitHub-Actions> from JMERELO
 - <https://github.com/travis-perl/helpers>
 - <https://www.activestate.com/products/platform/state-tool/>
+- <https://github.com/FGasper/perl-github-action-tips>
