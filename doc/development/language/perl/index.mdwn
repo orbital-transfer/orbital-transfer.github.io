@@ -91,6 +91,7 @@ Some modules have Pure-Perl fallbacks:
 - <https://github.com/tokuhirom/Perl-Build>
 - <https://github.com/tokuhirom/plenv>
 - <https://perlbrew.pl/>
+- <https://github.com/skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro>
 
 ## Package dependencies
 
