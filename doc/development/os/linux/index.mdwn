@@ -1,3 +1,6 @@
 [[!meta title="Linux"]]
 
 - <https://www.kernel.org/doc/man-pages/>
+- <https://refspecs.linuxfoundation.org/fhs.shtml>
+    * <https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard>
+- <https://tldp.org/>
