@@ -157,3 +157,8 @@
 - <https://invisible-island.net/diffstat/>
 - <https://diffoscope.org/>
     * <https://reproducible-builds.org/tools/>
+
+# Runtime environment
+
+- [[schroot — codelibre.net|http://www.codelibre.net/schroot/index.html]]
+- [[GitHub - containers/bubblewrap: Unprivileged sandboxing tool|https://github.com/containers/bubblewrap]]
