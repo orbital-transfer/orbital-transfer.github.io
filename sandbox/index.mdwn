@@ -84,6 +84,7 @@
 - <http://swig.org/>
 - <https://www.doxygen.nl/>
 - <https://github.com/CastXML/CastXML>
+- <https://www.riverbankcomputing.com/software/sip/intro>
 
 
 # Tasks
