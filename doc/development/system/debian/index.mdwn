@@ -4,3 +4,4 @@
 - https://wiki.debian.org/PackageManagement
 - https://wiki.debian.org/Diaspora/Packaging/pbuilder
 - https://snapshot.debian.org/
+- https://wiki.debian.org/apt-src
