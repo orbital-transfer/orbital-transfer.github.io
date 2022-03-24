@@ -3,3 +3,4 @@
 - <https://wiki.gentoo.org/wiki/Embedded_Handbook/General/Compiling_with_qemu_user_chroot>
     * old: <https://wiki.gentoo.org/wiki/Crossdev_qemu-static-user-chroot>
 - <https://github.com/foxlet/macOS-Simple-KVM>
+- Docker for qemu: <https://github.com/multiarch/qemu-user-static>
