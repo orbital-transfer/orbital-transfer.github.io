@@ -85,6 +85,7 @@
 - <https://www.doxygen.nl/>
 - <https://github.com/CastXML/CastXML>
 - <https://www.riverbankcomputing.com/software/sip/intro>
+- <https://github.com/vapier/coverity-scan-action>
 
 
 # Tasks
