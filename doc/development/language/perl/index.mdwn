@@ -140,6 +140,10 @@ Some modules have Pure-Perl fallbacks:
 - <https://dev.to/haarg/distar-a-cpan-distribution-author-tool-5e95>
 - <https://metacpan.org/pod/Zilla::Dist>
 
+## Paths
+
+- <https://metacpan.org/dist/Module-Which>
+
 # Benchmarking, Profiling
 
 - <https://metacpan.org/pod/Dumbbench>
