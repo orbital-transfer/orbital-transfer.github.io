@@ -47,6 +47,7 @@ Drop-in alternative: [[podman]]
 
 - <https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/>
 - <https://github.com/uraimo/run-on-arch-action/blob/master/src/run-on-arch.sh>
+- <https://github.com/docker-library/official-images#architectures-other-than-amd64>
 
 # Passing in information at build/runtime
 
