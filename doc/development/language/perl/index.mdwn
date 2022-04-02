@@ -160,6 +160,7 @@ Some modules have Pure-Perl fallbacks:
     * https://github.com/yuki-kimoto/SPVM
     * https://yuki-kimoto.github.io/spvmdoc-public/language.html
 - https://metacpan.org/pod/RPerl
+- https://github.com/fglock/Perlito
 - https://github.com/perl11
     * http://perl11.github.io/
 - <https://www.sunstarsys.com/essays/perl7-sealed-lexicals>
