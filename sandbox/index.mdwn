@@ -165,7 +165,7 @@
 - [[schroot — codelibre.net|http://www.codelibre.net/schroot/index.html]]
 - [[GitHub - containers/bubblewrap: Unprivileged sandboxing tool|https://github.com/containers/bubblewrap]]
 
-## Linters / Tidiers
+# Linters / Tidiers
 
 - https://github.com/houseabsolute/precious
 - https://github.com/collab-qa/check-all-the-things
