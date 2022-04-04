@@ -170,3 +170,4 @@
 - https://github.com/houseabsolute/precious
 - https://github.com/collab-qa/check-all-the-things
 - https://metacpan.org/dist/Code-TidyAll
+- https://github.com/caramelomartins/awesome-linters
