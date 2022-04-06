@@ -171,3 +171,7 @@
 - https://github.com/collab-qa/check-all-the-things
 - https://metacpan.org/dist/Code-TidyAll
 - https://github.com/caramelomartins/awesome-linters
+
+# REPL
+- https://github.com/replit-archive/repl.it
+- https://github.com/replit/prybar
