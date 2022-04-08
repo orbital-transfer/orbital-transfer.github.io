@@ -165,6 +165,7 @@ Some modules have Pure-Perl fallbacks:
 - https://github.com/fglock/Perlito
 - https://github.com/perl11
     * http://perl11.github.io/
+- https://metacpan.org/dist/Compiler-Parser
 - <https://www.sunstarsys.com/essays/perl7-sealed-lexicals>
     * [[This Week on p5p 2000/06/25|https://www.perl.com/pub/2000/06/p5pdigest/THISWEEK-20000625.html/#Method_Lookup_Speedup_]]
     * [[Notes on Doug's Method Lookup Patch|https://www.perl.com/pub/2000/06/dougpatch.html/]]
