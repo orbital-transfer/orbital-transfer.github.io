@@ -6,6 +6,13 @@
 - Library code
 - Testing code
 
+e.g.,
+
+- https://github.com/tpope/vim-projectionist
+- https://www.emacswiki.org/emacs/CategoryProject
+    * https://github.com/bbatsov/projectile
+    * http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/progmodes/project.el
+
 # Poly-repo versus mono-repo
 
 - TODO: Add info from main page.
