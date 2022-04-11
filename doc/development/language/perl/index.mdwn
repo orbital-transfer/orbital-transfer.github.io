@@ -200,3 +200,7 @@ Some modules have Pure-Perl fallbacks:
 - <https://github.com/travis-perl/helpers>
 - <https://www.activestate.com/products/platform/state-tool/>
 - <https://github.com/FGasper/perl-github-action-tips>
+
+# Debugger
+
+- <https://metacpan.org/pod/DB::Skip>
