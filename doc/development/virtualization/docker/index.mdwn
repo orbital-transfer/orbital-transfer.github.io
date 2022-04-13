@@ -63,3 +63,4 @@ Drop-in alternative: [[podman]]
 # UI
 
 - <https://github.com/jesseduffield/lazydocker>
+- <https://github.com/portainer/portainer>
