@@ -34,6 +34,11 @@
 
 # Distribution
 
+## Language
+
+- <https://python-build-standalone.readthedocs.io/en/latest/>
+    * <https://github.com/indygreg/python-build-standalone/releases>
+
 ## Wheels
 
 - [[GitHub - pypa/cibuildwheel: 🎡 Build Python wheels for all the platforms on CI with minimal configuration.|https://github.com/pypa/cibuildwheel]]
