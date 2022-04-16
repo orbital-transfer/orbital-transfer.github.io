@@ -7,3 +7,8 @@
 # JS transpilers
 
 - <https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS>
+
+# Tools
+
+- <https://eslint.org/>
+- <https://babeljs.io/>
