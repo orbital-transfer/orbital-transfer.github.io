@@ -117,6 +117,8 @@ Some modules have Pure-Perl fallbacks:
 - <https://github.com/skaji/Carl>
 - <https://metacpan.org/release/CPAN-Mirror-Tiny>
 - <https://metacpan.org/pod/V>
+- <https://metacpan.org/pod/Carton>
+- <https://metacpan.org/pod/Carmel>
 
 # Distribution
 
