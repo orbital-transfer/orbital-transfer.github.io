@@ -10,6 +10,11 @@
         + download all `~/.cpanm/sources/*/02packages.details.txt.gz`
         + note `Local` is reserved: <https://pause.perl.org/pause/query?ACTION=pause_namingmodules>
 - cpm
+- cnext
+    * https://c.nextcpan.org/
+    * http://nextcpan.org/
+    * https://github.com/next-cpan
+    * https://github.com/next-cpan/OverPAN
 
 # Building Perl modules
 
