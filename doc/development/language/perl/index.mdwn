@@ -4,6 +4,8 @@
 
 - CPAN.pm
     * `cpan -g module`: to download tarball
+    * <https://metacpan.org/dist/CPAN-Plugin-Sysdeps>
+    * <https://metacpan.org/pod/CPAN#Plugin-support-***EXPERIMENTAL***>
 - cpanm
     * `PERL_CPANM_OPT='--from https://www.cpan.org --verify'`
     * `cpanm --mirror http://www.cpan.org/ --mirror http://backpan.perl.org/ --mirror http://cpan.cpantesters.org/ --mirror https://cpan.metacpan.org/ Local`
