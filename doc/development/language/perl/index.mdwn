@@ -180,6 +180,10 @@ Some modules have Pure-Perl fallbacks:
     * [[Notes on Doug's Method Lookup Patch|https://www.perl.com/pub/2000/06/dougpatch.html/]]
     * [[Speeding up method lookups - nntp.perl.org|https://www.nntp.perl.org/group/perl.perl5.porters/2000/05/msg13255.html]]
     * [[resolving methods at compile time - nntp.perl.org|https://www.nntp.perl.org/group/perl.perl5.porters/2005/08/msg104029.html]]
+- Stripping files
+    * <https://metacpan.org/pod/Perl::Strip>
+    * <https://metacpan.org/pod/Perl::Squish>
+    * <https://metacpan.org/pod/Perl::Stripper>
 
 # Projects
 
