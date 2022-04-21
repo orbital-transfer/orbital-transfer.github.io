@@ -217,3 +217,9 @@ Some modules have Pure-Perl fallbacks:
 # Debugger
 
 - <https://metacpan.org/pod/DB::Skip>
+
+# POD
+
+- <https://www.lemoda.net/perl/split-pod-from-pm/index.html>
+    * <http://blogs.perl.org/users/ben_bullock/2017/08/split-a-pm-into-a-pod-and-a-pm.html>
+- <https://metacpan.org/pod/Pod::Strip>
