@@ -223,3 +223,7 @@ Some modules have Pure-Perl fallbacks:
 - <https://www.lemoda.net/perl/split-pod-from-pm/index.html>
     * <http://blogs.perl.org/users/ben_bullock/2017/08/split-a-pm-into-a-pod-and-a-pm.html>
 - <https://metacpan.org/pod/Pod::Strip>
+
+# CPAN data
+
+- https://github.com/metacpan/metacpan-cpan-extracted
