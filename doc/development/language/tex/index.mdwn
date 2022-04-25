@@ -12,3 +12,6 @@
     + <https://metacpan.org/pod/BibTeX::Parser>
     + <https://metacpan.org/pod/Text::BibTeX>
     + <http://biblatex-biber.sourceforge.net/>
+
+- <https://tug.org/tex4ht/>
+- <https://dlmf.nist.gov/LaTeXML/>
