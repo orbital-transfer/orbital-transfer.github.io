@@ -4,3 +4,7 @@
 
 - <https://bundler.io/man/bundle-config.1.html>
     * e.g., setting build options <https://stackoverflow.com/questions/19649984/thrift-ruby-gem>.
+
+# Rake
+
+- <https://ruby.github.io/rake/>
