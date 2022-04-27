@@ -1,5 +1,10 @@
 [[!meta title="Ruby"]]
 
+# Ruby distributions
+
+- <https://github.com/rbenv/rbenv>
+- <https://github.com/rbenv/ruby-build>
+
 # Bundler
 
 - <https://bundler.io/man/bundle-config.1.html>
