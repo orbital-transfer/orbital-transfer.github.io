@@ -3,3 +3,8 @@
 - <https://luarocks.org/>
 - <https://github.com/pkulchenko/ZeroBraneStudio>
 - <https://github.com/EmmyLua>
+
+# Documentation
+
+- <https://keplerproject.github.io/luadoc/>
+- <https://github.com/lunarmodules/LDoc>
