@@ -1,0 +1,6 @@
+[[!meta title="Julia"]]
+
+- <https://julialang.org/blog/2019/11/artifacts/>
+    * <https://github.com/jlbuild/jlbuild.jl>
+    * <https://github.com/JuliaPackaging/Yggdrasil>
+    * <https://github.com/JuliaBinaryWrappers>
