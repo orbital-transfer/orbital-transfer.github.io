@@ -1,6 +1,7 @@
 [[!meta title="Java"]]
 
 - <https://github.com/GoogleContainerTools/jib>
+- <https://en.wikipedia.org/wiki/JShell>
 
 # JDK
 
