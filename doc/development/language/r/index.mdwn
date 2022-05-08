@@ -10,3 +10,8 @@
 - <https://www.r-consortium.org/>
 - <https://wiki.r-consortium.org/view/Code_Coverage_Tool_for_R>
 - <https://github.com/r-lib/covr>
+- <https://www.rstudio.com/blog/announcing-public-package-manager/>
+- <https://www.jumpingrivers.com/blog/r-packages-travis-github-actions-rstudio/>
+- <https://medium.com/@skyetetra/r-docker-faster-28e13a6d241d>
+- <https://github.com/rocker-org/rocker-versioned2>
+- <https://github.com/rstudio/r-builds>
