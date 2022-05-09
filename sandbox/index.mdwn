@@ -184,3 +184,7 @@
 
 - <https://www.cypress.io/>
 - <https://playwright.dev/>
+
+# Licenses
+
+- <https://github.com/fossology/fossology>
