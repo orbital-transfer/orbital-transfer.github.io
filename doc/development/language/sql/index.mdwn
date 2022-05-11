@@ -1,0 +1,5 @@
+[[!meta title="SQL"]]
+
+- <https://stackoverflow.com/questions/8271606/postgresql-syntax-check-without-running-the-query>
+    * <https://github.com/okbob/plpgsql_check>
+    * <https://github.com/markdrago/pgsanity>
