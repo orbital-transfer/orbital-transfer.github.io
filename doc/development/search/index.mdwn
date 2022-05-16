@@ -12,6 +12,7 @@
 
 * [[Perl-Tags-0.32 - Generate (possibly exuberant) Ctags style tags for Perl sourcecode - metacpan.org|https://metacpan.org/release/Perl-Tags]]
 * [[ctags regex for multiple declarations in one line - Stack Overflow|https://stackoverflow.com/questions/10741664/ctags-regex-for-multiple-declarations-in-one-line]]
+* [[ctags-client-tools — Universal Ctags|https://docs.ctags.io/en/latest/man/ctags-client-tools.7.html]]
 * [[List files in local git repo? - Stack Overflow|https://stackoverflow.com/questions/8533202/list-files-in-local-git-repo#8533413]]
 * [[Using Cscope and SilentBob to analyze source code - Linux.com|https://www.linux.com/news/using-cscope-and-silentbob-analyze-source-code]]
 * [[CGVG|http://uzix.org/cgvg.html]]
