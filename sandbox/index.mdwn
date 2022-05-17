@@ -188,3 +188,10 @@
 # Licenses
 
 - <https://github.com/fossology/fossology>
+
+# Code owners
+
+- <https://metacpan.org/dist/File-Codeowners>
+- <https://github.com/toptal/codeowners-checker>
+- <https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners>
+- <https://docs.gitlab.com/ee/user/project/code_owners.html>
