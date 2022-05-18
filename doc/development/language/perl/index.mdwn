@@ -100,6 +100,7 @@ Some modules have Pure-Perl fallbacks:
 - <https://github.com/tokuhirom/Perl-Build>
 - <https://github.com/tokuhirom/plenv>
 - <https://perlbrew.pl/>
+    * <https://perlbrew.pl/Reinstall-All-Modules-On-New-Perl.html>
 - <https://github.com/skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro>
 
 ## Package dependencies
