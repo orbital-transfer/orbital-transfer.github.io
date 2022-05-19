@@ -8,6 +8,7 @@
 - https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B
 - https://en.wikipedia.org/wiki/LLVM
 - https://drh.github.io/lcc/
+    * <http://www.smorgasbordet.com/pellesc/>
 - https://bellard.org/tcc/
 - https://sourceforge.net/projects/fpgac/
 - https://en.wikipedia.org/wiki/Amsterdam_Compiler_Kit
