@@ -24,3 +24,5 @@
 - <https://wiki.tcl-lang.org/page/AndroWish>
     * <http://www.androwish.org/home/home>
 - <https://wiki.tcl-lang.org/page/Installing+Tcl>
+- <https://www.magicsplat.com/tcl-installer/index.html>
+- <http://www.bawt.tcl3d.org/download.html>
