@@ -132,6 +132,8 @@
         + env/python/dist/Anaconda
     * `role/`: BLAS-interface, LAPACK-interface, XWindows-server, SQL-server, web-browser
         + e.g., BLAS: <https://www.mpi-magdeburg.mpg.de/projects/flexiblas>, <https://github.com/JuliaLinearAlgebra/libblastrampoline>.
+            + with variants for index-32, index-64
+            + some need Fortran, C, or C++
         + e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb
         + OpenGL version? Extensions <https://www.khronos.org/opengl/wiki/OpenGL_Extension>.
         + language compiler support? C99, C11, C++03, C++11, etc.?
