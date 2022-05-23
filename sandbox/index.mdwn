@@ -199,3 +199,8 @@
 # Intel oneAPI
 
 - <https://www.scivision.dev/intel-oneapi-github-actions/>
+
+# HPC workflows
+
+- <https://en.wikipedia.org/wiki/Singularity_(software)>
+- <https://snakemake.readthedocs.io/en/stable/>
