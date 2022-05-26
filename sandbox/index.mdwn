@@ -203,4 +203,12 @@
 # HPC workflows
 
 - <https://en.wikipedia.org/wiki/Singularity_(software)>
+    * <https://apptainer.org/>
+    * <https://github.com/apptainer/apptainer>
+    * <https://github.com/sylabs/singularity>
+        + <https://sylabs.io/singularity/>
+        + <https://sylabs.io/2022/05/whats-in-a-singularityce-release/>
+    * <https://github.com/hpcng/warewulf>
+        + <https://github.com/warewulf/warewulf3>
+    * <https://github.com/singularityware>
 - <https://snakemake.readthedocs.io/en/stable/>
