@@ -27,6 +27,10 @@
 
 - <https://python-poetry.org/docs/pyproject/>
 
+# Hatch
+
+- <https://github.com/pypa/hatch>
+
 # Env
 
 - [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
