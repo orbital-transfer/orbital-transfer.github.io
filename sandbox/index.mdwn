@@ -212,3 +212,18 @@
         + <https://github.com/warewulf/warewulf3>
     * <https://github.com/singularityware>
 - <https://snakemake.readthedocs.io/en/stable/>
+
+# Website debugging
+
+- https://gist.github.com/james2doyle/d552c408f5d3a6af8890914e60db3861
+- https://github.com/remy/jsconsole
+- https://github.com/google/ios-webkit-debug-proxy
+- https://developer.chrome.com/docs/devtools/remote-debugging/
+- https://stackoverflow.com/questions/11262236/ios-remote-debugging
+- https://medium.com/@nikoloza/how-to-debug-remote-ios-device-using-chrome-devtools-f44d697003a7
+- https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html
+- http://jonsadka.com/blog/how-to-debug-a-chrome-specific-bug-on-ios-using-remote-debugging
+- https://stackoverflow.com/questions/38179396/is-there-any-way-to-debug-chrome-in-any-ios-device
+- https://remotedebug.org/roadmap/
+    * https://github.com/RemoteDebug/remotedebug-compatibility-tables
+- https://inspect.dev/
