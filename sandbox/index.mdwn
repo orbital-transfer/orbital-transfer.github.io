@@ -227,3 +227,10 @@
 - https://remotedebug.org/roadmap/
     * https://github.com/RemoteDebug/remotedebug-compatibility-tables
 - https://inspect.dev/
+
+# Builds systems
+
+- https://en.wikipedia.org/wiki/List_of_build_automation_software
+- https://scons.org/
+- https://premake.github.io/
+- https://gittup.org/tup/
