@@ -230,7 +230,7 @@
 
 # Builds systems
 
-- https://en.wikipedia.org/wiki/List_of_build_automation_software
+- [[doc/development/build-tool]]
 - https://scons.org/
 - https://premake.github.io/
 - https://gittup.org/tup/
