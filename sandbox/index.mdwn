@@ -228,7 +228,7 @@
     * https://github.com/RemoteDebug/remotedebug-compatibility-tables
 - https://inspect.dev/
 
-# Builds systems
+# Build systems
 
 - [[doc/development/build-tool]]
 - https://scons.org/
