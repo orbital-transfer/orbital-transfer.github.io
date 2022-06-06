@@ -1,0 +1,4 @@
+[[!meta title="Sparkle"]]
+
+- <https://sparkle-project.org/>
+- <https://github.com/sparkle-project/Sparkle>
