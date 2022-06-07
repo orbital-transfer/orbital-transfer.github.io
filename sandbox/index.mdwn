@@ -234,3 +234,13 @@
 - https://scons.org/
 - https://premake.github.io/
 - https://gittup.org/tup/
+
+# Code coverage
+
+- Cobertura XML format
+    * <http://cobertura.github.io/cobertura/>
+    * <https://plugins.jenkins.io/cobertura/>
+    * <https://gcovr.com/en/stable/output/cobertura.html>
+    * <https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverage.coberturaformat-class.html>
+    * <https://docs.gitlab.com/ee/user/project/merge_requests/test_coverage_visualization.html>
+        + <https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html#artifactsreportscoverage_report>
