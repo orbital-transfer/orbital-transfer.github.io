@@ -1,0 +1,5 @@
+[[!meta title="Web testing"]]
+
+- <https://en.wikipedia.org/wiki/List_of_web_testing_tools>
+- <https://www.cypress.io/>
+- <https://playwright.dev/>

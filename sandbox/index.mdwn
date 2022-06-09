@@ -180,11 +180,6 @@
 - https://github.com/replit-archive/repl.it
 - https://github.com/replit/prybar
 
-# Web testing
-
-- <https://www.cypress.io/>
-- <https://playwright.dev/>
-
 # Licenses
 
 - <https://github.com/fossology/fossology>
