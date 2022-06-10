@@ -20,7 +20,6 @@
 # Build systems / environment management
 
 * [[GitHub - facebook/buck: A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages.|https://github.com/facebook/buck]]
-* [[GitHub - KDE/clazy: Qt-oriented static code analyzer based on the Clang framework|https://github.com/KDE/clazy]]
 * [[Clang Static Analyzer|https://clang-analyzer.llvm.org/]]
 * [[GitHub - bookingcom/pakket: An Unopinionated Meta-Packaging System|https://github.com/bookingcom/pakket]]
     * [["Pakket - An Unopinionated Meta-Packaging System" - Sawyer X - YouTube|https://www.youtube.com/watch?v=-WBL0QoQ3kw]]
