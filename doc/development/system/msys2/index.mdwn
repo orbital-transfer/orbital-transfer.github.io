@@ -1,5 +1,6 @@
 [[!meta title="MSYS2"]]
 
+* [[package-manager/pacman]]
 * use rankmirrors for MSYS2 packages? : [[Server downtime: Lessons learned · Issue #2178 · msys2/MSYS2-packages · GitHub|https://github.com/msys2/MSYS2-packages/issues/2178]]
 * CI cache packages? : [[(Discussion) Prune old packages from the repos · Issue #2174 · msys2/MSYS2-packages · GitHub|https://github.com/msys2/MSYS2-packages/issues/2174]]
 * Check space

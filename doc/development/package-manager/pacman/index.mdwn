@@ -1,0 +1,4 @@
+[[!meta title="Pacman"]]
+
+- https://archlinux.org/pacman/
+- https://github.com/Morganamilo/paru
