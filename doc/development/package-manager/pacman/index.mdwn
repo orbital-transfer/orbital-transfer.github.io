@@ -2,3 +2,4 @@
 
 - https://archlinux.org/pacman/
 - https://github.com/Morganamilo/paru
+- https://github.com/renatosilva/pactoys
