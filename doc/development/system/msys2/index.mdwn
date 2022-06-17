@@ -1,12 +1,23 @@
 [[!meta title="MSYS2"]]
 
+# Package management
+
+## Tools
+
 * [[package-manager/pacman]]
+* <https://www.msys2.org/docs/package-management/>
+* pacboy: <https://www.msys2.org/docs/package-naming/#avoiding-writing-long-package-names>
+
+## Creating packages
+
+* <https://www.msys2.org/wiki/Creating-Packages/>
+    + <https://archlinux.org/pacman/makepkg.8.html>
+
+## Setup
+
 * use rankmirrors for MSYS2 packages? : [[Server downtime: Lessons learned · Issue #2178 · msys2/MSYS2-packages · GitHub|https://github.com/msys2/MSYS2-packages/issues/2178]]
 * CI cache packages? : [[(Discussion) Prune old packages from the repos · Issue #2174 · msys2/MSYS2-packages · GitHub|https://github.com/msys2/MSYS2-packages/issues/2174]]
 * Check space
     + <https://github.com/Alexpux/MSYS2-pacman/issues/59>
     + <https://github.com/msys2/MINGW-packages/blob/master/.ci/ci-build.sh>
 * <https://github.com/msys2/setup-msys2/blob/master/main.js>
-* <https://www.msys2.org/wiki/Creating-Packages/>
-    + <https://archlinux.org/pacman/makepkg.8.html>
-* pacboy: <https://www.msys2.org/docs/package-management/#avoiding-writing-long-package-names>
