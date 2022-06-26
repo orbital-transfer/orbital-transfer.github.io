@@ -1,0 +1,6 @@
+[[!meta title="Raku"]]
+
+# Editor / IDE tools
+
+- LSP
+    * https://github.com/bscan/RakuNavigator
