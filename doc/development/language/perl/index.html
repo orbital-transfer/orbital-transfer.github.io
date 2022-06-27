@@ -99,8 +99,8 @@ Perl
 <li>CPAN.pm
 <ul>
 <li><code>cpan -g module</code>: to download tarball</li>
-<li><a href="https://metacpan.org/dist/CPAN-Plugin-Sysdeps">https://metacpan.org/dist/CPAN-Plugin-Sysdeps</a></li>
-<li><a href="https://metacpan.org/pod/CPAN#Plugin-support-***EXPERIMENTAL***">https://metacpan.org/pod/CPAN#Plugin-support-***EXPERIMENTAL***</a></li>
+<li><a href="https://metacpan.org/dist/CPAN-Plugin-Sysdeps">CPAN-Plugin-Sysdeps - CPAN.pm plugin for installing external dependencies - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/CPAN#Plugin-support-***EXPERIMENTAL***">Experimental plugin support</a></li>
 </ul></li>
 <li>cpanm
 <ul>
@@ -108,17 +108,22 @@ Perl
 <li><code>cpanm --mirror http://www.cpan.org/ --mirror http://backpan.perl.org/ --mirror http://cpan.cpantesters.org/ --mirror https://cpan.metacpan.org/ Local</code>
 <ul>
 <li>download all <code>~/.cpanm/sources/*/02packages.details.txt.gz</code></li>
-<li>note <code>Local</code> is reserved: <a href="https://pause.perl.org/pause/query?ACTION=pause_namingmodules">https://pause.perl.org/pause/query?ACTION=pause_namingmodules</a></li>
 </ul></li>
 </ul></li>
 <li>cpm</li>
 <li>cnext
 <ul>
-<li>https://c.nextcpan.org/</li>
-<li>http://nextcpan.org/</li>
-<li>https://github.com/next-cpan</li>
-<li>https://github.com/next-cpan/OverPAN</li>
+<li><a href="https://c.nextcpan.org/">cnext - an alternate CPAN client using next-cpan GitHub repositories</a></li>
+<li><a href="http://nextcpan.org/">The Next Generation of CPAN</a></li>
+<li><a href="https://github.com/next-cpan">The Next Generation of CPAN · GitHub</a></li>
+<li><a href="https://github.com/next-cpan/OverPAN">GitHub - next-cpan/OverPAN: OverPAN the extra layer to patch CPAN</a></li>
 </ul></li>
+</ul>
+
+<h1 id="namingperlmodules">Naming Perl modules</h1>
+
+<ul>
+<li><code>Local</code> is reserved: <a href="https://pause.perl.org/pause/query?ACTION=pause_namingmodules">https://pause.perl.org/pause/query?ACTION=pause_namingmodules</a></li>
 </ul>
 
 <h1 id="buildingperlmodules">Building Perl modules</h1>
@@ -128,7 +133,7 @@ Perl
 <ul>
 <li><a href="https://metacpan.org/pod/Perl::MinimumVersion">Perl::MinimumVersion - Find a minimum required version of perl for Perl code - metacpan.org</a></li>
 <li><a href="https://metacpan.org/pod/Perl::MinimumVersion::Fast">Perl::MinimumVersion::Fast - Find a minimum required version of perl for Perl code - metacpan.org</a></li>
-<li>https://metacpan.org/pod/Syntax::Construct</li>
+<li><a href="https://metacpan.org/pod/Syntax::Construct">Syntax::Construct - Explicitly state which non-feature constructs are used in the code. - metacpan.org</a></li>
 <li><a href="https://github.com/perlrdf/p5-rdf-ns-curated/pull/7/commits/2f7624f0bbbcfee0367a614d9ce519283675a435">Add minimum specified Perl version to build matrix (GitHub Actions workflow improvements by zmughal · Pull Request #7 · perlrdf/p5-rdf-ns-curated · GitHub)</a></li>
 </ul>
 
@@ -144,29 +149,29 @@ Perl version.</li>
 <ul>
 <li>Fatpacking:
 <ul>
-<li><a href="https://metacpan.org/release/App-FatPacker-Simple">https://metacpan.org/release/App-FatPacker-Simple</a></li>
-<li><a href="https://metacpan.org/pod/App::FatPacker">https://metacpan.org/pod/App::FatPacker</a></li>
+<li><a href="https://metacpan.org/release/App-FatPacker-Simple">App-FatPacker-Simple - only fatpack a script - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/App::FatPacker">App::FatPacker - pack your dependencies onto your script file - metacpan.org</a></li>
 </ul></li>
 </ul></li>
 <li>Some use an environment variable to set implementation:
 <ul>
 <li><code>Params::Util</code>: <code>&#036;ENV{PERL_PARAMS_UTIL_PP}=1</code></li>
 <li><code>Params::Validate</code>: <code>&#036;ENV{PARAMS_VALIDATE_IMPLEMENTATION}='PP'</code></li>
-<li>others: <a href="https://metacpan.org/pod/Acme::CPANModules::XSVersions">https://metacpan.org/pod/Acme::CPANModules::XSVersions</a></li>
+<li>others: <a href="https://metacpan.org/pod/Acme::CPANModules::XSVersions">Acme::CPANModules::XSVersions - List of XS versions of Perl modules - metacpan.org</a></li>
 </ul></li>
 </ul></li>
 <li>Alien modules
 <ul>
 <li>Are not: Perl version-specific.</li>
 <li>Are: Architecture-specific.</li>
-<li><a href="https://metacpan.org/pod/Alien::Build::Plugin::Probe::OverrideCI">https://metacpan.org/pod/Alien::Build::Plugin::Probe::OverrideCI</a></li>
-<li><a href="https://metacpan.org/pod/Alien::Build::Plugin::Fetch::Cache">https://metacpan.org/pod/Alien::Build::Plugin::Fetch::Cache</a></li>
+<li><a href="https://metacpan.org/pod/Alien::Build::Plugin::Probe::OverrideCI">Alien::Build::Plugin::Probe::OverrideCI - Override logic for continuous integration - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Alien::Build::Plugin::Fetch::Cache">Alien::Build::Plugin::Fetch::Cache - Alien::Build plugin to cache files downloaded from the internet - metacpan.org</a></li>
 </ul></li>
 <li>XS modules
 <ul>
 <li>Are: Perl version-specific.</li>
 <li>Are: Architecture-specific.</li>
-<li>Test without XS: <a href="https://metacpan.org/pod/Test::NoXS">https://metacpan.org/pod/Test::NoXS</a></li>
+<li>Test without XS: <a href="https://metacpan.org/pod/Test::NoXS">Test::NoXS - Prevent a module from loading its XS code - metacpan.org</a></li>
 <li>Can be packaged using PAR or staticperl (see below)</li>
 </ul></li>
 </ul>
@@ -174,7 +179,7 @@ Perl version.</li>
 <p>Some modules have Pure-Perl fallbacks:</p>
 
 <ul>
-<li><a href="https://metacpan.org/pod/Module::XSOrPP">https://metacpan.org/pod/Module::XSOrPP</a></li>
+<li><a href="https://metacpan.org/pod/Module::XSOrPP">Module::XSOrPP - Determine if an installed module is XS or pure-perl - metacpan.org</a></li>
 </ul>
 
 <h1 id="packaging">Packaging</h1>
@@ -182,8 +187,8 @@ Perl version.</li>
 <ul>
 <li>PAR
 <ul>
-<li><a href="https://metacpan.org/pod/PAR::Dist">https://metacpan.org/pod/PAR::Dist</a></li>
-<li>PAR issue with DLLs <a href="https://github.com/project-renard/curie/issues/122">https://github.com/project-renard/curie/issues/122</a>, <a href="https://www.mail-archive.com/par@perl.org/msg05985.html">https://www.mail-archive.com/par@perl.org/msg05985.html</a>
+<li><a href="https://metacpan.org/pod/PAR::Dist">PAR::Dist - Create and manipulate PAR distributions - metacpan.org</a></li>
+<li>PAR issue with DLLs <a href="https://github.com/project-renard/curie/issues/122">Track PAR XSLoader issue on MSYS2/MinGW64 · Issue #122 · project-renard/curie · GitHub</a>, <a href="https://www.mail-archive.com/par@perl.org/msg05985.html">Getting Gtk3 to work with PAR</a>
 <ul>
 <li>may need to use DLL dependency tool for <a href="../../os/windows/">Windows</a> to automate this.</li>
 </ul></li>
@@ -191,36 +196,36 @@ Perl version.</li>
 <li><p>staticperl</p>
 
 <ul>
-<li><a href="https://metacpan.org/pod/staticperl">https://metacpan.org/pod/staticperl</a></li>
-<li><a href="https://github.com/gh0stwizard/staticperl-modules">https://github.com/gh0stwizard/staticperl-modules</a>
+<li><a href="https://metacpan.org/pod/staticperl">staticperl - perl, libc, 100 modules, all in one standalone 500kb file - metacpan.org</a></li>
+<li><a href="https://github.com/gh0stwizard/staticperl-modules">GitHub - gh0stwizard/staticperl-modules: Patched modules from CPAN for staticperl</a>
 <ul>
-<li><a href="https://gh0stwizard.tk/categories/staticperl/">https://gh0stwizard.tk/categories/staticperl/</a></li>
+<li><a href="https://gh0stwizard.tk/categories/staticperl/">Category: staticperl @ Technotes</a></li>
 </ul></li>
 </ul></li>
 <li><p>Debian</p>
 
 <ul>
-<li>http://web.archive.org/web/20170911182144/https://debian-administration.org/article/78/Building_Debian_packages_of_Perl_modules</li>
-<li>https://metacpan.org/pod/CPANPLUS::Dist::Deb</li>
-<li>https://wiki.debian.org/PerlFAQ</li>
-<li>https://github.com/jozef/Debian-Apt-PM
+<li><a href="http://web.archive.org/web/20170911182144/https://debian-administration.org/article/78/Building_Debian_packages_of_Perl_modules">Building Debian packages of Perl modules</a></li>
+<li><a href="https://metacpan.org/pod/CPANPLUS::Dist::Deb">CPANPLUS::Dist::Deb - metacpan.org</a></li>
+<li><a href="https://wiki.debian.org/PerlFAQ">PerlFAQ - Debian Wiki</a></li>
+<li><a href="https://github.com/jozef/Debian-Apt-PM">GitHub - jozef/Debian-Apt-PM: locate Perl Modules in Debian repositories</a>
 <ul>
-<li>https://metacpan.org/pod/Alien::Debian::Apt::PM</li>
-<li>https://news.perlfoundation.org/post/2010q3_grant_proposal_cpan_to</li>
-<li>https://metacpan.org/pod/distribution/Debian-Apt-PM/lib/Debian/Apt/PM/SettingUpBuildSystem.pod</li>
+<li><a href="https://metacpan.org/pod/Alien::Debian::Apt::PM">Alien::Debian::Apt::PM - install bundled apt-pm apt-cpan apt-pm-web dh-make-pm cpan-patches dpkg-scanpmpackages - metacpan.org</a></li>
+<li><a href="https://news.perlfoundation.org/post/2010q3_grant_proposal_cpan_to">2010Q3 Grant Proposal: CPAN to deb autopackaging</a></li>
+<li><a href="https://metacpan.org/pod/distribution/Debian-Apt-PM/lib/Debian/Apt/PM/SettingUpBuildSystem.pod">SettingUpBuildSystem - How to set-up a chrooted build system - metacpan.org</a></li>
 </ul></li>
-<li><a href="https://stackoverflow.com/questions/25906062/how-to-find-debian-ubuntu-packages-that-provide-required-perl-modules">https://stackoverflow.com/questions/25906062/how-to-find-debian-ubuntu-packages-that-provide-required-perl-modules</a>
+<li><a href="https://stackoverflow.com/questions/25906062/how-to-find-debian-ubuntu-packages-that-provide-required-perl-modules">How to find (Debian/Ubuntu/...) packages that provide required Perl modules - Stack Overflow</a>
 <ul>
-<li><a href="https://www.enricozini.org/blog/2011/debian/distromatch/">https://www.enricozini.org/blog/2011/debian/distromatch/</a></li>
-<li><a href="https://askubuntu.com/questions/358472/how-to-find-out-what-package-contains-some-perl-module">https://askubuntu.com/questions/358472/how-to-find-out-what-package-contains-some-perl-module</a></li>
+<li><a href="https://www.enricozini.org/blog/2011/debian/distromatch/">Match package names across distributions</a></li>
+<li><a href="https://askubuntu.com/questions/358472/how-to-find-out-what-package-contains-some-perl-module">deb - How to find out what package contains some Perl module - Ask Ubuntu</a></li>
 </ul></li>
 </ul></li>
 <li>RPM
 <ul>
-<li>http://cpanspec.sourceforge.net/</li>
-<li>https://fedoraproject.org/wiki/Perl/cpanspec</li>
-<li>https://github.com/openSUSE/cpanspec</li>
-<li><a href="https://askubuntu.com/questions/108888/yum-whatprovides-perlfoobar-equivalent-with-apt-or-dpkg">https://askubuntu.com/questions/108888/yum-whatprovides-perlfoobar-equivalent-with-apt-or-dpkg</a>
+<li><a href="http://cpanspec.sourceforge.net/">cpanspec - RPM spec file generation utility</a></li>
+<li><a href="https://fedoraproject.org/wiki/Perl/cpanspec">Perl/cpanspec - Fedora Project Wiki</a></li>
+<li><a href="https://github.com/openSUSE/cpanspec">GitHub - openSUSE/cpanspec: Create openSUSE spec files form cpan tar files</a></li>
+<li><a href="https://askubuntu.com/questions/108888/yum-whatprovides-perlfoobar-equivalent-with-apt-or-dpkg">yum whatprovides 'perl(Foo::Bar)' equivalent with apt or dpkg? - Ask Ubuntu</a>
 <ul>
 <li><code>yum whatprovides 'perl(Foo::Bar)'</code></li>
 </ul></li>
@@ -230,11 +235,11 @@ Perl version.</li>
 <h1 id="versionupdating">Version updating</h1>
 
 <ul>
-<li><a href="http://blogs.perl.org/users/grinnz/2018/04/a-guide-to-versions-in-perl.html">http://blogs.perl.org/users/grinnz/2018/04/a-guide-to-versions-in-perl.html</a></li>
-<li><a href="https://metacpan.org/pod/Sort::Versions">https://metacpan.org/pod/Sort::Versions</a></li>
-<li><a href="https://stackoverflow.com/questions/1454202/how-can-i-automatically-update-perl-modules-version-with-git">https://stackoverflow.com/questions/1454202/how-can-i-automatically-update-perl-modules-version-with-git</a></li>
-<li><a href="https://metacpan.org/pod/distribution/App-RewriteVersion/script/perl-bump-version">https://metacpan.org/pod/distribution/App-RewriteVersion/script/perl-bump-version</a></li>
-<li><a href="https://metacpan.org/release/PPI-PowerToys">https://metacpan.org/release/PPI-PowerToys</a></li>
+<li><a href="http://blogs.perl.org/users/grinnz/2018/04/a-guide-to-versions-in-perl.html">A Guide to Versions in Perl - Grinnz (blogs.perl.org)</a></li>
+<li><a href="https://metacpan.org/pod/Sort::Versions">Sort::Versions - a perl 5 module for sorting of revision-like numbers - metacpan.org</a></li>
+<li><a href="https://stackoverflow.com/questions/1454202/how-can-i-automatically-update-perl-modules-version-with-git">How can I automatically update Perl modules' $VERSION with Git? - Stack Overflow</a></li>
+<li><a href="https://metacpan.org/pod/distribution/App-RewriteVersion/script/perl-bump-version">perl-bump-version - A tool to bump your Perl module versions - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/PPI-PowerToys">PPI-PowerToys - A handy collection of small PPI-based utilities - metacpan.org</a></li>
 </ul>
 
 <h1 id="existingtools">Existing tools</h1>
@@ -242,44 +247,44 @@ Perl version.</li>
 <h2 id="buildingdistributingperl">Building / distributing Perl</h2>
 
 <ul>
-<li><a href="https://github.com/tokuhirom/Perl-Build">https://github.com/tokuhirom/Perl-Build</a></li>
-<li><a href="https://github.com/tokuhirom/plenv">https://github.com/tokuhirom/plenv</a></li>
-<li><a href="https://perlbrew.pl/">https://perlbrew.pl/</a>
+<li><a href="https://github.com/tokuhirom/Perl-Build">GitHub - tokuhirom/Perl-Build</a></li>
+<li><a href="https://github.com/tokuhirom/plenv">GitHub - tokuhirom/plenv: Perl binary manager</a></li>
+<li><a href="https://perlbrew.pl/">Perlbrew</a>
 <ul>
-<li><a href="https://perlbrew.pl/Reinstall-All-Modules-On-New-Perl.html">https://perlbrew.pl/Reinstall-All-Modules-On-New-Perl.html</a></li>
+<li><a href="https://perlbrew.pl/Reinstall-All-Modules-On-New-Perl.html">How To Reinstall All Modules On New Perl</a></li>
 </ul></li>
-<li><a href="https://github.com/skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro">https://github.com/skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro</a></li>
+<li><a href="https://github.com/skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro">GitHub - skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro</a></li>
 </ul>
 
 <h2 id="packagedependencies">Package dependencies</h2>
 
 <ul>
-<li><a href="https://metacpan.org/pod/CPAN::Unwind">https://metacpan.org/pod/CPAN::Unwind</a>
+<li><a href="https://metacpan.org/pod/CPAN::Unwind">CPAN::Unwind - Recursively determines dependencies of CPAN modules - metacpan.org</a>
 <ul>
-<li><a href="https://metacpan.org/release/Parse-CPAN-Packages">https://metacpan.org/release/Parse-CPAN-Packages</a></li>
-<li><a href="https://metacpan.org/pod/Module::Depends::Intrusive">https://metacpan.org/pod/Module::Depends::Intrusive</a></li>
+<li><a href="https://metacpan.org/release/Parse-CPAN-Packages">Parse-CPAN-Packages - Parse 02packages.details.txt.gz - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Module::Depends::Intrusive">Module::Depends::Intrusive - intrusive discovery of distribution dependencies. - metacpan.org</a></li>
 </ul></li>
-<li><a href="https://metacpan.org/release/Devel-TraceUse">https://metacpan.org/release/Devel-TraceUse</a></li>
-<li><a href="https://metacpan.org/dist/Module-ExtractUse">https://metacpan.org/dist/Module-ExtractUse</a></li>
-<li><a href="https://metacpan.org/release/Perl-PrereqScanner-NotQuiteLite">https://metacpan.org/release/Perl-PrereqScanner-NotQuiteLite</a></li>
-<li><a href="https://metacpan.org/release/Perl-PrereqScanner">https://metacpan.org/release/Perl-PrereqScanner</a></li>
-<li><a href="https://metacpan.org/release/App-scan_prereqs_cpanfile">https://metacpan.org/release/App-scan_prereqs_cpanfile</a></li>
-<li><a href="https://metacpan.org/release/Dependencies-Searcher">https://metacpan.org/release/Dependencies-Searcher</a></li>
-<li><a href="https://metacpan.org/release/Module-ScanDeps">https://metacpan.org/release/Module-ScanDeps</a></li>
-<li><a href="https://metacpan.org/release/Tangerine">https://metacpan.org/release/Tangerine</a></li>
-<li><a href="https://metacpan.org/release/CPAN-FindDependencies">https://metacpan.org/release/CPAN-FindDependencies</a></li>
-<li><p><a href="http://neilb.org/reviews/dependencies.html">http://neilb.org/reviews/dependencies.html</a></p></li>
-<li><p><a href="https://metacpan.org/pod/OrePAN2">https://metacpan.org/pod/OrePAN2</a></p></li>
-<li><a href="https://metacpan.org/pod/App::opan">https://metacpan.org/pod/App::opan</a></li>
-<li><a href="https://metacpan.org/release/App-plx">https://metacpan.org/release/App-plx</a></li>
-<li><a href="https://github.com/skaji/Carl">https://github.com/skaji/Carl</a></li>
-<li><a href="https://metacpan.org/release/CPAN-Mirror-Tiny">https://metacpan.org/release/CPAN-Mirror-Tiny</a></li>
-<li><a href="https://metacpan.org/pod/Pinto">https://metacpan.org/pod/Pinto</a></li>
-<li><a href="https://metacpan.org/pod/CPAN::Mini">https://metacpan.org/pod/CPAN::Mini</a></li>
-<li><a href="https://metacpan.org/pod/CPAN::Mini::Inject">https://metacpan.org/pod/CPAN::Mini::Inject</a></li>
-<li><a href="https://metacpan.org/pod/V">https://metacpan.org/pod/V</a></li>
-<li><a href="https://metacpan.org/pod/Carton">https://metacpan.org/pod/Carton</a></li>
-<li><a href="https://metacpan.org/pod/Carmel">https://metacpan.org/pod/Carmel</a></li>
+<li><a href="https://metacpan.org/release/Devel-TraceUse">Devel-TraceUse - show the modules your program loads, recursively - metacpan.org</a></li>
+<li><a href="https://metacpan.org/dist/Module-ExtractUse">Module-ExtractUse - Find out what modules are used - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/Perl-PrereqScanner-NotQuiteLite">Perl-PrereqScanner-NotQuiteLite - a tool to scan your Perl code for its prerequisites - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/Perl-PrereqScanner">Perl-PrereqScanner - a tool to scan your Perl code for its prerequisites - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/App-scan_prereqs_cpanfile">App-scan_prereqs_cpanfile - Scan prerequisite modules and generate CPANfile - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/Dependencies-Searcher">Dependencies-Searcher - Search for modules used or required by a distribution and build a report that can be used as Carton cpanfile . - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/Module-ScanDeps">Module-ScanDeps - Recursively scan Perl code for dependencies - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/Tangerine">Tangerine - Examine perl files and report dependency metadata - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/CPAN-FindDependencies">CPAN-FindDependencies - generate reports when modules' dependencies get new releases - metacpan.org</a></li>
+<li><p><a href="http://neilb.org/reviews/dependencies.html">CPAN modules for getting module dependency information</a></p></li>
+<li><p><a href="https://metacpan.org/pod/OrePAN2">OrePAN2 - Yet another DarkPAN manager. - metacpan.org</a></p></li>
+<li><a href="https://metacpan.org/pod/App::opan">App::opan - A CPAN overlay for darkpan and pinning purposes - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/App-plx">App-plx - Perl Layout Executor - metacpan.org</a></li>
+<li><a href="https://github.com/skaji/Carl">GitHub - skaji/Carl</a></li>
+<li><a href="https://metacpan.org/release/CPAN-Mirror-Tiny">CPAN-Mirror-Tiny - create partial CPAN mirror (a.k.a. DarkPAN) - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Pinto">Pinto - Curate a repository of Perl modules - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/CPAN::Mini">CPAN::Mini - create a minimal mirror of CPAN - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/CPAN::Mini::Inject">CPAN::Mini::Inject - Inject modules into a CPAN::Mini mirror. - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/V">V - Print version of the specified module(s). - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Carton">Carton - Perl module dependency manager (aka Bundler for Perl) - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Carmel">Carmel - CPAN Artifact Repository Manager - metacpan.org</a></li>
 </ul>
 
 <h1 id="distribution">Distribution</h1>
@@ -287,47 +292,47 @@ Perl version.</li>
 <h2 id="perlinterpreter">Perl interpreter</h2>
 
 <ul>
-<li><a href="https://github.com/skaji/relocatable-perl">https://github.com/skaji/relocatable-perl</a>
+<li><a href="https://github.com/skaji/relocatable-perl">GitHub - skaji/relocatable-perl: self-contained, portable perl binaries</a>
 <ul>
-<li><a href="https://github.com/ddmitov/perl-executing-browser">https://github.com/ddmitov/perl-executing-browser</a></li>
+<li><a href="https://github.com/ddmitov/perl-executing-browser">GitHub - ddmitov/perl-executing-browser: HTML interface for Perl 5 desktop applications</a></li>
 </ul></li>
-<li><a href="https://github.com/stevieb9/berrybrew">https://github.com/stevieb9/berrybrew</a>
+<li><a href="https://github.com/stevieb9/berrybrew">GitHub - stevieb9/berrybrew: Perlbrew for Windows!</a>
 <ul>
-<li><a href="https://github.com/stevieb9/test-brewbuild">https://github.com/stevieb9/test-brewbuild</a></li>
-<li><a href="https://community.chocolatey.org/packages/berrybrew">https://community.chocolatey.org/packages/berrybrew</a></li>
+<li><a href="https://github.com/stevieb9/test-brewbuild">GitHub - stevieb9/test-brewbuild: Automate builds across all installed perl/berrybrew instances (Windows or Unix)</a></li>
+<li><a href="https://community.chocolatey.org/packages/berrybrew">Chocolatey Software - berrybrew (Install) 1.2.6</a></li>
 </ul></li>
 </ul>
 
 <h2 id="guides">Guides</h2>
 
 <ul>
-<li><a href="https://metacpan.org/pod/Dist::Zilla::Starter">https://metacpan.org/pod/Dist::Zilla::Starter</a></li>
-<li><a href="https://ology.github.io/2021/03/14/releasing-perl-modules-to-cpan/">https://ology.github.io/2021/03/14/releasing-perl-modules-to-cpan/</a></li>
-<li><a href="http://tynovsky.github.io/cpan-tutorials/">http://tynovsky.github.io/cpan-tutorials/</a></li>
+<li><a href="https://metacpan.org/pod/Dist::Zilla::Starter">Dist::Zilla::Starter - Guide to getting started with Dist::Zilla - metacpan.org</a></li>
+<li><a href="https://ology.github.io/2021/03/14/releasing-perl-modules-to-cpan/">Releasing Perl Modules to CPAN - Gene Boggs</a></li>
+<li><a href="http://tynovsky.github.io/cpan-tutorials/">CPAN Tutorials</a></li>
 </ul>
 
 <h2 id="tools">Tools</h2>
 
 <ul>
-<li><a href="https://metacpan.org/pod/Dist::Milla">https://metacpan.org/pod/Dist::Milla</a></li>
-<li><a href="https://metacpan.org/pod/Dist::Iller">https://metacpan.org/pod/Dist::Iller</a></li>
-<li><a href="https://metacpan.org/release/Minilla">https://metacpan.org/release/Minilla</a></li>
-<li><a href="https://dev.to/haarg/distar-a-cpan-distribution-author-tool-5e95">https://dev.to/haarg/distar-a-cpan-distribution-author-tool-5e95</a></li>
-<li><a href="https://metacpan.org/pod/Zilla::Dist">https://metacpan.org/pod/Zilla::Dist</a></li>
+<li><a href="https://metacpan.org/pod/Dist::Milla">Dist::Milla - Distribution builder, Opinionated but Unobtrusive - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Dist::Iller">Dist::Iller - A Dist::Zilla &amp; Pod::Weaver preprocessor - metacpan.org</a></li>
+<li><a href="https://metacpan.org/release/Minilla">Minilla - CPAN module authoring tool - metacpan.org</a></li>
+<li><a href="https://dev.to/haarg/distar-a-cpan-distribution-author-tool-5e95">Distar - A CPAN Distribution Author Tool - DEV Community</a></li>
+<li><a href="https://metacpan.org/pod/Zilla::Dist">Zilla::Dist - metacpan.org</a></li>
 </ul>
 
 <h2 id="paths">Paths</h2>
 
 <ul>
-<li><a href="https://metacpan.org/dist/Module-Which">https://metacpan.org/dist/Module-Which</a></li>
+<li><a href="https://metacpan.org/dist/Module-Which">Module-Which - find version and path of locally installed modules - metacpan.org</a></li>
 </ul>
 
 <h1 id="benchmarkingprofiling">Benchmarking, Profiling</h1>
 
 <ul>
-<li><a href="https://metacpan.org/pod/Dumbbench">https://metacpan.org/pod/Dumbbench</a></li>
-<li><a href="https://metacpan.org/pod/Benchmark">https://metacpan.org/pod/Benchmark</a></li>
-<li><a href="https://metacpan.org/pod/Devel::NYTProf">https://metacpan.org/pod/Devel::NYTProf</a></li>
+<li><a href="https://metacpan.org/pod/Dumbbench">Dumbbench - More reliable benchmarking with the least amount of thinking - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Benchmark">Benchmark - benchmark running times of Perl code - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Devel::NYTProf">Devel::NYTProf - Powerful fast feature-rich Perl source code profiler - metacpan.org</a></li>
 </ul>
 
 <h1 id="parserstranspilers">Parsers, transpilers</h1>
@@ -337,19 +342,19 @@ Perl version.</li>
 <li><a href="https://metacpan.org/pod/PPR">PPR - Pattern-based Perl Recognizer - metacpan.org</a></li>
 <li><a href="https://metacpan.org/pod/Babble">Babble - EXPERIMENTAL Babel-like for perl - metacpan.org</a></li>
 <li><a href="https://metacpan.org/pod/Guacamole">Guacamole - A parser toolkit for Standard Perl - metacpan.org</a></li>
-<li>https://metacpan.org/pod/SPVM
+<li><a href="https://metacpan.org/pod/SPVM">SPVM - SPVM Language - metacpan.org</a>
 <ul>
-<li>https://github.com/yuki-kimoto/SPVM</li>
-<li>https://yuki-kimoto.github.io/spvmdoc-public/language.html</li>
+<li><a href="https://github.com/yuki-kimoto/SPVM">GitHub - yuki-kimoto/SPVM: SPVM Language</a></li>
+<li><a href="https://yuki-kimoto.github.io/spvmdoc-public/language.html">SPVM Language Specification - SPVM Document - Static Perl Virtual Machine. Fast Calculation, Fast Array Operation, and Easy C/C++ Binding.</a></li>
 </ul></li>
-<li>https://metacpan.org/pod/RPerl</li>
-<li>https://github.com/fglock/Perlito</li>
-<li>https://github.com/perl11
+<li><a href="https://metacpan.org/pod/RPerl">RPerl - metacpan.org</a></li>
+<li><a href="https://github.com/fglock/Perlito">GitHub - fglock/Perlito: "Perlito" Perl programming language compiler</a></li>
+<li><a href="https://github.com/perl11">Perl 11 · GitHub</a>
 <ul>
-<li>http://perl11.github.io/</li>
+<li><a href="http://perl11.github.io/">This Perl Goes To 11</a></li>
 </ul></li>
-<li>https://metacpan.org/dist/Compiler-Parser</li>
-<li><a href="https://www.sunstarsys.com/essays/perl7-sealed-lexicals">https://www.sunstarsys.com/essays/perl7-sealed-lexicals</a>
+<li><a href="https://metacpan.org/dist/Compiler-Parser">Compiler-Parser - Create Abstract Syntax Tree for Perl5 - metacpan.org</a></li>
+<li><a href="https://www.sunstarsys.com/essays/perl7-sealed-lexicals">SunStar Systems - Perl 7 Feature Request: sealed subs for typed lexicals</a>
 <ul>
 <li><a href="https://www.perl.com/pub/2000/06/p5pdigest/THISWEEK-20000625.html/#Method_Lookup_Speedup_">This Week on p5p 2000/06/25</a></li>
 <li><a href="https://www.perl.com/pub/2000/06/dougpatch.html/">Notes on Doug's Method Lookup Patch</a></li>
@@ -358,34 +363,35 @@ Perl version.</li>
 </ul></li>
 <li>Stripping files
 <ul>
-<li><a href="https://metacpan.org/pod/Perl::Strip">https://metacpan.org/pod/Perl::Strip</a></li>
-<li><a href="https://metacpan.org/pod/Perl::Squish">https://metacpan.org/pod/Perl::Squish</a></li>
-<li><a href="https://metacpan.org/pod/Perl::Stripper">https://metacpan.org/pod/Perl::Stripper</a></li>
+<li><a href="https://metacpan.org/pod/Perl::Strip">Perl::Strip - reduce file size by stripping whitespace, comments, pod etc. - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Perl::Squish">Perl::Squish - Reduce Perl code to a few characters as possible - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Perl::Stripper">Perl::Stripper - Yet another PPI-based Perl source code stripper - metacpan.org</a></li>
 </ul></li>
 </ul>
 
 <h1 id="projects">Projects</h1>
 
 <ul>
-<li><a href="https://github.com/saiftynet/GUIDeFATE">https://github.com/saiftynet/GUIDeFATE</a></li>
+<li><a href="https://github.com/saiftynet/GUIDeFATE">GitHub - saiftynet/GUIDeFATE: GUI Design From A Text Editor</a></li>
 </ul>
 
 <h1 id="refactoring">Refactoring</h1>
 
 <ul>
-<li>https://metacpan.org/pod/Devel::Deprecate</li>
-<li>https://phoenixtrap.com/2021/06/29/gradual-method-renaming-in-perl/</li>
+<li><a href="https://metacpan.org/pod/Devel::Deprecate">Devel::Deprecate - Create deprecation schedules in your code - metacpan.org</a></li>
+<li><a href="https://phoenixtrap.com/2021/06/29/gradual-method-renaming-in-perl/">Gradual method renaming in Perl—The Phoenix Trap</a></li>
+<li><a href="https://metacpan.org/dist/App-PRT">App-PRT - Command line Perl Refactoring Tool - metacpan.org</a></li>
 </ul>
 
 <h1 id="testing">Testing</h1>
 
 <ul>
-<li><a href="https://metacpan.org/pod/Test::NeedsDisplay">https://metacpan.org/pod/Test::NeedsDisplay</a></li>
-<li><a href="https://www.perlmonks.org/?node_id=856415">https://www.perlmonks.org/?node_id=856415</a></li>
-<li><a href="https://github.com/Perl-Toolchain-Gang/toolchain-site/blob/master/lancaster-consensus.md">https://github.com/Perl-Toolchain-Gang/toolchain-site/blob/master/lancaster-consensus.md</a>
+<li><a href="https://metacpan.org/pod/Test::NeedsDisplay">Test::NeedsDisplay - Ensure that tests needing a display have one - metacpan.org</a></li>
+<li><a href="https://www.perlmonks.org/?node_id=856415">Perl CPAN test metadata</a></li>
+<li><a href="https://github.com/Perl-Toolchain-Gang/toolchain-site/blob/master/lancaster-consensus.md">toolchain-site/lancaster-consensus.md at master · Perl-Toolchain-Gang/toolchain-site · GitHub</a>
 <ul>
-<li><a href="https://xdg.me/the-annotated-lancaster-consensus/">https://xdg.me/the-annotated-lancaster-consensus/</a></li>
-<li><a href="http://cpan.io/ref/toolchain/lancaster-consensus.html">http://cpan.io/ref/toolchain/lancaster-consensus.html</a></li>
+<li><a href="https://xdg.me/the-annotated-lancaster-consensus/">The Annotated Lancaster Consensus</a></li>
+<li><a href="http://cpan.io/ref/toolchain/lancaster-consensus.html">CPAN.io</a></li>
 </ul></li>
 <li><code>git clone https://github.com/travis-perl/helpers &amp;&amp; git -C helpers grep export</code></li>
 </ul>
@@ -393,35 +399,127 @@ Perl version.</li>
 <h1 id="cihelpers">CI helpers</h1>
 
 <ul>
-<li><a href="https://github.com/uperl/cip">https://github.com/uperl/cip</a> from plicease</li>
-<li><a href="https://github.com/tobyink/p5-app-ghaprove">https://github.com/tobyink/p5-app-ghaprove</a> from tobyink</li>
-<li><a href="https://github.com/houseabsolute/ci-perl-helpers">https://github.com/houseabsolute/ci-perl-helpers</a>, <a href="https://metacpan.org/dist/App-CISetup">https://metacpan.org/dist/App-CISetup</a> from DROLSKY</li>
-<li><a href="https://metacpan.org/dist/GitHub-Actions">https://metacpan.org/dist/GitHub-Actions</a> from JMERELO</li>
-<li><a href="https://github.com/travis-perl/helpers">https://github.com/travis-perl/helpers</a></li>
-<li><a href="https://www.activestate.com/products/platform/state-tool/">https://www.activestate.com/products/platform/state-tool/</a></li>
-<li><a href="https://github.com/FGasper/perl-github-action-tips">https://github.com/FGasper/perl-github-action-tips</a></li>
+<li><a href="https://github.com/uperl/cip">GitHub - uperl/cip</a> from plicease</li>
+<li><a href="https://github.com/tobyink/p5-app-ghaprove">GitHub - tobyink/p5-app-ghaprove: Perl 5 distribution App-GhaProve; see homepage for downloads and documentation.</a> from tobyink</li>
+<li><a href="https://github.com/houseabsolute/ci-perl-helpers">GitHub - houseabsolute/ci-perl-helpers: Makes comprehensive testing of Perl projects in Azure Pipelines trivial</a>, <a href="https://metacpan.org/dist/App-CISetup">App-CISetup - Command line tools to generate and update Travis and AppVeyor configs for Perl libraries - metacpan.org</a> from DROLSKY</li>
+<li><a href="https://metacpan.org/dist/GitHub-Actions">GitHub-Actions - Work in GitHub Actions using Perl - metacpan.org</a> from JMERELO</li>
+<li><a href="https://github.com/travis-perl/helpers">GitHub - travis-perl/helpers: Travis-CI testing helper for Perl modules (unofficial)</a></li>
+<li><a href="https://www.activestate.com/products/platform/state-tool/">Install the State Tool: ActiveState Platform's CLI tool</a></li>
+<li><a href="https://github.com/FGasper/perl-github-action-tips">GitHub - FGasper/perl-github-action-tips: Tips for testing Perl modules via GitHub Actions</a></li>
 </ul>
 
 <h1 id="debugger">Debugger</h1>
 
 <ul>
-<li><a href="https://metacpan.org/pod/DB::Skip">https://metacpan.org/pod/DB::Skip</a></li>
+<li><a href="https://debugger.perl.org/tools.html">Perl Debugging Tools - perl.org</a></li>
+<li><a href="https://metacpan.org/pod/DB::Skip">DB::Skip - make the perl debugger skip statements in given packages or subs - metacpan.org</a></li>
+<li><a href="http://ptkdb.sourceforge.net/">Perl/Tk Debugger - ptkdb - Overview</a></li>
+<li><a href="https://metacpan.org/pod/Regexp::Debugger">Regexp::Debugger - Visually debug regexes in-place - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Rx">Rx - Regex debugger module - metacpan.org</a>
+<ul>
+<li><a href="https://perl.plover.com/Rx/paper/">Rx: A Regex Debugger for Perl</a></li>
+</ul></li>
 </ul>
 
 <h1 id="pod">POD</h1>
 
 <ul>
-<li><a href="https://www.lemoda.net/perl/split-pod-from-pm/index.html">https://www.lemoda.net/perl/split-pod-from-pm/index.html</a>
+<li><a href="https://www.lemoda.net/perl/split-pod-from-pm/index.html">Split pod documentation from a Perl module</a>
 <ul>
-<li><a href="http://blogs.perl.org/users/ben_bullock/2017/08/split-a-pm-into-a-pod-and-a-pm.html">http://blogs.perl.org/users/ben_bullock/2017/08/split-a-pm-into-a-pod-and-a-pm.html</a></li>
+<li><a href="http://blogs.perl.org/users/ben_bullock/2017/08/split-a-pm-into-a-pod-and-a-pm.html">Split a .pm into a .pod and a .pm - The Incredible Journey (blogs.perl.org)</a></li>
 </ul></li>
-<li><a href="https://metacpan.org/pod/Pod::Strip">https://metacpan.org/pod/Pod::Strip</a></li>
+<li><a href="https://metacpan.org/pod/Pod::Strip">Pod::Strip - Remove POD from Perl code - metacpan.org</a></li>
 </ul>
 
 <h1 id="cpandata">CPAN data</h1>
 
 <ul>
-<li>https://github.com/metacpan/metacpan-cpan-extracted</li>
+<li><a href="https://github.com/metacpan/metacpan-cpan-extracted">GitHub - metacpan/metacpan-cpan-extracted: Extracted CPAN (all latest files extracted)</a></li>
+</ul>
+
+<h1 id="editoridetools">Editor / IDE tools</h1>
+
+<ul>
+<li><p>Discussion</p>
+
+<ul>
+<li><a href="http://www.eigenstate.net/perl_tools/">Perl Needs Better Tools</a></li>
+<li><a href="http://perlide.org/">Perl Editor, Perl IDE</a></li>
+<li><a href="https://www.perlmonks.org/?node=Perl%20Development%20Tools">Perl Development Tools</a></li>
+</ul></li>
+<li><p>Generic</p>
+
+<ul>
+<li><a href="https://metacpan.org/dist/App-EditorTools">App-EditorTools - Command line tool for Perl code refactoring - metacpan.org</a></li>
+<li><a href="https://metacpan.org/dist/Devel-PerlySense">Devel-PerlySense - Perl IDE backend with Emacs frontend - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Devel::IntelliPerl">Devel::IntelliPerl - Auto-completion for Perl - metacpan.org</a></li>
+<li><a href="https://metacpan.org/dist/Code-ART">Code-ART - Analyze/Rename/Track Perl source code - metacpan.org</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=fVnmYzJfy5s">Damian Conway - Keynote: A Simple Matter Of Programming - YouTube</a></li>
+</ul></li>
+<li><a href="https://metacpan.org/pod/Perl::Tags">Perl::Tags - Generate (possibly exuberant) Ctags style tags for Perl sourcecode - metacpan.org</a></li>
+</ul></li>
+<li>LSP
+<ul>
+<li><a href="https://github.com/bscan/PerlNavigator">GitHub - bscan/PerlNavigator: Perl Language Server that includes syntax checking, perl critic, and code navigation</a></li>
+<li><a href="https://metacpan.org/pod/PLS">PLS - Perl Language Server - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Perl::LanguageServer">Perl::LanguageServer - Language Server and Debug Protocol Adapter for Perl - metacpan.org</a></li>
+</ul></li>
+<li>Vim
+<ul>
+<li><a href="https://github.com/vim-perl/vim-perl">GitHub - vim-perl/vim-perl: Support for Perl 5 in Vim</a></li>
+<li><a href="https://github.com/skaji/syntax-check-perl">GitHub - skaji/syntax-check-perl</a></li>
+<li><a href="https://metacpan.org/pod/Vim::X">Vim::X - Candy for Perl programming in Vim - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Vim::Helper">Vim::Helper - Extended tools to assist working with perl in vim. - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Pod::Simple::Vim">Pod::Simple::Vim - Render pod for display in vim - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Devel::Cover::Report::Vim">Devel::Cover::Report::Vim - Backend for displaying coverage data in Vim - metacpan.org</a></li>
+<li><a href="https://metacpan.org/pod/Vim::Tag">Vim::Tag - Generate perl tags for vim - metacpan.org</a></li>
+</ul></li>
+<li>Emacs
+<ul>
+<li><a href="https://github.com/HaraldJoerg/cperl-mode">GitHub - HaraldJoerg/cperl-mode: Bring new language features and popular DSLs into cperl-mode</a></li>
+<li><a href="https://metacpan.org/pod/Emacs::PDE">Emacs::PDE - Perl Development Environment in emacs - metacpan.org</a>
+<ul>
+<li><a href="https://www.emacswiki.org/emacs/PerlDevelopEnvironment">EmacsWiki: Perl Develop Environment</a></li>
+</ul></li>
+<li><a href="https://metacpan.org/pod/Sepia">Sepia - Simple Emacs-Perl Interface - metacpan.org</a></li>
+</ul></li>
+<li>IntelliJ
+<ul>
+<li><a href="https://github.com/Camelcade/Perl5-IDEA">GitHub - Camelcade/Perl5-IDEA: Perl5 plugins for IntelliJ IDEA</a>
+<ul>
+<li><a href="https://plugins.jetbrains.com/plugin/7796-perl">Perl - IntelliJ IDEs Plugin - Marketplace</a></li>
+</ul></li>
+</ul></li>
+<li>Eclipse
+<ul>
+<li><a href="http://www.epic-ide.org/">EPIC - Eclipse Perl Integration</a></li>
+</ul></li>
+<li>Netbeans
+<ul>
+<li><a href="https://github.com/sudeephazra/perl-on-netbeans">GitHub - sudeephazra/perl-on-netbeans: This plugin adds support for Perl 5 to NetBeans</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=EpGFIgTgBi0">Sudeep Hazra - Perl On NetBeans - YouTube</a></li>
+</ul></li>
+<li><a href="https://sourceforge.net/projects/nbperl/">nbPerl download - SourceForge.net</a></li>
+</ul></li>
+<li>Padre
+<ul>
+<li><a href="https://padre.perlide.org/">Padre, the Perl IDE</a></li>
+</ul></li>
+<li>Open Perl
+<ul>
+<li><a href="https://sourceforge.net/projects/open-perl-ide/">Open Perl IDE download - SourceForge.net</a></li>
+</ul></li>
+<li>Komodo
+<ul>
+<li><a href="https://www.activestate.com/products/komodo-ide/">Komodo IDE By ActiveState - One IDE for All Your Languages</a></li>
+</ul></li>
+<li>OptiPerl
+<ul>
+<li><a href="https://github.com/hakakou/optiperl">GitHub - hakakou/optiperl: OptiPerl is a fully integrated developing environment for creating, testing, debugging and running perl scripts</a></li>
+<li><a href="https://www.uptiv.com/free/optiperl/">OptiPerl - Uptiv</a></li>
+</ul></li>
 </ul>
 
 </div>
@@ -449,7 +547,7 @@ Perl version.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Wed May 18 02:48:45 2022</span>
+Last edited <span class="date">Mon Jun 27 16:03:03 2022</span>
 <!-- Created <span class="date">Thu Nov 12 18:42:47 2020</span> -->
 </div>
 
