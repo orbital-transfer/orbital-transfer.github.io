@@ -278,3 +278,12 @@ Some modules have Pure-Perl fallbacks:
     * https://github.com/sudeephazra/perl-on-netbeans
         + https://www.youtube.com/watch?v=EpGFIgTgBi0
     * https://sourceforge.net/projects/nbperl/
+- Padre
+    * https://padre.perlide.org/
+- Open Perl
+    * https://sourceforge.net/projects/open-perl-ide/
+- Komodo
+    * https://www.activestate.com/products/komodo-ide/
+- OptiPerl
+    * https://github.com/hakakou/optiperl
+    * https://www.uptiv.com/free/optiperl/
