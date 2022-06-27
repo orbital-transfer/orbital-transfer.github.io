@@ -269,3 +269,12 @@ Some modules have Pure-Perl fallbacks:
     * https://metacpan.org/pod/Emacs::PDE
         + https://www.emacswiki.org/emacs/PerlDevelopEnvironment
     * https://metacpan.org/pod/Sepia
+- IntelliJ
+    * https://github.com/Camelcade/Perl5-IDEA
+        + https://plugins.jetbrains.com/plugin/7796-perl
+- Eclipse
+    * http://www.epic-ide.org/
+- Netbeans
+    * https://github.com/sudeephazra/perl-on-netbeans
+        + https://www.youtube.com/watch?v=EpGFIgTgBi0
+    * https://sourceforge.net/projects/nbperl/
