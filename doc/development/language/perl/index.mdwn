@@ -221,7 +221,12 @@ Some modules have Pure-Perl fallbacks:
 
 # Debugger
 
+- https://debugger.perl.org/tools.html
 - <https://metacpan.org/pod/DB::Skip>
+- http://ptkdb.sourceforge.net/
+- https://metacpan.org/pod/Regexp::Debugger
+- https://metacpan.org/pod/Rx
+    * https://perl.plover.com/Rx/paper/
 
 # POD
 
