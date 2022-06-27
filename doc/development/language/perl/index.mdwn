@@ -237,3 +237,22 @@ Some modules have Pure-Perl fallbacks:
 # CPAN data
 
 - https://github.com/metacpan/metacpan-cpan-extracted
+
+# Editor / IDE tools
+
+- Discussion
+    * http://www.eigenstate.net/perl_tools/
+    * http://perlide.org/
+    * https://www.perlmonks.org/?node=Perl%20Development%20Tools
+
+- Generic
+    * https://metacpan.org/dist/App-EditorTools
+    * https://metacpan.org/dist/Devel-PerlySense
+    * https://metacpan.org/pod/Devel::IntelliPerl
+    * https://metacpan.org/dist/Code-ART
+        + https://www.youtube.com/watch?v=fVnmYzJfy5s
+    * https://metacpan.org/pod/Perl::Tags
+- LSP
+    * https://github.com/bscan/PerlNavigator
+    * https://metacpan.org/pod/PLS
+    * https://metacpan.org/pod/Perl::LanguageServer
