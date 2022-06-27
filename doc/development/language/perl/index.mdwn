@@ -256,3 +256,16 @@ Some modules have Pure-Perl fallbacks:
     * https://github.com/bscan/PerlNavigator
     * https://metacpan.org/pod/PLS
     * https://metacpan.org/pod/Perl::LanguageServer
+- Vim
+    * https://github.com/vim-perl/vim-perl
+    * https://github.com/skaji/syntax-check-perl
+    * https://metacpan.org/pod/Vim::X
+    * https://metacpan.org/pod/Vim::Helper
+    * https://metacpan.org/pod/Pod::Simple::Vim
+    * https://metacpan.org/pod/Devel::Cover::Report::Vim
+    * https://metacpan.org/pod/Vim::Tag
+- Emacs
+    * https://github.com/HaraldJoerg/cperl-mode
+    * https://metacpan.org/pod/Emacs::PDE
+        + https://www.emacswiki.org/emacs/PerlDevelopEnvironment
+    * https://metacpan.org/pod/Sepia
