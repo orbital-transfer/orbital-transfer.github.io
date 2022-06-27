@@ -1,0 +1,3 @@
+[submodule ".ikiwiki-plugins/p5-IkiWiki-Plugin-github"]
+	path = .ikiwiki-plugins/p5-IkiWiki-Plugin-github
+	url = https://github.com/ikiwiki-dakine/p5-IkiWiki-Plugin-github.git

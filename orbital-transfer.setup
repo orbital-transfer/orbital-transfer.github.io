@@ -47,6 +47,7 @@ add_plugins:
 - tag
 - sidebar
 - map
+- github
 - highlight
 # plugins to disable
 disable_plugins: []
@@ -91,7 +92,8 @@ hardlink: 0
 # group for wrappers to run in
 #wrappergroup: ikiwiki
 # extra library and plugin directories
-libdirs: []
+libdirs:
+- './.ikiwiki-plugins/p5-IkiWiki-Plugin-github/lib'
 # extra library and plugin directory (searched after libdirs)
 libdir: ''
 # environment variables
@@ -418,3 +420,7 @@ recentchangesnum: 100
 #tag_autocreate: 1
 # commit autocreated tag pages
 tag_autocreate_commit: 1
+
+github:
+ repo: orbital-transfer/orbital-transfer.github.io
+ branch: source
