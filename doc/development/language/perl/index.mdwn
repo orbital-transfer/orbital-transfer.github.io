@@ -133,6 +133,7 @@ Some modules have Pure-Perl fallbacks:
 - [[V - Print version of the specified module(s). - metacpan.org|https://metacpan.org/pod/V]]
 - [[Carton - Perl module dependency manager (aka Bundler for Perl) - metacpan.org|https://metacpan.org/pod/Carton]]
 - [[Carmel - CPAN Artifact Repository Manager - metacpan.org|https://metacpan.org/pod/Carmel]]
+- [[Devel::Wherefore - Where the heck did these subroutines come from? - metacpan.org|https://metacpan.org/pod/Devel::Wherefore]]
 
 # Distribution
 
