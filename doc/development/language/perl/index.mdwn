@@ -201,6 +201,8 @@ Some modules have Pure-Perl fallbacks:
     * [[Perl::Strip - reduce file size by stripping whitespace, comments, pod etc. - metacpan.org|https://metacpan.org/pod/Perl::Strip]]
     * [[Perl::Squish - Reduce Perl code to a few characters as possible - metacpan.org|https://metacpan.org/pod/Perl::Squish]]
     * [[Perl::Stripper - Yet another PPI-based Perl source code stripper - metacpan.org|https://metacpan.org/pod/Perl::Stripper]]
+- Misc
+    * [[Perl - The Detroit of Scripting Languages - Speaker Deck|https://speakerdeck.com/stevan_little/perl-the-detroit-of-scripting-languages]]
 
 # Projects
 
