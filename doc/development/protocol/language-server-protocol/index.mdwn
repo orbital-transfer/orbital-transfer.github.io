@@ -1,0 +1,5 @@
+[[!meta title="Language Server Protocol"]]
+
+- [[Official page for Language Server Protocol|https://microsoft.github.io/language-server-protocol/]]
+    * [[GitHub - microsoft/language-server-protocol: Defines a common protocol for language servers.|https://github.com/microsoft/language-server-protocol]]
+- [[GitHub - langserver/langserver.github.io|https://github.com/langserver/langserver.github.io]]
