@@ -213,6 +213,8 @@ Some modules have Pure-Perl fallbacks:
 - [[Devel::Deprecate - Create deprecation schedules in your code - metacpan.org|https://metacpan.org/pod/Devel::Deprecate]]
 - [[Gradual method renaming in Perl—The Phoenix Trap|https://phoenixtrap.com/2021/06/29/gradual-method-renaming-in-perl/]]
 - [[App-PRT - Command line Perl Refactoring Tool - metacpan.org|https://metacpan.org/dist/App-PRT]]
+- [[App::perlimports - Make implicit imports explicit - metacpan.org|https://metacpan.org/pod/App::perlimports]]
+- [[App::perlvars - CLI tool to detect unused variables in Perl modules - metacpan.org|https://metacpan.org/pod/App::perlvars]]
 
 # Testing
 
