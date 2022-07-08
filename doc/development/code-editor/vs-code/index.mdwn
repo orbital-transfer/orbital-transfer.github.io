@@ -1,0 +1,10 @@
+[[!meta title="VS Code"]]
+
+- <https://github.com/VSCodium/vscodium>
+
+## Extension development
+
+- https://github.com/HaaLeo/publish-vscode-extension#readme
+- https://open-vsx.org/
+    * https://www.eclipse.org/legal/open-vsx-registry-faq/
+    * https://github.com/open-vsx/publish-extensions
