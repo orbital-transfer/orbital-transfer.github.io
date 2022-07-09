@@ -1,0 +1,8 @@
+[[!meta title="Environment"]]
+
+# Environment variable
+
+# `NO_COLOR`
+
+- [[NO_COLOR: disabling ANSI color output in various Unix commands|https://no-color.org/]]
+- [[Acme::CPANModules::NO_COLOR - Modules/scripts that follow the NO_COLOR convention - metacpan.org|https://metacpan.org/pod/Acme::CPANModules::NO_COLOR]]
