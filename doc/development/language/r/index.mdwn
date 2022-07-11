@@ -1,5 +1,11 @@
 [[!meta title="R"]]
 
+# Metadata
+
+- <https://nanx.me/talks/visualization-of-cran-package-dependency-network-nanxiao.pdf>
+
+# Misc
+
 - <http://projecttemplate.net/>
 - <https://github.com/rstudio/r-system-requirements>
 - <https://docs.r-hub.io/>
