@@ -17,6 +17,11 @@
     * [[The Next Generation of CPAN · GitHub|https://github.com/next-cpan]]
     * [[GitHub - next-cpan/OverPAN: OverPAN the extra layer to patch CPAN|https://github.com/next-cpan/OverPAN]]
 
+# Metadata
+
+- <https://github.com/metacpan/metacpan-api/blob/master/docs/API-docs.md>
+- <https://github.com/metacpan/metacpan-examples>
+
 # Naming Perl modules
 
 - `Local` is reserved: <https://pause.perl.org/pause/query?ACTION=pause_namingmodules>
