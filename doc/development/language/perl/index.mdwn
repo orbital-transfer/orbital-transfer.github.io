@@ -21,6 +21,11 @@
 
 - <https://github.com/metacpan/metacpan-api/blob/master/docs/API-docs.md>
 - <https://github.com/metacpan/metacpan-examples>
+- <http://mapofcpan.org/>
+    * <https://github.com/grantm/cpan-map>
+- <https://gephi.wordpress.com/2009/06/25/cpan-explorer-an-interactive-exploration-of-the-perl-ecosystem/>
+    * <https://github.com/gephi/gephi/wiki/Datasets>
+    * <https://studentwork.prattsi.org/infovis/labs/network-analysis-on-the-developers-and-the-modules-of-the-perl-language/>
 
 # Naming Perl modules
 
