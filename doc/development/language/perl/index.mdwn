@@ -297,6 +297,7 @@ Some modules have Pure-Perl fallbacks:
     * [[Emacs::PDE - Perl Development Environment in emacs - metacpan.org|https://metacpan.org/pod/Emacs::PDE]]
         + [[EmacsWiki: Perl Develop Environment|https://www.emacswiki.org/emacs/PerlDevelopEnvironment]]
     * [[Sepia - Simple Emacs-Perl Interface - metacpan.org|https://metacpan.org/pod/Sepia]]
+    * [[GitHub - syohex/emacs-devel-cover: Highlight C0 lines with Devel::Cover|https://github.com/syohex/emacs-devel-cover]]
 - IntelliJ
     * [[GitHub - Camelcade/Perl5-IDEA: Perl5 plugins for IntelliJ IDEA|https://github.com/Camelcade/Perl5-IDEA]]
         + [[Perl - IntelliJ IDEs Plugin - Marketplace|https://plugins.jetbrains.com/plugin/7796-perl]]
