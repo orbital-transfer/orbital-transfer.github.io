@@ -21,3 +21,7 @@
 - <https://medium.com/@skyetetra/r-docker-faster-28e13a6d241d>
 - <https://github.com/rocker-org/rocker-versioned2>
 - <https://github.com/rstudio/r-builds>
+
+# Documentation
+
+- <https://en.wikipedia.org/wiki/Knitr>
