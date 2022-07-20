@@ -9,8 +9,8 @@
     * https://linker.iecc.com/
     * https://www.iecc.com/linker/
     * ftp://ftp.iecc.com/pub/linker/
-- https://github.com/snowleopard/build
-- https://research.swtch.com/deps
+- [[GitHub - snowleopard/build: Build Systems à la Carte|https://github.com/snowleopard/build]]
+- [[research!rsc: Our Software Dependency Problem|https://research.swtch.com/deps]]
 
 # C/C++ package management
 
