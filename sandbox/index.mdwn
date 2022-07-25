@@ -36,6 +36,12 @@
 * Module systems
     + <https://modules.readthedocs.io/en/latest/>
     + <https://lmod.readthedocs.io/en/latest/>
+* Cross-compiling /  older libcs
+    + https://github.com/billziss-gh/glibc-compat
+    + https://git.adelielinux.org/adelie/gcompat/
+        + https://blog.adelielinux.org/tag/gcompat/
+    + https://dev.to/kristoff/zig-makes-go-cross-compilation-just-work-29ho
+    + https://github.com/phusion/holy-build-box
 
 # Debugging / profiling / coverage tools for C/C++
 
