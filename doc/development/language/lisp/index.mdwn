@@ -11,3 +11,7 @@
 
 - [[About - Steel Bank Common Lisp|http://www.sbcl.org/]]
 - [[GitHub - clasp-developers/clasp: clasp Common Lisp environment|https://github.com/clasp-developers/clasp]]
+
+# Scheme
+
+- [[Akku.scm - Scheme package manager|https://akkuscm.org/]]
