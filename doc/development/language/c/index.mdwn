@@ -5,6 +5,7 @@
 - <http://libexplain.sourceforge.net/>
 - <https://github.com/ridiculousfish/cdecl-blocks>
     * <https://cdecl.org/>
+- <https://embed.cs.utah.edu/creduce/>
 
 
 # libc
