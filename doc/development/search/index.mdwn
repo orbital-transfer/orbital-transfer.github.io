@@ -18,3 +18,5 @@
 * [[CGVG|http://uzix.org/cgvg.html]]
 * [[GNU GLOBAL source code tagging system|https://www.gnu.org/software/global/global.html]]
 * [[Comparison with Similar Tools · oracle/opengrok Wiki · GitHub|https://github.com/OpenGrok/OpenGrok/wiki/Comparison-with-Similar-Tools]]
+* [[en/LXR Project|https://lxr.sourceforge.io/en/index.php]]
+    + [[LXR / The Linux Cross Reference|http://lxr.linux.no/+trees]]
