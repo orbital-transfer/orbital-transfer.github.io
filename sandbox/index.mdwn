@@ -244,3 +244,12 @@
     * <https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverage.coberturaformat-class.html>
     * <https://docs.gitlab.com/ee/user/project/merge_requests/test_coverage_visualization.html>
         + <https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html#artifactsreportscoverage_report>
+
+# REST APIs
+
+## OpenAPI, JSON Schema
+
+- [[OpenAPI Specification - Swagger|https://swagger.io/specification/]]
+- [[OpenAPI Examples Need Help|https://phil.tech/2020/openapi-examples/]]
+- [[Creating OpenAPI from HTTP Traffic - APIs You Won't Hate|https://apisyouwonthate.com/blog/creating-openapi-from-http-traffic]]
+- [[JSON Schema Bundling Finally Formalised - APIs You Won't Hate|https://apisyouwonthate.com/blog/json-schema-bundling-finally-formalised]]
