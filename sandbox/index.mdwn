@@ -257,3 +257,9 @@
 # System package managers
 
 - <https://paludis.exherbo.org/>
+
+# Regular expressions
+
+- [[regex - Code coverage tools for regexes? - Stack Overflow|https://stackoverflow.com/questions/3645012/code-coverage-tools-for-regexes]]
+- [[Rex - Regular Expression Exploration - Microsoft Research|https://www.microsoft.com/en-us/research/project/rex-regular-expression-exploration/]]
+- [[Xeger - A Java library for generating random text from regular expressions|https://code.google.com/archive/p/xeger/]]
