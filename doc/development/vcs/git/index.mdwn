@@ -1,0 +1,18 @@
+[[!meta title="Git"]]
+
+# Conventions
+
+- <https://git.wiki.kernel.org/index.php/CommitMessageConventions>
+    * <https://stackoverflow.com/questions/7442112/how-to-attribute-a-single-commit-to-multiple-developers>
+
+# .gitattributes
+
+- <https://github.com/github/linguist/blob/master/docs/overrides.md#using-gitattributes>
+
+# Tools
+
+- <https://github.com/keis/git-fixup>
+- <https://github.com/arxanas/git-branchless>
+    * <https://blog.waleedkhan.name/in-memory-rebases/>
+- <https://github.com/MikhailGolubtsov/git-mv-changes>
+    * <https://stackoverflow.com/questions/18569931/move-files-between-commits>
