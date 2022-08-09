@@ -213,6 +213,10 @@ Some modules have Pure-Perl fallbacks:
     * [[Perl::Stripper - Yet another PPI-based Perl source code stripper - metacpan.org|https://metacpan.org/pod/Perl::Stripper]]
 - Misc
     * [[Perl - The Detroit of Scripting Languages - Speaker Deck|https://speakerdeck.com/stevan_little/perl-the-detroit-of-scripting-languages]]
+- Regex
+    * [[Regexp::Parsertron - Parse a Perl regexp into a data structure of type Tree - metacpan.org|https://metacpan.org/pod/Regexp::Parsertron]]
+    * [[Regexp::Parser - base class for parsing regexes - metacpan.org|https://metacpan.org/pod/Regexp::Parser]]
+    * [[PPIx::Regexp - Represent a regular expression of some sort - metacpan.org|https://metacpan.org/pod/PPIx::Regexp]]
 
 # Projects
 
