@@ -182,6 +182,7 @@ Some modules have Pure-Perl fallbacks:
 # Parsers, transpilers
 
 - [[PPI - Parse, Analyze and Manipulate Perl (without perl) - metacpan.org|https://metacpan.org/pod/PPI]]
+    * [[PPI-XS - (Minor) XS acceleration for PPI - metacpan.org|https://metacpan.org/dist/PPI-XS]]
 - [[PPR - Pattern-based Perl Recognizer - metacpan.org|https://metacpan.org/pod/PPR]]
 - [[Babble - EXPERIMENTAL Babel-like for perl - metacpan.org|https://metacpan.org/pod/Babble]]
 - [[Guacamole - A parser toolkit for Standard Perl - metacpan.org|https://metacpan.org/pod/Guacamole]]
@@ -229,6 +230,7 @@ Some modules have Pure-Perl fallbacks:
 - [[App-PRT - Command line Perl Refactoring Tool - metacpan.org|https://metacpan.org/dist/App-PRT]]
 - [[App::perlimports - Make implicit imports explicit - metacpan.org|https://metacpan.org/pod/App::perlimports]]
 - [[App::perlvars - CLI tool to detect unused variables in Perl modules - metacpan.org|https://metacpan.org/pod/App::perlvars]]
+- [[Perl::Critic - Critique Perl source code for best-practices. - metacpan.org|https://metacpan.org/pod/Perl::Critic]]
 
 # Testing
 
