@@ -3,7 +3,11 @@
 # Conventions
 
 - <https://git.wiki.kernel.org/index.php/CommitMessageConventions>
-    * <https://stackoverflow.com/questions/7442112/how-to-attribute-a-single-commit-to-multiple-developers>
+    * `Co-Authored-By:`
+        + <https://stackoverflow.com/questions/7442112/how-to-attribute-a-single-commit-to-multiple-developers>
+        + <https://stackoverflow.com/questions/64311092/how-do-i-add-a-co-author-to-latest-pushed-git-commit>
+        + GitHub: <https://github.blog/2018-01-29-commit-together-with-co-authors/>
+        + GitLab: <https://gitlab.com/gitlab-org/gitlab-foss/-/merge_requests/17919>
 
 # .gitattributes
 
