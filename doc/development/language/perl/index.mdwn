@@ -240,6 +240,7 @@ Some modules have Pure-Perl fallbacks:
     * [[The Annotated Lancaster Consensus|https://xdg.me/the-annotated-lancaster-consensus/]]
     * [[CPAN.io|http://cpan.io/ref/toolchain/lancaster-consensus.html]]
 - `git clone https://github.com/travis-perl/helpers && git -C helpers grep export`
+- [[GitHub - wolfsage/p5-distribution-smoke: Distribution::Smoke - smoke various versions of a distribution against modules down the river from it|https://github.com/wolfsage/p5-distribution-smoke]]
 
 
 # CI helpers
