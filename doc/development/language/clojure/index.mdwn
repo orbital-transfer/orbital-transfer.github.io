@@ -1,0 +1,4 @@
+[[!meta title="Clojure"]]
+
+- [[GitHub - borkdude/re-find: Find functions by matching specs|https://github.com/borkdude/re-find]]
+- [[GitHub - borkdude/speculative: Unofficial community-driven specs for clojure.core|https://github.com/borkdude/speculative]]
