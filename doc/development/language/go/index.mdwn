@@ -2,6 +2,7 @@
 
 - <https://go.dev/>
 - <https://en.wikipedia.org/wiki/Go_(programming_language)>
+- <https://github.com/golang-standards/project-layout>
 - <https://pkg.go.dev/cmd/cgo>
 - Cross-compile
     * https://dave.cheney.net/2015/08/22/cross-compilation-with-go-1-5
