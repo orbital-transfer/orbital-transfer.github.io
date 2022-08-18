@@ -261,6 +261,7 @@ Some modules have Pure-Perl fallbacks:
 - [[Regexp::Debugger - Visually debug regexes in-place - metacpan.org|https://metacpan.org/pod/Regexp::Debugger]]
 - [[Rx - Regex debugger module - metacpan.org|https://metacpan.org/pod/Rx]]
     * [[Rx: A Regex Debugger for Perl|https://perl.plover.com/Rx/paper/]]
+- [[Devel-ebug - A simple, extensible Perl debugger - metacpan.org|https://metacpan.org/dist/Devel-ebug]]
 
 # POD
 
