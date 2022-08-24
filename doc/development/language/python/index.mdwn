@@ -1,5 +1,9 @@
 [[!meta title="Python"]]
 
+# Syntax and semantics
+
+- [[__future__ — Future statement definitions — Python documentation|https://docs.python.org/3/library/__future__.html]]
+
 # pip
 
 - [[GitHub - pypa/pipfile|https://github.com/pypa/pipfile]]
