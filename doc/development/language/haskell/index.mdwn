@@ -1,0 +1,5 @@
+[[!meta title="Haskell"]]
+
+# Syntax and semantics
+
+- [[Overview of all language extensions — Glasgow Haskell Compiler User's Guide|https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/table.html]]
