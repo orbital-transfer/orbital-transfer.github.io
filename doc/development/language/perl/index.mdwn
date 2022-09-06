@@ -115,6 +115,8 @@ Some modules have Pure-Perl fallbacks:
 - [[Perlbrew|https://perlbrew.pl/]]
     * [[How To Reinstall All Modules On New Perl|https://perlbrew.pl/Reinstall-All-Modules-On-New-Perl.html]]
 - [[GitHub - skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro|https://github.com/skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro]]
+- [[CPAN::Perl::Releases - Mapping Perl releases on CPAN to the location of the tarballs - metacpan.org|https://metacpan.org/pod/CPAN::Perl::Releases]]
+- [[CPAN::Perl::Releases::MetaCPAN - Mapping Perl releases on CPAN to the location of the tarballs via MetaCPAN API - metacpan.org|https://metacpan.org/pod/CPAN::Perl::Releases::MetaCPAN]]
 
 ## Package dependencies
 
