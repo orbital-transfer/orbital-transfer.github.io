@@ -233,6 +233,8 @@ Some modules have Pure-Perl fallbacks:
 - [[App::perlimports - Make implicit imports explicit - metacpan.org|https://metacpan.org/pod/App::perlimports]]
 - [[App::perlvars - CLI tool to detect unused variables in Perl modules - metacpan.org|https://metacpan.org/pod/App::perlvars]]
 - [[Perl::Critic - Critique Perl source code for best-practices. - metacpan.org|https://metacpan.org/pod/Perl::Critic]]
+- [[PPIx::Refactor - Hooks for refactoring perl via PPI - metacpan.org|https://metacpan.org/pod/PPIx::Refactor]]
+- [[Devel::Refactor - Perl extension for refactoring Perl code. - metacpan.org|https://metacpan.org/pod/Devel::Refactor]]
 
 # Testing
 
