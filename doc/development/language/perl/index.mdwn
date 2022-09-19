@@ -114,6 +114,7 @@ Some modules have Pure-Perl fallbacks:
 - [[GitHub - tokuhirom/plenv: Perl binary manager|https://github.com/tokuhirom/plenv]]
 - [[Perlbrew|https://perlbrew.pl/]]
     * [[How To Reinstall All Modules On New Perl|https://perlbrew.pl/Reinstall-All-Modules-On-New-Perl.html]]
+- [[Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl - metacpan.org|https://metacpan.org/pod/Devel::PatchPerl]]
 - [[GitHub - skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro|https://github.com/skaji/Devel-PatchPerl-Plugin-FixCompoundTokenSplitByMacro]]
 - [[CPAN::Perl::Releases - Mapping Perl releases on CPAN to the location of the tarballs - metacpan.org|https://metacpan.org/pod/CPAN::Perl::Releases]]
 - [[CPAN::Perl::Releases::MetaCPAN - Mapping Perl releases on CPAN to the location of the tarballs via MetaCPAN API - metacpan.org|https://metacpan.org/pod/CPAN::Perl::Releases::MetaCPAN]]
