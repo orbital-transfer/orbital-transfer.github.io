@@ -134,6 +134,7 @@ Some modules have Pure-Perl fallbacks:
 - [[Tangerine - Examine perl files and report dependency metadata - metacpan.org|https://metacpan.org/release/Tangerine]]
 - [[CPAN-FindDependencies - generate reports when modules' dependencies get new releases - metacpan.org|https://metacpan.org/release/CPAN-FindDependencies]]
 - [[CPAN modules for getting module dependency information|http://neilb.org/reviews/dependencies.html]]
+- [[Dist::Surveyor - Survey installed modules and determine the specific distribution versions they came from - metacpan.org|https://metacpan.org/pod/Dist::Surveyor]]
 
 - [[OrePAN2 - Yet another DarkPAN manager. - metacpan.org|https://metacpan.org/pod/OrePAN2]]
 - [[App::opan - A CPAN overlay for darkpan and pinning purposes - metacpan.org|https://metacpan.org/pod/App::opan]]
