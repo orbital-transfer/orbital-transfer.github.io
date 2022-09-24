@@ -144,9 +144,42 @@ Examples:
 
 ## GitLab CI
 
+- YAML syntax reference
+    * <https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html>
 - Cronjobs
     * <https://tonyxu.io/posts/2018/use-gitlab-ci-to-run-free-scheduled-jobs/>
     * <https://medium.com/@Maxime_/get-free-cron-jobs-with-gitlab-78f57e086453>
+- Reports
+    * <https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html>
+    * JUnit
+        + <https://gitlab.com/gitlab-org/gitlab/-/issues/299086>
+            + <https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/parsers/test/junit.rb>
+        + <https://gitlab.com/gitlab-org/gitlab/-/issues/268035>
+        + <https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html>
+        + <https://docs.gitlab.com/ee/ci/testing/unit_test_report_examples.html>
+        + <https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format>
+        + <https://gitlab.com/gitlab-org/gitlab/-/issues/228950>
+- Env variables:
+    * <https://about.gitlab.com/blog/2021/04/09/demystifying-ci-cd-variables/>
+    * Pre-defined env variables: <https://docs.gitlab.com/ee/ci/variables/predefined_variables.html>
+- Cacheing:
+    * <https://docs.gitlab.com/ee/ci/caching/>
+- Disabling jobs
+    * <https://docs.gitlab.com/ee/ci/jobs/index.html#hide-jobs> via <https://stackoverflow.com/questions/66116619/is-there-a-better-way-to-disable-skip-a-job-in-a-gitlab-ci-pipeline-than-comment>
+- Shared runners
+    * <https://gitlab.com/gitlab-org/gitlab/-/issues/359974>
+    * Windows
+        + https://docs.gitlab.com/ee/development/windows.html#shared-windows-runners
+        + https://about.gitlab.com/blog/2020/01/21/windows-shared-runner-beta/
+        + https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers
+        + <https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers/-/tree/main/cookbooks/preinstalled-software>
+    * macOS
+        + <https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/macstadium/orka>
+        + <https://docs.gitlab.com/ee/ci/runners/saas/macos/environment.html#vm-images>
+        + <https://about.gitlab.com/blog/2021/08/23/build-cloud-for-macos-beta/>
+        + <https://gitlab.com/gitlab-com/runner-saas-macos-access-requests>
+        + <https://gitlab.com/gitlab-org/gitlab-runner/-/issues/6564>
+        + <https://gitlab.com/gitlab-org/gitlab/-/issues/224124>
 
 # Common features
 
