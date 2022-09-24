@@ -322,10 +322,63 @@ installing distribution. This way it is only authored once.</li>
 <h2 id="gitlabci">GitLab CI</h2>
 
 <ul>
+<li>YAML syntax reference
+<ul>
+<li><a href="https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html">https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html</a></li>
+</ul></li>
 <li>Cronjobs
 <ul>
 <li><a href="https://tonyxu.io/posts/2018/use-gitlab-ci-to-run-free-scheduled-jobs/">https://tonyxu.io/posts/2018/use-gitlab-ci-to-run-free-scheduled-jobs/</a></li>
 <li><a href="https://medium.com/@Maxime_/get-free-cron-jobs-with-gitlab-78f57e086453">https://medium.com/@Maxime_/get-free-cron-jobs-with-gitlab-78f57e086453</a></li>
+</ul></li>
+<li>Reports
+<ul>
+<li><a href="https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html">https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html</a></li>
+<li>JUnit
+<ul>
+<li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/299086">https://gitlab.com/gitlab-org/gitlab/-/issues/299086</a>
+<ul>
+<li><a href="https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/parsers/test/junit.rb">https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/parsers/test/junit.rb</a></li>
+</ul></li>
+<li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/268035">https://gitlab.com/gitlab-org/gitlab/-/issues/268035</a></li>
+<li><a href="https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html">https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html</a></li>
+<li><a href="https://docs.gitlab.com/ee/ci/testing/unit_test_report_examples.html">https://docs.gitlab.com/ee/ci/testing/unit_test_report_examples.html</a></li>
+<li><a href="https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format">https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format</a></li>
+<li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/228950">https://gitlab.com/gitlab-org/gitlab/-/issues/228950</a></li>
+</ul></li>
+</ul></li>
+<li>Env variables:
+<ul>
+<li><a href="https://about.gitlab.com/blog/2021/04/09/demystifying-ci-cd-variables/">https://about.gitlab.com/blog/2021/04/09/demystifying-ci-cd-variables/</a></li>
+<li>Pre-defined env variables: <a href="https://docs.gitlab.com/ee/ci/variables/predefined_variables.html">https://docs.gitlab.com/ee/ci/variables/predefined_variables.html</a></li>
+</ul></li>
+<li>Cacheing:
+<ul>
+<li><a href="https://docs.gitlab.com/ee/ci/caching/">https://docs.gitlab.com/ee/ci/caching/</a></li>
+</ul></li>
+<li>Disabling jobs
+<ul>
+<li><a href="https://docs.gitlab.com/ee/ci/jobs/index.html#hide-jobs">https://docs.gitlab.com/ee/ci/jobs/index.html#hide-jobs</a> via <a href="https://stackoverflow.com/questions/66116619/is-there-a-better-way-to-disable-skip-a-job-in-a-gitlab-ci-pipeline-than-comment">https://stackoverflow.com/questions/66116619/is-there-a-better-way-to-disable-skip-a-job-in-a-gitlab-ci-pipeline-than-comment</a></li>
+</ul></li>
+<li>Shared runners
+<ul>
+<li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/359974">https://gitlab.com/gitlab-org/gitlab/-/issues/359974</a></li>
+<li>Windows
+<ul>
+<li>https://docs.gitlab.com/ee/development/windows.html#shared-windows-runners</li>
+<li>https://about.gitlab.com/blog/2020/01/21/windows-shared-runner-beta/</li>
+<li>https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers</li>
+<li><a href="https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers/-/tree/main/cookbooks/preinstalled-software">https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers/-/tree/main/cookbooks/preinstalled-software</a></li>
+</ul></li>
+<li>macOS
+<ul>
+<li><a href="https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/macstadium/orka">https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/macstadium/orka</a></li>
+<li><a href="https://docs.gitlab.com/ee/ci/runners/saas/macos/environment.html#vm-images">https://docs.gitlab.com/ee/ci/runners/saas/macos/environment.html#vm-images</a></li>
+<li><a href="https://about.gitlab.com/blog/2021/08/23/build-cloud-for-macos-beta/">https://about.gitlab.com/blog/2021/08/23/build-cloud-for-macos-beta/</a></li>
+<li><a href="https://gitlab.com/gitlab-com/runner-saas-macos-access-requests">https://gitlab.com/gitlab-com/runner-saas-macos-access-requests</a></li>
+<li><a href="https://gitlab.com/gitlab-org/gitlab-runner/-/issues/6564">https://gitlab.com/gitlab-org/gitlab-runner/-/issues/6564</a></li>
+<li><a href="https://gitlab.com/gitlab-org/gitlab/-/issues/224124">https://gitlab.com/gitlab-org/gitlab/-/issues/224124</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -379,7 +432,7 @@ Links:
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu May 26 17:48:57 2022</span>
+Last edited <span class="date">Sat Sep 24 19:54:58 2022</span>
 <!-- Created <span class="date">Sun Nov 15 00:02:54 2020</span> -->
 </div>
 
