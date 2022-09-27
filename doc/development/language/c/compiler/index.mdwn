@@ -15,3 +15,5 @@
 - https://en.wikipedia.org/wiki/Keil_(company)
 - https://www.delorie.com/djgpp/
 - https://en.wikipedia.org/wiki/List_of_compilers#C_compilers
+- <https://en.wikipedia.org/wiki/Small_Device_C_Compiler>
+    * <https://sdcc.sourceforge.net/>
