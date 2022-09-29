@@ -240,6 +240,8 @@ Some modules have Pure-Perl fallbacks:
 
 # Testing
 
+- <https://perldoc.perl.org/TAP::Harness>
+    * <https://perldoc.perl.org/Test::Harness>
 - [[Test::NeedsDisplay - Ensure that tests needing a display have one - metacpan.org|https://metacpan.org/pod/Test::NeedsDisplay]]
 - [[Perl CPAN test metadata|https://www.perlmonks.org/?node_id=856415]]
 - [[toolchain-site/lancaster-consensus.md at master · Perl-Toolchain-Gang/toolchain-site · GitHub|https://github.com/Perl-Toolchain-Gang/toolchain-site/blob/master/lancaster-consensus.md]]
@@ -247,7 +249,11 @@ Some modules have Pure-Perl fallbacks:
     * [[CPAN.io|http://cpan.io/ref/toolchain/lancaster-consensus.html]]
 - `git clone https://github.com/travis-perl/helpers && git -C helpers grep export`
 - [[GitHub - wolfsage/p5-distribution-smoke: Distribution::Smoke - smoke various versions of a distribution against modules down the river from it|https://github.com/wolfsage/p5-distribution-smoke]]
-
+- Ant JUnit XML output
+    * <https://metacpan.org/pod/TAP::Harness::JUnit>
+    * <https://metacpan.org/pod/TAP::Formatter::JUnit>
+        + <https://metacpan.org/pod/TAP::Formatter::JUnitREGRU>
+    * <https://metacpan.org/pod/Test2::Harness::Renderer::JUnit>
 
 # CI helpers
 
