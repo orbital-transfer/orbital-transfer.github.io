@@ -148,6 +148,7 @@ Some modules have Pure-Perl fallbacks:
 - [[Carton - Perl module dependency manager (aka Bundler for Perl) - metacpan.org|https://metacpan.org/pod/Carton]]
 - [[Carmel - CPAN Artifact Repository Manager - metacpan.org|https://metacpan.org/pod/Carmel]]
 - [[Devel::Wherefore - Where the heck did these subroutines come from? - metacpan.org|https://metacpan.org/pod/Devel::Wherefore]]
+- [[Acme::CPANModules::HidingModules - Hiding modules - metacpan.org|https://metacpan.org/pod/Acme::CPANModules::HidingModules]]
 
 # Distribution
 
@@ -164,6 +165,7 @@ Some modules have Pure-Perl fallbacks:
 - [[Dist::Zilla::Starter - Guide to getting started with Dist::Zilla - metacpan.org|https://metacpan.org/pod/Dist::Zilla::Starter]]
 - [[Releasing Perl Modules to CPAN - Gene Boggs|https://ology.github.io/2021/03/14/releasing-perl-modules-to-cpan/]]
 - [[CPAN Tutorials|http://tynovsky.github.io/cpan-tutorials/]]
+- [[Release::Checklist - A QA checklist for CPAN releases - metacpan.org|https://metacpan.org/pod/Release::Checklist]]
 
 ## Tools
 
@@ -274,6 +276,10 @@ Some modules have Pure-Perl fallbacks:
 - [[Rx - Regex debugger module - metacpan.org|https://metacpan.org/pod/Rx]]
     * [[Rx: A Regex Debugger for Perl|https://perl.plover.com/Rx/paper/]]
 - [[Devel-ebug - A simple, extensible Perl debugger - metacpan.org|https://metacpan.org/dist/Devel-ebug]]
+- [[Devel::MAT - Perl Memory Analysis Tool - metacpan.org|https://metacpan.org/pod/Devel::MAT]]
+    * [[Devel::MAT::Tool::Future - analyse Future logic - metacpan.org|https://metacpan.org/pod/Devel::MAT::Tool::Future]]
+- [[App::Stacktrace - Stack trace - metacpan.org|https://metacpan.org/pod/App::Stacktrace]]
+- [[Enbugger - metacpan.org|https://metacpan.org/pod/Enbugger]]
 
 # POD
 
