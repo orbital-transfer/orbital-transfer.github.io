@@ -20,3 +20,4 @@
     * <https://blog.waleedkhan.name/in-memory-rebases/>
 - <https://github.com/MikhailGolubtsov/git-mv-changes>
     * <https://stackoverflow.com/questions/18569931/move-files-between-commits>
+- <https://github.com/GitTools/GitVersion>
