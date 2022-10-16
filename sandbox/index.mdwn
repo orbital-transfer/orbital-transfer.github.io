@@ -279,3 +279,7 @@ Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-
 - MSYS but only for Git Bash: `MSYS_NO_PATHCONV=1` environment variable
 - MSYS2: `MSYS2_ARG_CONV_EXCL="*"` environment variable
     * <https://github.com/msys2/MSYS2-packages/issues/84>
+
+# Software architecture
+
+- <https://arc42.org/>
