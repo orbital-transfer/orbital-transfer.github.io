@@ -1,0 +1,6 @@
+[[!meta title="OpenVMS"]]
+
+- [[OpenVMS - Wikipedia|https://en.wikipedia.org/wiki/OpenVMS]]
+- [[Ready to run OpenVMS VM – Student Kit from VSI - Virtually Fun|https://virtuallyfun.com/2022/04/18/ready-to-run-openvms-vm-student-kit-from-vsi/]]
+    * [[Community License — VMS Software, Inc.|https://vmssoftware.com/community/community-license/]]
+    * [[Student License|https://training.vmssoftware.com/student-license/]]
