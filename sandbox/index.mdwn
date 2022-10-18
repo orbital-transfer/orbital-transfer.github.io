@@ -283,3 +283,10 @@ Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-
 # Software architecture
 
 - <https://arc42.org/>
+
+# Coccinelle
+
+- <https://coccinelle.gitlabpages.inria.fr/website/>
+- <https://www.kernel.org/doc/html/latest/dev-tools/coccinelle.html>
+- <http://coccinellery.org/>
+- <https://dewaka.com/blog/semantic-patching/>
