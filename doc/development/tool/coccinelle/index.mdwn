@@ -1,0 +1,6 @@
+[[!meta title="Coccinelle"]]
+
+- <https://coccinelle.gitlabpages.inria.fr/website/>
+- <https://www.kernel.org/doc/html/latest/dev-tools/coccinelle.html>
+- <http://coccinellery.org/>
+- <https://dewaka.com/blog/semantic-patching/>
