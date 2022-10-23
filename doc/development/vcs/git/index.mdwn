@@ -21,3 +21,7 @@
 - <https://github.com/MikhailGolubtsov/git-mv-changes>
     * <https://stackoverflow.com/questions/18569931/move-files-between-commits>
 - <https://github.com/GitTools/GitVersion>
+- Git credentials
+    * <https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage>
+    * <https://github.com/GitCredentialManager/git-credential-manager>
+    * <https://serverfault.com/questions/815043/how-to-give-username-password-to-git-clone-in-a-script-but-not-store-credential>
