@@ -284,3 +284,6 @@ Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-
 
 - <https://arc42.org/>
 
+# Performance visualisation
+
+- [[Flame Graphs|https://www.brendangregg.com/flamegraphs.html]]
