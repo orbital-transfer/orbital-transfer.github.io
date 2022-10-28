@@ -8,10 +8,18 @@
         + <https://stackoverflow.com/questions/64311092/how-do-i-add-a-co-author-to-latest-pushed-git-commit>
         + GitHub: <https://github.blog/2018-01-29-commit-together-with-co-authors/>
         + GitLab: <https://gitlab.com/gitlab-org/gitlab-foss/-/merge_requests/17919>
+- `.gitkeep`
+    * <https://code-maven.com/slides/git-intro/gitkeep>
 
 # .gitattributes
 
 - <https://github.com/github/linguist/blob/master/docs/overrides.md#using-gitattributes>
+
+# Git hooks
+
+- <https://githooks.com/>
+- <https://github.com/gnustavo/Git-Hooks>
+- <https://pre-commit.com/>
 
 # Tools
 
