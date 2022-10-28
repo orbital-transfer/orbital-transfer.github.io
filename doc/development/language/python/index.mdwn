@@ -56,6 +56,7 @@
 ## Applications
 
 - [[Briefcase— BeeWare|https://beeware.org/project/projects/tools/briefcase/]]
+- [[Welcome to cx_Freeze’s documentation! — cx_Freeze 6.12.0 documentation|https://cx-freeze.readthedocs.io/en/latest/]]
 
 # Debugger
 
