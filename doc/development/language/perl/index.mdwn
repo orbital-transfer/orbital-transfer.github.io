@@ -209,6 +209,7 @@ Some modules have Pure-Perl fallbacks:
     * [[GitHub - goccy/perl-motion: Perl for iOS and OS X|https://github.com/goccy/perl-motion]]
         + [[PerlMotion|https://www.slideshare.net/kaz_hiramatsu/perlmotion]]
         + [[Perl motion|https://www.slideshare.net/kaz_hiramatsu/perl-motion-pdf]]
+- [[GitHub - mbarbon/language-p: An experimental Perl 5 parser/compiler written in Perl 5|https://github.com/mbarbon/language-p]]
 - [[SunStar Systems - Perl 7 Feature Request: sealed subs for typed lexicals|https://www.sunstarsys.com/essays/perl7-sealed-lexicals]]
     * [[This Week on p5p 2000/06/25|https://www.perl.com/pub/2000/06/p5pdigest/THISWEEK-20000625.html/#Method_Lookup_Speedup_]]
     * [[Notes on Doug's Method Lookup Patch|https://www.perl.com/pub/2000/06/dougpatch.html/]]
