@@ -296,3 +296,7 @@ Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-
 - <https://bpan.org/>
 - <https://www.basher.it/>
 - <https://bpkg.sh/>
+
+# VCS
+
+- <https://porkrind.org/commit-patch/>
