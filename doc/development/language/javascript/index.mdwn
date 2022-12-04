@@ -22,3 +22,8 @@
 
 - <https://eslint.org/>
 - <https://babeljs.io/>
+
+# Documentation
+
+- <https://en.wikipedia.org/wiki/JSDoc>
+- <https://ashkenas.com/docco/>
