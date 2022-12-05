@@ -4,6 +4,10 @@
 
 - <https://nanx.me/talks/visualization-of-cran-package-dependency-network-nanxiao.pdf>
 
+# Packaging
+
+- [[Another Approach to Package Installation • pak|https://pak.r-lib.org/]]
+
 # Misc
 
 - <http://projecttemplate.net/>
