@@ -38,8 +38,10 @@
 
 # Env
 
+- [[venv — Creation of virtual environments — Python 3 documentation|https://docs.python.org/3/library/venv.html]]
 - [[GitHub - pypa/pipenv: Python Development Workflow for Humans.|https://github.com/kennethreitz/pipenv]]
 - [[Miniconda — Conda documentation|https://conda.io/miniconda.html]]
+- [[Virtualenv — virtualenv documentation|https://virtualenv.pypa.io/en/latest/]]
 
 # Distribution
 
