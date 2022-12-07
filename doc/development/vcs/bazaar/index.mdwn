@@ -1,0 +1,6 @@
+[[!meta title="Bazaar"]]
+
+- <https://en.wikipedia.org/wiki/GNU_Bazaar>
+    * <http://bazaar.canonical.com/en/>
+- <https://en.wikipedia.org/wiki/Breezy_(software)>
+    * <https://www.breezy-vcs.org/>
