@@ -291,12 +291,6 @@ Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-
 
 - [[Flame Graphs|https://www.brendangregg.com/flamegraphs.html]]
 
-# GNU bash
-
-- [[BPAN™ — Bash Package Are Nearby|https://bpan.org/]]
-- [[package manager for bash scripts · basher|https://www.basher.it/]]
-- [[bpkg home|https://bpkg.sh/]]
-
 # VCS
 
 - <https://porkrind.org/commit-patch/>
