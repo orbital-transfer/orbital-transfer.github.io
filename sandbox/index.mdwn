@@ -275,14 +275,6 @@
 - <http://svn.apache.org/repos/asf/ant/core/trunk/src/main/org/apache/tools/ant/taskdefs/optional/junit/>
 - <https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd>
 
-# MSYS / MSYS2
-
-Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-mingw-and-msys-from-mangling-path-names-given-at-the-command-line>
-
-- MSYS but only for Git Bash: `MSYS_NO_PATHCONV=1` environment variable
-- MSYS2: `MSYS2_ARG_CONV_EXCL="*"` environment variable
-    * <https://github.com/msys2/MSYS2-packages/issues/84>
-
 # Software architecture
 
 - <https://arc42.org/>

@@ -21,3 +21,8 @@
     + <https://github.com/Alexpux/MSYS2-pacman/issues/59>
     + <https://github.com/msys2/MINGW-packages/blob/master/.ci/ci-build.sh>
 * <https://github.com/msys2/setup-msys2/blob/master/main.js>
+
+Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-mingw-and-msys-from-mangling-path-names-given-at-the-command-line>
+
+- MSYS2: `MSYS2_ARG_CONV_EXCL="*"` environment variable
+    * <https://github.com/msys2/MSYS2-packages/issues/84>

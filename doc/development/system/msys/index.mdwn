@@ -1,0 +1,5 @@
+[[!meta title="MSYS"]]
+
+Disable path mangling: <https://stackoverflow.com/questions/7250130/how-to-stop-mingw-and-msys-from-mangling-path-names-given-at-the-command-line>
+
+- MSYS but only for Git Bash: `MSYS_NO_PATHCONV=1` environment variable
