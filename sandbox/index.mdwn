@@ -234,9 +234,9 @@
 # Build systems
 
 - [[doc/development/build-tool]]
-- https://scons.org/
-- https://premake.github.io/
-- https://gittup.org/tup/
+- [[SCons: A software construction tool - SCons|https://scons.org/]]
+- [[Premake|https://premake.github.io/]]
+- [[tup - Home|https://gittup.org/tup/]]
 
 # Code coverage
 
