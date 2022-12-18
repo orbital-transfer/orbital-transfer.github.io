@@ -141,23 +141,23 @@
     * <https://github.com/jordemort/virt-what>
 - OSes on CI
     * <https://github.com/PDLPorters/devops/issues/1>
-    * <https://github.com/vmactions/solaris-vm>
-    * <https://github.com/vmactions/freebsd-vm>
+    * [[GitHub - vmactions/solaris-vm: Use Solaris in github actions|https://github.com/vmactions/solaris-vm]]
+    * [[GitHub - vmactions/freebsd-vm: Use FreeBSD in github actions|https://github.com/vmactions/freebsd-vm]]
 
 # GitHub Actions for specific languages
 
 - Examples: <https://github.com/actions/starter-workflows>
-- https://github.com/40ants/setup-lisp
-- https://github.com/actions/setup-dotnet
-- https://github.com/actions/setup-go
-- https://github.com/actions/setup-java
-- https://github.com/actions/setup-node
-- https://github.com/actions/setup-python
-- https://github.com/logtalk-actions/setup-swi-prolog
-- https://github.com/r-lib/actions
-- https://github.com/ruby/setup-ruby
-- https://github.com/shivammathur/setup-php
-- https://github.com/shogo82148/actions-setup-perl
+- [[GitHub - 40ants/setup-lisp: GitHub Action to Setup Common Lisp tools|https://github.com/40ants/setup-lisp]]
+- [[GitHub - actions/setup-dotnet: Set up your GitHub Actions workflow with a specific version of the .NET core sdk|https://github.com/actions/setup-dotnet]]
+- [[GitHub - actions/setup-go: Set up your GitHub Actions workflow with a specific version of Go|https://github.com/actions/setup-go]]
+- [[GitHub - actions/setup-java: Set up your GitHub Actions workflow with a specific version of Java|https://github.com/actions/setup-java]]
+- [[GitHub - actions/setup-node: Set up your GitHub Actions workflow with a specific version of node.js|https://github.com/actions/setup-node]]
+- [[GitHub - actions/setup-python: Set up your GitHub Actions workflow with a specific version of Python|https://github.com/actions/setup-python]]
+- [[GitHub - logtalk-actions/setup-swi-prolog: Setup SWI-Prolog action|https://github.com/logtalk-actions/setup-swi-prolog]]
+- [[GitHub - r-lib/actions: GitHub Actions for the R community|https://github.com/r-lib/actions]]
+- [[GitHub - ruby/setup-ruby: An action to download a prebuilt Ruby and add it to the PATH in 5 seconds|https://github.com/ruby/setup-ruby]]
+- [[GitHub - shivammathur/setup-php: GitHub action to set up PHP with extensions, php.ini configuration, coverage drivers, and various tools.|https://github.com/shivammathur/setup-php]]
+- [[GitHub - shogo82148/actions-setup-perl: Setup Perl environment Action|https://github.com/shogo82148/actions-setup-perl]]
 
 # Package differences
 
