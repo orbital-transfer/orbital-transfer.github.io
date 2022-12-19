@@ -106,8 +106,8 @@
 
 # Linking
 
-- <https://github.com/JonathonReinhart/staticx>
-- <https://github.com/NixOS/patchelf>
+- [[GitHub - JonathonReinhart/staticx: Create static executable from dynamic executable|https://github.com/JonathonReinhart/staticx]]
+- [[GitHub - NixOS/patchelf: A small utility to modify the dynamic linker and RPATH of ELF executables|https://github.com/NixOS/patchelf]]
 
 # Rendering debugging
 
