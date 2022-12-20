@@ -74,10 +74,11 @@
 
 # Repository indexes
 
-- <https://repology.org/>
-- <https://pkgs.org/>
-- <https://release-monitoring.org>
-- <https://reposcope.com/>
+- [[Repology|https://repology.org/]]
+- [[pkgs.org - Packages for Linux and Unix operating systems|https://pkgs.org/]]
+- [[Anitya|https://release-monitoring.org]]
+    * [[API Documentation — Anitya documentation|https://release-monitoring.org/static/docs/api.html]]
+- <https://reposcope.com/> — seems down?
 
 # Package indexes
 
