@@ -14,6 +14,9 @@
 # .gitattributes
 
 - <https://github.com/github/linguist/blob/master/docs/overrides.md#using-gitattributes>
+    * <https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github>
+- <https://www.git-scm.com/docs/gitattributes#_generating_diff_text>
+    * <https://stackoverflow.com/questions/1016798/excluding-files-from-git-diff>
 
 # Git hooks
 
