@@ -94,6 +94,10 @@
       management systems).
     * Has dependencies.
     * Dependencies should be resolvable.
+    * define data declaratively
+        + it can be updated
+        + it can be modeled
+        + it does not have code
 
 # Organisation of project
 
