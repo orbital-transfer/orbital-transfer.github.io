@@ -285,3 +285,16 @@
 # VCS
 
 - <https://porkrind.org/commit-patch/>
+
+
+# Security
+
+- [[GitHub - mviereck/x11docker: Run GUI applications and desktops in docker and podman containers. Focus on security.|https://github.com/mviereck/x11docker]]
+- [[ClamAVNet|https://www.clamav.net/]]
+- [[Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies - by Alex Birsan - Medium|https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610]]
+    * [[Compromised PyTorch-nightly dependency chain between December 25th and December 30th, 2022. - PyTorch|https://pytorch.org/blog/compromised-nightly-dependency/]]
+    * https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/
+    * [[Threat Alert: Private npm Packages Disclosed via Timing Attacks|https://blog.aquasec.com/private-packages-disclosed-via-timing-attack-on-npm]]
+    * [[Python Malware Starting to Employ Anti-Debug Techniques|https://jfrog.com/blog/pypi-malware-creators-are-starting-to-employ-anti-debug-techniques/]]
+    * [[New Technique Used by Attackers in NPM to Avoid Detection - Checkmarx.com|https://checkmarx.com/blog/new-technique-used-by-attackers-in-npm-to-avoid-detection/]]
+- [[Language-theoretic Security|http://langsec.org/]]
