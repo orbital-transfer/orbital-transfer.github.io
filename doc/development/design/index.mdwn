@@ -98,6 +98,11 @@
         + it can be updated
         + it can be modeled
         + it does not have code
+- Data
+    * RDF model?
+        + provides graph
+        + easy serialisation
+        + existing ontologies like DOAP
 
 # Organisation of project
 
