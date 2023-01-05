@@ -103,6 +103,8 @@
         + provides graph
         + easy serialisation
         + existing ontologies like DOAP
+        + link up with security advisories
+            + CVE, Debian, etc.
 
 # Organisation of project
 
