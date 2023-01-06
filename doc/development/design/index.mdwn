@@ -105,6 +105,8 @@
         + existing ontologies like DOAP
         + link up with security advisories
             + CVE, Debian, etc.
+        + have modules provide RDF representation?
+            + see also the old Moose + Semantic Web work
 
 # Organisation of project
 
