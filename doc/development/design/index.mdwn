@@ -107,6 +107,10 @@
             + CVE, Debian, etc.
         + have modules provide RDF representation?
             + see also the old Moose + Semantic Web work
+        + can track provenance of data
+            + which graph it came from
+            + was it entered via a tool or manually
+            + maybe tie data changes to a commit?
     * Need to model command line tools
         + See PaSh <https://binpa.sh/>
             + https://nikos.vasilak.is/p/pash:osdi:2022.pdf
