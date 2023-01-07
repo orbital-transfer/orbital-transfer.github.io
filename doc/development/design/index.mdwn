@@ -107,6 +107,10 @@
             + CVE, Debian, etc.
         + have modules provide RDF representation?
             + see also the old Moose + Semantic Web work
+    * Need to model command line tools
+        + See PaSh <https://binpa.sh/>
+            + https://nikos.vasilak.is/p/pash:osdi:2022.pdf
+            + https://arxiv.org/pdf/2012.15422.pdf
 
 # Organisation of project
 
