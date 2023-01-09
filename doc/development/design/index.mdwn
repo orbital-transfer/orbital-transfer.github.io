@@ -119,6 +119,7 @@
             + sub-commands
             + type-aware (getopt types, paths, etc.)
             + see zsh, bash completion
+            + PowerShell ISE
 
 # Organisation of project
 
