@@ -115,6 +115,10 @@
         + See PaSh <https://binpa.sh/>
             + https://nikos.vasilak.is/p/pash:osdi:2022.pdf
             + https://arxiv.org/pdf/2012.15422.pdf
+        + can this be used to provide completion?
+            + sub-commands
+            + type-aware (getopt types, paths, etc.)
+            + see zsh, bash completion
 
 # Organisation of project
 
