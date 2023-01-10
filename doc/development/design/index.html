@@ -249,7 +249,15 @@ then they can be merged by merging the arrays of <code>package-list</code>.</li>
 <ul>
 <li>An installable unit.</li>
 <li>What gets installed varies by package type (different packaging
-management systems).</li>
+management systems).
+<ul>
+<li>e.g., libfoo on one system might be equivalent to separate libfoo and
+libfoo-dev packages on another</li>
+<li>perhaps be able to identify categories of files installed
+<ul>
+<li>work with pkg-config to find <code>-I</code> and <code>-L</code></li>
+</ul></li>
+</ul></li>
 <li>Has dependencies.</li>
 <li>Dependencies should be resolvable.</li>
 <li>define data declaratively
@@ -274,6 +282,12 @@ management systems).</li>
 <ul>
 <li>see also the old Moose + Semantic Web work</li>
 </ul></li>
+<li>can track provenance of data
+<ul>
+<li>which graph it came from</li>
+<li>was it entered via a tool or manually</li>
+<li>maybe tie data changes to a commit?</li>
+</ul></li>
 </ul></li>
 <li>Need to model command line tools
 <ul>
@@ -281,6 +295,13 @@ management systems).</li>
 <ul>
 <li>https://nikos.vasilak.is/p/pash:osdi:2022.pdf</li>
 <li>https://arxiv.org/pdf/2012.15422.pdf</li>
+</ul></li>
+<li>can this be used to provide completion?
+<ul>
+<li>sub-commands</li>
+<li>type-aware (getopt types, paths, etc.)</li>
+<li>see zsh, bash completion</li>
+<li>PowerShell ISE</li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -486,7 +507,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat Jan  7 04:52:03 2023</span>
+Last edited <span class="date">Tue Jan 10 20:03:44 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
