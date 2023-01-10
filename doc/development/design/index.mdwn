@@ -92,6 +92,10 @@
     * An installable unit.
     * What gets installed varies by package type (different packaging
       management systems).
+        + e.g., libfoo on one system might be equivalent to separate libfoo and
+          libfoo-dev packages on another
+        + perhaps be able to identify categories of files installed
+            + work with pkg-config to find `-I` and `-L`
     * Has dependencies.
     * Dependencies should be resolvable.
     * define data declaratively
