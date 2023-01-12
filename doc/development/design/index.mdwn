@@ -102,6 +102,8 @@
         + it can be updated
         + it can be modeled
         + it does not have code
+    * bug trackers / submission
+        + preferred bug tracker and non-preferred alternatives (e.g., RT, GitHub, GitLab, mailing lists)
 - Data
     * RDF model?
         + provides graph
