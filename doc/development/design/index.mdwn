@@ -118,6 +118,8 @@
                 + https://github.com/spdx/tools-python
         + link up with security advisories
             + CVE, Debian, etc.
+            + [[About - cve-search - tool-set to perform local searches for known vulnerabilities|https://www.cve-search.org/about/]]
+            + [[Vulnerability APIs|https://nvd.nist.gov/developers/vulnerabilities]]
         + have modules provide RDF representation?
             + see also the old Moose + Semantic Web work
         + can track provenance of data
