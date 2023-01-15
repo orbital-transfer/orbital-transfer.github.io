@@ -120,6 +120,9 @@
             + CVE, Debian, etc.
             + [[About - cve-search - tool-set to perform local searches for known vulnerabilities|https://www.cve-search.org/about/]]
             + [[Vulnerability APIs|https://nvd.nist.gov/developers/vulnerabilities]]
+            + https://stackoverflow.com/questions/37526701/cve-details-api-get-vulnerabilities-by-component
+            + https://cve.mitre.org/cve/data_feeds.html
+            + https://www.opencve.io/welcome
         + have modules provide RDF representation?
             + see also the old Moose + Semantic Web work
         + can track provenance of data
