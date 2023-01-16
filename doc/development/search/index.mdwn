@@ -20,3 +20,5 @@
 * [[Comparison with Similar Tools · oracle/opengrok Wiki · GitHub|https://github.com/OpenGrok/OpenGrok/wiki/Comparison-with-Similar-Tools]]
 * [[en/LXR Project|https://lxr.sourceforge.io/en/index.php]]
     + [[LXR / The Linux Cross Reference|http://lxr.linux.no/+trees]]
+* [[Sourcegraph - Wikipedia|https://en.wikipedia.org/wiki/Sourcegraph]]
+    + [[GitHub - sourcegraph/sourcegraph: Code Intelligence Platform|https://github.com/sourcegraph/sourcegraph]]
