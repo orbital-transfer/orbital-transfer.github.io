@@ -1,0 +1,5 @@
+[[!meta title="Conda"]]
+
+- [[GitHub - conda/conda: OS-agnostic, system-level binary package manager and ecosystem|https://github.com/conda/conda]]
+- [[Conda (package manager) - Wikipedia|https://en.wikipedia.org/wiki/Conda_(package_manager)]]
+- [[conda-forge - community driven packaging for conda|https://conda-forge.org/]]
