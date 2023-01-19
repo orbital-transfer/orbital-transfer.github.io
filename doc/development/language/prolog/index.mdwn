@@ -15,6 +15,7 @@
 - <https://github.com/mthom/scryer-prolog>
 - <https://github.com/tau-prolog/tau-prolog>
 - <https://github.com/infradig/trealla>
+- <https://ciao-lang.org/>
 
 # Language extensions
 
