@@ -284,6 +284,7 @@ Some modules have Pure-Perl fallbacks:
 
 # POD
 
+- <https://perldoc.perl.org/Pod::Simple::Search>
 - [[Pod::Simple - metacpan.org|https://metacpan.org/pod/Pod::Simple]]
 - [[Split pod documentation from a Perl module|https://www.lemoda.net/perl/split-pod-from-pm/index.html]]
     * [[Split a .pm into a .pod and a .pm - The Incredible Journey (blogs.perl.org)|http://blogs.perl.org/users/ben_bullock/2017/08/split-a-pm-into-a-pod-and-a-pm.html]]
