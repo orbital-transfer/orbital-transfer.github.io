@@ -206,16 +206,16 @@
 
 # HPC workflows
 
-- <https://en.wikipedia.org/wiki/Singularity_(software)>
-    * <https://apptainer.org/>
-    * <https://github.com/apptainer/apptainer>
-    * <https://github.com/sylabs/singularity>
-        + <https://sylabs.io/singularity/>
-        + <https://sylabs.io/2022/05/whats-in-a-singularityce-release/>
-    * <https://github.com/hpcng/warewulf>
-        + <https://github.com/warewulf/warewulf3>
-    * <https://github.com/singularityware>
-- <https://snakemake.readthedocs.io/en/stable/>
+- [[Singularity (software) - Wikipedia|https://en.wikipedia.org/wiki/Singularity_(software)]]
+    * [[Home - Apptainer|https://apptainer.org/]]
+    * [[GitHub - apptainer/apptainer: Apptainer: Application containers for Linux|https://github.com/apptainer/apptainer]]
+    * [[GitHub - sylabs/singularity: SingularityCE is the Community Edition of Singularity, an open source container platform designed to be simple, fast, and secure.|https://github.com/sylabs/singularity]]
+        + [[SingularityCE - Sylabs|https://sylabs.io/singularity/]]
+        + [[What’s in a SingularityCE Release? - Sylabs|https://sylabs.io/2022/05/whats-in-a-singularityce-release/]]
+    * [[GitHub - hpcng/warewulf: Warewulf is a stateless and diskless container operating system provisioning system for large clusters of bare metal and/or virtual systems.|https://github.com/hpcng/warewulf]]
+        + [[GitHub - warewulf/warewulf3: Warewulf is a scalable systems management suite originally developed to manage large high-performance Linux clusters.|https://github.com/warewulf/warewulf3]]
+    * [[Singularity · GitHub|https://github.com/singularityware]]
+- [[Snakemake documentation|https://snakemake.readthedocs.io/en/stable/]]
 
 # Website debugging
 
