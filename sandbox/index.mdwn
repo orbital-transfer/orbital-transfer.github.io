@@ -21,13 +21,26 @@
 
 # Build systems / environment management
 
+* [[GitHub - bazelbuild/bazel: a fast, scalable, multi-language and extensible build system|https://github.com/bazelbuild/bazel]]
+    + [[Starlark Language  -  Bazel|https://bazel.build/rules/language]]
+        + https://github.com/bazelbuild/starlark/blob/master/users.md
 * [[GitHub - facebook/buck: A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages.|https://github.com/facebook/buck]]
+    + [[Buck: Skylark|https://buck.build/concept/skylark.html]]
+    + [[Buck: Macros|https://buck.build/extending/macros.html]]
+    + [[The future of Buck|https://developers.facebook.com/blog/post/2021/07/01/future-of-buck/]]
+    + [[media.ccc.de -Building Portable Service Images with Buck|https://media.ccc.de/v/ASG2019-143-building-portable-service-images-with-buck]]
+        + <https://av.tib.eu/media/46107>
+* [[Neil Mitchell's Blog (Haskell etc): Huge Project Build Systems|http://neilmitchell.blogspot.com/2021/09/huge-project-build-systems.html]]
+* https://ndmitchell.com/downloads/slides-cheaply_writing_a_fast_interpreter-23_feb_2021.pdf
+* https://byby.dev/build-systems
+* https://blog.gradle.org/gradle-vs-bazel-jvm
+* [[Open-Sourcing Isopod: An Expressive DSL Framework for Kubernetes Configuration - by Charles Xu - Cruise - Medium|https://medium.com/cruise/isopod-5ad7c565d350]]
+    + [[Isopod - Proceedings of the ACM Symposium on Cloud Computing|https://dl.acm.org/doi/10.1145/3357223.3365759]]
 * [[Clang Static Analyzer|https://clang-analyzer.llvm.org/]]
 * [[GitHub - bookingcom/pakket: An Unopinionated Meta-Packaging System|https://github.com/bookingcom/pakket]]
     * [["Pakket - An Unopinionated Meta-Packaging System" - Sawyer X - YouTube|https://www.youtube.com/watch?v=-WBL0QoQ3kw]]
     * [[Sawyer X - "Pakket - An Unopinionated Meta-Packaging System" - YouTube|https://www.youtube.com/watch?v=aiNRbQKX9iU]]
 * [[GitHub - fluendo/cerbero|https://github.com/fluendo/cerbero]]
-* [[GitHub - bazelbuild/bazel: a fast, scalable, multi-language and extensible build system|https://github.com/bazelbuild/bazel]]
 * [[lib/Metabrik/Shell/Command.pm - metacpan.org|https://metacpan.org/source/Metabrik::Shell::Command]]
 * [[Pants|https://www.pantsbuild.org/]]
 * [[Welcome to the BuildStream project - BuildStream, the software integration tool|https://www.buildstream.build/]]
