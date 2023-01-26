@@ -10,6 +10,10 @@
     * https://www.iecc.com/linker/
     * ftp://ftp.iecc.com/pub/linker/
 - [[GitHub - snowleopard/build: Build Systems à la Carte|https://github.com/snowleopard/build]]
+    * [[Shake Build System|https://shakebuild.com/]]
+        + [[Neil Mitchell's Blog (Haskell etc): Reflecting on the Shake Build System|https://neilmitchell.blogspot.com/2021/09/reflecting-on-shake-build-system.html]]
+        + [[Neil Mitchell's Blog (Haskell etc): Huge Project Build Systems|http://neilmitchell.blogspot.com/2021/09/huge-project-build-systems.html]]
+    * [[GitHub - snowleopard/hadrian: Hadrian: a new build system for the Glasgow Haskell Compiler. Now merged into the GHC tree!|https://github.com/snowleopard/hadrian]]
 - [[research!rsc: Our Software Dependency Problem|https://research.swtch.com/deps]]
 
 # C/C++ package management
@@ -30,7 +34,6 @@
     + [[The future of Buck|https://developers.facebook.com/blog/post/2021/07/01/future-of-buck/]]
     + [[media.ccc.de -Building Portable Service Images with Buck|https://media.ccc.de/v/ASG2019-143-building-portable-service-images-with-buck]]
         + <https://av.tib.eu/media/46107>
-* [[Neil Mitchell's Blog (Haskell etc): Huge Project Build Systems|http://neilmitchell.blogspot.com/2021/09/huge-project-build-systems.html]]
 * https://ndmitchell.com/downloads/slides-cheaply_writing_a_fast_interpreter-23_feb_2021.pdf
 * https://byby.dev/build-systems
 * https://blog.gradle.org/gradle-vs-bazel-jvm
