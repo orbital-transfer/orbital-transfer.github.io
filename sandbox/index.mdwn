@@ -154,10 +154,14 @@
 
 # Virtualisation
 
-- virt-what
-    * <https://people.redhat.com/~rjones/virt-what/>
-    * <http://git.annexia.org/?p=virt-what.git;a=summary>
-    * <https://github.com/jordemort/virt-what>
+- Detect virtualisation
+    * virt-what
+        + <https://people.redhat.com/~rjones/virt-what/>
+        + <http://git.annexia.org/?p=virt-what.git;a=summary>
+        + <https://github.com/jordemort/virt-what>
+    * [[imvirt @ Thomas Liske's Attic|http://micky.ibh.net/~liske/imvirt.html]]
+    * [[Perl module for detecting virtualization|https://www.dmo.ca/blog/perl-module-for-virtualization-detection/]]
+        + [[Sys::Detect::Virtualization - Detect if a UNIX system is running as a virtual machine - metacpan.org|https://metacpan.org/pod/Sys::Detect::Virtualization]]
 - OSes on CI
     * <https://github.com/PDLPorters/devops/issues/1>
     * [[GitHub - vmactions/solaris-vm: Use Solaris in github actions|https://github.com/vmactions/solaris-vm]]
