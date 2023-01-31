@@ -109,9 +109,9 @@
 - [[GitHub - returntocorp/semgrep: Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.|https://github.com/returntocorp/semgrep]]
 - [[GitHub - returntocorp/ocaml-tree-sitter-semgrep: Generate parsers from tree-sitter grammars extended to support Semgrep patterns|https://github.com/returntocorp/ocaml-tree-sitter-semgrep]]
 - [[GitHub - tree-sitter/tree-sitter: An incremental parsing system for programming tools|https://github.com/tree-sitter/tree-sitter]]
-- <http://swig.org/>
-- <https://www.doxygen.nl/>
-- <https://github.com/CastXML/CastXML>
+- [[Simplified Wrapper and Interface Generator|http://swig.org/]]
+- [[Doxygen: Doxygen|https://www.doxygen.nl/]]
+- [[GitHub - CastXML/CastXML: C-family Abstract Syntax Tree XML Output|https://github.com/CastXML/CastXML]]
 - <https://www.riverbankcomputing.com/software/sip/intro>
 - <https://github.com/vapier/coverity-scan-action>
 
