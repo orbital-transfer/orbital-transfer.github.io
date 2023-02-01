@@ -1,0 +1,4 @@
+[[!meta title="LLVM"]]
+
+- [[The LLVM Compiler Infrastructure Project|https://llvm.org/]]
+- [[GitHub - rsms/llvmbox: Self contained, fully static llvm tools & libs|https://github.com/rsms/llvmbox]]
