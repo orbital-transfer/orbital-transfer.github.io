@@ -4,6 +4,9 @@
 
 - <https://github.com/rbenv/rbenv>
 - <https://github.com/rbenv/ruby-build>
+- [[Traveling Ruby: self-contained, portable Ruby binaries|https://phusion.github.io/traveling-ruby/]]
+    * [[The future of Traveling Ruby – Joyful Bikeshedding|https://www.joyfulbikeshedding.com/blog/2021-01-06-the-future-of-traveling-ruby.html]]
+    * [[An alternative to macOS's DYLD_LIBRARY_PATH – Joyful Bikeshedding|https://www.joyfulbikeshedding.com/blog/2021-01-13-alternative-to-macos-dyld-library-path.html]]
 
 # Bundler
 
