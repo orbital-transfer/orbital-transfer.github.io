@@ -14,6 +14,10 @@
 - [[About - Steel Bank Common Lisp|http://www.sbcl.org/]]
 - [[GitHub - clasp-developers/clasp: clasp Common Lisp environment|https://github.com/clasp-developers/clasp]]
 
+## Packaging
+
+- [[Quicklisp|https://www.quicklisp.org/]]
+
 # Scheme
 
 ## Packaging
