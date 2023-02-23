@@ -131,6 +131,7 @@ Some modules have Pure-Perl fallbacks:
 - [[App-scan_prereqs_cpanfile - Scan prerequisite modules and generate CPANfile - metacpan.org|https://metacpan.org/release/App-scan_prereqs_cpanfile]]
 - [[Dependencies-Searcher - Search for modules used or required by a distribution and build a report that can be used as Carton cpanfile . - metacpan.org|https://metacpan.org/release/Dependencies-Searcher]]
 - [[Module-ScanDeps - Recursively scan Perl code for dependencies - metacpan.org|https://metacpan.org/release/Module-ScanDeps]]
+- [[Module-ScanDeps-Static - scan modules for dependencies - metacpan.org|https://metacpan.org/dist/Module-ScanDeps-Static]]
 - [[Tangerine - Examine perl files and report dependency metadata - metacpan.org|https://metacpan.org/release/Tangerine]]
 - [[CPAN-FindDependencies - generate reports when modules' dependencies get new releases - metacpan.org|https://metacpan.org/release/CPAN-FindDependencies]]
 - [[CPAN modules for getting module dependency information|http://neilb.org/reviews/dependencies.html]]
