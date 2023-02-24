@@ -6,7 +6,8 @@
 
 # pip
 
-- [[ensurepip — Bootstrapping the pip installer — Python 3 documentation|https://docs.python.org/3/library/ensurepip.html]]
+- [[Installation - pip documentation|https://pip.pypa.io/en/stable/installation/]]
+    * [[ensurepip — Bootstrapping the pip installer — Python 3 documentation|https://docs.python.org/3/library/ensurepip.html]]
 - [[GitHub - pypa/pipfile|https://github.com/pypa/pipfile]]
 - [[pipx|https://pypa.github.io/pipx/]]
 - [[GitHub - thoth-station/micropipenv: A lightweight wrapper for pip to support requirements.txt, Pipenv and Poetry lock files or converting them to pip-tools compatible output. Designed for containerized Python applications but not limited to them.|https://github.com/thoth-station/micropipenv]]
