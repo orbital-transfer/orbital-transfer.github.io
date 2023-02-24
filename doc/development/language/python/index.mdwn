@@ -51,6 +51,8 @@
 
 - <https://python-build-standalone.readthedocs.io/en/latest/>
     * <https://github.com/indygreg/python-build-standalone/releases>
+    * https://gregoryszorc.com/docs/python-build-standalone/main/index.html
+    * https://pyoxidizer.readthedocs.io/en/latest/pyoxy.html
 - macOS
     * [[GitHub - ronaldoussoren/py2app: py2app is a Python setuptools command which will allow you to make standalone Mac OS X application bundles and plugins from Python scripts.|https://github.com/ronaldoussoren/py2app]]
     * [[GitHub - gregneagle/relocatable-python: A tool for building standalone relocatable Python.framework bundles|https://github.com/gregneagle/relocatable-python]]
