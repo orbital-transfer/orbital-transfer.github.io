@@ -4,8 +4,11 @@
 
 # RefreshEnv
 
+* <https://docs.chocolatey.org/en-us/create/functions/update-sessionenvironment>
 * [[powershell - install-package with chocolatey never adds anything to the path environment variable - Stack Overflow|https://stackoverflow.com/questions/44756491/install-package-with-chocolatey-never-adds-anything-to-the-path-environment-vari]]
 * [[installation - How to refresh the environment of a PowerShell session after a Chocolatey install without needing to open a new session - Stack Overflow|https://stackoverflow.com/questions/46758437/how-to-refresh-the-environment-of-a-powershell-session-after-a-chocolatey-instal]]
+    + [[installation - How to refresh the environment of a PowerShell session after a Chocolatey install without needing to open a new session - Stack Overflow|https://stackoverflow.com/questions/46758437/how-to-refresh-the-environment-of-a-powershell-session-after-a-chocolatey-instal/46760714#46760714]]
+* [[powershell - Restart environment and script during batch script - Stack Overflow|https://stackoverflow.com/questions/60978594/restart-environment-and-script-during-batch-script]]
 
 * [[chocolatey - How to choose between 32 bit or 64 bit version of a package? - Super User|https://superuser.com/questions/1167112/how-to-choose-between-32-bit-or-64-bit-version-of-a-package]]
 * [[CommandsInstall · chocolatey/choco Wiki · GitHub|https://github.com/chocolatey/choco/wiki/CommandsInstall]]
