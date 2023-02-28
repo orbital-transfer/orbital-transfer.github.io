@@ -197,6 +197,7 @@
 - [[schroot — codelibre.net|http://www.codelibre.net/schroot/index.html]]
 - [[GitHub - containers/bubblewrap: Unprivileged sandboxing tool|https://github.com/containers/bubblewrap]]
 - [[GitHub - lima-vm/lima: Linux virtual machines, typically on macOS, for running containerd|https://github.com/lima-vm/lima]]
+- [[GitHub - containers/skopeo: Work with remote images registries - retrieving information, images, signing content|https://github.com/containers/skopeo]]
 
 # Linters / Tidiers
 
