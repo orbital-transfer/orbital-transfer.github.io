@@ -2,3 +2,4 @@
 
 - <https://about.gitlab.com/solutions/open-source/join/>
 - [[continuous-integration]]
+- [[Securing GitLab CI pipelines with Sysbox - Nestybox Blog Site|https://blog.nestybox.com/2020/10/21/gitlab-dind.html]]
