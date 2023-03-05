@@ -326,3 +326,7 @@
     * [[Python Malware Starting to Employ Anti-Debug Techniques|https://jfrog.com/blog/pypi-malware-creators-are-starting-to-employ-anti-debug-techniques/]]
     * [[New Technique Used by Attackers in NPM to Avoid Detection - Checkmarx.com|https://checkmarx.com/blog/new-technique-used-by-attackers-in-npm-to-avoid-detection/]]
 - [[Language-theoretic Security|http://langsec.org/]]
+
+# Dependency resolving
+
+- [[GitHub - openSUSE/libsolv: Library for solving packages and reading repositories|https://github.com/openSUSE/libsolv]]
