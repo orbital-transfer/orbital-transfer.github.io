@@ -330,3 +330,4 @@
 # Dependency resolving
 
 - [[GitHub - openSUSE/libsolv: Library for solving packages and reading repositories|https://github.com/openSUSE/libsolv]]
+- [[How Rust Solved Dependency Hell - Stephen Coakley|https://stephencoakley.com/2019/04/24/how-rust-solved-dependency-hell]]
