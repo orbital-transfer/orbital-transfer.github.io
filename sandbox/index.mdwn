@@ -331,3 +331,5 @@
 
 - [[GitHub - openSUSE/libsolv: Library for solving packages and reading repositories|https://github.com/openSUSE/libsolv]]
 - [[How Rust Solved Dependency Hell - Stephen Coakley|https://stephencoakley.com/2019/04/24/how-rust-solved-dependency-hell]]
+- [[pub/solver.md at master · dart-lang/pub · GitHub|https://github.com/dart-lang/pub/blob/master/doc/solver.md]]
+    * [[PubGrub: Next-Generation Version Solving - by Natalie Weizenbaum - Medium|https://nex3.medium.com/pubgrub-2fb6470504f]]
