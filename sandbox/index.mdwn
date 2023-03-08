@@ -220,7 +220,7 @@
 - <https://metacpan.org/dist/File-Codeowners>
 - <https://github.com/toptal/codeowners-checker>
 - <https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners>
-- <https://docs.gitlab.com/ee/user/project/code_owners.html>
+- [[GitLab|doc/development/service/gitlab]] <https://docs.gitlab.com/ee/user/project/code_owners.html>
 - <https://codeowners.com/>
 - <https://www.fullstory.com/blog/taming-github-codeowners-with-bots/>
 
@@ -272,7 +272,7 @@
     * <https://plugins.jenkins.io/cobertura/>
     * <https://gcovr.com/en/stable/output/cobertura.html>
     * <https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverage.coberturaformat-class.html>
-    * <https://docs.gitlab.com/ee/user/project/merge_requests/test_coverage_visualization.html>
+    * [[GitLab|doc/development/service/gitlab]] <https://docs.gitlab.com/ee/user/project/merge_requests/test_coverage_visualization.html>
         + <https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html#artifactsreportscoverage_report>
 
 # REST APIs
@@ -305,7 +305,7 @@
 - Used by
     * Hudson
     * Jenkins
-    * GitLab CI
+    * [[GitLab|doc/development/service/gitlab]] CI
 
 # Software architecture
 
