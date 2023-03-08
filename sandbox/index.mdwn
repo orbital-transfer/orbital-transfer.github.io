@@ -296,11 +296,16 @@
 
 # Ant JUnit XML
 
-- <https://stackoverflow.com/questions/4922867/what-is-the-junit-xml-format-specification-that-hudson-supports>
-- <https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format>
-- <https://stackoverflow.com/questions/442556/spec-for-junit-xml-output>
-- <http://svn.apache.org/repos/asf/ant/core/trunk/src/main/org/apache/tools/ant/taskdefs/optional/junit/>
-- <https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd>
+- Spec
+    * <https://stackoverflow.com/questions/4922867/what-is-the-junit-xml-format-specification-that-hudson-supports>
+    * <https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format>
+    * <https://stackoverflow.com/questions/442556/spec-for-junit-xml-output>
+    * <http://svn.apache.org/repos/asf/ant/core/trunk/src/main/org/apache/tools/ant/taskdefs/optional/junit/>
+    * <https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd>
+- Used by
+    * Hudson
+    * Jenkins
+    * GitLab CI
 
 # Software architecture
 
