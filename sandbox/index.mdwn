@@ -269,7 +269,7 @@
 
 - Cobertura XML format
     * <http://cobertura.github.io/cobertura/>
-    * <https://plugins.jenkins.io/cobertura/>
+    * [[doc/development/continuous-integration/jenkins]] <https://plugins.jenkins.io/cobertura/>
     * <https://gcovr.com/en/stable/output/cobertura.html>
     * <https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverage.coberturaformat-class.html>
     * [[GitLab|doc/development/service/gitlab]] <https://docs.gitlab.com/ee/user/project/merge_requests/test_coverage_visualization.html>
@@ -304,7 +304,7 @@
     * <https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd>
 - Used by
     * Hudson
-    * Jenkins
+    * [[doc/development/continuous-integration/jenkins]]
     * [[GitLab|doc/development/service/gitlab]] CI
 
 # Software architecture
