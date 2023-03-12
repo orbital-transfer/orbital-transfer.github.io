@@ -60,6 +60,11 @@
     + https://dev.to/kristoff/zig-makes-go-cross-compilation-just-work-29ho
     + https://github.com/phusion/holy-build-box
 
+- [[doc/development/build-tool]]
+- [[SCons: A software construction tool - SCons|https://scons.org/]]
+- [[Premake|https://premake.github.io/]]
+- [[tup - Home|https://gittup.org/tup/]]
+
 # Debugging / profiling / coverage tools for C/C++
 
 - [[GitHub - google/sanitizers: AddressSanitizer, ThreadSanitizer, MemorySanitizer|https://github.com/google/sanitizers]]
@@ -255,13 +260,6 @@
 - https://remotedebug.org/roadmap/
     * https://github.com/RemoteDebug/remotedebug-compatibility-tables
 - https://inspect.dev/
-
-# Build systems
-
-- [[doc/development/build-tool]]
-- [[SCons: A software construction tool - SCons|https://scons.org/]]
-- [[Premake|https://premake.github.io/]]
-- [[tup - Home|https://gittup.org/tup/]]
 
 # Code coverage
 
