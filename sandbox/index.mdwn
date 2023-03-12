@@ -69,8 +69,6 @@
     * [[Sanitizer support · The Julia Language|https://docs.julialang.org/en/v1/devdocs/sanitizers/]]
     * [[ThreadSanitizer (TSan) v. 2 - The Chromium Projects|https://www.chromium.org/developers/testing/threadsanitizer-tsan-v2]]
 - [[Perf Wiki|https://perf.wiki.kernel.org/index.php/Main_Page]]
-- [[Gcov (Using the GNU Compiler Collection (GCC))|http://gcc.gnu.org/onlinedocs/gcc/Gcov.html]]
-    * [[GitHub - gcovr/gcovr: generate code coverage reports with gcc/gcov|https://github.com/gcovr/gcovr]]
 - [[Top (GNU gprof)|http://sourceware.org/binutils/docs/gprof/]]
 - [[GitHub - notfoundry/ppstep: Interactive C/C++ preprocessor macro debugger|https://github.com/notfoundry/ppstep]]
 - [[linux - is there a tool for finding shared library symbol conflicts? - Unix & Linux Stack Exchange|https://unix.stackexchange.com/questions/594790/is-there-a-tool-for-finding-shared-library-symbol-conflicts]]
@@ -270,7 +268,7 @@
 - Cobertura XML format
     * <http://cobertura.github.io/cobertura/>
     * [[doc/development/continuous-integration/jenkins]] <https://plugins.jenkins.io/cobertura/>
-    * <https://gcovr.com/en/stable/output/cobertura.html>
+    * [[doc/development/compiler/gcc]] <https://gcovr.com/en/stable/output/cobertura.html>
     * <https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverage.coberturaformat-class.html>
     * [[GitLab|doc/development/service/gitlab]] <https://docs.gitlab.com/ee/user/project/merge_requests/test_coverage_visualization.html>
         + <https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html#artifactsreportscoverage_report>
