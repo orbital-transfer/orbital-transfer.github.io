@@ -74,7 +74,6 @@
     * [[Sanitizer support · The Julia Language|https://docs.julialang.org/en/v1/devdocs/sanitizers/]]
     * [[ThreadSanitizer (TSan) v. 2 - The Chromium Projects|https://www.chromium.org/developers/testing/threadsanitizer-tsan-v2]]
 - [[Perf Wiki|https://perf.wiki.kernel.org/index.php/Main_Page]]
-- [[Top (GNU gprof)|http://sourceware.org/binutils/docs/gprof/]]
 - [[GitHub - notfoundry/ppstep: Interactive C/C++ preprocessor macro debugger|https://github.com/notfoundry/ppstep]]
 - [[linux - is there a tool for finding shared library symbol conflicts? - Unix & Linux Stack Exchange|https://unix.stackexchange.com/questions/594790/is-there-a-tool-for-finding-shared-library-symbol-conflicts]]
     * [[linker - Limiting visibility of symbols when linking shared libraries - Stack Overflow|https://stackoverflow.com/questions/435352/limiting-visibility-of-symbols-when-linking-shared-libraries]]
