@@ -247,18 +247,18 @@
 
 # Website debugging
 
-- https://gist.github.com/james2doyle/d552c408f5d3a6af8890914e60db3861
-- https://github.com/remy/jsconsole
-- https://github.com/google/ios-webkit-debug-proxy
-- https://developer.chrome.com/docs/devtools/remote-debugging/
-- https://stackoverflow.com/questions/11262236/ios-remote-debugging
-- https://medium.com/@nikoloza/how-to-debug-remote-ios-device-using-chrome-devtools-f44d697003a7
-- https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html
-- http://jonsadka.com/blog/how-to-debug-a-chrome-specific-bug-on-ios-using-remote-debugging
-- https://stackoverflow.com/questions/38179396/is-there-any-way-to-debug-chrome-in-any-ios-device
-- https://remotedebug.org/roadmap/
-    * https://github.com/RemoteDebug/remotedebug-compatibility-tables
-- https://inspect.dev/
+- [[Enable remote debugging on the iOS simulator using Chrome Dev Tools · GitHub|https://gist.github.com/james2doyle/d552c408f5d3a6af8890914e60db3861]]
+- [[GitHub - remy/jsconsole: Web based console - for presentations and workshops|https://github.com/remy/jsconsole]]
+- [[GitHub - google/ios-webkit-debug-proxy: A DevTools proxy (Chrome Remote Debugging Protocol) for iOS devices (Safari Remote Web Inspector).|https://github.com/google/ios-webkit-debug-proxy]]
+- [[Remote debug Android devices - Chrome Developers|https://developer.chrome.com/docs/devtools/remote-debugging/]]
+- [[Remote Debugging for Chrome iOS (and Safari) - Stack Overflow|https://stackoverflow.com/questions/11262236/ios-remote-debugging]]
+- [[How to debug remote iOS device using Chrome DevTools - by nikoloza - Symbols|https://medium.com/@nikoloza/how-to-debug-remote-ios-device-using-chrome-devtools-f44d697003a7]]
+- [[weinre - Home|https://people.apache.org/~pmuellr/weinre/docs/latest/Home.html]]
+- [[Jon Sadka - How to debug an issue in Chrome for iOS using remote debugging|http://jonsadka.com/blog/how-to-debug-a-chrome-specific-bug-on-ios-using-remote-debugging]]
+- [[Is there any way to debug chrome in any IOS device - Stack Overflow|https://stackoverflow.com/questions/38179396/is-there-any-way-to-debug-chrome-in-any-ios-device]]
+- [[RemoteDebug, an initiative to unify remote debugging across browsers.|https://remotedebug.org/roadmap/]]
+    * [[GitHub - RemoteDebug/remotedebug-compatibility-tables: RemoteDebug Compatibility Tables|https://github.com/RemoteDebug/remotedebug-compatibility-tables]]
+- [[Inspect – The mobile DevTools you'll love using|https://inspect.dev/]]
 
 # Code coverage
 
