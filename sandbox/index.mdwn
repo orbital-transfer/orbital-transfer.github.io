@@ -146,9 +146,9 @@
 
 # Codemeta
 
-- <https://codemeta.github.io/>
-- <https://codemeta.github.io/codemetar/>
-- <https://github.com/cboettig/codemeta>
+- [[The CodeMeta Project|https://codemeta.github.io/]]
+- [[Generate CodeMeta Metadata for R Packages • codemetar|https://codemeta.github.io/codemetar/]]
+- [[GitHub - cboettig/codemeta: A smaller codemetar|https://github.com/cboettig/codemeta]]
 
 # Security
 
