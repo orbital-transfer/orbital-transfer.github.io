@@ -187,13 +187,13 @@
 
 # Package differences
 
-- <https://github.com/lvc/pkgdiff>
-- <http://tardiff.coolprojects.org/>
-    * <https://www.tcg.com/blog/experiments_in_/>
-    * <http://tardiff.sourceforge.net/>
-- <https://invisible-island.net/diffstat/>
-- <https://diffoscope.org/>
-    * <https://reproducible-builds.org/tools/>
+- [[GitHub - lvc/pkgdiff: A tool for visualizing changes in Linux software packages|https://github.com/lvc/pkgdiff]]
+- [[TarDiff - Tarball comparison tool|http://tardiff.coolprojects.org/]]
+    * [[Experiments in Rapid System Restoration using Tardiff - TCG|https://www.tcg.com/blog/experiments_in_/]]
+    * [[tardiff - an archive patching utility|http://tardiff.sourceforge.net/]]
+- [[DIFFSTAT – make histogram from diff-output|https://invisible-island.net/diffstat/]]
+- [[diffoscope: in-depth comparison of files, archives, and directories|https://diffoscope.org/]]
+    * [[Tools — reproducible-builds.org|https://reproducible-builds.org/tools/]]
 
 # Runtime environment
 
