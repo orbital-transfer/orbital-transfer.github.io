@@ -152,7 +152,7 @@
 
 # Security
 
-- <https://wiki.debian.org/HardeningWalkthrough>
+- [[HardeningWalkthrough - Debian Wiki|https://wiki.debian.org/HardeningWalkthrough]]
 
 # Virtualisation
 
