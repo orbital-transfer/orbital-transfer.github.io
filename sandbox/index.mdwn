@@ -228,9 +228,9 @@
 
 # Intel oneAPI
 
-- <https://www.scivision.dev/intel-oneapi-github-actions/>
-- <https://github.com/intel/oneapi-containers>
-- <https://anaconda.org/intel>
+- [[Intel oneAPI on GitHub Actions - Scientific Computing - SciVision|https://www.scivision.dev/intel-oneapi-github-actions/]]
+- [[GitHub - intel/oneapi-containers|https://github.com/intel/oneapi-containers]]
+- [[intel :: Anaconda.org|https://anaconda.org/intel]]
 
 # HPC workflows
 
