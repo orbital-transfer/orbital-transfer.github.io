@@ -30,3 +30,10 @@
 # Documentation
 
 - <https://en.wikipedia.org/wiki/Knitr>
+
+# Online
+
+- [[Searching R Packages - Wikiversity|https://en.wikiversity.org/wiki/Searching_R_Packages]]
+    * [[R Package Documentation|https://rdrr.io/]]
+    * [[rseek.org - rstats search engine|https://rseek.org/]]
+    * [[Home - RDocumentation|https://www.rdocumentation.org/]]
