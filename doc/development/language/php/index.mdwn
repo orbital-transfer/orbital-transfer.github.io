@@ -1,0 +1,5 @@
+[[!meta title="PHP"]]
+
+- [[PHPMD - PHP Mess Detector|https://phpmd.org/]]
+- [[GitHub - squizlabs/PHP_CodeSniffer: PHP_CodeSniffer tokenizes PHP files and detects violations of a defined set of coding standards.|https://github.com/squizlabs/PHP_CodeSniffer]]
+- [[Find Bugs Without Writing Tests - PHPStan|https://phpstan.org/]]
