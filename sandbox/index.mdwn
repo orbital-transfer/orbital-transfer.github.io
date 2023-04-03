@@ -333,3 +333,8 @@
 - [[How Rust Solved Dependency Hell - Stephen Coakley|https://stephencoakley.com/2019/04/24/how-rust-solved-dependency-hell]]
 - [[pub/solver.md at master · dart-lang/pub · GitHub|https://github.com/dart-lang/pub/blob/master/doc/solver.md]]
     * [[PubGrub: Next-Generation Version Solving - by Natalie Weizenbaum - Medium|https://nex3.medium.com/pubgrub-2fb6470504f]]
+
+# Packaging
+
+- [[Tarballs, the ultimate container image format — 2018 — Blog — GNU Guix|https://guix.gnu.org/blog/2018/tarballs-the-ultimate-container-image-format/]]
+- [[GUB -- Grand Unified Builder|http://lilypond.org/gub/]]
