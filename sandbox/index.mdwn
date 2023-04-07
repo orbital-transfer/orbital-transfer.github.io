@@ -54,11 +54,11 @@
     + <https://modules.readthedocs.io/en/latest/>
     + <https://lmod.readthedocs.io/en/latest/>
 * Cross-compiling /  older libcs
-    + https://github.com/billziss-gh/glibc-compat
-    + https://git.adelielinux.org/adelie/gcompat/
-        + https://blog.adelielinux.org/tag/gcompat/
-    + https://dev.to/kristoff/zig-makes-go-cross-compilation-just-work-29ho
-    + https://github.com/phusion/holy-build-box
+    + [[GitHub - billziss-gh/glibc-compat: GLIBC compatibility headers|https://github.com/billziss-gh/glibc-compat]]
+    + [[Adélie Linux / gcompat · GitLab|https://git.adelielinux.org/adelie/gcompat/]]
+        + [[gcompat Archives - The Adélie Chronicle|https://blog.adelielinux.org/tag/gcompat/]]
+    + [[Zig Makes Go Cross Compilation Just Work - DEV Community|https://dev.to/kristoff/zig-makes-go-cross-compilation-just-work-29ho]]
+    + [[GitHub - phusion/holy-build-box: System for building cross-distribution Linux binaries|https://github.com/phusion/holy-build-box]]
 
 - [[doc/development/build-tool]]
 - [[SCons: A software construction tool - SCons|https://scons.org/]]
