@@ -51,6 +51,11 @@ Module specificity:
             + [[App-FatPacker-Simple - only fatpack a script - metacpan.org|https://metacpan.org/release/App-FatPacker-Simple]]
             + [[App::FatPacker - pack your dependencies onto your script file - metacpan.org|https://metacpan.org/pod/App::FatPacker]]
             + [[App::depak - Pack dependencies onto your script file - metacpan.org|https://metacpan.org/pod/App::depak]]
+        + Or "mobundled"
+            + [[Parachuting Whatever – PolettiX!|http://blog.polettix.it/parachuting-whatever/]]
+            + [[mobundle - ETOOBUSY|https://github.polettix.it/ETOOBUSY/2023/02/21/mobundle/]]
+            + [[mobundle gets some love - ETOOBUSY|https://github.polettix.it/ETOOBUSY/2023/03/01/mobundle-gets-some-love/]]
+            + [[Public Git Hosting - mobundle.git/summary|https://repo.or.cz/mobundle.git]]
     * Some use an environment variable to set implementation:
         + `Params::Util`: `$ENV{PERL_PARAMS_UTIL_PP}=1`
         + `Params::Validate`: `$ENV{PARAMS_VALIDATE_IMPLEMENTATION}='PP'`
