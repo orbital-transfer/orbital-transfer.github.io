@@ -107,6 +107,7 @@
 # Parsing / static analysis + API + docs
 
 - [[List of tools for static code analysis - Wikipedia|https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis]]
+- [[Moosetechnology|https://modularmoose.org/]]
 - [[PMD|https://pmd.github.io/]]
 - [[GitHub - trailofbits/graphtage: A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV.|https://github.com/trailofbits/graphtage]]
 - [[GitHub - returntocorp/pfff: pfff is mainly an OCaml API to write static analysis, dynamic analysis, code visualizations, code navigations, or style-preserving source-to-source transformations such as refactorings on source code.|https://github.com/returntocorp/pfff]]
