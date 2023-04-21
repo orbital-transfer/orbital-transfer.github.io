@@ -1,6 +1,7 @@
 [[!meta title="Debian"]]
 
 - [[package-manager/apt]]
+- https://sources.debian.org/doc/api/
 - https://wiki.debian.org/SupportedArchitectures
 - https://wiki.debian.org/PackageManagement
 - https://wiki.debian.org/PackageManagement/Searching
