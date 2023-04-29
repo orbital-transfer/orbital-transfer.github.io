@@ -341,3 +341,14 @@
 
 - [[Tarballs, the ultimate container image format — 2018 — Blog — GNU Guix|https://guix.gnu.org/blog/2018/tarballs-the-ultimate-container-image-format/]]
 - [[GUB -- Grand Unified Builder|http://lilypond.org/gub/]]
+
+# Merging
+
+- [[Mark J. Wielaard » Blog Archive » Automagically merging ChangeLog files with mercurial or git|https://gnu.wildebeest.org/blog/mjw/2012/03/16/automagically-merging-changelog-files-with-mercurial-or-git/]]
+    * [[Savannah Git Hosting - gnulib.git/blob - lib/git-merge-changelog.c|http://git.savannah.gnu.org/gitweb/?p=gnulib.git;a=blob;f=lib/git-merge-changelog.c]]
+- Git `merge=union` <https://www.git-scm.com/docs/gitattributes#Documentation/gitattributes.txt-union>
+    * [[Support merge=union from .gitattributes when evaluating merge conflicts (#17325) · Issues · GitLab.org / GitLab FOSS · GitLab|https://gitlab.com/gitlab-org/gitlab-foss/-/issues/17325]]
+    * [[Pull request conflicts: Support `merge=union` in .gitattributes file · community · Discussion #9288 · GitHub|https://github.com/orgs/community/discussions/9288]]
+    * [[Revisit gitattributes merge=union · Issue #21516 · scikit-learn/scikit-learn · GitHub|https://github.com/scikit-learn/scikit-learn/issues/21516]]
+    * [[Merge conflicts in csproj files - You’ve Been Haacked|https://haacked.com/archive/2014/04/16/csproj-merge-conflicts/]]
+- [[GitLab reduced merge conflicts by 90% with changelog placeholders-GitLab|https://about.gitlab.com/blog/2015/02/10/gitlab-reduced-merge-conflicts-by-90-percent-with-changelog-placeholders/]]
