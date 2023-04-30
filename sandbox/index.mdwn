@@ -351,4 +351,5 @@
     * [[Pull request conflicts: Support `merge=union` in .gitattributes file · community · Discussion #9288 · GitHub|https://github.com/orgs/community/discussions/9288]]
     * [[Revisit gitattributes merge=union · Issue #21516 · scikit-learn/scikit-learn · GitHub|https://github.com/scikit-learn/scikit-learn/issues/21516]]
     * [[Merge conflicts in csproj files - You’ve Been Haacked|https://haacked.com/archive/2014/04/16/csproj-merge-conflicts/]]
+    * [[merge=union · Issue #56 · olivierlacan/keep-a-changelog · GitHub|https://github.com/olivierlacan/keep-a-changelog/issues/56]]
 - [[GitLab reduced merge conflicts by 90% with changelog placeholders-GitLab|https://about.gitlab.com/blog/2015/02/10/gitlab-reduced-merge-conflicts-by-90-percent-with-changelog-placeholders/]]
