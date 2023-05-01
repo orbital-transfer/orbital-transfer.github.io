@@ -120,6 +120,9 @@
 - <https://www.riverbankcomputing.com/software/sip/intro>
 - <https://github.com/vapier/coverity-scan-action>
 
+# Misc package managers
+
+- [[OPM - OpenResty Package Manager|https://opm.openresty.org/docs]]
 
 # Tasks
 
