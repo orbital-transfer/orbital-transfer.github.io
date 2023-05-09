@@ -361,3 +361,11 @@
 # Configuration management
 
 - TODO: Compare with CM capabilities.
+
+# Releasing
+
+
+- [[Release::Checklist - A QA checklist for CPAN releases - metacpan.org|https://metacpan.org/pod/Release::Checklist]]
+    * [[Module::Release - Automate software releases - metacpan.org|https://metacpan.org/pod/Module::Release]]
+- [[README - semantic-release|https://semantic-release.gitbook.io/semantic-release/]]
+    * [[semantic-release/configuration.md at master · semantic-release/semantic-release · GitHub|https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md]]
