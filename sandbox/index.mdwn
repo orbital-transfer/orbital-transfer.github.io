@@ -369,3 +369,7 @@
     * [[Module::Release - Automate software releases - metacpan.org|https://metacpan.org/pod/Module::Release]]
 - [[README - semantic-release|https://semantic-release.gitbook.io/semantic-release/]]
     * [[semantic-release/configuration.md at master · semantic-release/semantic-release · GitHub|https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md]]
+
+# Visualization
+
+- [[GitHub - CoatiSoftware/Sourcetrail: Sourcetrail - free and open-source interactive source explorer|https://github.com/CoatiSoftware/Sourcetrail]]
