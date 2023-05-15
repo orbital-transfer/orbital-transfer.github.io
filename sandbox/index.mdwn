@@ -175,6 +175,7 @@
     * [[GitHub - vmactions/solaris-vm: Use Solaris in github actions|https://github.com/vmactions/solaris-vm]]
     * [[GitHub - vmactions/freebsd-vm: Use FreeBSD in github actions|https://github.com/vmactions/freebsd-vm]]
     * [[GitHub - docker/setup-qemu-action: GitHub Action to configure QEMU support|https://github.com/docker/setup-qemu-action]]
+- <https://en.wikipedia.org/wiki/Comparison_of_platform_virtualization_software>
 
 # GitHub Actions for specific languages
 
