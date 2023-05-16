@@ -375,3 +375,7 @@
 # Visualization
 
 - [[GitHub - CoatiSoftware/Sourcetrail: Sourcetrail - free and open-source interactive source explorer|https://github.com/CoatiSoftware/Sourcetrail]]
+
+# Some other ideas
+
+- [[Build monitor for Github Actions, Gitlab CI, Travis CI, Bitrise and Buddy! - Meercode|https://meercode.io/]]
