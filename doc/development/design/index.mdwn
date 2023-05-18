@@ -103,7 +103,7 @@
         + it can be modeled
         + it does not have code
     * bug trackers / submission
-        + preferred bug tracker and non-preferred alternatives (e.g., RT, GitHub, GitLab, mailing lists)
+        + preferred bug tracker and non-preferred alternatives (e.g., RT, [[GitHub|service/github]], [[GitLab|service/gitlab]], mailing lists)
 - Data
     * RDF model?
         + provides graph
