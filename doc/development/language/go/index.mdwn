@@ -11,3 +11,9 @@
     * https://github.com/inconshreveable/gonative
     * https://github.com/mitchellh/gox
 - <https://zchee.github.io/golang-wiki/>
+
+# Modules
+
+- <https://go.dev/doc/modules/gomod-ref>
+- <https://go.dev/doc/modules/managing-dependencies>
+- <https://go.dev/doc/modules/managing-source>
