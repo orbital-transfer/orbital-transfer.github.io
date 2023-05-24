@@ -12,6 +12,13 @@
     * https://github.com/mitchellh/gox
 - <https://zchee.github.io/golang-wiki/>
 
+# Implementations
+
+- <https://github.com/traefik/yaegi>
+- <https://github.com/golang/gofrontend>
+    * <https://go.dev/doc/install/gccgo>
+- <https://go.googlesource.com/gollvm/>
+
 # Modules
 
 - <https://go.dev/doc/modules/gomod-ref>
