@@ -120,6 +120,7 @@
 - [[GitHub - CastXML/CastXML: C-family Abstract Syntax Tree XML Output|https://github.com/CastXML/CastXML]]
 - <https://www.riverbankcomputing.com/software/sip/intro>
 - <https://github.com/vapier/coverity-scan-action>
+- [[GitHub - openrewrite/rewrite: Automated mass refactoring of source code.|https://github.com/openrewrite/rewrite]]
 
 # Misc package managers
 
