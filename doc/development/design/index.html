@@ -348,6 +348,7 @@ libfoo-dev packages on another</li>
 <li>Serv (for Service):
 <ul>
 <li>Usually a web service</li>
+<li>e.g., GitHub, Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls</li>
 </ul></li>
 <li>VCS: version control system
 <ul>
@@ -502,6 +503,18 @@ checkout the version of that repo.</li>
 <li>Test package</li>
 <li>Timing for tasks</li>
 </ul></li>
+<li>Given a repository and a set of plugins for that repository:
+<ul>
+<li>Find the matching GitHub repository for each remote
+<ul>
+<li><em>if</em> plugin {Coveralls,Travis,GitHub CI},
+<em>then</em> use that GitHub name to find matching provider of metadata</li>
+<li>e.g., for issues on GitHub, by default use the GitHub issues provider
+if they are enabled.</li>
+<li>There may be other providers for example with a CPAN module, there
+could be issues at rt.cpan.org.</li>
+</ul></li>
+</ul></li>
 </ul>
 
 </div>
@@ -529,7 +542,7 @@ checkout the version of that repo.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu May 18 18:47:32 2023</span>
+Last edited <span class="date">Tue May 30 18:36:21 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
