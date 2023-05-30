@@ -151,6 +151,7 @@
         + Package management system
     * Serv (for Service):
         + Usually a web service
+        + e.g., GitHub, Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls
     * VCS: version control system
         + git, bzr, svn, cvs, etc.
 - database
@@ -215,3 +216,11 @@
     * Install package
     * Test package
     * Timing for tasks
+- Given a repository and a set of plugins for that repository:
+    * Find the matching GitHub repository for each remote
+        + *if* plugin {Coveralls,Travis,GitHub CI},
+          *then* use that GitHub name to find matching provider of metadata
+        + e.g., for issues on GitHub, by default use the GitHub issues provider
+          if they are enabled.
+        + There may be other providers for example with a CPAN module, there
+          could be issues at rt.cpan.org.
