@@ -103,6 +103,11 @@ Some modules have Pure-Perl fallbacks:
     * [[GitHub - openSUSE/cpanspec: Create openSUSE spec files form cpan tar files|https://github.com/openSUSE/cpanspec]]
     * [[yum whatprovides 'perl(Foo::Bar)' equivalent with apt or dpkg? - Ask Ubuntu|https://askubuntu.com/questions/108888/yum-whatprovides-perlfoobar-equivalent-with-apt-or-dpkg]]
         + `yum whatprovides 'perl(Foo::Bar)'`
+- relatedly for pkg-config
+    * <https://stackoverflow.com/questions/18475961/how-to-map-pkg-config-names-to-yum-apt-get>
+    * `apt-file search  /usr/lib/$(dpkg-architecture -qDEB_HOST_MULTIARCH)/pkgconfig/zlib.pc`
+        + <https://wiki.debian.org/Multiarch/Tuples>
+    * `yum whatprovides 'pkgconfig(zlib)'`
 
 # Version updating
 
