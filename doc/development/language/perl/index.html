@@ -258,6 +258,15 @@ Perl version.</li>
 <li><code>yum whatprovides 'perl(Foo::Bar)'</code></li>
 </ul></li>
 </ul></li>
+<li>relatedly for pkg-config
+<ul>
+<li><a href="https://stackoverflow.com/questions/18475961/how-to-map-pkg-config-names-to-yum-apt-get">https://stackoverflow.com/questions/18475961/how-to-map-pkg-config-names-to-yum-apt-get</a></li>
+<li><code>apt-file search  /usr/lib/&#036;(dpkg-architecture -qDEB_HOST_MULTIARCH)/pkgconfig/zlib.pc</code>
+<ul>
+<li><a href="https://wiki.debian.org/Multiarch/Tuples">https://wiki.debian.org/Multiarch/Tuples</a></li>
+</ul></li>
+<li><code>yum whatprovides 'pkgconfig(zlib)'</code></li>
+</ul></li>
 </ul>
 
 <h1 id="versionupdating">Version updating</h1>
@@ -641,7 +650,7 @@ Perl version.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Tue Apr 11 00:34:19 2023</span>
+Last edited <span class="date">Thu Jun  1 17:54:06 2023</span>
 <!-- Created <span class="date">Thu Nov 12 18:42:47 2020</span> -->
 </div>
 
