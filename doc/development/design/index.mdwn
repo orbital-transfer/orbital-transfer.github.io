@@ -151,7 +151,7 @@
         + Package management system
     * Serv (for Service):
         + Usually a web service
-        + e.g., GitHub, Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls
+        + e.g., GitHub, Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls, Codecov
     * VCS: version control system
         + git, bzr, svn, cvs, etc.
 - database
