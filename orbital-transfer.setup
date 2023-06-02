@@ -48,6 +48,7 @@ add_plugins:
 - sidebar
 - map
 - github
+- plantuml
 - highlight
 # plugins to disable
 disable_plugins: []
@@ -94,6 +95,7 @@ hardlink: 0
 # extra library and plugin directories
 libdirs:
 - './.ikiwiki-plugins/p5-IkiWiki-Plugin-github/lib'
+- './.ikiwiki-plugins/ikiwiki-uml'
 # extra library and plugin directory (searched after libdirs)
 libdir: ''
 # environment variables
