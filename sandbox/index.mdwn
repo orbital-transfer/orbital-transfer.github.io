@@ -378,6 +378,12 @@
 
 - [[GitHub - CoatiSoftware/Sourcetrail: Sourcetrail - free and open-source interactive source explorer|https://github.com/CoatiSoftware/Sourcetrail]]
 
+
+# Model-based / language-oriented
+
+- [[Eclipse Modeling Framework - Wikipedia|https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework]]
+- [[JetBrains MPS - Wikipedia|https://en.wikipedia.org/wiki/JetBrains_MPS]]
+
 # Some other ideas
 
 - [[Build monitor for Github Actions, Gitlab CI, Travis CI, Bitrise and Buddy! - Meercode|https://meercode.io/]]
