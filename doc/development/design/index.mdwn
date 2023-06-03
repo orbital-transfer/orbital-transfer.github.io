@@ -40,6 +40,95 @@
         + Need to have a context for installation and loading which holds the
           directories for bootstrapping.
 
+# Workflow
+
+- Current:
+    * Have two tasks:
+        + Install
+        + Test
+    * What do these tasks do:
+        + Determine the platform
+            + Platforms:
+                + Debian + apt,
+                + macOS + Homebrew,
+                + Windows + MSYS2.
+        + Set up environment for everything (task: Install, Test).
+            + Not great... this is specific to project-renard. It downloads the
+              test data and sets an environment variable.
+        + Each platform has a `_install` method (task: Install).
+            + Debian + apt: Install `xvfb xauth`.
+            + macOS + Homebrew:
+              - Update Homebrew if needed (in non-CI environments).  This is
+                necessary because Homebrew can be slow to update and this slows
+                down the CI.  This might not be needed with newer versions of Homebrew.
+              - Remove old Python: `python@2` to clean up a pre-installed
+                package. This is (was?) specific to GitHub CI and was causing a
+                conflict with Python 3.
+              - [SKIPPED] Installing `xquartz`. This might have been for an older
+                version of `gtk+3`. Note that this requires adding a tap to
+                install a cask. Good thing it isn't needed now but being able
+                to use a Homebrew tap is still important.
+              - Install `pkg-config`. Often needed for finding the libraries.
+              - Install openssl.
+            + Windows + MSYS2:
+              - Prepare MSYS2:
+                  * TODO explain this more. It's complicated and hacky.
+                  * TODO Disable checkspace
+                  * TODO Update mirror list
+                  * Update
+                      + Install `pacman-mirrors`.
+                      + Install `git`. Needed for below when fetching repos.
+                      + TODO
+              - Install build tools using pacman.
+              - Install openssl package using pacman.
+              - Copy `gcc` to `cc` and `mingw32-make` to `gmake`. Not sure if
+                this is needed anymore. This makes Perl XS builds happy.
+              - Create `C:\tmp` for `Data::UUID`. Not fixed yet!
+              - Install Perl. Fixes `pl2bat` because `pl2bat.bat` isn't there.
+                Installs `cpanm`, `cpm`, and some basic Perl modules.
+                Includes my own patches to `cpm` to help it work in parallel (not ready for upstream).
+                Not great as this is Perl specific and really should be part of
+                non-platform code. Yikes!!!
+        + Each platform has a `_pre_run` method (task: Install, Test)
+            + Debian + apt: start the `Xvfb` sever.
+            + macOS + Homebrew: no-op.
+            + Windows + MSYS2: no-op.
+        + Each platform has an environment (task: Install, Test)
+            + Debian + apt: sets `DISPLAY` to the `Xvfb` started above.
+            + macOS + Homebrew:
+                - This environment depends on the Homebrew prefix.
+                - Adds to `PKG_CONFIG_PATH`: openssl, libffi
+                - Adds to `PATH`: openssl, gettext.
+                - Sets `ARCHFLAGS`: This has something to do with using a
+                  macOS system Perl. Might not be needed with Homebrew. Bad
+                  idea to use the macOS system Perl anyway.
+            + Windows + MSYS2:
+                - Set `MSYSTEM`: default is MINGW64.
+                - Set `PATH`: to the default paths for that MSYSTEM.
+                - Set `MSYS2_FC_CACHE_SKIP`: skip font cache for `fontconfig` package.
+                - Add hack that modifies Perl linking for EUMM: yikes! This
+                  isn't even in the same project! Yikes!!!
+                - Set `ALIEN_BUILD_PKG_CONFIG` to prefer
+                  `PkgConfig::CommandLine`: This should probably be upstream.
+        + For each repo to install via depth-first walk (task: Install):
+            + Get the repos using `git`. Note that `git` is already installed in most environments (except MSYS2 in the CI so that is why
+              the `_install` for MSYS2 step installs `git`.
+            + Install all the "native" dependencies of the repos first, then install the repos.
+            + Each platform has an `install_packages` method to install the "native" packages (task: Install)
+                + Debian + apt: TODO
+                + macOS + Homebrew: TODO
+                + Windows + MSYS2: TODO
+            + Install the repo itself (task: Install)
+                + Right now this is only for Perl distributions.
+                    + via `Orbital::Payload::Env::Perl->apply_roles_to_repo`.
+                    + More coupling! Yikes!
+                + There is some caching here.
+                + `$repo->install`.
+        + Test the main repo (task: Test).
+            + `$repo->run_test`.
+
+- Future
+
 # Workflow graph
 
 - Task
