@@ -160,6 +160,137 @@ directories for bootstrapping.</li>
 </ul></li>
 </ul>
 
+<h1 id="workflow">Workflow</h1>
+
+<ul>
+<li><p>Current:</p>
+
+<ul>
+<li>Have two tasks:
+<ul>
+<li>Install</li>
+<li>Test</li>
+</ul></li>
+<li>What do these tasks do:
+<ul>
+<li>Determine the platform
+<ul>
+<li>Platforms:
+<ul>
+<li>Debian + apt,</li>
+<li>macOS + Homebrew,</li>
+<li>Windows + MSYS2.</li>
+</ul></li>
+</ul></li>
+<li>Set up environment for everything (task: Install, Test).
+<ul>
+<li>Not great... this is specific to project-renard. It downloads the
+test data and sets an environment variable.</li>
+</ul></li>
+<li>Each platform has a <code>_install</code> method (task: Install).
+<ul>
+<li>Debian + apt: Install <code>xvfb xauth</code>.</li>
+<li>macOS + Homebrew:
+<ul>
+<li>Update Homebrew if needed (in non-CI environments).  This is
+necessary because Homebrew can be slow to update and this slows
+down the CI.  This might not be needed with newer versions of Homebrew.</li>
+<li>Remove old Python: <code>python@2</code> to clean up a pre-installed
+package. This is (was?) specific to GitHub CI and was causing a
+conflict with Python 3.</li>
+<li>[SKIPPED] Installing <code>xquartz</code>. This might have been for an older
+version of <code>gtk+3</code>. Note that this requires adding a tap to
+install a cask. Good thing it isn't needed now but being able
+to use a Homebrew tap is still important.</li>
+<li>Install <code>pkg-config</code>. Often needed for finding the libraries.</li>
+<li>Install openssl.</li>
+</ul></li>
+<li>Windows + MSYS2:
+<ul>
+<li>Prepare MSYS2:
+<ul>
+<li>TODO explain this more. It's complicated and hacky.</li>
+<li>TODO Disable checkspace</li>
+<li>TODO Update mirror list</li>
+<li>Update
+<ul>
+<li>Install <code>pacman-mirrors</code>.</li>
+<li>Install <code>git</code>. Needed for below when fetching repos.</li>
+<li>TODO</li>
+</ul></li>
+</ul></li>
+<li>Install build tools using pacman.</li>
+<li>Install openssl package using pacman.</li>
+<li>Copy <code>gcc</code> to <code>cc</code> and <code>mingw32-make</code> to <code>gmake</code>. Not sure if
+this is needed anymore. This makes Perl XS builds happy.</li>
+<li>Create <code>C:\tmp</code> for <code>Data::UUID</code>. Not fixed yet!</li>
+<li>Install Perl. Fixes <code>pl2bat</code> because <code>pl2bat.bat</code> isn't there.
+Installs <code>cpanm</code>, <code>cpm</code>, and some basic Perl modules.
+Includes my own patches to <code>cpm</code> to help it work in parallel (not ready for upstream).
+Not great as this is Perl specific and really should be part of
+non-platform code. Yikes!!!</li>
+</ul></li>
+</ul></li>
+<li>Each platform has a <code>_pre_run</code> method (task: Install, Test)
+<ul>
+<li>Debian + apt: start the <code>Xvfb</code> sever.</li>
+<li>macOS + Homebrew: no-op.</li>
+<li>Windows + MSYS2: no-op.</li>
+</ul></li>
+<li>Each platform has an environment (task: Install, Test)
+<ul>
+<li>Debian + apt: sets <code>DISPLAY</code> to the <code>Xvfb</code> started above.</li>
+<li>macOS + Homebrew:
+<ul>
+<li>This environment depends on the Homebrew prefix.</li>
+<li>Adds to <code>PKG_CONFIG_PATH</code>: openssl, libffi</li>
+<li>Adds to <code>PATH</code>: openssl, gettext.</li>
+<li>Sets <code>ARCHFLAGS</code>: This has something to do with using a
+macOS system Perl. Might not be needed with Homebrew. Bad
+idea to use the macOS system Perl anyway.</li>
+</ul></li>
+<li>Windows + MSYS2:
+<ul>
+<li>Set <code>MSYSTEM</code>: default is MINGW64.</li>
+<li>Set <code>PATH</code>: to the default paths for that MSYSTEM.</li>
+<li>Set <code>MSYS2_FC_CACHE_SKIP</code>: skip font cache for <code>fontconfig</code> package.</li>
+<li>Add hack that modifies Perl linking for EUMM: yikes! This
+isn't even in the same project! Yikes!!!</li>
+<li>Set <code>ALIEN_BUILD_PKG_CONFIG</code> to prefer
+<code>PkgConfig::CommandLine</code>: This should probably be upstream.</li>
+</ul></li>
+</ul></li>
+<li>For each repo to install via depth-first walk (task: Install):
+<ul>
+<li>Get the repos using <code>git</code>. Note that <code>git</code> is already installed in most environments (except MSYS2 in the CI so that is why
+the <code>_install</code> for MSYS2 step installs <code>git</code>.</li>
+<li>Install all the "native" dependencies of the repos first, then install the repos.</li>
+<li>Each platform has an <code>install_packages</code> method to install the "native" packages (task: Install)
+<ul>
+<li>Debian + apt: TODO</li>
+<li>macOS + Homebrew: TODO</li>
+<li>Windows + MSYS2: TODO</li>
+</ul></li>
+<li>Install the repo itself (task: Install)
+<ul>
+<li>Right now this is only for Perl distributions.
+<ul>
+<li>via <code>Orbital::Payload::Env::Perl-&gt;apply_roles_to_repo</code>.</li>
+<li>More coupling! Yikes!</li>
+</ul></li>
+<li>There is some caching here.</li>
+<li><code>&#036;repo-&gt;install</code>.</li>
+</ul></li>
+</ul></li>
+<li>Test the main repo (task: Test).
+<ul>
+<li><code>&#036;repo-&gt;run_test</code>.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Future</p></li>
+</ul>
+
 <h1 id="workflowgraph">Workflow graph</h1>
 
 <ul>
@@ -542,7 +673,7 @@ could be issues at rt.cpan.org.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Thu Jun  1 02:19:14 2023</span>
+Last edited <span class="date">Sat Jun  3 20:13:36 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
