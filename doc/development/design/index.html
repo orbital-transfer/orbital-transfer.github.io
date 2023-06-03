@@ -209,14 +209,20 @@ to use a Homebrew tap is still important.</li>
 <ul>
 <li>Prepare MSYS2:
 <ul>
-<li>TODO explain this more. It's complicated and hacky.</li>
-<li>TODO Disable checkspace</li>
-<li>TODO Update mirror list</li>
-<li>Update
+<li>Disable <code>CheckSpace</code> option for <code>pacman</code>. Checking the disk
+space takes time in the CI. This speed up is also used by
+the GitHub action <a href="https://github.com/msys2/setup-msys2">https://github.com/msys2/setup-msys2</a>.</li>
+<li>Update mirror list. This was needed at some point to fix
+the update because the mirror was down. Need to look more
+into this as this was a hot fix at the time.</li>
+<li>Run pacman update, then
 <ul>
+<li>Update also requires killing processes that use
+<code>msys-2.0.dll</code>. This is the same as what installers
+of tools like Chocolatey and the aforementioned GitHub Action do.</li>
 <li>Install <code>pacman-mirrors</code>.</li>
 <li>Install <code>git</code>. Needed for below when fetching repos.</li>
-<li>TODO</li>
+<li>There was a (now disabled) work around to update GCC9.</li>
 </ul></li>
 </ul></li>
 <li>Install build tools using pacman.</li>
@@ -228,12 +234,24 @@ this is needed anymore. This makes Perl XS builds happy.</li>
 Installs <code>cpanm</code>, <code>cpm</code>, and some basic Perl modules.
 Includes my own patches to <code>cpm</code> to help it work in parallel (not ready for upstream).
 Not great as this is Perl specific and really should be part of
-non-platform code. Yikes!!!</li>
+non-platform code. Who did this?! Oh, right.</li>
 </ul></li>
 </ul></li>
 <li>Each platform has a <code>_pre_run</code> method (task: Install, Test)
 <ul>
-<li>Debian + apt: start the <code>Xvfb</code> sever.</li>
+<li>Debian + apt:
+<ul>
+<li>Start the <code>Xvfb</code> sever.  Note that the reason why <code>Xvfb</code> is
+also needed for the Install task is that running
+<code>dzil listdeps</code> or <code>dzil build</code> needs a display because
+with <code>project-renard/curie</code>, these commands load the code.
+It runs Gtk3's init on loading the module! This is a bad
+design, but worth working around just to prove that it can be
+worked around. Run <code>DISPLAY= perl -MDevel::Hide=Gtk3 -S dzil listdeps</code>
+to see the issues. This is also why errors while building
+occur when these modules have not yet been installed in the
+CI environment. A very unsensible arrangement.</li>
+</ul></li>
 <li>macOS + Homebrew: no-op.</li>
 <li>Windows + MSYS2: no-op.</li>
 </ul></li>
@@ -255,7 +273,7 @@ idea to use the macOS system Perl anyway.</li>
 <li>Set <code>PATH</code>: to the default paths for that MSYSTEM.</li>
 <li>Set <code>MSYS2_FC_CACHE_SKIP</code>: skip font cache for <code>fontconfig</code> package.</li>
 <li>Add hack that modifies Perl linking for EUMM: yikes! This
-isn't even in the same project! Yikes!!!</li>
+isn't even in the same project! Boo this code!!!</li>
 <li>Set <code>ALIEN_BUILD_PKG_CONFIG</code> to prefer
 <code>PkgConfig::CommandLine</code>: This should probably be upstream.</li>
 </ul></li>
@@ -267,16 +285,43 @@ the <code>_install</code> for MSYS2 step installs <code>git</code>.</li>
 <li>Install all the "native" dependencies of the repos first, then install the repos.</li>
 <li>Each platform has an <code>install_packages</code> method to install the "native" packages (task: Install)
 <ul>
-<li>Debian + apt: TODO</li>
-<li>macOS + Homebrew: TODO</li>
-<li>Windows + MSYS2: TODO</li>
+<li>Debian + apt:
+<ul>
+<li>Check if all needed packages are already installed.</li>
+<li>Otherwise <code>apt-get update</code>.</li>
+<li>Then <code>apt-get install</code>.</li>
+<li>Includes a hack to install <code>meson</code> via <code>pip3</code>. This is
+because the version of Meson in the specific Debian
+container used is too old. I would like to support this
+somehow for flexibility purposes. But not here. Not like this... not like this.
+This will actually break with newer systems due to how <code>pip3</code> is now set up using
+an <code>externally-managed-environment</code> under PEP 668.</li>
+</ul></li>
+<li>macOS + Homebrew:
+<ul>
+<li>Disable auto update. See above in <code>_install</code> for why this was slow on older Homebrew's.</li>
+<li>Check if <code>fontconfig</code> is a dependency. If it is, use a
+hack to skip the font cache generation post-install step.
+Terrible. But the hack is still needed.</li>
+<li><code>brew install</code> any packages that are not already
+installed. Ignore errors by using <code>|| true</code>. Alas!</li>
+</ul></li>
+<li>Windows + MSYS2:
+<ul>
+<li>Uses Chocolatey and Pacman! Wait, I thought this was just
+Pacman for MSYS2! The horror! I believe this is for one
+specific thing which was to get testing of Anki working
+on Windows (because there is no way Anki is going to be
+installed via an MSYS2 package as the focus is on
+developer tools).</li>
+</ul></li>
 </ul></li>
 <li>Install the repo itself (task: Install)
 <ul>
 <li>Right now this is only for Perl distributions.
 <ul>
 <li>via <code>Orbital::Payload::Env::Perl-&gt;apply_roles_to_repo</code>.</li>
-<li>More coupling! Yikes!</li>
+<li>More coupling! Cut the knot!</li>
 </ul></li>
 <li>There is some caching here.</li>
 <li><code>&#036;repo-&gt;install</code>.</li>
@@ -290,6 +335,8 @@ the <code>_install</code> for MSYS2 step installs <code>git</code>.</li>
 </ul></li>
 <li><p>Future</p></li>
 </ul>
+
+<p>TODO</p>
 
 <h1 id="workflowgraph">Workflow graph</h1>
 
@@ -673,7 +720,7 @@ could be issues at rt.cpan.org.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sat Jun  3 20:13:36 2023</span>
+Last edited <span class="date">Sat Jun  3 22:40:59 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
