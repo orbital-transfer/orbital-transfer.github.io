@@ -90,7 +90,17 @@
                 Not great as this is Perl specific and really should be part of
                 non-platform code. Yikes!!!
         + Each platform has a `_pre_run` method (task: Install, Test)
-            + Debian + apt: start the `Xvfb` sever.
+            + Debian + apt:
+                - Start the `Xvfb` sever.  Note that the reason why `Xvfb` is
+                  also needed for the Install task is that running
+                  `dzil listdeps` or `dzil build` needs a display because
+                  with `project-renard/curie`, these commands load the code.
+                  It runs Gtk3's init on loading the module! This is a bad
+                  design, but worth working around just to prove that it can be
+                  worked around. Run `DISPLAY= perl -MDevel::Hide=Gtk3 -S dzil listdeps`
+                  to see the issues. This is also why errors while building
+                  occur when these modules have not yet been installed in the
+                  CI environment.
             + macOS + Homebrew: no-op.
             + Windows + MSYS2: no-op.
         + Each platform has an environment (task: Install, Test)
@@ -128,6 +138,8 @@
             + `$repo->run_test`.
 
 - Future
+
+TODO
 
 # Workflow graph
 
