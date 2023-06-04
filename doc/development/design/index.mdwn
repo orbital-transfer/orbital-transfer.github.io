@@ -244,6 +244,8 @@ TODO
                 + https://spdx.dev/
                 + https://spdx.dev/spdx-examples-repo/
                 + https://github.com/spdx/tools-python
+            + CycloneDX
+                + <https://cyclonedx.org/>
         + link up with security advisories
             + CVE, Debian, etc.
             + [[About - cve-search - tool-set to perform local searches for known vulnerabilities|https://www.cve-search.org/about/]]
