@@ -268,6 +268,8 @@ TODO
             + type-aware (getopt types, paths, etc.)
             + see zsh, bash completion
             + PowerShell ISE
+        + Modeling should include version numbers and different specs
+          (input, output, etc.) for different versions of a software.
 
 # Organisation of project
 
