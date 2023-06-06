@@ -378,6 +378,10 @@
 
 - [[GitHub - CoatiSoftware/Sourcetrail: Sourcetrail - free and open-source interactive source explorer|https://github.com/CoatiSoftware/Sourcetrail]]
 
+# MLOps
+
+- <https://en.wikipedia.org/wiki/MLOps>
+- <https://mlflow.org/>
 
 # Model-based / language-oriented
 
