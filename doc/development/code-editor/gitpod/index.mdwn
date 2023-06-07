@@ -1,3 +1,5 @@
 [[!meta title="Gitpod"]]
 
 - [[Developing native UI applications in Gitpod - by Christian Weichel - Gitpod - Medium|https://medium.com/gitpod/developing-native-ui-applications-in-gitpod-15af2967c24e]]
+- Integration:
+    * GitLab: [[Gitpod - GitLab|https://docs.gitlab.com/ee/integration/gitpod.html]]
