@@ -313,6 +313,9 @@ TODO
             + some need Fortran, C, or C++
         + e.g., SSLeay, OpenSSL (fork of SSLeay), LibreSSL (fork of OpenSSL), wolfSSL (has OpenSSL compatibility interface)
         + e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb
+        + e.g., `role/interface/gstreamer/{plugin,decoder,source,sink}`:
+            + provided inside of several packages
+            + can use metadata (such as that available on Debian e.g., `Gstreamer-Decoders`)
         + OpenGL version? Extensions <https://www.khronos.org/opengl/wiki/OpenGL_Extension>.
         + language compiler support? C99, C11, C++03, C++11, etc.?
 - databases should be layered:
