@@ -168,6 +168,16 @@
 
 TODO
 
+- Fetch repos:
+    * current repo is used as is
+    * Fetching dependencies have have several strategies
+        + if have `git`
+            + Have metadata to repo elsewhere on FS
+                + if repo is `git` and have `git`, can use `git worktree`
+            + else `git clone`
+        + else
+            + fetch over HTTP using host specific tarball?
+
 # Workflow graph
 
 - Task
