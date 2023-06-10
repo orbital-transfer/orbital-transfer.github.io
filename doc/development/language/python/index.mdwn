@@ -12,6 +12,7 @@
 - [[pipx|https://pypa.github.io/pipx/]]
 - [[GitHub - thoth-station/micropipenv: A lightweight wrapper for pip to support requirements.txt, Pipenv and Poetry lock files or converting them to pip-tools compatible output. Designed for containerized Python applications but not limited to them.|https://github.com/thoth-station/micropipenv]]
 - [[pip-audit · PyPI|https://pypi.org/project/pip-audit/]]
+- [[GitHub - pdm-project/pdm: A modern Python package and dependency manager supporting the latest PEP standards|https://github.com/pdm-project/pdm]]
 
 # Local PyPI
 
