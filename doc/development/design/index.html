@@ -338,6 +338,28 @@ developer tools).</li>
 
 <p>TODO</p>
 
+<ul>
+<li>Fetch repos:
+<ul>
+<li>current repo is used as is</li>
+<li>Fetching dependencies have have several strategies
+<ul>
+<li>if have <code>git</code>
+<ul>
+<li>Have metadata to repo elsewhere on FS
+<ul>
+<li>if repo is <code>git</code> and have <code>git</code>, can use <code>git worktree</code></li>
+</ul></li>
+<li>else <code>git clone</code></li>
+</ul></li>
+<li>else
+<ul>
+<li>fetch over HTTP using host specific tarball?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
 <h1 id="workflowgraph">Workflow graph</h1>
 
 <ul>
@@ -630,6 +652,11 @@ def_pkg {
 </ul></li>
 <li>e.g., SSLeay, OpenSSL (fork of SSLeay), LibreSSL (fork of OpenSSL), wolfSSL (has OpenSSL compatibility interface)</li>
 <li>e.g., role/server/xwindows: provided by Xorg, Xephyr, Xvfb</li>
+<li>e.g., <code>role/interface/gstreamer/{plugin,decoder,source,sink}</code>:
+<ul>
+<li>provided inside of several packages</li>
+<li>can use metadata (such as that available on Debian e.g., <code>Gstreamer-Decoders</code>)</li>
+</ul></li>
 <li>OpenGL version? Extensions <a href="https://www.khronos.org/opengl/wiki/OpenGL_Extension">https://www.khronos.org/opengl/wiki/OpenGL_Extension</a>.</li>
 <li>language compiler support? C99, C11, C++03, C++11, etc.?</li>
 </ul></li>
@@ -726,7 +753,7 @@ could be issues at rt.cpan.org.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Mon Jun  5 17:48:24 2023</span>
+Last edited <span class="date">Fri Jun  9 15:44:28 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
