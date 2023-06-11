@@ -49,19 +49,8 @@ package System::MSYS2BuildTools <<Node>> {
     circle "pacman:make"
     circle "pacman:patch"
     circle "pacman:mingw-w64-x86_64-libtool"
-
-    /'
-    MSYS2 o--> "pacman:mingw-w64-x86_64-make"       : depends
-    MSYS2 o--> "pacman:mingw-w64-x86_64-toolchain"  : depends
-    MSYS2 o--> "pacman:autoconf"                    : depends
-    MSYS2 o--> "pacman:automake"                    : depends
-    MSYS2 o--> "pacman:libtool"                     : depends
-    MSYS2 o--> "pacman:make"                        : depends
-    MSYS2 o--> "pacman:patch"                       : depends
-    MSYS2 o--> "pacman:mingw-w64-x86_64-libtool"    : depends
-    '/
 }
-MSYS2 *--> "System::MSYS2BuildTools"    : depends
+MSYS2 o--> "System::MSYS2BuildTools"    : depends
 
 ''' Perl
 package Tools::Perl <<Node>> {
