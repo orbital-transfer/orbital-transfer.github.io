@@ -42,6 +42,8 @@
 
 # Workflow
 
+[[!inline pagenames="doc/development/design/gfx/current-workflow" raw=yes]]
+
 - Current:
     * Have two tasks:
         + Install
