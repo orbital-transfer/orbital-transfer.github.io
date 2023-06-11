@@ -191,7 +191,16 @@ test data and sets an environment variable.</li>
 </ul></li>
 <li>Each platform has a <code>_install</code> method (task: Install).
 <ul>
-<li>Debian + apt: Install <code>xvfb xauth</code>.</li>
+<li>Debian + apt: Install <code>xvfb xauth</code>.
+<ul>
+<li><code>xauth</code> is only needed for the <code>xvfb-run</code> script. <code>xvfb-run</code>
+seems to be distribution-specific
+(i.e., the script is not provided by the upstream <code>xorg-server</code>
+package but is packaged by some Linux distributions such as
+<a href="https://salsa.debian.org/xorg-team/xserver/xorg-server/-/blob/debian-bullseye/debian/local/xvfb-run">Debian</a>
+and
+<a href="https://src.fedoraproject.org/rpms/xorg-x11-server/blob/f38/f/xvfb-run.sh">Fedora</a>).</li>
+</ul></li>
 <li>macOS + Homebrew:
 <ul>
 <li>Update Homebrew if needed (in non-CI environments).  This is
@@ -755,7 +764,7 @@ could be issues at rt.cpan.org.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sun Jun 11 01:02:55 2023</span>
+Last edited <span class="date">Sun Jun 11 15:40:01 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
