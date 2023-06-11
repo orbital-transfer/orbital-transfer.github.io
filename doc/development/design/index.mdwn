@@ -59,6 +59,13 @@
               test data and sets an environment variable.
         + Each platform has a `_install` method (task: Install).
             + Debian + apt: Install `xvfb xauth`.
+                + `xauth` is only needed for the `xvfb-run` script. `xvfb-run`
+                  seems to be distribution-specific
+                  (i.e., the script is not provided by the upstream `xorg-server`
+                  package but is packaged by some Linux distributions such as
+                  [[Debian|https://salsa.debian.org/xorg-team/xserver/xorg-server/-/blob/debian-bullseye/debian/local/xvfb-run]]
+                  and
+                  [[Fedora|https://src.fedoraproject.org/rpms/xorg-x11-server/blob/f38/f/xvfb-run.sh]]).
             + macOS + Homebrew:
               - Update Homebrew if needed (in non-CI environments).  This is
                 necessary because Homebrew can be slow to update and this slows
