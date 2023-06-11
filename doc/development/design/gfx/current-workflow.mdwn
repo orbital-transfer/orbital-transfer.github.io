@@ -1,0 +1,96 @@
+[[!uml src="""
+@startuml
+
+set separator ::
+
+''' Debian
+class System::Debian implements Task::Install, Task::Test {
+    .. Installers ..
+    + apt-get
+    .. Services ..
+    + Xvfb
+}
+package System {
+    note right of Debian::Xvfb
+        Set ""$ENV{DISPLAY}""
+    end note
+}
+package System::Xserver <<Node>> {
+    circle "apt:xvfb"
+    circle "apt:xauth"
+
+}
+System::Debian o--> "System::Xserver"  : depends
+
+''' macOS
+class System::MacOSHomebrew implements Task::Install, Task::Test {
+    .. Installers ..
+    + brew
+}
+package System::MacOSHomebrewBuildTools <<Node>> {
+    circle "brew:pkg-config"
+
+}
+System::MacOSHomebrew o--> "brew:pkg-config" : depends
+
+''' MSYS2
+class System::MSYS2 implements Task::Install, Task::Test {
+    .. Installers ..
+    + pacman
+    + choco
+}
+package System::MSYS2BuildTools <<Node>> {
+    circle "pacman:mingw-w64-x86_64-make"
+    circle "pacman:mingw-w64-x86_64-toolchain"
+    circle "pacman:autoconf"
+    circle "pacman:automake"
+    circle "pacman:libtool"
+    circle "pacman:make"
+    circle "pacman:patch"
+    circle "pacman:mingw-w64-x86_64-libtool"
+
+    /'
+    MSYS2 o--> "pacman:mingw-w64-x86_64-make"       : depends
+    MSYS2 o--> "pacman:mingw-w64-x86_64-toolchain"  : depends
+    MSYS2 o--> "pacman:autoconf"                    : depends
+    MSYS2 o--> "pacman:automake"                    : depends
+    MSYS2 o--> "pacman:libtool"                     : depends
+    MSYS2 o--> "pacman:make"                        : depends
+    MSYS2 o--> "pacman:patch"                       : depends
+    MSYS2 o--> "pacman:mingw-w64-x86_64-libtool"    : depends
+    '/
+}
+MSYS2 *--> "System::MSYS2BuildTools"    : depends
+
+''' Perl
+package Tools::Perl <<Node>> {
+    circle cpm
+    circle cpanm
+}
+"System::Debian"        *--> "Tools::Perl" : installs
+"System::MacOSHomebrew" *--> "Tools::Perl" : installs
+"System::MSYS2"         *--> "Tools::Perl" : installs
+
+''' Fetch
+package System::FetchTools <<Node>> {
+    circle "pkg:git"
+}
+System::Debian        o--> "pkg:git" : depends
+System::MacOSHomebrew o--> "pkg:git" : depends
+System::MSYS2         o--> "pkg:git" : depends
+
+''' OpenSSL
+package System::OpenSSL <<Node>> {
+    circle "pacman:mingw-w64-x86_64-openssl"
+    circle "brew:openssl"
+
+}
+System::MSYS2 o--> "pacman:mingw-w64-x86_64-openssl" : depends
+System::MacOSHomebrew o--> "brew:openssl"    : depends
+
+interface Task::Install
+interface Task::Test
+
+@enduml
+
+"""]]
