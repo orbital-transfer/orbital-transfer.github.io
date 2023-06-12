@@ -385,3 +385,9 @@ TODO
           if they are enabled.
         + There may be other providers for example with a CPAN module, there
           could be issues at rt.cpan.org.
+- File pattern matching
+    * Include + Exclude
+    * See
+        + [[`.gitignore`|https://git-scm.com/docs/gitignore]]
+        + [[`.dockerignore`|https://docs.docker.com/engine/reference/builder/#dockerignore-file]]
+        + [[Serverless Framework - Packaging|https://www.serverless.com/framework/docs/providers/aws/guide/packaging]]
