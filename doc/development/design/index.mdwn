@@ -391,3 +391,11 @@ TODO
         + [[`.gitignore`|https://git-scm.com/docs/gitignore]]
         + [[`.dockerignore`|https://docs.docker.com/engine/reference/builder/#dockerignore-file]]
         + [[Serverless Framework - Packaging|https://www.serverless.com/framework/docs/providers/aws/guide/packaging]]
+- Add repositories
+    * Debian
+        + https://www.virtualbox.org/wiki/Linux_Downloads
+        + https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository
+        + https://docs.docker.com/engine/install/
+        + https://github.com/cli/cli#installation
+        + NVIDIA CUDA, container toolkit, etc.
+        + https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html
