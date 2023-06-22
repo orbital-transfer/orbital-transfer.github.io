@@ -14,6 +14,7 @@
     * <https://en.wikipedia.org/wiki/Npm_(software)#Alternatives>
 - <https://yarnpkg.com/>
     * <https://bower.io/blog/2017/how-to-migrate-away-from-bower/>
+- <https://vitejs.dev/>
 
 # JS transpilers
 
