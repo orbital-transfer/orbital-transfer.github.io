@@ -371,6 +371,7 @@ TODO
 - Query dependencies for directory.
     * Need language-specific scanner.
     * Read from meta files.
+        + see <https://github.com/librariesio/bibliothecary>
 - List platforms supported.
 - REPL for working with objects
 - Tasks
