@@ -4,3 +4,31 @@
 - <https://libyear.com/>
 - <https://metacpan.org/release/Analizo>
 - <https://dwheeler.com/sloccount/>
+
+# Formats
+
+## Code coverage
+
+- Cobertura XML format
+    * <http://cobertura.github.io/cobertura/>
+    * [[doc/development/continuous-integration/jenkins]] <https://plugins.jenkins.io/cobertura/>
+    * [[doc/development/compiler/gcc]] <https://gcovr.com/en/stable/output/cobertura.html>
+    * <https://www.mathworks.com/help/matlab/ref/matlab.unittest.plugins.codecoverage.coberturaformat-class.html>
+    * [[GitLab|doc/development/service/gitlab]] <https://docs.gitlab.com/ee/user/project/merge_requests/test_coverage_visualization.html>
+        + <https://docs.gitlab.com/ee/ci/yaml/artifacts_reports.html#artifactsreportscoverage_report>
+
+## Test results
+
+
+### Ant JUnit XML
+
+- Spec
+    * <https://stackoverflow.com/questions/4922867/what-is-the-junit-xml-format-specification-that-hudson-supports>
+    * <https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format>
+    * <https://stackoverflow.com/questions/442556/spec-for-junit-xml-output>
+    * <http://svn.apache.org/repos/asf/ant/core/trunk/src/main/org/apache/tools/ant/taskdefs/optional/junit/>
+    * <https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd>
+- Used by
+    * Hudson
+    * [[doc/development/continuous-integration/jenkins]]
+    * [[GitLab|doc/development/service/gitlab]] CI
