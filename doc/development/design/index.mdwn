@@ -4,6 +4,16 @@
 # Bootstrapping
 
 - Current
+    * Setup for CI
+        + e.g., [[for GitHub Actions|https://github.com/orbital-transfer/p5-Orbital-Launch/blob/master/lib/Orbital/Launch/CIGen/GitHubActions.pm]]
+        + Download and eval [[shell script|https://github.com/orbital-transfer/launch-site/blob/master/script/ci/github-actions-orbital.sh]]
+            + Sets several environment variables. TODO Need to check if these variables
+              are script specific or used within the bootstrapping process.
+    * Setup for Docker
+        + [[Dockerfile|https://github.com/orbital-transfer/launch-site/blob/master/Dockerfile]]
+        + Packages needed to fetch repos (VCS): [[https://github.com/orbital-transfer/launch-site/blob/master/maint/docker-debian-packages]]
+    * Bootstrap
+        + [[https://github.com/orbital-transfer/p5-Orbital-Launch/blob/master/lib/Orbital/Launch/Command/Bootstrap.pm]]
     * config:
         + Install directory
             + global install: no directory specified (so installs to `perl -V:sitelib`)
