@@ -366,6 +366,11 @@
 - [[Eclipse Modeling Framework - Wikipedia|https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework]]
 - [[JetBrains MPS - Wikipedia|https://en.wikipedia.org/wiki/JetBrains_MPS]]
 
+# Literate programming
+
+- <https://github.com/bashup/mdsh>
+- <https://github.com/bashup/jqmd>
+
 # Some other ideas
 
 - [[Build monitor for Github Actions, Gitlab CI, Travis CI, Bitrise and Buddy! - Meercode|https://meercode.io/]]
