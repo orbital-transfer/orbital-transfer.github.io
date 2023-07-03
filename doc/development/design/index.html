@@ -100,6 +100,24 @@ Design
 <ul>
 <li>Current
 <ul>
+<li>Setup for CI
+<ul>
+<li>e.g., <a href="https://github.com/orbital-transfer/p5-Orbital-Launch/blob/master/lib/Orbital/Launch/CIGen/GitHubActions.pm">for GitHub Actions</a></li>
+<li>Download and eval <a href="https://github.com/orbital-transfer/launch-site/blob/master/script/ci/github-actions-orbital.sh">shell script</a>
+<ul>
+<li>Sets several environment variables. TODO Need to check if these variables
+are script specific or used within the bootstrapping process.</li>
+</ul></li>
+</ul></li>
+<li>Setup for Docker
+<ul>
+<li><a href="https://github.com/orbital-transfer/launch-site/blob/master/Dockerfile">Dockerfile</a></li>
+<li>Packages needed to fetch repos (VCS): <a href="https://github.com/orbital-transfer/launch-site/blob/master/maint/docker-debian-packages">https://github.com/orbital-transfer/launch-site/blob/master/maint/docker-debian-packages</a></li>
+</ul></li>
+<li>Bootstrap
+<ul>
+<li><a href="https://github.com/orbital-transfer/p5-Orbital-Launch/blob/master/lib/Orbital/Launch/Command/Bootstrap.pm">https://github.com/orbital-transfer/p5-Orbital-Launch/blob/master/lib/Orbital/Launch/Command/Bootstrap.pm</a></li>
+</ul></li>
 <li>config:
 <ul>
 <li>Install directory
@@ -794,7 +812,7 @@ could be issues at rt.cpan.org.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Jun 23 03:29:23 2023</span>
+Last edited <span class="date">Sun Jul  2 15:21:03 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
