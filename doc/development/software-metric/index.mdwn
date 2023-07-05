@@ -19,6 +19,9 @@
 
 ## Test results
 
+### TAP
+
+- <https://testanything.org/tap-specification.html>
 
 ### Ant JUnit XML
 
