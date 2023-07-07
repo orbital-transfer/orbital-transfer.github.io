@@ -358,8 +358,8 @@
 
 # MLOps
 
-- <https://en.wikipedia.org/wiki/MLOps>
-- <https://mlflow.org/>
+- [[MLOps - Wikipedia|https://en.wikipedia.org/wiki/MLOps]]
+- [[MLflow - A platform for the machine learning lifecycle - MLflow|https://mlflow.org/]]
 
 # Model-based / language-oriented
 
