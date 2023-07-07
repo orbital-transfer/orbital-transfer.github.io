@@ -4,6 +4,8 @@
 - <https://libyear.com/>
 - <https://metacpan.org/release/Analizo>
 - <https://dwheeler.com/sloccount/>
+- <https://github.com/adrianzap/softwipe>
+    * <https://www.h-its.org/2021/07/05/softwipe/>
 
 # Formats
 
