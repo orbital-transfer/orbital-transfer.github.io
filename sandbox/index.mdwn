@@ -300,7 +300,7 @@
 
 # VCS
 
-- <https://porkrind.org/commit-patch/>
+- [[Porkrind Dot Org: commit-patch|https://porkrind.org/commit-patch/]]
 
 
 # Security
