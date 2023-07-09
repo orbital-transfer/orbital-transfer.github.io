@@ -101,8 +101,8 @@
 
 # Package indexes
 
-- <https://github.com/librariesio/libraries.io/blob/main/docs/add-a-package-manager.md>
-    * <https://github.com/librariesio/bibliothecary>
+- [[libraries.io/docs/add-a-package-manager.md at main · librariesio/libraries.io · GitHub|https://github.com/librariesio/libraries.io/blob/main/docs/add-a-package-manager.md]]
+    * [[GitHub - librariesio/bibliothecary: :notebook_with_decorative_cover: Libraries.io Package Manager Manifest Parsers|https://github.com/librariesio/bibliothecary]]
 
 # Parsing / static analysis + API + docs
 
