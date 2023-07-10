@@ -81,7 +81,7 @@
     * [[Debuginfod - Debian Wiki|https://wiki.debian.org/Debuginfod]]
     * [[elfutils debuginfod services|https://sourceware.org/elfutils/Debuginfod.html]]
 - <https://stackoverflow.com/questions/24284293/recommended-way-to-track-down-array-out-of-bound-access-write-in-c-program>
-- https://github.com/dyninst/dyninst
+- [[GitHub - dyninst/dyninst: DyninstAPI: Tools for binary instrumentation, analysis, and modification.|https://github.com/dyninst/dyninst]]
 - <https://en.wikipedia.org/wiki/OllyDbg>
 - [[DUMPBIN Command Line - Microsoft Learn|https://learn.microsoft.com/en-us/cpp/build/reference/dumpbin-command-line?view=msvc-170]]
 
