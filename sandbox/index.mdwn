@@ -84,6 +84,7 @@
 - [[GitHub - dyninst/dyninst: DyninstAPI: Tools for binary instrumentation, analysis, and modification.|https://github.com/dyninst/dyninst]]
 - <https://en.wikipedia.org/wiki/OllyDbg>
 - [[DUMPBIN Command Line - Microsoft Learn|https://learn.microsoft.com/en-us/cpp/build/reference/dumpbin-command-line?view=msvc-170]]
+- [[GitHub - LLNL/GOTCHA: GOTCHA is a library for wrapping function calls in shared libraries|https://github.com/LLNL/GOTCHA]]
 
 # Language Server
 
