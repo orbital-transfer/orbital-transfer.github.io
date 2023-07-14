@@ -79,4 +79,5 @@
 - [[CodeCoverage - Python Wiki|https://wiki.python.org/moin/CodeCoverage]]
     * [[GitHub - nedbat/coveragepy: The code coverage tool for Python|https://github.com/nedbat/coveragepy]]
 - [[GitHub - python/typeshed: Collection of library stubs for Python, with static types|https://github.com/python/typeshed]]
+- [[mypy - Optional Static Typing for Python|https://www.mypy-lang.org/]]
 - [[GitHub - PyCQA/bandit: Bandit is a tool designed to find common security issues in Python code.|https://github.com/PyCQA/bandit]]
