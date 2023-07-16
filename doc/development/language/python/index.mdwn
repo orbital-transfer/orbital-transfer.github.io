@@ -81,4 +81,6 @@
 - [[GitHub - python/typeshed: Collection of library stubs for Python, with static types|https://github.com/python/typeshed]]
 - [[mypy - Optional Static Typing for Python|https://www.mypy-lang.org/]]
 - [[The Hy programming language|http://hylang.org/]]
+- [[Pydantic|https://pydantic.dev/]]
+    * [[Welcome to Pydantic - Pydantic|https://docs.pydantic.dev/latest/]]
 - [[GitHub - PyCQA/bandit: Bandit is a tool designed to find common security issues in Python code.|https://github.com/PyCQA/bandit]]
