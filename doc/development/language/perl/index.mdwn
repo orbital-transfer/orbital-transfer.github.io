@@ -238,6 +238,7 @@ Some modules have Pure-Perl fallbacks:
     * [[Regexp::Parsertron - Parse a Perl regexp into a data structure of type Tree - metacpan.org|https://metacpan.org/pod/Regexp::Parsertron]]
     * [[Regexp::Parser - base class for parsing regexes - metacpan.org|https://metacpan.org/pod/Regexp::Parser]]
     * [[PPIx::Regexp - Represent a regular expression of some sort - metacpan.org|https://metacpan.org/pod/PPIx::Regexp]]
+- [[GitHub - Perl-Oshun/oshun: Declarative data validation for variables and subroutines|https://github.com/Perl-Oshun/oshun]]
 
 # Projects
 
