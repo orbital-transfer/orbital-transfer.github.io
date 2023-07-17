@@ -211,6 +211,7 @@ Some modules have Pure-Perl fallbacks:
 - [[GitHub - fglock/Perlito: "Perlito" Perl programming language compiler|https://github.com/fglock/Perlito]]
 - [[Perl 11 · GitHub|https://github.com/perl11]]
     * [[This Perl Goes To 11|http://perl11.github.io/]]
+- [[Lingy - metacpan.org|https://metacpan.org/pod/Lingy]]
 - [[Compiler-Parser - Create Abstract Syntax Tree for Perl5 - metacpan.org|https://metacpan.org/dist/Compiler-Parser]]
     * [[これからのPerlプロダクトのかたち(YAPC::Asia 2013)|https://www.slideshare.net/goccy/yapc2013-26403213]]
     * [[GitHub - goccy/gperl: fastest perl like language|https://github.com/goccy/gperl]]
