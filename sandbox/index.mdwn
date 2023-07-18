@@ -371,6 +371,7 @@
 
 - <https://github.com/bashup/mdsh>
 - <https://github.com/bashup/jqmd>
+- [[Noweb - Wikipedia|https://en.wikipedia.org/wiki/Noweb]]
 
 # Some other ideas
 
