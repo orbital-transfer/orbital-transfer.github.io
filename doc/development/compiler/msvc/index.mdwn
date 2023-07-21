@@ -1,0 +1,4 @@
+[[!meta title="Microsoft Visual C++"]]
+
+- [[Microsoft Visual C++ - Wikipedia|https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B]]
+- [[GitHub - OpenCppCoverage/OpenCppCoverage: OpenCppCoverage is an open source code coverage tool for C++ under Windows.|https://github.com/OpenCppCoverage/OpenCppCoverage]]
