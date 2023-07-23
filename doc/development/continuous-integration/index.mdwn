@@ -181,6 +181,10 @@ Examples:
         + <https://gitlab.com/gitlab-org/gitlab-runner/-/issues/6564>
         + <https://gitlab.com/gitlab-org/gitlab/-/issues/224124>
 
+## Cirrus CI
+
+- [[Cirrus CI - Cirrus CI|https://cirrus-ci.org/]]
+
 # Common features
 
 - Skipping commits by using directive in commit message:
