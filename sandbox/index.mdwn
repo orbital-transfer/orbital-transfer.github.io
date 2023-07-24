@@ -212,6 +212,8 @@
 - [[GitHub - lima-vm/lima: Linux virtual machines, typically on macOS, for running containerd|https://github.com/lima-vm/lima]]
 - [[GitHub - containers/skopeo: Work with remote images registries - retrieving information, images, signing content|https://github.com/containers/skopeo]]
 - [[Open Container Initiative - Open Container Initiative|https://opencontainers.org/]]
+- https://docs.pagure.org/koji/
+- https://github.com/containerbuildsystem/atomic-reactor
 
 # Linters / Tidiers
 
