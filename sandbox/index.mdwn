@@ -304,6 +304,7 @@
 # VCS
 
 - [[Porkrind Dot Org: commit-patch|https://porkrind.org/commit-patch/]]
+- http://cyberelk.net/tim/software/patchutils/
 
 
 # Security
