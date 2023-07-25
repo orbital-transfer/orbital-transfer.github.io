@@ -368,7 +368,232 @@ developer tools).</li>
 
 <h2 id="future">Future</h2>
 
-<p>TODO</p>
+<ul>
+<li>The tooling runs on a <em>System</em>
+<ul>
+<li>Host <em>System</em> is where it all starts!</li>
+<li>Target <em>System</em> is what you want the output to run on.
+<ul>
+<li>Targets can be nested.</li>
+<li>e.g., you need to run inside of a container inside of VM on another
+machine. For example, you have a build box with Windows VM and you
+need to use specific Windows Docker containers.</li>
+</ul></li>
+</ul></li>
+<li>For host, target
+<ul>
+<li>Need to identify the kernel, OS, architecture.
+<ul>
+<li>Note: some OSes are multi-arch or have a compatibility mode (x86_64 can run x86 code, some Windows could run 16-bit using NTVDM)</li>
+<li>Process:
+<ul>
+<li>Note: <code>uname</code> is from POSIX <a href="https://en.wikipedia.org/wiki/Uname">https://en.wikipedia.org/wiki/Uname</a></li>
+<li>Kernel discovery process:
+<ul>
+<li>On Linux
+<ul>
+<li><code>uname -s</code>: name</li>
+<li><code>uname -r</code>: release</li>
+<li><code>uname -v</code> : version</li>
+</ul></li>
+</ul></li>
+<li>OS discovery process:
+<ul>
+<li>On Linux
+<ul>
+<li><code>uname -o</code></li>
+</ul></li>
+<li>On DOS, Windows
+<ul>
+<li><code>ver</code></li>
+</ul></li>
+</ul></li>
+<li>Kernel Architecture
+<ul>
+<li>On Linux
+<ul>
+<li><code>uname -m</code></li>
+</ul></li>
+<li>Note: kernel is compiled for a particular architecture</li>
+<li>This might not be what the CPU could potentially support.</li>
+<li>e.g., a 32-bit kernel running on a 64-bit CPU machine
+<ul>
+<li>this may limit what you can run</li>
+</ul></li>
+</ul></li>
+<li>CPU architecture
+<ul>
+<li>CPU info</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Need to identify runtime environment (default: host and target are identical and local).
+<ul>
+<li>Identify which tools are available
+<ul>
+<li>Debian: apt, most likely GNU coreutils</li>
+<li>MSYS2: pacman</li>
+<li>Alpine: apk, Busybox</li>
+</ul></li>
+<li>Process:
+<ul>
+<li>Depends on OS.</li>
+<li>In some cases the runtime environment tools you want are not installed
+such as macOS and Windows that have multiple package managers.</li>
+</ul></li>
+</ul></li>
+<li>Scenario 1:
+<ul>
+<li>Goal: as discussed on the homepage, I would like to test on FreeBSD.</li>
+<li>Step 1: Get the name of the Vagrant box to use.</li>
+<li>Note: <a href="https://app.vagrantup.com/freebsd">https://app.vagrantup.com/freebsd</a> are official.
+<ul>
+<li>More info on release announcements like <a href="https://www.freebsd.org/releases/13.0R/announce/">https://www.freebsd.org/releases/13.0R/announce/</a>.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>For configuration
+<ul>
+<li>Package dependencies
+<ul>
+<li>Have a way to say what you depend on and how to install it.</li>
+<li>Examples:
+<ul>
+<li>Install Perl using:
+<ul>
+<li>Debian     : apt-get install perl (<code>pkg:debian/deb/perl</code>)</li>
+<li>Unix-likes : perlbrew (options for version and all compile flags)</li>
+<li>Windows    : berrybrew (options for version and architecture)</li>
+<li>Windows    : chocolatey install strawberryperl (has options for version and architecture)</li>
+<li>Linux | macoOS : <a href="https://github.com/skaji/relocatable-perl">https://github.com/skaji/relocatable-perl</a></li>
+<li>Unix-likes : plenv
+<ul>
+<li>extension for relocatable-perl: <a href="https://github.com/skaji/plenv-download">https://github.com/skaji/plenv-download</a></li>
+</ul></li>
+<li>Inside of GitHub Actions: <a href="https://github.com/shogo82148/actions-setup-perl">https://github.com/shogo82148/actions-setup-perl</a>
+<ul>
+<li>various options (threads, etc.)</li>
+</ul></li>
+<li>Version info:
+<ul>
+<li><a href="https://metacpan.org/pod/CPAN::Perl::Releases">https://metacpan.org/pod/CPAN::Perl::Releases</a></li>
+<li><a href="https://metacpan.org/pod/CPAN::Perl::Releases::MetaCPAN">https://metacpan.org/pod/CPAN::Perl::Releases::MetaCPAN</a></li>
+</ul></li>
+</ul></li>
+<li>Install Ruby using:
+<ul>
+<li>Unix-likes: <a href="https://github.com/rbenv/rbenv">https://github.com/rbenv/rbenv</a></li>
+<li>Unix-likes: <a href="https://github.com/rvm/rvm">https://github.com/rvm/rvm</a></li>
+<li><a href="https://phusion.github.io/traveling-ruby/">https://phusion.github.io/traveling-ruby/</a> (Windows have to be made on Linux | macOS)</li>
+<li>Windows    : chocolatey</li>
+</ul></li>
+<li>Install MSYS2 (Windows only)
+<ul>
+<li>chocolatey (options include path)</li>
+<li>Inside of GitHub Actions: <a href="https://github.com/msys2/setup-msys2">https://github.com/msys2/setup-msys2</a></li>
+</ul></li>
+</ul></li>
+<li>This is necessary for different kinds of scenarios:
+<ul>
+<li>Scenario 1:
+<ul>
+<li>Goal: make sure that code works with the Perl interpreter and
+Perl modules packaged in Debian.</li>
+<li>Given a project that depends on Perl modules (e.g., <code>pkg:cpan/module/Foo</code>)</li>
+<li>Step 1: Map the Perl modules to Debian packages (e.g., <code>pkg:debian/deb/libfoo-perl</code>)</li>
+<li>Step 2: Install the ones that map via Debian packages</li>
+<li>Step 3: Install the rest using CPAN client.</li>
+<li>Note: This implies the Perl being used is the <code>/usr/bin/perl</code> via Debian <code>pkg:debian/deb/perl</code>.</li>
+<li>Example: used in the BioPerl CI.</li>
+<li>Process:
+<ul>
+<li>Need to have a way to enumerate Perl module dependencies.</li>
+</ul></li>
+</ul></li>
+<li>Scenario 2:
+<ul>
+<li>Goal: test different build options for Alien::Build.</li>
+<li>Given a Perl Alien project that uses Alien::Build that
+is used to provide a library bar.so and headers bar.h.</li>
+<li>Alternative 1.1: On Debian, Alien install type "system" needs <code>pkg:debian/deb/libbar-dev</code> to work.</li>
+<li>Alternative 1.2: On macOS, Alien install type "system" needs <code>pkg:brew/formula/bar</code> to work.</li>
+<li>Alternative 1.3: Alien install type "share" only needs compiler. This is tested on multiple OSes.</li>
+<li>Example: many different Alien modules</li>
+<li>Process:
+<ul>
+<li>Need to have a way to define dependencies for different options / variants.</li>
+</ul></li>
+</ul></li>
+<li>Scenario 3:
+<ul>
+<li>Goal: Select which CPAN mirror to download from.</li>
+<li>Given a Perl project that has local patches to dists that
+it needs.</li>
+<li>These patched dists are stored in a local private mirror.</li>
+<li>Set the mirror used for particular packages.</li>
+<li>Pin to a particular version.</li>
+<li>Aside: List of all public CPAN mirrors <a href="http://mirrors.cpan.org/">http://mirrors.cpan.org/</a> (but this is no longer needed as CPAN uses a CDN now)</li>
+<li>Aside: Important for security: also needed to set HTTPS (see cpanm docs for --mirror).</li>
+</ul></li>
+<li>Scenario 4:
+<ul>
+<li>Goal: Faster builds using pre-configured images.</li>
+<li>Given a project with dependencies A, B, C which are installable via the system package manager.</li>
+<li>Step 1: Create a Docker image that install A, B, C if the image does not exist.
+<ul>
+<li>May need to specify level of cacheing
+<ul>
+<li>Cache by package names</li>
+<li>Cache by package names + available package versions.</li>
+<li>May want to use <a href="https://snapshot.debian.org/">https://snapshot.debian.org/</a>.</li>
+</ul></li>
+</ul></li>
+<li>Step 2: Now run the rest of the installation inside of the Docker image.</li>
+<li>Note: This will run faster on subsequent installations.</li>
+<li>Note: May need to indicate what to do about checking for newer versions of A, B, C (update + upgrade)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Service dependencies
+<ul>
+<li>Scenario 1: Tests need X11
+<ul>
+<li>X11 can be run under various servers
+<ul>
+<li>If DISPLAY is set, have option
+<ul>
+<li>Use current DISPLAY</li>
+<li>Use Xvfb</li>
+<li>Use Xephyr (may need a WM to run inside)</li>
+</ul></li>
+<li>If DISPLAY is not set (headless environment)
+<ul>
+<li>Set DISPLAY</li>
+<li>Use Xvfb (requires <code>pkg:debian/deb/xvfb</code>)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Scenario 2: Tests need PostgreSQL
+<ul>
+<li>Alternative 1: Use existing PostgreSQL on system.</li>
+<li>Alternative 2: Use Docker <a href="https://hub.docker.com/_/postgres/">https://hub.docker.com/_/postgres/</a>.</li>
+<li>Alternative 3: If already using Docker for running the tests separately, use Docker Compose.</li>
+<li>Requires: connection string (host, port, auth)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Testing of Orb database
+<ul>
+<li>Need to be able to detect updates (e.g., new version of Debian, FreeBSD, etc. released)</li>
+<li>Self-tests (e.g., a configuration that uses that particular Orb).</li>
+<li>Need to have an archive of test reports for particular configurations.
+<ul>
+<li>Because doing integration tests on these could be heavy (time
+consuming, lots of compute resources).</li>
+<li>Used to track stability across versions.</li>
+</ul></li>
+</ul></li>
+</ul>
 
 <h3 id="outline">Outline</h3>
 
@@ -812,7 +1037,7 @@ could be issues at rt.cpan.org.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Sun Jul  2 15:21:03 2023</span>
+Last edited <span class="date">Tue Jul 25 22:54:28 2023</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
