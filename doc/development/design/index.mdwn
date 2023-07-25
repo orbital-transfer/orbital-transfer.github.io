@@ -190,7 +190,140 @@
 
 ## Future
 
-TODO
+- The tooling runs on a *System*
+    * Host *System* is where it all starts!
+    * Target *System* is what you want the output to run on.
+        + Targets can be nested.
+        + e.g., you need to run inside of a container inside of VM on another
+          machine. For example, you have a build box with Windows VM and you
+          need to use specific Windows Docker containers.
+- For host, target
+    * Need to identify the kernel, OS, architecture.
+        + Note: some OSes are multi-arch or have a compatibility mode (x86_64 can run x86 code, some Windows could run 16-bit using NTVDM)
+        + Process:
+            + Note: `uname` is from POSIX <https://en.wikipedia.org/wiki/Uname>
+            + Kernel discovery process:
+                + On Linux
+                    + `uname -s`: name
+                    + `uname -r`: release
+                    + `uname -v` : version
+            + OS discovery process:
+                + On Linux
+                    + `uname -o`
+                + On DOS, Windows
+                    + `ver`
+            + Kernel Architecture
+                + On Linux
+                    + `uname -m`
+                + Note: kernel is compiled for a particular architecture
+                + This might not be what the CPU could potentially support.
+                + e.g., a 32-bit kernel running on a 64-bit CPU machine
+                    + this may limit what you can run
+            + CPU architecture
+                + CPU info
+    * Need to identify runtime environment (default: host and target are identical and local).
+        + Identify which tools are available
+            + Debian: apt, most likely GNU coreutils
+            + MSYS2: pacman
+            + Alpine: apk, Busybox
+        + Process:
+            + Depends on OS.
+            + In some cases the runtime environment tools you want are not installed
+              such as macOS and Windows that have multiple package managers.
+    * Scenario 1:
+        + Goal: as discussed on the homepage, I would like to test on FreeBSD.
+        + Step 1: Get the name of the Vagrant box to use.
+        + Note: <https://app.vagrantup.com/freebsd> are official.
+            + More info on release announcements like <https://www.freebsd.org/releases/13.0R/announce/>.
+- For configuration
+    * Package dependencies
+        + Have a way to say what you depend on and how to install it.
+        + Examples:
+            + Install Perl using:
+                + Debian     : apt-get install perl (`pkg:debian/deb/perl`)
+                + Unix-likes : perlbrew (options for version and all compile flags)
+                + Windows    : berrybrew (options for version and architecture)
+                + Windows    : chocolatey install strawberryperl (has options for version and architecture)
+                + Linux | macoOS : <https://github.com/skaji/relocatable-perl>
+                + Unix-likes : plenv
+                    + extension for relocatable-perl: <https://github.com/skaji/plenv-download>
+                + Inside of GitHub Actions: <https://github.com/shogo82148/actions-setup-perl>
+                    + various options (threads, etc.)
+                + Version info:
+                    + <https://metacpan.org/pod/CPAN::Perl::Releases>
+                    + <https://metacpan.org/pod/CPAN::Perl::Releases::MetaCPAN>
+            + Install Ruby using:
+                + Unix-likes: <https://github.com/rbenv/rbenv>
+                + Unix-likes: <https://github.com/rvm/rvm>
+                + <https://phusion.github.io/traveling-ruby/> (Windows have to be made on Linux | macOS)
+                + Windows    : chocolatey
+            + Install MSYS2 (Windows only)
+                + chocolatey (options include path)
+                + Inside of GitHub Actions: <https://github.com/msys2/setup-msys2>
+        + This is necessary for different kinds of scenarios:
+            + Scenario 1:
+                + Goal: make sure that code works with the Perl interpreter and
+                  Perl modules packaged in Debian.
+                + Given a project that depends on Perl modules (e.g., `pkg:cpan/module/Foo`)
+                + Step 1: Map the Perl modules to Debian packages (e.g., `pkg:debian/deb/libfoo-perl`)
+                + Step 2: Install the ones that map via Debian packages
+                + Step 3: Install the rest using CPAN client.
+                + Note: This implies the Perl being used is the `/usr/bin/perl` via Debian `pkg:debian/deb/perl`.
+                + Example: used in the BioPerl CI.
+                + Process:
+                    + Need to have a way to enumerate Perl module dependencies.
+            + Scenario 2:
+                + Goal: test different build options for Alien::Build.
+                + Given a Perl Alien project that uses Alien::Build that
+                  is used to provide a library bar.so and headers bar.h.
+                + Alternative 1.1: On Debian, Alien install type "system" needs `pkg:debian/deb/libbar-dev` to work.
+                + Alternative 1.2: On macOS, Alien install type "system" needs `pkg:brew/formula/bar` to work.
+                + Alternative 1.3: Alien install type "share" only needs compiler. This is tested on multiple OSes.
+                + Example: many different Alien modules
+                + Process:
+                    + Need to have a way to define dependencies for different options / variants.
+            + Scenario 3:
+                + Goal: Select which CPAN mirror to download from.
+                + Given a Perl project that has local patches to dists that
+                  it needs.
+                + These patched dists are stored in a local private mirror.
+                + Set the mirror used for particular packages.
+                + Pin to a particular version.
+                + Aside: List of all public CPAN mirrors <http://mirrors.cpan.org/> (but this is no longer needed as CPAN uses a CDN now)
+                + Aside: Important for security: also needed to set HTTPS (see cpanm docs for --mirror).
+            + Scenario 4:
+                + Goal: Faster builds using pre-configured images.
+                + Given a project with dependencies A, B, C which are installable via the system package manager.
+                + Step 1: Create a Docker image that install A, B, C if the image does not exist.
+                    + May need to specify level of cacheing
+                        + Cache by package names
+                        + Cache by package names + available package versions.
+                        + May want to use <https://snapshot.debian.org/>.
+                + Step 2: Now run the rest of the installation inside of the Docker image.
+                + Note: This will run faster on subsequent installations.
+                + Note: May need to indicate what to do about checking for newer versions of A, B, C (update + upgrade)
+    * Service dependencies
+        + Scenario 1: Tests need X11
+            + X11 can be run under various servers
+                + If DISPLAY is set, have option
+                    + Use current DISPLAY
+                    + Use Xvfb
+                    + Use Xephyr (may need a WM to run inside)
+                + If DISPLAY is not set (headless environment)
+                    + Set DISPLAY
+                    + Use Xvfb (requires `pkg:debian/deb/xvfb`)
+        + Scenario 2: Tests need PostgreSQL
+            + Alternative 1: Use existing PostgreSQL on system.
+            + Alternative 2: Use Docker <https://hub.docker.com/_/postgres/>.
+            + Alternative 3: If already using Docker for running the tests separately, use Docker Compose.
+            + Requires: connection string (host, port, auth)
+- Testing of Orb database
+    * Need to be able to detect updates (e.g., new version of Debian, FreeBSD, etc. released)
+    * Self-tests (e.g., a configuration that uses that particular Orb).
+    * Need to have an archive of test reports for particular configurations.
+        + Because doing integration tests on these could be heavy (time
+          consuming, lots of compute resources).
+        + Used to track stability across versions.
 
 ### Outline
 
