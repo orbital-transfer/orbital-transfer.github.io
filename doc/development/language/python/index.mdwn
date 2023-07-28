@@ -59,10 +59,11 @@
     * [[GitHub - ronaldoussoren/py2app: py2app is a Python setuptools command which will allow you to make standalone Mac OS X application bundles and plugins from Python scripts.|https://github.com/ronaldoussoren/py2app]]
     * [[GitHub - gregneagle/relocatable-python: A tool for building standalone relocatable Python.framework bundles|https://github.com/gregneagle/relocatable-python]]
 
-## Wheels
+## Packages / Wheels
 
 - [[GitHub - pypa/cibuildwheel: 🎡 Build Python wheels for all the platforms on CI with minimal configuration.|https://github.com/pypa/cibuildwheel]]
 - [[GitHub - pypa/manylinux: Python wheels that work on any linux (almost)|https://github.com/pypa/manylinux]]
+- [[The Mingwpy project — mingwpy 0.1 documentation|https://mingwpy.github.io/]]
 
 ## Applications
 
