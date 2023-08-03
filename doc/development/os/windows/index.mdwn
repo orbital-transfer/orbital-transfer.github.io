@@ -58,3 +58,7 @@
 - <https://cygwin.com/packages/>
 - <https://packages.msys2.org/>
 
+# Windows Subsystem for Linux
+
+- <https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux>
+- <https://learn.microsoft.com/en-us/windows/wsl/about>
