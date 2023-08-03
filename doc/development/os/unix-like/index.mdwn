@@ -1,0 +1,5 @@
+[[!meta title="Unix-like"]]
+
+General information about Unix-likes:
+
+- [[chroot - Wikipedia|https://en.wikipedia.org/wiki/Chroot]]
