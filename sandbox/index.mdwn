@@ -282,7 +282,8 @@
 - [[OpenAPI Specification - Swagger|https://swagger.io/specification/]]
 - [[OpenAPI Examples Need Help|https://phil.tech/2020/openapi-examples/]]
 - [[Creating OpenAPI from HTTP Traffic - APIs You Won't Hate|https://apisyouwonthate.com/blog/creating-openapi-from-http-traffic]]
-- [[JSON Schema Bundling Finally Formalised - APIs You Won't Hate|https://apisyouwonthate.com/blog/json-schema-bundling-finally-formalised]]
+- [[JSON Schema - The home of JSON Schema|https://json-schema.org/]]
+    * [[JSON Schema Bundling Finally Formalised - APIs You Won't Hate|https://apisyouwonthate.com/blog/json-schema-bundling-finally-formalised]]
 
 # System package managers
 
