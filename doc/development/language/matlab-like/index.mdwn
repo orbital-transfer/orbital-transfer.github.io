@@ -7,3 +7,11 @@
 - Matlab: <https://www.mathworks.com/matlabcentral/fileexchange/>
 - Octave: <https://octave.sourceforge.io/packages.php>
 - Scilab: <https://atoms.scilab.org/>
+
+# CI
+
+- Matlab
+    * [[GitHub - mathworks/ci-configuration-examples: This repository makes it easy to run your MATLAB tests on some of the most common CI platforms. The configuration files take care of setting up MATLAB and automatically executing your MATLAB tests.|https://github.com/mathworks/ci-configuration-examples]]
+    * [[GitHub - matlab-actions/setup-matlab: Set up MATLAB on a GitHub-hosted runner.|https://github.com/matlab-actions/setup-matlab]]
+    * [[GitHub - benjamin-heasly/matlab-support: Docker image with enough dependencies to support a mounted-in Matlab.|https://github.com/benjamin-heasly/matlab-support]]
+    * [[GitHub - FriesischScott/gitlab-ci-matlab: Container supporting a mounted in matlab for use in Gitlab CI|https://github.com/FriesischScott/gitlab-ci-matlab]]
