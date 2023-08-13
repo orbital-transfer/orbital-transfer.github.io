@@ -1,0 +1,8 @@
+[[!meta title="Rust"]]
+
+- [[Rust Programming Language|https://www.rust-lang.org/]]
+
+# Packages
+
+- [[crates.io: Rust Package Registry|https://crates.io/]]
+- [[Lib.rs — home for Rust crates // Lib.rs|https://lib.rs/]]
