@@ -21,6 +21,7 @@
 
 # Modules
 
+- [[Go Packages - Go Packages|https://pkg.go.dev/]]
 - <https://go.dev/doc/modules/gomod-ref>
 - <https://go.dev/doc/modules/managing-dependencies>
 - <https://go.dev/doc/modules/managing-source>
