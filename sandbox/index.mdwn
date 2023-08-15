@@ -382,3 +382,7 @@
 # Some other ideas
 
 - [[Build monitor for Github Actions, Gitlab CI, Travis CI, Bitrise and Buddy! - Meercode|https://meercode.io/]]
+
+# Interfaces
+
+- [[Interface description language - Wikipedia|https://en.wikipedia.org/wiki/Interface_description_language]]
