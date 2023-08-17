@@ -16,3 +16,9 @@
 # Rake
 
 - <https://ruby.github.io/rake/>
+
+# Tooling
+
+- <https://github.com/ruby/rbs>
+- <https://github.com/soutaro/steep>
+- <https://github.com/sorbet/sorbet>
