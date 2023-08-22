@@ -18,6 +18,12 @@
 - <https://www.git-scm.com/docs/gitattributes#_generating_diff_text>
     * <https://stackoverflow.com/questions/1016798/excluding-files-from-git-diff>
 
+# Features
+
+- rerere
+    * <https://git-scm.com/docs/git-rerere>
+    * <https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67>
+
 # Git hooks
 
 - <https://githooks.com/>
