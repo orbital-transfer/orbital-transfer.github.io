@@ -303,6 +303,11 @@ Some modules have Pure-Perl fallbacks:
 - [[Split pod documentation from a Perl module|https://www.lemoda.net/perl/split-pod-from-pm/index.html]]
     * [[Split a .pm into a .pod and a .pm - The Incredible Journey (blogs.perl.org)|http://blogs.perl.org/users/ben_bullock/2017/08/split-a-pm-into-a-pod-and-a-pm.html]]
 - [[Pod::Strip - Remove POD from Perl code - metacpan.org|https://metacpan.org/pod/Pod::Strip]]
+- i18n
+    * [[International Perl Resources|https://www.perlmonks.org/?node_id=55176]]
+    * [[perl - POD multilanguage documentation - Stack Overflow|https://stackoverflow.com/questions/2768775/pod-multilanguage-documentation]]
+    * [[perldoc 2.0 - International Perl Documentation|https://perldoc2.sourceforge.net/]]
+    * [[Pod::MultiLang - metacpan.org|https://metacpan.org/pod/Pod::MultiLang]]
 
 # CPAN data
 
