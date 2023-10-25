@@ -306,6 +306,11 @@ Some modules have Pure-Perl fallbacks:
 - i18n
     * [[International Perl Resources|https://www.perlmonks.org/?node_id=55176]]
     * [[perl - POD multilanguage documentation - Stack Overflow|https://stackoverflow.com/questions/2768775/pod-multilanguage-documentation]]
+    * [[gitpan/Pod-Parser-I18N: Read-only release history for Pod-Parser-I18N|https://github.com/gitpan/Pod-Parser-I18N]]
+    * PerlDoc.jp
+        + [[canada/PerlDocJp: This Web application let perldoc.jp Japanized pod document browsable and searchable just like search.cpan.org|https://github.com/canada/PerlDocJp]]
+        + [[perldoc.jp|https://perldoc.jp/]]
+        + [[Pod::PerldocJp - perldoc that also checks perldoc.jp - metacpan.org|https://metacpan.org/pod/Pod::PerldocJp]]
     * [[perldoc 2.0 - International Perl Documentation|https://perldoc2.sourceforge.net/]]
     * [[Pod::MultiLang - metacpan.org|https://metacpan.org/pod/Pod::MultiLang]]
 
