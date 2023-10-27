@@ -362,6 +362,8 @@
 
 - [[GitHub - CoatiSoftware/Sourcetrail: Sourcetrail - free and open-source interactive source explorer|https://github.com/CoatiSoftware/Sourcetrail]]
 - [[Call graph - Wikipedia|https://en.wikipedia.org/wiki/Call_graph]]
+- [[Mermaid - Diagramming and charting tool|http://mermaid.js.org/]]
+- [[PlantUML: Open-source tool that uses simple textual descriptions to draw beautiful UML diagrams.|https://plantuml.com/]]
 
 # MLOps
 
