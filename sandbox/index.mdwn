@@ -364,6 +364,9 @@
 - [[Call graph - Wikipedia|https://en.wikipedia.org/wiki/Call_graph]]
 - [[Mermaid - Diagramming and charting tool|http://mermaid.js.org/]]
 - [[PlantUML: Open-source tool that uses simple textual descriptions to draw beautiful UML diagrams.|https://plantuml.com/]]
+- [[Home - D2 Documentation|https://d2lang.com/]]
+    * [[Text to diagram|https://text-to-diagram.com/]]
+- [[Plain text diagrams - the best diagrams as code tools|https://www.augmentedmind.de/2020/12/20/plain-text-diagrams-as-code/]]
 
 # MLOps
 
