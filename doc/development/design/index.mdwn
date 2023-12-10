@@ -200,6 +200,7 @@
 - For host, target
     * Need to identify the kernel, OS, architecture.
         + Note: some OSes are multi-arch or have a compatibility mode (x86_64 can run x86 code, some Windows could run 16-bit using NTVDM)
+            + e.g., Debian supports multi-arch apt package settings.
         + Process:
             + Note: `uname` is from POSIX <https://en.wikipedia.org/wiki/Uname>
             + Kernel discovery process:
