@@ -224,9 +224,9 @@
                 + CPU info
     * Need to identify runtime environment (default: host and target are identical and local).
         + Identify which tools are available
-            + Debian: apt, most likely GNU coreutils
-            + MSYS2: pacman
-            + Alpine: apk, Busybox
+            + Debian: `apt`, most likely GNU coreutils
+            + MSYS2: `pacman`
+            + Alpine: `apk`, Busybox
         + Process:
             + Depends on OS.
             + In some cases the runtime environment tools you want are not installed
