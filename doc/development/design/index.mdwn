@@ -236,6 +236,7 @@
         + Step 1: Get the name of the Vagrant box to use.
         + Note: <https://app.vagrantup.com/freebsd> are official.
             + More info on release announcements like <https://www.freebsd.org/releases/13.0R/announce/>.
+            + Official VM images can be part of the database.
 - For configuration
     * Package dependencies
         + Have a way to say what you depend on and how to install it.
