@@ -226,7 +226,7 @@
         + Identify which tools are available
             + Debian: `apt`, most likely GNU coreutils
             + MSYS2: `pacman`
-            + Alpine: `apk`, Busybox
+            + Alpine: `apk`, Busybox (as opposed to GNU coreutils)
         + Process:
             + Depends on OS.
             + In some cases the runtime environment tools you want are not installed
