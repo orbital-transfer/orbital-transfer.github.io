@@ -242,12 +242,12 @@
         + Have a way to say what you depend on and how to install it.
         + Examples:
             + Install Perl using:
-                + Debian     : apt-get install perl (`pkg:debian/deb/perl`)
-                + Unix-likes : perlbrew (options for version and all compile flags)
-                + Windows    : berrybrew (options for version and architecture)
-                + Windows    : chocolatey install strawberryperl (has options for version and architecture)
+                + Debian     : `apt-get install perl` (`pkg:debian/deb/perl`)
+                + Unix-likes : `perlbrew` (options for version and all compile flags)
+                + Windows    : `berrybrew` (options for version and architecture)
+                + Windows    : `chocolatey install strawberryperl` (has options for version and architecture)
                 + Linux | macoOS : <https://github.com/skaji/relocatable-perl>
-                + Unix-likes : plenv
+                + Unix-likes : `plenv`
                     + extension for relocatable-perl: <https://github.com/skaji/plenv-download>
                 + Inside of GitHub Actions: <https://github.com/shogo82148/actions-setup-perl>
                     + various options (threads, etc.)
