@@ -274,6 +274,11 @@
                 + Example: used in the BioPerl CI.
                 + Process:
                     + Need to have a way to enumerate Perl module dependencies.
+                        + Enumerating dependencies can be done via different strategies (that need priority):
+                            + `cpanfile`
+                            + `META.json`
+                            + `Makefile.PL`
+                        + These are part of what CPAN clients can provide.
             + Scenario 2:
                 + Goal: test different build options for Alien::Build.
                 + Given a Perl Alien project that uses Alien::Build that
