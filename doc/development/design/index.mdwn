@@ -242,7 +242,7 @@
         + Have a way to say what you depend on and how to install it.
         + Examples:
             + Install Perl using:
-                + Debian     : `apt-get install perl` (`pkg:debian/deb/perl`)
+                + Debian     : `apt-get install perl` (`pkg:deb/debian/perl`)
                 + Unix-likes : `perlbrew` (options for version and all compile flags)
                 + Windows    : `berrybrew` (options for version and architecture)
                 + Windows    : `chocolatey install strawberryperl` (has options for version and architecture)
@@ -267,10 +267,10 @@
                 + Goal: make sure that code works with the Perl interpreter and
                   Perl modules packaged in Debian.
                 + Given a project that depends on Perl modules (e.g., `pkg:cpan/module/Foo`)
-                + Step 1: Map the Perl modules to Debian packages (e.g., `pkg:debian/deb/libfoo-perl`)
+                + Step 1: Map the Perl modules to Debian packages (e.g., `pkg:deb/debian/libfoo-perl`)
                 + Step 2: Install the ones that map via Debian packages
                 + Step 3: Install the rest using CPAN client.
-                + Note: This implies the Perl being used is the `/usr/bin/perl` via Debian `pkg:debian/deb/perl`.
+                + Note: This implies the Perl being used is the `/usr/bin/perl` via Debian `pkg:deb/debian/perl`.
                 + Example: used in the BioPerl CI.
                 + Process:
                     + Need to have a way to enumerate Perl module dependencies.
@@ -283,7 +283,7 @@
                 + Goal: test different build options for Alien::Build.
                 + Given a Perl Alien project that uses Alien::Build that
                   is used to provide a library bar.so and headers bar.h.
-                + Alternative 1.1: On Debian, Alien install type "system" needs `pkg:debian/deb/libbar-dev` to work.
+                + Alternative 1.1: On Debian, Alien install type "system" needs `pkg:deb/debian/libbar-dev` to work.
                 + Alternative 1.2: On macOS, Alien install type "system" needs `pkg:brew/formula/bar` to work.
                 + Alternative 1.3: Alien install type "share" only needs compiler. This is tested on multiple OSes.
                 + Example: many different Alien modules
@@ -318,7 +318,7 @@
                     + Use Xephyr (may need a WM to run inside)
                 + If DISPLAY is not set (headless environment)
                     + Set DISPLAY
-                    + Use Xvfb (requires `pkg:debian/deb/xvfb`)
+                    + Use Xvfb (requires `pkg:deb/debian/xvfb`)
         + Scenario 2: Tests need PostgreSQL
             + Alternative 1: Use existing PostgreSQL on system.
             + Alternative 2: Use Docker <https://hub.docker.com/_/postgres/>.
