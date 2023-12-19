@@ -66,9 +66,9 @@
 - What do these tasks do:
     * Determine the platform
         + Platforms:
-            + [[Debian|doc/development/system/debian]] + [[apt|doc/development/package-manager/apt]],
-            + [[macOS|doc/development/os/macos]] + [[Homebrew|doc/development/system/homebrew]],
-            + [[Windows|doc/development/os/windows]] + [[MSYS2|doc/development/system/msys2]].
+            + [[Debian|system/debian]] + [[apt|package-manager/apt]],
+            + [[macOS|os/macos]] + [[Homebrew|system/homebrew]],
+            + [[Windows|os/windows]] + [[MSYS2|system/msys2]].
     * Set up environment for everything (task: Install, Test).
         + Not great... this is specific to project-renard. It downloads the
           test data and sets an environment variable.
