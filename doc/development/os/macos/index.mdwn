@@ -45,6 +45,10 @@ Note from my own debugging of a autotools configure script:
 
 ---
 
+# Package managers
+
+- [[system/macports]]
+- [[system/homebrew]]
 
 # Distribution
 
