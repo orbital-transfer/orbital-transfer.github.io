@@ -54,9 +54,9 @@
 
 - <https://winlibs.com/>
 - <https://www.mingw-w64.org/>
-- <https://vcpkg.io/en/docs/users/mingw.html>
+- [[system/vcpkg]] <https://vcpkg.io/en/docs/users/mingw.html>
 - <https://cygwin.com/packages/>
-- <https://packages.msys2.org/>
+- [[system/msys2]] <https://packages.msys2.org/>
 
 # Windows Subsystem for Linux
 
