@@ -260,7 +260,7 @@
                 + <https://phusion.github.io/traveling-ruby/> (Windows have to be made on Linux | macOS)
                 + Windows    : chocolatey
             + Install MSYS2 (Windows only)
-                + chocolatey (options include path)
+                + Using [[system/chocolatey]] (options include path)
                 + Inside of GitHub Actions: <https://github.com/msys2/setup-msys2>
         + This is necessary for different kinds of scenarios:
             + Scenario 1:
