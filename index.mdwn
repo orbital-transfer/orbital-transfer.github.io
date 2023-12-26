@@ -240,7 +240,7 @@ the combination that needs to be supported:
 - [[CI/CD pipelines|doc/development/continuous-integration]]: Jenkins, Travis CI, AppVeyor, GitHub Actions, GitLab CI/CD, Azure Pipelines
 - IDEs: local IDEs, cloud IDEs ([[Gitpod|doc/development/code-editor/gitpod]], [[Eclipse Che / Codenvy|doc/development/code-editor/eclipse-che]]),
   notebooks ([[Project Jupyter|https://jupyter.org/]], [[Binder|https://mybinder.org/]])
-- Operating systems: GNU/Linux ([[Debian|doc/development/system/debian]], [[Fedora|doc/development/system/fedora-linux]], SuSE), macOS ([[Homebrew|doc/development/system/homebrew]], MacPorts, Fink), [[Windows|doc/development/os/windows]] ([[MSYS2|doc/development/system/msys2]], [[vcpkg|doc/development/system/vcpkg]]), \*BSDs
+- Operating systems: GNU/Linux ([[Debian|doc/development/system/debian]], [[Fedora|doc/development/system/fedora-linux]], SuSE), macOS ([[Homebrew|doc/development/system/homebrew]], [[MacPorts|doc/development/system/macports]], Fink), [[Windows|doc/development/os/windows]] ([[MSYS2|doc/development/system/msys2]], [[vcpkg|doc/development/system/vcpkg]]), \*BSDs
 - Toolchains: `gcc`, `clang`, Visual Studio Build Tools, Oracle Developer Studio (Sun Studio), Open Watcom C/C++, Embarcadero C++Builder, Intel C++
 - Wrappers: [[`ccache`|doc/development/language/c/compiler/ccache]], [[`distcc`|doc/development/language/c/compiler/distcc]]
 - Build systems: [[CMake|doc/development/build-tool/cmake]], Gradle.
