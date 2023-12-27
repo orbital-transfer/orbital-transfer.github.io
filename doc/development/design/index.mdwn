@@ -271,7 +271,7 @@
                 + Step 2: Install the ones that map via Debian packages
                 + Step 3: Install the rest using CPAN client.
                 + Note: This implies the Perl being used is the `/usr/bin/perl` via Debian `pkg:deb/debian/perl`.
-                + Example: used in the BioPerl CI.
+                + Example: used in the [[BioPerl CI|https://github.com/bioperl/bioperl-live/pull/379/files]].
                 + Process:
                     + Need to have a way to enumerate Perl module dependencies.
                         + Enumerating dependencies can be done via different strategies (that need priority):
