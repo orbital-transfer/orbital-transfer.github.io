@@ -233,7 +233,7 @@
               such as macOS and Windows that have multiple package managers.
     * Scenario 1:
         + Goal: as discussed on the homepage, I would like to test on FreeBSD.
-        + Step 1: Get the name of the Vagrant box to use.
+        + Step 1: Get the name of the [[Vagrant|virtualization/vagrant]] box to use.
         + Note: <https://app.vagrantup.com/freebsd> are official.
             + More info on release announcements like <https://www.freebsd.org/releases/13.0R/announce/>.
             + Official VM images can be part of the database.
