@@ -453,7 +453,7 @@
 - Payload:
     * Env (for Environment):
         + Language
-        + DB (e.g., PostgreSQL, MySQL)
+        + DB (e.g., [[PostgreSQL|database/rdbms/postgresql]], MySQL)
         + XWindows
     * Sys (for System):
         + Operating system
