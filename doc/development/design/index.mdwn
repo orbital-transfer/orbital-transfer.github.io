@@ -460,7 +460,7 @@
         + Package management system
     * Serv (for Service):
         + Usually a web service
-        + e.g., GitHub, Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls, Codecov
+        + e.g., [[GitHub|service/github]], Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls, Codecov
     * VCS: version control system
         + [[git|vcs/git]], [[bzr|vcs/bazaar]], [[svn|vcs/subversion]], cvs, etc.
 - database
