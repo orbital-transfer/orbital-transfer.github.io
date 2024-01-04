@@ -447,6 +447,9 @@
             + PowerShell ISE
         + Modeling should include version numbers and different specs
           (input, output, etc.) for different versions of a software.
+            + what if different packages provide a conflicting command name?
+            + example: GNU Parallel and moreutils both provide a `parallel`. In
+              Debian, this is fixed by renaming one to `parallel.moreutils`.
 
 # Organisation of project
 
