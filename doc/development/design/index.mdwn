@@ -475,6 +475,7 @@
         + Need a mapper from external packages to database.
             + e.g., `CPANPackage($Name) -> Pkg('main:pkg/perl/$Name')`
             + must be overrideable: in case a fork needs to be used or in the example of Perl, an <https://p3rl.org/Alt> module.
+                + Nix has good ideas about these overlays.
     * `sys/`: os  package manager + distribution
         + e.g., sys/os/{windows,linux,macos}
         + e.g., sys/dist/{debian,ubuntu}, sys/dist/fedora
