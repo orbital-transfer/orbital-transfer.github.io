@@ -1,0 +1,3 @@
+[[!meta title="GNU Guix"]]
+
+[[GNU Guix transactional package manager and distribution — GNU Guix|https://guix.gnu.org/]]
