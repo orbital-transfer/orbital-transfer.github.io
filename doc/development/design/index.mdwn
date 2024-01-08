@@ -454,17 +454,17 @@
 # Organisation of project
 
 - Payload:
-    * Env (for Environment):
+    * <abbr title="Environment">Env</abbr>:
         + Language
         + DB (e.g., [[PostgreSQL|database/rdbms/postgresql]], MySQL)
         + XWindows
-    * Sys (for System):
+    * <abbr title="System">Sys</abbr>:
         + Operating system
         + Package management system
-    * Serv (for Service):
+    * <abbr title="Service">Serv</abbr>:
         + Usually a web service
         + e.g., [[GitHub|service/github]], Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls, Codecov
-    * VCS: version control system
+    * <abbr title="Version Control System">VCS</abbr>:
         + [[git|vcs/git]], [[bzr|vcs/bazaar]], [[svn|vcs/subversion]], cvs, etc.
 - database
     * `pkg/`: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
