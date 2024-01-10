@@ -445,6 +445,7 @@
             + type-aware (getopt types, paths, etc.)
             + see zsh, bash completion
             + PowerShell ISE
+        + Possible to extract from `--help`, from `man(1)` page, from calls to `getopt(3)`?
         + Modeling should include version numbers and different specs
           (input, output, etc.) for different versions of a software.
             + what if different packages provide a conflicting command name?
