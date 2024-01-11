@@ -451,6 +451,8 @@
             + what if different packages provide a conflicting command name?
             + example: GNU Parallel and moreutils both provide a `parallel`. In
               Debian, this is fixed by renaming one to `parallel.moreutils`.
+    * Need to model build options:
+        + `autoconf` can be parsed.
 
 # Organisation of project
 
