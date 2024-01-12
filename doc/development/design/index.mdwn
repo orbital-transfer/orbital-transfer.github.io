@@ -431,7 +431,7 @@
             + https://cve.mitre.org/cve/data_feeds.html
             + https://www.opencve.io/welcome
         + have modules provide RDF representation?
-            + see also the old Moose + Semantic Web work
+            + see also the old Moose + Semantic Web work, LinkML + dataclasses codegen work
         + can track provenance of data
             + which graph it came from
             + was it entered via a tool or manually
