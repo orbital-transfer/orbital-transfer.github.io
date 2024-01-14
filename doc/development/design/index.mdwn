@@ -18,7 +18,7 @@
         + Install directory
             + global install: no directory specified (so installs to `perl -V:sitelib`)
             + CI install: in `~/.orbital`.
-                + Only when $ENV{CI} is true
+                + Only when `$ENV{CI}` is true
             + default: relative to launch-site repo
     * steps:
         1. Install `cpm` (from vendor submodules) if not available
@@ -134,7 +134,7 @@
         + macOS + Homebrew: no-op.
         + Windows + MSYS2: no-op.
     * Each platform has an environment (task: Install, Test)
-        + Debian + apt: sets `DISPLAY` to the `Xvfb` started above.
+        + Debian + `apt`: sets `DISPLAY` to the `Xvfb` started above.
         + macOS + Homebrew:
             - This environment depends on the Homebrew prefix.
             - Adds to `PKG_CONFIG_PATH`: openssl, libffi
