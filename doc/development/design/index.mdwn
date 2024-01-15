@@ -148,6 +148,11 @@
             - Set `MSYS2_FC_CACHE_SKIP`: skip font cache for `fontconfig` package.
             - Add hack that modifies Perl linking for EUMM: yikes! This
               isn't even in the same project! Boo this code!!!
+                * Unsure what a proper fix for this would be. Each distribution
+                  links to different libraries and will need transformations,
+                  but these transformations are not so much of a special case
+                  that they can't be given a name (e.g., use `:nosearch` +
+                  `:search` around a particular `-lfoo` flag).
             - Set `ALIEN_BUILD_PKG_CONFIG` to prefer
               `PkgConfig::CommandLine`: This should probably be upstream.
     * For each repo to install via depth-first walk (task: Install):
