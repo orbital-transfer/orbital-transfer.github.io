@@ -120,7 +120,7 @@
             Not great as this is Perl specific and really should be part of
             non-platform code. Who did this?! Oh, right.
     * Each platform has a `_pre_run` method (task: Install, Test)
-        + Debian + apt:
+        + Debian + `apt`:
             - Start the `Xvfb` sever.  Note that the reason why `Xvfb` is
               also needed for the Install task is that running
               `dzil listdeps` or `dzil build` needs a display because
@@ -160,7 +160,7 @@
           the `_install` for MSYS2 step installs `git`.
         + Install all the "native" dependencies of the repos first, then install the repos.
         + Each platform has an `install_packages` method to install the "native" packages (task: Install)
-            + Debian + apt:
+            + Debian + `apt`:
                 - Check if all needed packages are already installed.
                 - Otherwise `apt-get update`.
                 - Then `apt-get install`.
@@ -205,7 +205,7 @@
 - For host, target
     * Need to identify the kernel, OS, architecture.
         + Note: some OSes are multi-arch or have a compatibility mode (x86_64 can run x86 code, some Windows could run 16-bit using NTVDM)
-            + e.g., Debian supports multi-arch apt package settings.
+            + e.g., Debian supports multi-arch `apt` package settings.
         + Process:
             + Note: `uname` is from POSIX <https://en.wikipedia.org/wiki/Uname>
             + Kernel discovery process:
@@ -529,7 +529,7 @@
         + Env::Perl
             + CPAN (via MetaCPAN)
             + local DarkPAN
-        + .deb: Debian apt, Ubuntu PPA
+        + `.deb`: Debian `apt`, Ubuntu PPA
 - Directory can be specified as local FS or remote URL.
 - Query dependencies for directory.
     * Need language-specific scanner.
@@ -557,7 +557,7 @@
         + [[Serverless Framework - Packaging|https://www.serverless.com/framework/docs/providers/aws/guide/packaging]]
 - Add repositories
     * Debian
-        + Example apt repositories for common software:
+        + Example `apt` repositories for common software:
             + <https://www.virtualbox.org/wiki/Linux_Downloads>
             + <https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository>
             + <https://docs.docker.com/engine/install/>
