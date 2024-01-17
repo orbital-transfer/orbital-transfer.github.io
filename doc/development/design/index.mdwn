@@ -326,7 +326,7 @@
                     + Use Xvfb (requires `pkg:deb/debian/xvfb`)
         + Scenario 2: Tests need PostgreSQL
             + Alternative 1: Use existing PostgreSQL on system.
-            + Alternative 2: Use Docker <https://hub.docker.com/_/postgres/>.
+            + Alternative 2: Use [[Docker|virtualization/docker]] <https://hub.docker.com/_/postgres/>.
                 + Note: similar to official VMs, there can be a concept of official Docker images.
             + Alternative 3: If already using Docker for running the tests separately, use Docker Compose.
             + Requires: connection string (host, port, auth)
