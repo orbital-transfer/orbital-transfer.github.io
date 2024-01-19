@@ -460,6 +460,9 @@
               Debian, this is fixed by renaming one to `parallel.moreutils`.
     * Need to model build options:
         + `autoconf` can be parsed.
+- Some projects need external data
+    * Perhaps these can also be modeled as "packages"?
+    * "Data packages" as opposed to "Software packages"
 
 # Organisation of project
 
