@@ -463,6 +463,11 @@
 - Some projects need external data
     * Perhaps these can also be modeled as "packages"?
     * "Data packages" as opposed to "Software packages"
+    * Trick: using GNU Stow to manage symlink to data directory structure while
+      keeping the data as read-only. This can be used for host-specific data
+      (e.g., `.env` deployment configurations by `$HOSTNAME`) and to avoid
+      accidentally deleting data when cleaning project directory
+      (e.g., `make clean`, `git clean`).
 
 # Organisation of project
 
