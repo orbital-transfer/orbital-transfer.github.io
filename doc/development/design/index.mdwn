@@ -468,6 +468,10 @@
       (e.g., `.env` deployment configurations by `$HOSTNAME`) and to avoid
       accidentally deleting data when cleaning project directory
       (e.g., `make clean`, `git clean`).
+    * [[!format sh """
+              cd "$(git rev-parse --show-toplevel)" \
+                      && stow --target . --dir ../merge .
+      """]]
 
 # Organisation of project
 
