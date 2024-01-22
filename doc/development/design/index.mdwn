@@ -486,6 +486,7 @@
     * <abbr title="Service">Serv</abbr>:
         + Usually a web service
         + e.g., [[GitHub|service/github]], Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls, Codecov
+        + Example of non-web service: an intranet [[Jenkins|continuous-integration/jenkins]] server.
     * <abbr title="Version Control System">VCS</abbr>:
         + [[git|vcs/git]], [[bzr|vcs/bazaar]], [[svn|vcs/subversion]], cvs, etc.
 - database
