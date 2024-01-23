@@ -463,6 +463,8 @@
 - Some projects need external data
     * Perhaps these can also be modeled as "packages"?
     * "Data packages" as opposed to "Software packages"
+    * There are several solutions to this including the concept of version
+      control for data (e.g., DVC, LakeFS).
     * Trick: using GNU Stow to manage symlink to data directory structure while
       keeping the data as read-only. This can be used for host-specific data
       (e.g., `.env` deployment configurations by `$HOSTNAME`) and to avoid
