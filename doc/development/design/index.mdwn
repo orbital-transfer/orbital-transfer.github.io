@@ -474,6 +474,9 @@
               cd "$(git rev-parse --show-toplevel)" \
                       && stow --target . --dir ../merge .
       """]]
+- Ideas that look interesting:
+    * Cfengine's Promise theory
+    * Nix / Guix / Spack
 
 # Organisation of project
 
