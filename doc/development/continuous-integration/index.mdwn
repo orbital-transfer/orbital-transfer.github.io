@@ -169,9 +169,9 @@ Examples:
 - Shared runners
     * <https://gitlab.com/gitlab-org/gitlab/-/issues/359974>
     * Windows
-        + https://docs.gitlab.com/ee/development/windows.html#shared-windows-runners
-        + https://about.gitlab.com/blog/2020/01/21/windows-shared-runner-beta/
-        + https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers
+        + <https://docs.gitlab.com/ee/development/windows.html#shared-windows-runners>
+        + <https://about.gitlab.com/blog/2020/01/21/windows-shared-runner-beta/>
+        + <https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers>
         + <https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/gcp/windows-containers/-/tree/main/cookbooks/preinstalled-software>
     * macOS
         + <https://gitlab.com/gitlab-org/ci-cd/shared-runners/images/macstadium/orka>
