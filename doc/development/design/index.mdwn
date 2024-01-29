@@ -445,8 +445,8 @@
             + maybe tie data changes to a commit?
     * Need to model command line tools
         + See PaSh <https://binpa.sh/>
-            + https://nikos.vasilak.is/p/pash:osdi:2022.pdf
-            + https://arxiv.org/pdf/2012.15422.pdf
+            + <https://nikos.vasilak.is/p/pash:osdi:2022.pdf>
+            + <https://arxiv.org/pdf/2012.15422.pdf>
         + can this be used to provide completion?
             + sub-commands
             + type-aware (getopt types, paths, etc.)
