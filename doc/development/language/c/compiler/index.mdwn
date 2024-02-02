@@ -1,19 +1,19 @@
 [[!map pages="doc/development/language/c/compiler/* and ! doc/development/language/c/compiler/*/*"]]
 
-- https://en.wikipedia.org/wiki/Borland_Turbo_C
-- https://en.wikipedia.org/wiki/Watcom_C/C%2B%2B
-- https://en.wikipedia.org/wiki/Comeau_C/C%2B%2B
-- https://en.wikipedia.org/wiki/Edison_Design_Group
-- https://en.wikipedia.org/wiki/Small_Device_C_Compiler
-- https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B
-- https://en.wikipedia.org/wiki/LLVM
-- https://drh.github.io/lcc/
+- <https://en.wikipedia.org/wiki/Borland_Turbo_C>
+- <https://en.wikipedia.org/wiki/Watcom_C/C%2B%2B>
+- <https://en.wikipedia.org/wiki/Comeau_C/C%2B%2B>
+- <https://en.wikipedia.org/wiki/Edison_Design_Group>
+- <https://en.wikipedia.org/wiki/Small_Device_C_Compiler>
+- <https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B>
+- <https://en.wikipedia.org/wiki/LLVM>
+- <https://drh.github.io/lcc/>
     * <http://www.smorgasbordet.com/pellesc/>
-- https://bellard.org/tcc/
-- https://sourceforge.net/projects/fpgac/
-- https://en.wikipedia.org/wiki/Amsterdam_Compiler_Kit
-- https://en.wikipedia.org/wiki/Keil_(company)
-- https://www.delorie.com/djgpp/
-- https://en.wikipedia.org/wiki/List_of_compilers#C_compilers
+- <https://bellard.org/tcc/>
+- <https://sourceforge.net/projects/fpgac/>
+- <https://en.wikipedia.org/wiki/Amsterdam_Compiler_Kit>
+- <https://en.wikipedia.org/wiki/Keil_(company)>
+- <https://www.delorie.com/djgpp/>
+- <https://en.wikipedia.org/wiki/List_of_compilers#C_compilers>
 - <https://en.wikipedia.org/wiki/Small_Device_C_Compiler>
     * <https://sdcc.sourceforge.net/>
