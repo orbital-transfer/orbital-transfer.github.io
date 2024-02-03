@@ -5,11 +5,11 @@
 - <https://github.com/golang-standards/project-layout>
 - <https://pkg.go.dev/cmd/cgo>
 - Cross-compile
-    * https://dave.cheney.net/2015/08/22/cross-compilation-with-go-1-5
-    * https://github.com/karalabe/xgo
-    * https://github.com/davecheney/golang-crosscompile
-    * https://github.com/inconshreveable/gonative
-    * https://github.com/mitchellh/gox
+    * <https://dave.cheney.net/2015/08/22/cross-compilation-with-go-1-5>
+    * <https://github.com/karalabe/xgo>
+    * <https://github.com/davecheney/golang-crosscompile>
+    * <https://github.com/inconshreveable/gonative>
+    * <https://github.com/mitchellh/gox>
 - <https://zchee.github.io/golang-wiki/>
 
 # Implementations
