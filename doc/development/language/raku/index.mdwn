@@ -3,4 +3,4 @@
 # Editor / IDE tools
 
 - LSP
-    * https://github.com/bscan/RakuNavigator
+    * <https://github.com/bscan/RakuNavigator>
