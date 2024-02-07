@@ -1,4 +1,4 @@
 [[!meta title="APT"]]
 
-- https://wiki.debian.org/apt-src
-- https://jaqque.sbih.org/kplug/apt-pinning.html
+- <https://wiki.debian.org/apt-src>
+- <https://jaqque.sbih.org/kplug/apt-pinning.html>
