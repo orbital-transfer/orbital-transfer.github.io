@@ -25,8 +25,8 @@ e.g.,
     * <https://github.com/nealrichardson/skeletor>
     * <https://stat.ethz.ch/R-manual/R-devel/library/utils/html/package.skeleton.html>
     * <https://docs.ropensci.org/DataPackageR/reference/datapackage_skeleton.html>
+    * <http://projecttemplate.net/>
 - Python
     * <https://github.com/pyscaffold/pyscaffold>
 - Perl
     * <https://perldoc.perl.org/h2xs>
-    * <http://projecttemplate.net/>
