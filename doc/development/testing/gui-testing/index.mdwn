@@ -1,9 +1,9 @@
 [[!meta title="GUI testing"]]
 
 - FrogLogic Squish
-    * https://www.youtube.com/watch?v=ic0BILPYYik
-    * https://kb.froglogic.com/squish/mac/howto/automate-dmg-installers/
-    * https://www.froglogic.com/blog/how-automate-gui-tests-dmg-installer/
+    * <https://www.youtube.com/watch?v=ic0BILPYYik>
+    * <https://kb.froglogic.com/squish/mac/howto/automate-dmg-installers/>
+    * <https://www.froglogic.com/blog/how-automate-gui-tests-dmg-installer/>
 - <https://gitlab.com/dogtail/dogtail>
     * <https://stackoverflow.com/questions/45605632/what-is-best-test-automation-tool-approach-for-automating-gtk-guis-on-windows>
 - Gtk3
