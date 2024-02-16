@@ -319,11 +319,11 @@
             + X11 can be run under various servers
                 + If `DISPLAY` is set, have option
                     + Use current `DISPLAY`
-                    + Use Xvfb
-                    + Use Xephyr (may need a WM to run inside)
+                    + Use Xvfb (`pkg:deb/debian/xvfb`)
+                    + Use Xephyr (`pkg:deb/debian/xserver-xephyr`) (may need a WM to run inside)
                 + If `DISPLAY` is not set (headless environment)
                     + Set `DISPLAY`
-                    + Use Xvfb (requires `pkg:deb/debian/xvfb`)
+                    + Use Xvfb (`pkg:deb/debian/xvfb`)
         + Scenario 2: Tests need PostgreSQL
             + Alternative 1: Use existing PostgreSQL on system.
             + Alternative 2: Use [[Docker|virtualization/docker]] <https://hub.docker.com/_/postgres/>.
