@@ -320,7 +320,7 @@
                 + If `DISPLAY` is set, have option
                     + Use current `DISPLAY`
                     + Use Xvfb (`pkg:deb/debian/xvfb`)
-                    + Use Xephyr (`pkg:deb/debian/xserver-xephyr`) (may need a WM to run inside)
+                    + Use Xephyr (`pkg:deb/debian/xserver-xephyr`) (may need a <abbr title="Window Manager">WM</abbr> to run inside)
                 + If `DISPLAY` is not set (headless environment)
                     + Set `DISPLAY`
                     + Use Xvfb (`pkg:deb/debian/xvfb`)
