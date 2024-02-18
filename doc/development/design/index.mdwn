@@ -285,9 +285,9 @@
                             + `Makefile.PL`
                         + These are part of what CPAN clients can provide.
             + Scenario 2:
-                + Goal: test different build options for Alien::Build.
-                + Given a Perl Alien project that uses Alien::Build that
-                  is used to provide a library bar.so and headers bar.h.
+                + Goal: test different build options for `Alien::Build`.
+                + Given a Perl Alien project that uses `Alien::Build` that
+                  is used to provide a library `bar.so` and headers `bar.h`.
                 + Alternative 1.1: On Debian, Alien install type "system" needs `pkg:deb/debian/libbar-dev` to work.
                 + Alternative 1.2: On macOS, Alien install type "system" needs `pkg:brew/formula/bar` to work.
                 + Alternative 1.3: Alien install type "share" only needs compiler. This is tested on multiple OSes.
