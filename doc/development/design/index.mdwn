@@ -263,7 +263,7 @@
                 + Unix-likes: <https://github.com/rbenv/rbenv>
                 + Unix-likes: <https://github.com/rvm/rvm>
                 + <https://phusion.github.io/traveling-ruby/> (Windows have to be made on Linux | macOS)
-                + Windows    : chocolatey
+                + Windows    : [[chocolatey|system/chocolatey]]
             + Install MSYS2 (Windows only)
                 + Using [[system/chocolatey]] (options include path)
                 + Inside of GitHub Actions: <https://github.com/msys2/setup-msys2>
