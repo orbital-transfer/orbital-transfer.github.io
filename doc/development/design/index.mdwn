@@ -248,7 +248,7 @@
         + Examples:
             + Install Perl using:
                 + Debian     : `apt-get install perl` (`pkg:deb/debian/perl`)
-                + Unix-likes : `perlbrew` (options for version and all compile flags)
+                + Unix-likes : `perlbrew` (options for version and all compile flags), requires a C compiler
                 + Windows    : `berrybrew` (options for version and architecture)
                 + Windows    : `chocolatey install strawberryperl` (has options for version and architecture)
                 + Linux | macoOS : <https://github.com/skaji/relocatable-perl>
