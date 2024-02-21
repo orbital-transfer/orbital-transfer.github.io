@@ -286,6 +286,8 @@
                         + These are part of what CPAN clients can provide.
             + Scenario 2:
                 + Goal: test different build options for `Alien::Build`.
+                    + Most important: `ALIEN_INSTALL_TYPE`
+                    + Others are listed in the documentation under the `ENVIRONMENT` heading.
                 + Given a Perl Alien project that uses `Alien::Build` that
                   is used to provide a library `bar.so` and headers `bar.h`.
                 + Alternative 1.1: On Debian, Alien install type "system" needs `pkg:deb/debian/libbar-dev` to work.
