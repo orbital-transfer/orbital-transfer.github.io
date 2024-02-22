@@ -460,6 +460,12 @@
             + what if different packages provide a conflicting command name?
             + example: GNU Parallel and moreutils both provide a `parallel`. In
               Debian, this is fixed by renaming one to `parallel.moreutils`.
+    * Need to model environment variables:
+        + Each language has different ways of access environment variables:
+            + C: `getenv(3)`;
+            + Perl: `%ENV`, `Env.pm`;
+            + Python: `os.environ[]`, `os.getenv()`.
+        + Documentation usually has an `ENVIRONMENT` section.
     * Need to model build options:
         + `autoconf` can be parsed.
 - Some projects need external data
