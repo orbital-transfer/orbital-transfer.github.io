@@ -468,6 +468,7 @@
         + Documentation usually has an `ENVIRONMENT` section.
     * Need to model build options:
         + `autoconf` can be parsed.
+        + See how tools like Spack, Gentoo do it?
 - Some projects need external data
     * Perhaps these can also be modeled as "packages"?
     * "Data packages" as opposed to "Software packages"
