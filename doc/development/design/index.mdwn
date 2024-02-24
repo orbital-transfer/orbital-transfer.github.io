@@ -485,7 +485,7 @@
       """]]
 - Ideas that look interesting:
     * Cfengine's Promise theory
-    * Nix / Guix / Spack
+    * [[Nix|system/nix]] / Guix / Spack
 
 # Organisation of project
 
