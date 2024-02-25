@@ -504,7 +504,7 @@
     * <abbr title="Version Control System">VCS</abbr>:
         + [[git|vcs/git]], [[bzr|vcs/bazaar]], [[svn|vcs/subversion]], cvs, etc.
 - database
-    * `pkg/`: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
+    * `pkg/`: packages. These can be from source (for FOSS code), binary-only (for proprietary code), or data (data packages).
         + e.g., `pkg/gui/gtk3`
             + inside of this create definitions such as [[!format txt """ [[!inline pagenames="doc/development/design/pkg-def.txt.ex" raw=yes ]] """]]
         + e.g., `pkg/perl/Gtk3` for <https://p3rl.org/Gtk3>
