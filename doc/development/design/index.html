@@ -125,7 +125,7 @@ are script specific or used within the bootstrapping process.</li>
 <li>global install: no directory specified (so installs to <code>perl -V:sitelib</code>)</li>
 <li>CI install: in <code>~/.orbital</code>.
 <ul>
-<li>Only when $ENV{CI} is true</li>
+<li>Only when <code>&#036;ENV{CI}</code> is true</li>
 </ul></li>
 <li>default: relative to launch-site repo</li>
 </ul></li>
@@ -200,9 +200,9 @@ directories for bootstrapping.</li>
 <ul>
 <li>Platforms:
 <ul>
-<li>Debian + apt,</li>
-<li>macOS + Homebrew,</li>
-<li>Windows + MSYS2.</li>
+<li><a href="../system/debian/">Debian</a> + <a href="../package-manager/apt/">apt</a>,</li>
+<li><a href="../os/macos/">macOS</a> + <a href="../system/homebrew/">Homebrew</a>,</li>
+<li><a href="../os/windows/">Windows</a> + <a href="../system/msys2/">MSYS2</a>.</li>
 </ul></li>
 </ul></li>
 <li>Set up environment for everything (task: Install, Test).
@@ -212,9 +212,9 @@ test data and sets an environment variable.</li>
 </ul></li>
 <li>Each platform has a <code>_install</code> method (task: Install).
 <ul>
-<li>Debian + apt: Install <code>xvfb xauth</code>.
+<li>Debian + apt: Install <code>pkg:deb/debian/xvfb</code>, <code>pkg:deb/debian/xauth</code>.
 <ul>
-<li><code>xauth</code> is only needed for the <code>xvfb-run</code> script. <code>xvfb-run</code>
+<li><code>pkg:deb/debian/xauth</code> is only needed for the <code>xvfb-run</code> script. <code>xvfb-run</code>
 seems to be distribution-specific
 (i.e., the script is not provided by the upstream <code>xorg-server</code>
 package but is packaged by some Linux distributions such as
@@ -271,7 +271,7 @@ non-platform code. Who did this?! Oh, right.</li>
 </ul></li>
 <li>Each platform has a <code>_pre_run</code> method (task: Install, Test)
 <ul>
-<li>Debian + apt:
+<li>Debian + <code>apt</code>:
 <ul>
 <li>Start the <code>Xvfb</code> sever.  Note that the reason why <code>Xvfb</code> is
 also needed for the Install task is that running
@@ -289,7 +289,7 @@ CI environment. A very unsensible arrangement.</li>
 </ul></li>
 <li>Each platform has an environment (task: Install, Test)
 <ul>
-<li>Debian + apt: sets <code>DISPLAY</code> to the <code>Xvfb</code> started above.</li>
+<li>Debian + <code>apt</code>: sets <code>DISPLAY</code> to the <code>Xvfb</code> started above.</li>
 <li>macOS + Homebrew:
 <ul>
 <li>This environment depends on the Homebrew prefix.</li>
@@ -305,7 +305,14 @@ idea to use the macOS system Perl anyway.</li>
 <li>Set <code>PATH</code>: to the default paths for that MSYSTEM.</li>
 <li>Set <code>MSYS2_FC_CACHE_SKIP</code>: skip font cache for <code>fontconfig</code> package.</li>
 <li>Add hack that modifies Perl linking for EUMM: yikes! This
-isn't even in the same project! Boo this code!!!</li>
+isn't even in the same project! Boo this code!!!
+<ul>
+<li>Unsure what a proper fix for this would be. Each distribution
+links to different libraries and will need transformations,
+but these transformations are not so much of a special case
+that they can't be given a name (e.g., use <code>:nosearch</code> +
+<code>:search</code> around a particular <code>-lfoo</code> flag).</li>
+</ul></li>
 <li>Set <code>ALIEN_BUILD_PKG_CONFIG</code> to prefer
 <code>PkgConfig::CommandLine</code>: This should probably be upstream.</li>
 </ul></li>
@@ -317,7 +324,7 @@ the <code>_install</code> for MSYS2 step installs <code>git</code>.</li>
 <li>Install all the "native" dependencies of the repos first, then install the repos.</li>
 <li>Each platform has an <code>install_packages</code> method to install the "native" packages (task: Install)
 <ul>
-<li>Debian + apt:
+<li>Debian + <code>apt</code>:
 <ul>
 <li>Check if all needed packages are already installed.</li>
 <li>Otherwise <code>apt-get update</code>.</li>
@@ -384,7 +391,10 @@ need to use specific Windows Docker containers.</li>
 <ul>
 <li>Need to identify the kernel, OS, architecture.
 <ul>
-<li>Note: some OSes are multi-arch or have a compatibility mode (x86_64 can run x86 code, some Windows could run 16-bit using NTVDM)</li>
+<li>Note: some OSes are multi-arch or have a compatibility mode (x86_64 can run x86 code, some Windows could run 16-bit using NTVDM)
+<ul>
+<li>e.g., Debian supports multi-arch <code>apt</code> package settings.</li>
+</ul></li>
 <li>Process:
 <ul>
 <li>Note: <code>uname</code> is from POSIX <a href="https://en.wikipedia.org/wiki/Uname">https://en.wikipedia.org/wiki/Uname</a></li>
@@ -431,9 +441,9 @@ need to use specific Windows Docker containers.</li>
 <ul>
 <li>Identify which tools are available
 <ul>
-<li>Debian: apt, most likely GNU coreutils</li>
-<li>MSYS2: pacman</li>
-<li>Alpine: apk, Busybox</li>
+<li>Debian: <a href="../package-manager/apt/"><code>apt</code></a>, most likely GNU coreutils</li>
+<li>MSYS2: <a href="../package-manager/pacman/"><code>pacman</code></a></li>
+<li>Alpine: <code>apk</code>, Busybox (as opposed to GNU coreutils)</li>
 </ul></li>
 <li>Process:
 <ul>
@@ -445,10 +455,11 @@ such as macOS and Windows that have multiple package managers.</li>
 <li>Scenario 1:
 <ul>
 <li>Goal: as discussed on the homepage, I would like to test on FreeBSD.</li>
-<li>Step 1: Get the name of the Vagrant box to use.</li>
+<li>Step 1: Get the name of the <a href="../virtualization/vagrant/">Vagrant</a> box to use.</li>
 <li>Note: <a href="https://app.vagrantup.com/freebsd">https://app.vagrantup.com/freebsd</a> are official.
 <ul>
 <li>More info on release announcements like <a href="https://www.freebsd.org/releases/13.0R/announce/">https://www.freebsd.org/releases/13.0R/announce/</a>.</li>
+<li>Official VM images can be part of the database.</li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -461,12 +472,12 @@ such as macOS and Windows that have multiple package managers.</li>
 <ul>
 <li>Install Perl using:
 <ul>
-<li>Debian     : apt-get install perl (<code>pkg:debian/deb/perl</code>)</li>
-<li>Unix-likes : perlbrew (options for version and all compile flags)</li>
-<li>Windows    : berrybrew (options for version and architecture)</li>
-<li>Windows    : chocolatey install strawberryperl (has options for version and architecture)</li>
+<li>Debian     : <code>apt-get install perl</code> (<code>pkg:deb/debian/perl</code>)</li>
+<li>Unix-likes : <code>perlbrew</code> (options for version and all compile flags), requires a C compiler</li>
+<li>Windows    : <code>berrybrew</code> (options for version and architecture)</li>
+<li>Windows    : <code>chocolatey install strawberryperl</code> (has options for version and architecture)</li>
 <li>Linux | macoOS : <a href="https://github.com/skaji/relocatable-perl">https://github.com/skaji/relocatable-perl</a></li>
-<li>Unix-likes : plenv
+<li>Unix-likes : <code>plenv</code>
 <ul>
 <li>extension for relocatable-perl: <a href="https://github.com/skaji/plenv-download">https://github.com/skaji/plenv-download</a></li>
 </ul></li>
@@ -485,11 +496,11 @@ such as macOS and Windows that have multiple package managers.</li>
 <li>Unix-likes: <a href="https://github.com/rbenv/rbenv">https://github.com/rbenv/rbenv</a></li>
 <li>Unix-likes: <a href="https://github.com/rvm/rvm">https://github.com/rvm/rvm</a></li>
 <li><a href="https://phusion.github.io/traveling-ruby/">https://phusion.github.io/traveling-ruby/</a> (Windows have to be made on Linux | macOS)</li>
-<li>Windows    : chocolatey</li>
+<li>Windows    : <a href="../system/chocolatey/">chocolatey</a></li>
 </ul></li>
 <li>Install MSYS2 (Windows only)
 <ul>
-<li>chocolatey (options include path)</li>
+<li>Using <a href="../system/chocolatey/">chocolatey</a> (options include path)</li>
 <li>Inside of GitHub Actions: <a href="https://github.com/msys2/setup-msys2">https://github.com/msys2/setup-msys2</a></li>
 </ul></li>
 </ul></li>
@@ -500,22 +511,35 @@ such as macOS and Windows that have multiple package managers.</li>
 <li>Goal: make sure that code works with the Perl interpreter and
 Perl modules packaged in Debian.</li>
 <li>Given a project that depends on Perl modules (e.g., <code>pkg:cpan/module/Foo</code>)</li>
-<li>Step 1: Map the Perl modules to Debian packages (e.g., <code>pkg:debian/deb/libfoo-perl</code>)</li>
+<li>Step 1: Map the Perl modules to Debian packages (e.g., <code>pkg:deb/debian/libfoo-perl</code>)</li>
 <li>Step 2: Install the ones that map via Debian packages</li>
 <li>Step 3: Install the rest using CPAN client.</li>
-<li>Note: This implies the Perl being used is the <code>/usr/bin/perl</code> via Debian <code>pkg:debian/deb/perl</code>.</li>
-<li>Example: used in the BioPerl CI.</li>
+<li>Note: This implies the Perl being used is the <code>/usr/bin/perl</code> via Debian <code>pkg:deb/debian/perl</code>.</li>
+<li>Example: used in the <a href="https://github.com/bioperl/bioperl-live/pull/379/files">BioPerl CI</a>.</li>
 <li>Process:
 <ul>
-<li>Need to have a way to enumerate Perl module dependencies.</li>
+<li>Need to have a way to enumerate Perl module dependencies.
+<ul>
+<li>Enumerating dependencies can be done via different strategies (that need priority):
+<ul>
+<li><code>cpanfile</code></li>
+<li><code>META.json</code></li>
+<li><code>Makefile.PL</code></li>
+</ul></li>
+<li>These are part of what CPAN clients can provide.</li>
+</ul></li>
 </ul></li>
 </ul></li>
 <li>Scenario 2:
 <ul>
-<li>Goal: test different build options for Alien::Build.</li>
-<li>Given a Perl Alien project that uses Alien::Build that
-is used to provide a library bar.so and headers bar.h.</li>
-<li>Alternative 1.1: On Debian, Alien install type "system" needs <code>pkg:debian/deb/libbar-dev</code> to work.</li>
+<li>Goal: test different build options for <code>Alien::Build</code>.
+<ul>
+<li>Most important: <code>ALIEN_INSTALL_TYPE</code></li>
+<li>Others are listed in the documentation under the <code>ENVIRONMENT</code> heading.</li>
+</ul></li>
+<li>Given a Perl Alien project that uses <code>Alien::Build</code> that
+is used to provide a library <code>bar.so</code> and headers <code>bar.h</code>.</li>
+<li>Alternative 1.1: On Debian, Alien install type "system" needs <code>pkg:deb/debian/libbar-dev</code> to work.</li>
 <li>Alternative 1.2: On macOS, Alien install type "system" needs <code>pkg:brew/formula/bar</code> to work.</li>
 <li>Alternative 1.3: Alien install type "share" only needs compiler. This is tested on multiple OSes.</li>
 <li>Example: many different Alien modules</li>
@@ -560,23 +584,26 @@ it needs.</li>
 <ul>
 <li>X11 can be run under various servers
 <ul>
-<li>If DISPLAY is set, have option
+<li>If <code>DISPLAY</code> is set, have option
 <ul>
-<li>Use current DISPLAY</li>
-<li>Use Xvfb</li>
-<li>Use Xephyr (may need a WM to run inside)</li>
+<li>Use current <code>DISPLAY</code></li>
+<li>Use Xvfb (<code>pkg:deb/debian/xvfb</code>)</li>
+<li>Use Xephyr (<code>pkg:deb/debian/xserver-xephyr</code>) (may need a <abbr title="Window Manager">WM</abbr> to run inside)</li>
 </ul></li>
-<li>If DISPLAY is not set (headless environment)
+<li>If <code>DISPLAY</code> is not set (headless environment)
 <ul>
-<li>Set DISPLAY</li>
-<li>Use Xvfb (requires <code>pkg:debian/deb/xvfb</code>)</li>
+<li>Set <code>DISPLAY</code></li>
+<li>Use Xvfb (<code>pkg:deb/debian/xvfb</code>)</li>
 </ul></li>
 </ul></li>
 </ul></li>
 <li>Scenario 2: Tests need PostgreSQL
 <ul>
 <li>Alternative 1: Use existing PostgreSQL on system.</li>
-<li>Alternative 2: Use Docker <a href="https://hub.docker.com/_/postgres/">https://hub.docker.com/_/postgres/</a>.</li>
+<li>Alternative 2: Use <a href="../virtualization/docker/">Docker</a> <a href="https://hub.docker.com/_/postgres/">https://hub.docker.com/_/postgres/</a>.
+<ul>
+<li>Note: similar to official VMs, there can be a concept of official Docker images.</li>
+</ul></li>
 <li>Alternative 3: If already using Docker for running the tests separately, use Docker Compose.</li>
 <li>Requires: connection string (host, port, auth)</li>
 </ul></li>
@@ -608,6 +635,8 @@ consuming, lots of compute resources).</li>
 <li>Have metadata to repo elsewhere on FS
 <ul>
 <li>if repo is <code>git</code> and have <code>git</code>, can use <code>git worktree</code></li>
+<li>Trick that I use: to do processing on a separate FS, check
+out a fresh copy of the repository to a <code>git worktree</code>.</li>
 </ul></li>
 <li>else <code>git clone</code></li>
 </ul></li>
@@ -621,8 +650,9 @@ consuming, lots of compute resources).</li>
 
 <h1 id="workflowgraph">Workflow graph</h1>
 
-<ul>
-<li>Task
+<p><ul>
+<li>Task</p>
+
 <ul>
 <li>Something that can be run.
 <ul>
@@ -654,16 +684,22 @@ consuming, lots of compute resources).</li>
 <li>e.g., on GitHub Actions, this would indicate which
 OS the task is running on</li>
 </ul></li>
-</ul></li>
-<li>Resources
+</ul>
+
+<p></li>
+<li>Resources</p>
+
 <ul>
 <li>lockable / mutex
 <ul>
 <li>Some resources can only be accessed for writing by one task at a time,
 e.g., installing CPAN modules to a library directory, running apt-get.</li>
 </ul></li>
-</ul></li>
-<li>Scheduling
+</ul>
+
+<p></li>
+<li>Scheduling</p>
+
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Coffman&ndash;Graham_algorithm">https://en.wikipedia.org/wiki/Coffman–Graham_algorithm</a></li>
 <li><a href="https://metacpan.org/pod/Bencher::Scenario::GraphTopologicalSortModules">https://metacpan.org/pod/Bencher::Scenario::GraphTopologicalSortModules</a>
@@ -671,16 +707,22 @@ e.g., installing CPAN modules to a library directory, running apt-get.</li>
 <li><a href="https://metacpan.org/pod/Data::Graph::Util">https://metacpan.org/pod/Data::Graph::Util</a></li>
 <li><a href="https://metacpan.org/pod/Algorithm::Dependency">https://metacpan.org/pod/Algorithm::Dependency</a></li>
 </ul></li>
-</ul></li>
-<li>Workflow graph
+</ul>
+
+<p></li>
+<li>Workflow graph</p>
+
 <ul>
 <li>DAG
 <ul>
 <li>Maybe in the future use strongly connected components to do
 condensation of any directed graph?</li>
 </ul></li>
-</ul></li>
-<li><code>Task::Apt::Install</code>
+</ul>
+
+<p></li>
+<li><code>Task::Apt::Install</code></p>
+
 <ul>
 <li>Definition of <code>Task::Apt::Install</code>
 <ul>
@@ -703,8 +745,11 @@ at the resources they are trying to lock</li>
 <li>Mergeable: if the options other than <code>package-list</code> are the same,
 then they can be merged by merging the arrays of <code>package-list</code>.</li>
 </ul></li>
-</ul></li>
-<li>Package (or Pkg)
+</ul>
+
+<p></li>
+<li>Package (or Pkg)</p>
+
 <ul>
 <li>An installable unit.</li>
 <li>What gets installed varies by package type (different packaging
@@ -729,8 +774,11 @@ libfoo-dev packages on another</li>
 <ul>
 <li>preferred bug tracker and non-preferred alternatives (e.g., RT, <a href="../service/github/">GitHub</a>, <a href="../service/gitlab/">GitLab</a>, mailing lists)</li>
 </ul></li>
-</ul></li>
-<li>Data
+</ul>
+
+<p></li>
+<li>Data</p>
+
 <ul>
 <li>RDF model?
 <ul>
@@ -740,14 +788,14 @@ libfoo-dev packages on another</li>
 <ul>
 <li>DOAP
 <ul>
-<li>https://en.wikipedia.org/wiki/DOAP</li>
-<li>https://github.com/ewilderj/doap</li>
+<li><a href="https://en.wikipedia.org/wiki/DOAP">https://en.wikipedia.org/wiki/DOAP</a></li>
+<li><a href="https://github.com/ewilderj/doap">https://github.com/ewilderj/doap</a></li>
 </ul></li>
 <li>SPDX
 <ul>
-<li>https://spdx.dev/</li>
-<li>https://spdx.dev/spdx-examples-repo/</li>
-<li>https://github.com/spdx/tools-python</li>
+<li><a href="https://spdx.dev/">https://spdx.dev/</a></li>
+<li><a href="https://spdx.dev/spdx-examples-repo/">https://spdx.dev/spdx-examples-repo/</a></li>
+<li><a href="https://github.com/spdx/tools-python">https://github.com/spdx/tools-python</a></li>
 </ul></li>
 <li>CycloneDX
 <ul>
@@ -759,13 +807,13 @@ libfoo-dev packages on another</li>
 <li>CVE, Debian, etc.</li>
 <li><a href="https://www.cve-search.org/about/">About - cve-search - tool-set to perform local searches for known vulnerabilities</a></li>
 <li><a href="https://nvd.nist.gov/developers/vulnerabilities">Vulnerability APIs</a></li>
-<li>https://stackoverflow.com/questions/37526701/cve-details-api-get-vulnerabilities-by-component</li>
-<li>https://cve.mitre.org/cve/data_feeds.html</li>
-<li>https://www.opencve.io/welcome</li>
+<li><a href="https://stackoverflow.com/questions/37526701/cve-details-api-get-vulnerabilities-by-component">https://stackoverflow.com/questions/37526701/cve-details-api-get-vulnerabilities-by-component</a></li>
+<li><a href="https://cve.mitre.org/cve/data_feeds.html">https://cve.mitre.org/cve/data_feeds.html</a></li>
+<li><a href="https://www.opencve.io/welcome">https://www.opencve.io/welcome</a></li>
 </ul></li>
 <li>have modules provide RDF representation?
 <ul>
-<li>see also the old Moose + Semantic Web work</li>
+<li>see also the old Moose + Semantic Web work, LinkML + dataclasses codegen work</li>
 </ul></li>
 <li>can track provenance of data
 <ul>
@@ -778,8 +826,8 @@ libfoo-dev packages on another</li>
 <ul>
 <li>See PaSh <a href="https://binpa.sh/">https://binpa.sh/</a>
 <ul>
-<li>https://nikos.vasilak.is/p/pash:osdi:2022.pdf</li>
-<li>https://arxiv.org/pdf/2012.15422.pdf</li>
+<li><a href="https://nikos.vasilak.is/p/pash:osdi:2022.pdf">https://nikos.vasilak.is/p/pash:osdi:2022.pdf</a></li>
+<li><a href="https://arxiv.org/pdf/2012.15422.pdf">https://arxiv.org/pdf/2012.15422.pdf</a></li>
 </ul></li>
 <li>can this be used to provide completion?
 <ul>
@@ -788,41 +836,83 @@ libfoo-dev packages on another</li>
 <li>see zsh, bash completion</li>
 <li>PowerShell ISE</li>
 </ul></li>
+<li>Possible to extract from <code>--help</code>, from <code>man(1)</code> page, from calls to <code>getopt(3)</code>?</li>
 <li>Modeling should include version numbers and different specs
-(input, output, etc.) for different versions of a software.</li>
+(input, output, etc.) for different versions of a software.
+<ul>
+<li>what if different packages provide a conflicting command name?</li>
+<li>example: GNU Parallel and moreutils both provide a <code>parallel</code>. In
+Debian, this is fixed by renaming one to <code>parallel.moreutils</code>.</li>
 </ul></li>
+</ul></li>
+<li>Need to model environment variables:
+<ul>
+<li>Each language has different ways of access environment variables:
+<ul>
+<li>C: <code>getenv(3)</code>;</li>
+<li>Perl: <code>%ENV</code>, <code>Env.pm</code>;</li>
+<li>Python: <code>os.environ[]</code>, <code>os.getenv()</code>.</li>
+</ul></li>
+<li>Documentation usually has an <code>ENVIRONMENT</code> section.</li>
+</ul></li>
+<li>Need to model build options:
+<ul>
+<li><code>autoconf</code> can be parsed.</li>
+<li>See how tools like Spack, Gentoo do it?</li>
 </ul></li>
 </ul>
+
+<p></li>
+<li>Some projects need external data
+<ul>
+<li>Perhaps these can also be modeled as "packages"?</li>
+<li>"Data packages" as opposed to "Software packages"</li>
+<li>There are several solutions to this including the concept of version
+control for data (e.g., DVC, LakeFS).</li>
+<li>Trick: using GNU Stow to manage symlink to data directory structure while
+keeping the data as read-only. This can be used for host-specific data
+(e.g., <code>.env</code> deployment configurations by <code>&#036;HOSTNAME</code>) and to avoid
+accidentally deleting data when cleaning project directory
+(e.g., <code>make clean</code>, <code>git clean</code>).</li>
+<li><div class="highlight-sh"><pre class="hl">              <span class="hl kwb">cd</span> <span class="hl str">&quot;$(git rev-parse --show-toplevel)&quot;</span> \
+              <span class="hl opt">&amp;&amp;</span> stow <span class="hl kwb">--target</span> . <span class="hl kwb">--dir</span> ..<span class="hl opt">/</span>merge .</li>
+</ul></li>
+</ul>
+</pre></div>
+- Ideas that look interesting:
+    * Cfengine's Promise theory
+    * <a href="../system/nix/">Nix</a> / Guix / Spack</p>
 
 <h1 id="organisationofproject">Organisation of project</h1>
 
 <ul>
 <li>Payload:
 <ul>
-<li>Env (for Environment):
+<li><abbr title="Environment">Env</abbr>:
 <ul>
 <li>Language</li>
-<li>DB (e.g., PostgreSQL, MySQL)</li>
+<li>DB (e.g., <a href="../database/rdbms/postgresql/">PostgreSQL</a>, MySQL)</li>
 <li>XWindows</li>
 </ul></li>
-<li>Sys (for System):
+<li><abbr title="System">Sys</abbr>:
 <ul>
 <li>Operating system</li>
 <li>Package management system</li>
 </ul></li>
-<li>Serv (for Service):
+<li><abbr title="Service">Serv</abbr>:
 <ul>
 <li>Usually a web service</li>
-<li>e.g., GitHub, Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls, Codecov</li>
+<li>e.g., <a href="../service/github/">GitHub</a>, Sourceforge, Bitbucket, AppVeyor, Travis CI, Coveralls, Codecov</li>
+<li>Example of non-web service: an intranet <a href="../continuous-integration/jenkins/">Jenkins</a> server.</li>
 </ul></li>
-<li>VCS: version control system
+<li><abbr title="Version Control System">VCS</abbr>:
 <ul>
-<li>git, bzr, svn, cvs, etc.</li>
+<li><a href="../vcs/git/">git</a>, <a href="../vcs/bazaar/">bzr</a>, <a href="../vcs/subversion/">svn</a>, cvs, etc.</li>
 </ul></li>
 </ul></li>
 <li>database
 <ul>
-<li><code>pkg/</code>: packages. These can be from source (for FOSS code) or binary-only (for proprietary code).
+<li><code>pkg/</code>: packages. These can be from source (for FOSS code), binary-only (for proprietary code), or data (data packages).
 <ul>
 <li>e.g., <code>pkg/gui/gtk3</code>
 <ul>
@@ -879,7 +969,10 @@ def_pkg {
 <li>Need a mapper from external packages to database.
 <ul>
 <li>e.g., <code>CPANPackage(&#036;Name) -&gt; Pkg('main:pkg/perl/&#036;Name')</code></li>
-<li>must be overrideable: in case a fork needs to be used or in the example of Perl, an <a href="https://p3rl.org/Alt">https://p3rl.org/Alt</a> module.</li>
+<li>must be overrideable: in case a fork needs to be used or in the example of Perl, an <a href="https://p3rl.org/Alt">https://p3rl.org/Alt</a> module.
+<ul>
+<li>Nix has good ideas about these overlays.</li>
+</ul></li>
 </ul></li>
 </ul></li>
 <li><code>sys/</code>: os  package manager + distribution
@@ -956,7 +1049,7 @@ checkout the version of that repo.</li>
 <li>CPAN (via MetaCPAN)</li>
 <li>local DarkPAN</li>
 </ul></li>
-<li>.deb: Debian apt, Ubuntu PPA</li>
+<li><code>.deb</code>: Debian <code>apt</code>, Ubuntu PPA</li>
 </ul></li>
 </ul></li>
 <li>Directory can be specified as local FS or remote URL.</li>
@@ -1002,12 +1095,15 @@ could be issues at rt.cpan.org.</li>
 <ul>
 <li>Debian
 <ul>
-<li>https://www.virtualbox.org/wiki/Linux_Downloads</li>
-<li>https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository</li>
-<li>https://docs.docker.com/engine/install/</li>
-<li>https://github.com/cli/cli#installation</li>
+<li>Example <code>apt</code> repositories for common software:
+<ul>
+<li><a href="https://www.virtualbox.org/wiki/Linux_Downloads">https://www.virtualbox.org/wiki/Linux_Downloads</a></li>
+<li><a href="https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository">https://www.hashicorp.com/blog/announcing-the-hashicorp-linux-repository</a></li>
+<li><a href="https://docs.docker.com/engine/install/">https://docs.docker.com/engine/install/</a></li>
+<li><a href="https://github.com/cli/cli#installation">https://github.com/cli/cli#installation</a></li>
 <li>NVIDIA CUDA, container toolkit, etc.</li>
-<li>https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html</li>
+<li><a href="https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html">https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1037,7 +1133,7 @@ could be issues at rt.cpan.org.</li>
 
 
 <div class="pagedate">
-Last edited <span class="date">Tue Jul 25 22:54:28 2023</span>
+Last edited <span class="date">Sun Feb 25 00:19:04 2024</span>
 <!-- Created <span class="date">Sun Jan 24 05:22:03 2021</span> -->
 </div>
 
